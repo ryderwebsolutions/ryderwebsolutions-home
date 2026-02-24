@@ -3,213 +3,267 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dublin Rapid Plumbing — Emergency Plumber</title>
-  <meta name="description" content="Demo trades website: emergency plumber in Dublin. Mobile-first, click-to-call, services, areas served, reviews, contact." />
+  <title>Bridgeview Plumbing — Dublin Plumber</title>
+  <meta name="description" content="Demo trades website: plumber in Dublin. Clean layout, click-to-call, services, areas served, reviews, contact." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="demo.css" />
 </head>
+
 <body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="badge">Dublin Plumber</span>
+        <span class="muted">24/7 Callouts • Fully Insured</span>
+      </div>
+      <div class="topbar__right">
+        <a class="toplink" href="tel:+353800000000">Call: +353 800 000 000</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
   <header class="header">
     <div class="container header__inner">
-      <a class="brand" href="/demo/">Dublin Rapid Plumbing</a>
+      <a class="brand" href="/demo/">
+        <span class="brand__mark">BP</span>
+        <span class="brand__text">
+          <strong>Bridgeview Plumbing</strong>
+          <span class="muted">Dublin, Ireland</span>
+        </span>
+      </a>
 
-      <div class="header__actions">
-        <a class="btn btn--ghost btn--small" href="/">Back to Ryder</a>
-        <a class="btn btn--small" href="tel:+353800000000">Call Now</a>
-      </div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#areas">Areas</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact" class="btn btn--primary btn--small">Get a Callback</a>
+      </nav>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
+    <!-- Hero (different layout) -->
     <section class="hero">
       <div class="container hero__grid">
-        <div>
-          <p class="eyebrow">Emergency Plumber • Dublin</p>
-          <h1>Fast callouts. Clear pricing. No messing.</h1>
+        <div class="hero__copy">
+          <h1>Emergency plumbing in Dublin — fast callouts, no hassle.</h1>
           <p class="lead">
-            Boiler issues, leaks, blocked drains — we’ll get you sorted quickly.
-            Serving Dublin City & surrounding areas.
+            Leaks, boilers, blocked drains, burst pipes. We show up when you need it and explain pricing before work starts.
           </p>
 
-          <div class="cta">
-            <a class="btn" href="tel:+353800000000">Call +353 800 000 000</a>
-            <a class="btn btn--ghost" href="#quote">Request a Callback</a>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="tel:+353800000000">Call Now</a>
+            <a class="btn btn--outline" href="#contact">Request a Callback</a>
           </div>
 
-          <div class="trust">
-            <div class="trust__item"><strong>Response</strong><span>same day where possible</span></div>
-            <div class="trust__item"><strong>Insured</strong><span>fully qualified</span></div>
-            <div class="trust__item"><strong>Local</strong><span>Dublin based</span></div>
+          <div class="proof">
+            <div class="proof__item">
+              <div class="proof__num">30–90min</div>
+              <div class="proof__label">Typical response</div>
+            </div>
+            <div class="proof__item">
+              <div class="proof__num">4.8★</div>
+              <div class="proof__label">Local rating</div>
+            </div>
+            <div class="proof__item">
+              <div class="proof__num">Upfront</div>
+              <div class="proof__label">Clear pricing</div>
+            </div>
           </div>
-        </div>
 
-        <div class="card card--hero">
-          <h3>Quick info</h3>
-          <ul class="info">
-            <li><strong>Phone:</strong> +353 800 000 000</li>
-            <li><strong>Hours:</strong> 24/7 Callouts</li>
-            <li><strong>Areas:</strong> Dublin 1–24 + nearby</li>
-          </ul>
-          <p class="note">
-            This is a demo layout. For clients, we swap your branding, services, areas and reviews.
+          <p class="micro muted">
+            Demo site only — phone/email are placeholders.
+            <a class="micro__link" href="/">Back to Ryder Web Solutions</a>
           </p>
         </div>
+
+        <aside class="hero__card">
+          <div class="card card--shadow">
+            <h3>Quick contact</h3>
+            <div class="card__row">
+              <span class="muted">Phone</span>
+              <a href="tel:+353800000000"><strong>+353 800 000 000</strong></a>
+            </div>
+            <div class="card__row">
+              <span class="muted">Email</span>
+              <a href="mailto:hello@bridgeviewplumbing.ie"><strong>hello@bridgeviewplumbing.ie</strong></a>
+            </div>
+            <div class="card__row">
+              <span class="muted">Hours</span>
+              <strong>24/7 Callouts</strong>
+            </div>
+
+            <div class="divider"></div>
+
+            <h4>Popular jobs</h4>
+            <ul class="list">
+              <li>Emergency leaks & burst pipes</li>
+              <li>Boiler repair / no hot water</li>
+              <li>Blocked drains & toilets</li>
+              <li>Tap & toilet replacements</li>
+            </ul>
+
+            <a class="btn btn--primary btn--full" href="#contact">Request a Callback</a>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="section">
+    <!-- Services -->
+    <section id="services" class="section">
       <div class="container">
         <div class="section__head">
-          <h2>Plumbing services</h2>
-          <p class="muted">Keep it simple. List the money services people actually search for.</p>
+          <h2>Services</h2>
+          <p class="muted">Keep it simple: list what people actually search for.</p>
         </div>
 
-        <div class="grid3">
-          <div class="card">
+        <div class="cards">
+          <article class="service">
             <h3>Emergency leaks</h3>
-            <p>Fast diagnosis and repair. Stop water damage before it spreads.</p>
-          </div>
-          <div class="card">
+            <p>Fast diagnosis and repair to prevent water damage.</p>
+          </article>
+          <article class="service">
             <h3>Boiler repairs</h3>
-            <p>No heat or hot water? We’ll troubleshoot and fix quickly.</p>
-          </div>
-          <div class="card">
+            <p>No heat or hot water? Troubleshooting and same-day fixes where possible.</p>
+          </article>
+          <article class="service">
             <h3>Blocked drains</h3>
             <p>Kitchen sinks, showers, outdoor drains — cleared properly.</p>
-          </div>
-          <div class="card">
-            <h3>Tap & toilet fixes</h3>
+          </article>
+          <article class="service">
+            <h3>Toilets & taps</h3>
             <p>Drips, running toilets, replacements and fittings.</p>
-          </div>
-          <div class="card">
+          </article>
+          <article class="service">
             <h3>Pipework</h3>
-            <p>Repairs, replacements, upgrades and leak prevention.</p>
-          </div>
-          <div class="card">
+            <p>Repairs, replacements, upgrades and preventative work.</p>
+          </article>
+          <article class="service">
             <h3>Installations</h3>
-            <p>Appliances, radiators and small plumbing installs.</p>
-          </div>
+            <p>Small installs, appliances, radiators and plumbing upgrades.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- WHY CHOOSE -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section__head">
-          <h2>Why choose us</h2>
-          <p class="muted">Trades sites should answer objections fast.</p>
+    <!-- Split section (adds variety) -->
+    <section class="section section--soft">
+      <div class="container split">
+        <div class="split__left">
+          <h2>Why people call us</h2>
+          <ul class="ticks">
+            <li>Clear ETA and communication</li>
+            <li>Upfront pricing before work starts</li>
+            <li>Clean work and respect for your home</li>
+            <li>Fully insured & qualified</li>
+          </ul>
         </div>
 
-        <div class="grid2">
-          <div class="card">
-            <h3>Clear communication</h3>
-            <p>We confirm arrival times and keep you updated — no chasing.</p>
-          </div>
-          <div class="card">
-            <h3>Upfront pricing</h3>
-            <p>We explain costs before work starts. No surprise invoices.</p>
-          </div>
-          <div class="card">
-            <h3>Quality work</h3>
-            <p>Repairs done properly with parts you can trust.</p>
-          </div>
-          <div class="card">
-            <h3>Local reputation</h3>
-            <p>Reviews, referrals and repeat customers across Dublin.</p>
-          </div>
+        <div class="split__right card card--shadow">
+          <h3>What happens next?</h3>
+          <ol class="steps">
+            <li><strong>Call or request a callback</strong> — tell us the issue.</li>
+            <li><strong>We confirm arrival time</strong> and any callout details.</li>
+            <li><strong>Work is completed</strong> and you get a simple invoice.</li>
+          </ol>
+          <p class="muted tiny">For real clients we tailor this to their actual process.</p>
         </div>
       </div>
     </section>
 
-    <!-- AREAS -->
-    <section class="section">
+    <!-- Areas -->
+    <section id="areas" class="section">
       <div class="container">
         <div class="section__head">
           <h2>Areas served</h2>
-          <p class="muted">This section helps with local SEO and customer confidence.</p>
+          <p class="muted">Dublin City + surrounding areas.</p>
         </div>
 
-        <div class="card">
-          <div class="pillwrap">
-            <span class="pill">Dublin 1</span><span class="pill">Dublin 2</span><span class="pill">Dublin 4</span><span class="pill">Dublin 6</span>
-            <span class="pill">Dublin 8</span><span class="pill">Dublin 10</span><span class="pill">Dublin 12</span><span class="pill">Dublin 14</span>
-            <span class="pill">Dublin 16</span><span class="pill">Dublin 18</span><span class="pill">Dublin 20</span><span class="pill">Dublin 22</span>
-          </div>
-          <p class="note">We can also list towns (e.g., Tallaght, Rathfarnham, Dundrum, Lucan) depending on the client.</p>
+        <div class="pillwrap">
+          <span class="pill">Dublin 1</span><span class="pill">Dublin 2</span><span class="pill">Dublin 4</span><span class="pill">Dublin 6</span>
+          <span class="pill">Dublin 8</span><span class="pill">Dublin 10</span><span class="pill">Dublin 12</span><span class="pill">Dublin 14</span>
+          <span class="pill">Dublin 16</span><span class="pill">Dublin 18</span><span class="pill">Dublin 20</span><span class="pill">Dublin 22</span>
         </div>
       </div>
     </section>
 
-    <!-- REVIEWS -->
-    <section class="section section--alt">
+    <!-- Reviews (line removed) -->
+    <section id="reviews" class="section section--soft">
       <div class="container">
         <div class="section__head">
-          <h2>Customer reviews</h2>
-          <p class="muted">Even 3–5 real reviews massively improve trust. Don’t fake these for real clients.</p>
+          <h2>Reviews</h2>
+          <p class="muted">What customers say.</p>
         </div>
 
-        <div class="grid3">
-          <div class="card">
-            <p class="quote">“Arrived quickly and fixed the leak in 20 minutes. Sound lad.”</p>
-            <p class="muted">— Mark, Dublin 6</p>
-          </div>
-          <div class="card">
-            <p class="quote">“Boiler stopped working, back up same day. Fair price.”</p>
-            <p class="muted">— Sarah, Dublin 12</p>
-          </div>
-          <div class="card">
-            <p class="quote">“Unblocked the drain and explained what caused it. Recommended.”</p>
-            <p class="muted">— Liam, Dublin 4</p>
-          </div>
+        <div class="reviews">
+          <figure class="review card card--shadow">
+            <blockquote>“Arrived quickly and fixed the leak in under 30 minutes. Fair price.”</blockquote>
+            <figcaption class="muted">— Mark, Dublin 6</figcaption>
+          </figure>
+          <figure class="review card card--shadow">
+            <blockquote>“Boiler stopped working and they had it sorted same day. Sound service.”</blockquote>
+            <figcaption class="muted">— Sarah, Dublin 12</figcaption>
+          </figure>
+          <figure class="review card card--shadow">
+            <blockquote>“Unblocked the drain and explained what caused it. Would use again.”</blockquote>
+            <figcaption class="muted">— Liam, Dublin 4</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="quote" class="section">
+    <!-- Contact -->
+    <section id="contact" class="section">
       <div class="container contact">
-        <div>
+        <div class="contact__copy">
           <h2>Request a callback</h2>
-          <p class="muted">
-            Demo form only. For clients, this can go to email, WhatsApp, or a simple form service.
-          </p>
+          <p class="muted">Tell us what’s going on and we’ll call you back.</p>
 
           <div class="contact__details">
             <div><strong>Phone:</strong> <a href="tel:+353800000000">+353 800 000 000</a></div>
-            <div><strong>Email:</strong> <a href="mailto:hello@dublinrapidplumbing.ie">hello@dublinrapidplumbing.ie</a></div>
+            <div><strong>Email:</strong> <a href="mailto:hello@bridgeviewplumbing.ie">hello@bridgeviewplumbing.ie</a></div>
           </div>
         </div>
 
-        <form class="form" onsubmit="return false;">
+        <!-- Demo-only form: doesn't submit -->
+        <form class="form card card--shadow" onsubmit="return false;">
           <label>
             Name
             <input required placeholder="Your name" />
           </label>
+
           <label>
             Phone
             <input required placeholder="+353 ..." />
           </label>
+
           <label>
             What’s the issue?
             <textarea required rows="5" placeholder="Leak under sink, no hot water, blocked drain..."></textarea>
           </label>
-          <button class="btn" type="submit">Send (Demo)</button>
-          <p class="fineprint">For real clients, we connect this to email / form backend.</p>
+
+          <button class="btn btn--primary" type="submit">Send (Demo)</button>
+          <p class="muted tiny">For real clients, we connect this to email/WhatsApp/form backend.</p>
         </form>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container footer__inner">
-        <div>© <span id="year"></span> Dublin Rapid Plumbing</div>
+        <div>© <span id="year"></span> Bridgeview Plumbing</div>
         <div class="muted">Dublin, Ireland</div>
       </div>
     </footer>
+
+    <!-- Mobile call bar (conversion-focused) -->
+    <div class="callbar">
+      <a class="callbar__btn" href="tel:+353800000000">Call Now</a>
+      <a class="callbar__btn callbar__btn--outline" href="#contact">Callback</a>
+    </div>
   </main>
 
   <script>
