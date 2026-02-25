@@ -1,145 +1,405 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Dublin Pipe Rescue — Plumber in Dublin</title>
-  <meta name="description" content="Emergency plumber in Dublin. Leaks, boilers, blocked drains. Click-to-call, fast response, clear pricing."/>
-  <link rel="stylesheet" href="plumber.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emergency Plumber Dublin | Fast Callouts, Upfront Pricing</title>
+  <meta name="description" content="Need a plumber in Dublin today? Fast emergency callouts, boiler repairs, leaks and blocked drains. Fully insured, upfront pricing, guaranteed work." />
+  <link rel="stylesheet" href="plumber.css" />
+  <link rel="icon" href="assets/favicon.png" />
+
+  <!-- Local Business Schema (edit business details per client) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Plumber",
+    "name": "Dublin Plumbing Co.",
+    "url": "https://www.example.com/templates/plumber/",
+    "telephone": "+35315314920",
+    "areaServed": "Dublin, Ireland",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dublin",
+      "addressCountry": "IE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "16:00" }
+    ]
+  }
+  </script>
 </head>
+
 <body>
+  <!-- Emergency Bar -->
   <div class="topbar">
     <div class="container">
-      <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
-        <span class="badge">Emergency Plumber • Dublin</span>
-        <span class="muted">Fully Insured • Callouts Available</span>
+      <div class="row">
+        <div>
+          <strong>🚨 Emergency Plumber Dublin</strong>
+          <span class="tiny"> • Fast callouts • Fully insured • Work guaranteed</span>
+        </div>
+        <div class="phone">
+          <a href="tel:+35315314920">Call: 01 531 4920</a>
+        </div>
       </div>
-      <div><a href="tel:+353800000000"><strong>Call: +353 800 000 000</strong></a></div>
     </div>
   </div>
 
+  <!-- Header -->
   <header class="header">
     <div class="container">
-      <a class="brand" href="index.html">
-        <div class="logo">DP</div>
-        <div>
-          <strong>Dublin Pipe Rescue</strong>
-          <span>Plumber • Dublin</span>
-        </div>
-      </a>
+      <div class="row">
+        <a class="brand" href="./">
+          <img src="assets/logo.svg" alt="Dublin Plumbing Co. logo" />
+          <div>
+            <div class="name">Dublin Plumbing Co.</div>
+            <div class="tag">Emergency callouts • Boilers • Drains</div>
+          </div>
+        </a>
 
-      <nav class="nav">
-        <a href="services.html">Services</a>
-        <a href="areas.html">Areas</a>
-        <a href="contact.html">Contact</a>
-        <a class="btn btn--primary btn--small" href="tel:+353800000000">Call Now</a>
-      </nav>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="./services.html">Services</a>
+          <a href="./contact.html">Contact</a>
+          <a class="btn primary" href="tel:+35315314920" style="min-width:auto;padding:10px 12px;border-radius:12px;">Call Now</a>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <h1>Leaks, boilers, blocked drains — sorted fast.</h1>
-          <p class="lead">Mobile-first site built to convert calls. Clear info. Easy contact. No messing.</p>
-          <div class="cta">
-            <a class="btn btn--primary" href="tel:+353800000000">Call +353 800 000 000</a>
-            <a class="btn btn--ghost" href="contact.html">Request a Callback</a>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-wrap">
+        <div class="hero-left">
+          <div class="badge">✅ Upfront Pricing • ✅ Fully Insured • ✅ Dublin-Wide</div>
+          <div class="h1">Plumber in Dublin — Fast Callouts, Fixed Right First Time.</div>
+          <p class="lead">Leaks, boiler issues, blocked drains or no hot water? Speak directly with a qualified plumber and get help today.</p>
+
+          <ul class="hero-points">
+            <li><span class="dot"></span> Same-day appointments where possible</li>
+            <li><span class="dot"></span> Clear pricing before work begins</li>
+            <li><span class="dot"></span> Guaranteed workmanship & tidy finish</li>
+          </ul>
+
+          <div class="btns">
+            <a class="btn primary" href="tel:+35315314920">📞 Call Now</a>
+            <a class="btn dark" href="https://wa.me/353851234567?text=Hi%2C%20I%20need%20a%20plumber%20in%20Dublin.%20My%20issue%20is%3A" target="_blank" rel="noopener">💬 WhatsApp</a>
+            <a class="btn" href="#quote">✍️ Request Quote</a>
           </div>
 
-          <div class="kpis">
-            <div class="kpi"><strong>Same-day where possible</strong><span>response depends on workload</span></div>
-            <div class="kpi"><strong>Upfront pricing</strong><span>work explained before starting</span></div>
-            <div class="kpi"><strong>Local Dublin coverage</strong><span>postcodes + suburbs listed</span></div>
-          </div>
+          <p class="muted" style="margin-top:10px;"><strong>Tip:</strong> For emergencies (active leak / overflow), call — it’s the quickest response.</p>
         </div>
 
-        <aside class="panel">
-          <h2 style="margin:0 0 8px; font-size:18px;">Quick contact</h2>
-          <p class="muted" style="margin:0 0 12px;">Call now for urgent issues.</p>
-          <div class="kpis">
-            <div class="kpi"><strong>Phone</strong><span>+353 800 000 000</span></div>
-            <div class="kpi"><strong>Hours</strong><span>24/7 Callouts</span></div>
-            <div class="kpi"><strong>Areas</strong><span>Dublin 1–24 + nearby</span></div>
-          </div>
-          <div class="cta" style="margin-top:14px;">
-            <a class="btn btn--primary" style="width:100%;" href="tel:+353800000000">Call Now</a>
-          </div>
-          <p class="muted" style="font-size:13px; margin:10px 0 0;">Demo numbers/placeholders.</p>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container">
-        <h2>Popular services</h2>
-        <p class="muted">These are the searches that typically bring calls.</p>
-        <div class="grid">
-          <div class="card"><h3>Emergency leaks</h3><p>Fast diagnosis and repair to prevent damage.</p></div>
-          <div class="card"><h3>Boiler repairs</h3><p>No heat or hot water? Troubleshooting and fixes.</p></div>
-          <div class="card"><h3>Blocked drains</h3><p>Sinks, showers, toilets, outdoor drains.</p></div>
-          <div class="card"><h3>Toilets & taps</h3><p>Repairs, replacements, fittings.</p></div>
-          <div class="card"><h3>Pipework</h3><p>Repairs, upgrades, preventative work.</p></div>
-          <div class="card"><h3>Installations</h3><p>Small installs, radiators, appliances.</p></div>
+        <div class="hero-right">
+          <img src="assets/hero.jpg" alt="Professional plumber repairing a pipe" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section">
-      <div class="container split">
-        <div class="panel">
-          <h2 style="margin-top:0">Why customers choose us</h2>
-          <ul class="list">
-            <li>Clear ETA and communication</li>
-            <li>Upfront pricing before work starts</li>
-            <li>Clean work and respect for your home</li>
-            <li>Fully insured and qualified</li>
+  <!-- Services grid -->
+  <section class="section">
+    <div class="container">
+      <div class="kicker">Services</div>
+      <div class="h2">Plumbing Services Across Dublin</div>
+      <p class="muted">Fast response, clean workmanship, and straight answers. Browse our most requested services below.</p>
+
+      <div class="grid three service-grid" style="margin-top:14px;">
+        <div class="item">
+          <div class="top">
+            <div class="h3">Emergency Plumbing</div>
+            <div class="pill">24/7</div>
+          </div>
+          <p class="muted">Burst pipes, overflows, serious leaks — we respond fast and fix properly.</p>
+          <a class="link" href="services/emergency-plumber-dublin.html">View emergency service</a>
+        </div>
+
+        <div class="item">
+          <div class="top">
+            <div class="h3">Boiler Repair</div>
+            <div class="pill">Same-day</div>
+          </div>
+          <p class="muted">No heat or hot water? We diagnose quickly and get your system running.</p>
+          <a class="link" href="services/boiler-repair-dublin.html">Boiler repairs</a>
+        </div>
+
+        <div class="item">
+          <div class="top">
+            <div class="h3">Blocked Drains</div>
+            <div class="pill">Cleared</div>
+          </div>
+          <p class="muted">Sinks, toilets, showers — cleared safely and thoroughly (not a temporary patch).</p>
+          <a class="link" href="services/blocked-drains-dublin.html">Drain clearing</a>
+        </div>
+
+        <div class="item">
+          <div class="top">
+            <div class="h3">Leak Detection</div>
+            <div class="pill">Accurate</div>
+          </div>
+          <p class="muted">Hidden leaks causing damage or high bills? We locate the source and repair.</p>
+          <a class="link" href="services/leak-detection-dublin.html">Leak detection</a>
+        </div>
+
+        <div class="item">
+          <div class="top">
+            <div class="h3">Bathroom Plumbing</div>
+            <div class="pill">Install</div>
+          </div>
+          <p class="muted">Repairs and installs — taps, toilets, showers, pipework and upgrades.</p>
+          <a class="link" href="services/bathroom-plumbing-dublin.html">Bathroom plumbing</a>
+        </div>
+
+        <div class="item">
+          <div class="top">
+            <div class="h3">Hot Water Issues</div>
+            <div class="pill">Fix</div>
+          </div>
+          <p class="muted">Low pressure, immersion faults, cylinder problems — we troubleshoot and resolve.</p>
+          <a class="link" href="services/hot-water-issues-dublin.html">Hot water fixes</a>
+        </div>
+      </div>
+
+      <div class="btns">
+        <a class="btn" href="./services.html">All services</a>
+        <a class="btn primary" href="tel:+35315314920">Call for help</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="section tight">
+    <div class="container">
+      <div class="grid two">
+        <div class="card">
+          <div class="kicker">Why us</div>
+          <div class="h2">A Local Dublin Team — Not a Call Centre</div>
+          <p class="muted">You’ll speak directly with a plumber and get a clear plan, clear pricing, and a clean finish.</p>
+          <ul class="checklist">
+            <li>Upfront pricing before work begins</li>
+            <li>Fully insured for residential & commercial jobs</li>
+            <li>Work guaranteed</li>
+            <li>Tidy workmanship — we respect your home</li>
           </ul>
         </div>
-        <div class="panel">
-          <h2 style="margin-top:0">Areas served</h2>
-          <p class="muted">List postcodes + key suburbs for trust and SEO.</p>
-          <div class="pills">
-            <span class="pill">Dublin 1</span><span class="pill">Dublin 2</span><span class="pill">Dublin 4</span><span class="pill">Dublin 6</span>
-            <span class="pill">Dublin 8</span><span class="pill">Dublin 12</span><span class="pill">Dublin 14</span><span class="pill">Dublin 16</span>
-          </div>
-          <div class="cta" style="margin-top:14px;">
-            <a class="btn btn--ghost" href="areas.html">View full coverage</a>
+
+        <div class="hard-card">
+          <div class="kicker">Fast triage</div>
+          <div class="h2">Tell Us 3 Things</div>
+          <p class="muted">To speed up your booking, have these ready:</p>
+          <ul class="checklist">
+            <li>Your area in Dublin (e.g. Dublin 12 / Tallaght / Rathmines)</li>
+            <li>What’s happening (leak / no hot water / blocked drain)</li>
+            <li>How urgent (active leak now, or can schedule)</li>
+          </ul>
+          <div class="btns">
+            <a class="btn dark" href="https://wa.me/353851234567?text=Hi%2C%20I%20need%20a%20plumber.%20Area%3A%20____%20Issue%3A%20____%20Urgency%3A%20____" target="_blank" rel="noopener">WhatsApp with details</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section alt">
-      <div class="container split">
-        <div>
-          <h2>Request a callback</h2>
-          <p class="muted">Quick form for non-urgent issues. (For real clients this submits to email/WhatsApp.)</p>
+  <!-- How it works -->
+  <section class="section">
+    <div class="container">
+      <div class="kicker">Process</div>
+      <div class="h2">Simple, Straightforward Service</div>
+
+      <div class="grid three" style="margin-top:14px;">
+        <div class="card">
+          <div class="badge">1</div>
+          <div class="h3">Call or Request a Quote</div>
+          <p class="muted">Tell us what’s happening and where you are. We’ll advise next steps.</p>
         </div>
-        <form class="panel form" onsubmit="return false;">
-          <label>Name <input required placeholder="Your name"></label>
-          <label>Phone <input required placeholder="+353 ..."></label>
-          <label>What’s the issue? <textarea required rows="4" placeholder="Leak under sink, boiler not heating..."></textarea></label>
-          <button class="btn btn--primary" type="submit">Send (Demo)</button>
-          <div class="muted" style="font-size:13px;">Demo only.</div>
+        <div class="card">
+          <div class="badge">2</div>
+          <div class="h3">We Arrive With the Tools</div>
+          <p class="muted">A qualified plumber attends with what’s needed to diagnose and fix.</p>
+        </div>
+        <div class="card">
+          <div class="badge">3</div>
+          <div class="h3">Fixed & Guaranteed</div>
+          <p class="muted">We complete the job properly and stand over the workmanship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Areas served -->
+  <section class="section tight">
+    <div class="container">
+      <div class="card">
+        <div class="kicker">Areas served</div>
+        <div class="h2">Dublin-Wide Coverage</div>
+        <p class="muted">We cover Dublin 1–24 and surrounding areas. If you’re unsure, call and ask.</p>
+        <div class="grid three" style="margin-top:12px;">
+          <div class="muted">Dublin 1 • Dublin 2 • Dublin 3 • Dublin 4 • Dublin 5 • Dublin 6</div>
+          <div class="muted">Dublin 7 • Dublin 8 • Dublin 9 • Dublin 10 • Dublin 11 • Dublin 12</div>
+          <div class="muted">Dublin 13 • Dublin 14 • Dublin 15 • Dublin 16 • Dublin 17 • Dublin 18</div>
+        </div>
+        <div class="grid two" style="margin-top:8px;">
+          <div class="muted">Dublin 20 • Dublin 22 • Dublin 24</div>
+          <div class="muted">Tallaght • Lucan • Clontarf • Rathmines • Dundrum • Swords</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof -->
+  <section class="section">
+    <div class="container">
+      <div class="kicker">Proof</div>
+      <div class="h2">What Dublin Customers Say</div>
+
+      <div class="grid three" style="margin-top:14px;">
+        <div class="card">
+          <div class="rating">★★★★★</div>
+          <p class="quote">“Arrived quickly and fixed a burst pipe in the kitchen. No mess, no fuss.”</p>
+          <p class="muted"><strong>John</strong> • Tallaght</p>
+        </div>
+        <div class="card">
+          <div class="rating">★★★★★</div>
+          <p class="quote">“Boiler stopped working. Diagnosed it fast and had hot water back the same day.”</p>
+          <p class="muted"><strong>Sarah</strong> • Clontarf</p>
+        </div>
+        <div class="card">
+          <div class="rating">★★★★★</div>
+          <p class="quote">“Clear pricing up front. Job done properly. Would recommend.”</p>
+          <p class="muted"><strong>Mark</strong> • Rathmines</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section class="section guarantee">
+    <div class="container">
+      <div class="grid two">
+        <div class="card">
+          <div class="kicker" style="color:#fff;">Guarantee</div>
+          <div class="h2">Reliable Plumbing Done Properly</div>
+          <p class="muted">We believe in doing the job right the first time — and standing over it.</p>
+          <ul class="checklist">
+            <li>Fully insured</li>
+            <li>Work guaranteed</li>
+            <li>Transparent pricing</li>
+            <li>No hidden charges</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="h3">Need help today?</div>
+          <p class="muted">Call now to speak directly with a plumber.</p>
+          <div class="btns">
+            <a class="btn primary" href="tel:+35315314920">Call 01 531 4920</a>
+            <a class="btn" href="./contact.html">Request a quote</a>
+          </div>
+          <div class="note" style="border-color:rgba(255,255,255,.35); background:rgba(255,255,255,.06); color:#fff;">
+            <strong>Emergency?</strong> If water is leaking or overflowing right now, call — it’s the quickest response.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote form -->
+  <section class="section" id="quote">
+    <div class="container">
+      <div class="kicker">Request a quote</div>
+      <div class="h2">Get a Call Back</div>
+      <p class="muted">Send details and we’ll respond as soon as possible during working hours.</p>
+
+      <div class="card">
+        <!-- Replace action with your form endpoint (Formspree, Basin, your backend, etc.) -->
+        <form class="form" method="post" action="#">
+          <div class="row">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" placeholder="e.g. 087 123 4567" required />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="area">Area</label>
+              <input id="area" name="area" placeholder="e.g. Dublin 12 / Rathmines" required />
+            </div>
+            <div>
+              <label for="issue">Issue type</label>
+              <select id="issue" name="issue" required>
+                <option value="">Select one</option>
+                <option>Emergency leak / burst pipe</option>
+                <option>No hot water / heating</option>
+                <option>Blocked drain / toilet</option>
+                <option>Leak detection</option>
+                <option>Bathroom plumbing</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="details">Describe the problem</label>
+          <textarea id="details" name="details" placeholder="What’s happening? When did it start? Any photos?"></textarea>
+
+          <label for="time">Preferred contact time</label>
+          <input id="time" name="time" placeholder="e.g. Anytime / After 6pm / Tomorrow morning" />
+
+          <div class="btns">
+            <button class="btn primary" type="submit">Submit Request</button>
+            <a class="btn dark" href="tel:+35315314920">Or Call Now</a>
+          </div>
+
+          <p class="muted" style="margin-top:10px;">
+            By submitting, you agree we can contact you about your request.
+          </p>
         </form>
       </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container">
-        <div>© <span id="year"></span> Dublin Pipe Rescue</div>
-        <div>Plumber • Dublin</div>
-      </div>
-    </footer>
-
-    <div class="callbar">
-      <a class="btn btn--primary" href="tel:+353800000000">Call Now</a>
-      <a class="btn btn--ghost" href="contact.html">Callback</a>
     </div>
+  </section>
 
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="cols">
+        <div>
+          <div class="h3">Dublin Plumbing Co.</div>
+          <p class="muted">Emergency callouts • Boiler repairs • Leaks • Drains • Dublin-wide</p>
+          <p class="muted"><strong>Phone:</strong> <a class="link" href="tel:+35315314920">01 531 4920</a></p>
+          <p class="muted"><strong>WhatsApp:</strong> <a class="link" href="https://wa.me/353851234567" target="_blank" rel="noopener">Message us</a></p>
+        </div>
+        <div>
+          <div class="h3">Pages</div>
+          <p><a class="link" href="./services.html">Services</a></p>
+          <p><a class="link" href="./contact.html">Contact</a></p>
+        </div>
+        <div>
+          <div class="h3">Service Areas</div>
+          <p class="muted">Dublin 1–24 • Tallaght • Lucan • Swords • Dundrum • Clontarf</p>
+        </div>
+      </div>
+
+      <hr class="sep" />
+      <small>© <span id="year"></span> Dublin Plumbing Co. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Mobile CTA -->
+  <div class="mobile-cta" aria-label="Mobile quick actions">
+    <div class="bar">
+      <a class="call" href="tel:+35315314920">Call</a>
+      <a href="https://wa.me/353851234567?text=Hi%2C%20I%20need%20a%20plumber%20in%20Dublin." target="_blank" rel="noopener">WhatsApp</a>
+      <a href="#quote">Quote</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
