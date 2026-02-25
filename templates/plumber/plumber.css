@@ -208,6 +208,22 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
   .hero-wrap { grid-template-columns: 1fr; }
 }
 
+.rating-line{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:10px 0 6px;
+  padding:10px 12px;
+  border:1px solid #d7deea;
+  border-radius:12px;
+  background:#fff;
+  font-weight:800;
+}
+.rating-line .stars{
+  letter-spacing:2px;
+  font-weight:900;
+}
+
 /* --- Dense service grid --- */
 .service-grid .item {
   border: 2px solid #0b1220;
