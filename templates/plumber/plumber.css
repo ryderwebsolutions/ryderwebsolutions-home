@@ -471,3 +471,41 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
   border-radius:12px;
   display:inline-block;
 }
+
+.hero{
+  padding:40px 0 20px;
+  text-align:left;
+}
+
+.hero-phone{
+  margin:14px 0;
+}
+
+.hero-phone a{
+  display:inline-block;
+  font-size:clamp(30px, 5vw, 44px);
+  font-weight:900;
+  color:#ef4444;
+  text-decoration:none;
+}
+
+.phone-sub{
+  display:block;
+  font-size:14px;
+  font-weight:700;
+  color:#334155;
+}
+
+.hero-support-image{
+  margin-top:24px;
+  border-radius:16px;
+  overflow:hidden;
+  border:2px solid #0b1220;
+  max-width:700px;
+}
+
+.hero-support-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
