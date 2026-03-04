@@ -35,6 +35,13 @@ function rewriteLinksAndImages() {
       img.src = basePath + src;
     }
   });
+  // convert data-href links (e.g. stylesheet references)
+  document.querySelectorAll('link[data-href]').forEach(link => {
+    const href = link.getAttribute('data-href');
+    if (href) {
+      link.href = basePath + href;
+    }
+  });
 }
 
 // update copyright year if element exists
