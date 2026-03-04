@@ -20,6 +20,23 @@ includes.forEach(({ sel, path }) => {
     .catch(() => {});
 });
 
+function rewriteLinksAndImages() {
+  // convert data-link anchors to real hrefs
+  document.querySelectorAll('a[data-link]').forEach(a => {
+    const target = a.getAttribute('data-link');
+    if (target) {
+      a.href = basePath + target;
+    }
+  });
+  // convert data-src images
+  document.querySelectorAll('img[data-src]').forEach(img => {
+    const src = img.getAttribute('data-src');
+    if (src) {
+      img.src = basePath + src;
+    }
+  });
+}
+
 // update copyright year if element exists
 window.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
@@ -49,4 +66,17 @@ window.addEventListener('DOMContentLoaded', () => {
   const desc = document.querySelector('meta[name="description"]');
   if (desc) setMeta('og:description', desc.content);
   setMeta('og:type', 'website');
+
+  // rewrite any links/images that may exist already
+  rewriteLinksAndImages();
+});
+
+// also rewrite after each include loads (might load later)
+includes.forEach(({ sel }) => {
+  // observe the content area for changes
+  const container = document.querySelector(sel);
+  if (container) {
+    const obs = new MutationObserver(() => rewriteLinksAndImages());
+    obs.observe(container, { childList: true, subtree: true });
+  }
 });
