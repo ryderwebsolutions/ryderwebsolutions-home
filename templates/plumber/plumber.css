@@ -131,6 +131,15 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
   border: 2px solid #0b1220;
   background: #fff;
 }
+
+/* logo wrapper image for new structural path */
+.logo-wrap .logo-img {
+  width: 60px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #0b1220;
+  background: #fff;
+}
 .brand .name { font-weight: 900; letter-spacing: -.01em; }
 .brand .tag { font-size: 12px; color: #475569; font-weight: 700; }
 
