@@ -146,8 +146,17 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
   padding: 8px 10px;
   border-radius: 10px;
   border: 1px solid transparent;
+  background: #f5f7fb;
+  transition: background .2s, border-color .2s;
 }
-.nav a:hover { border-color: #d7deea; background: #f8fafc; }
+.nav a:hover {
+  border-color: #d7deea;
+  background: #eef2f7;
+}
+.nav a:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
 
 /* --- Buttons --- */
 .btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
