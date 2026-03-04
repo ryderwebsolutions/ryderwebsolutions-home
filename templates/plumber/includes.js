@@ -49,6 +49,30 @@ window.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // menu toggle
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  }
+
+  // insert trust strip after hero if not present
+  if (!document.querySelector('.trust-strip')) {
+    const hero = document.querySelector('.hero');
+    if (hero) {
+      const strip = document.createElement('section');
+      strip.className = 'trust-strip';
+      strip.innerHTML = '<div class="container"><div class="flex"><div><span aria-hidden="true">✅</span> 30-day guarantee</div><div><span aria-hidden="true">⚡</span> Fast callouts</div><div><span aria-hidden="true">💬</span> 4.9★ Google rating</div></div></div>';
+      hero.after(strip);
+    }
+  }
+
+  // transform proof cards into horizontal slider for mobile
+  const proof = document.querySelector('section .kicker + .h2 + .grid.three');
+  if (proof) {
+    proof.classList.add('testimonial-slider');
+  }
+
   // automatically add canonical and basic Open Graph tags
   const url = window.location.href;
   let canonical = document.querySelector('link[rel="canonical"]');
