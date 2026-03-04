@@ -106,16 +106,18 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
 }
 
 /* --- Header / Nav --- */
-.header {
+.site-header, .header {
   background: #ffffff;
   border-bottom: 1px solid #d7deea;
 }
-.header .row {
+.site-header .header-row, .header .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 14px 0;
   gap: 16px;
+  position: relative;
+  z-index: 10;
 }
 .brand {
   display: flex;
@@ -218,10 +220,11 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
 }
 .main-nav { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
 @media (max-width: 720px) {
+  .site-header .header-row { flex-wrap: wrap; }
   .nav-toggle { display: block; }
   .main-nav {
     position: absolute;
-    top: 60px;
+    top: 100%;
     left: 0;
     right: 0;
     background: #fff;

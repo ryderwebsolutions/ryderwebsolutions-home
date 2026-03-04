@@ -42,6 +42,8 @@ function rewriteLinksAndImages() {
       link.href = basePath + href;
     }
   });
+  // ensure nav toggle is bound if element added
+  setupNavToggle();
 }
 
 // update copyright year if element exists
@@ -49,12 +51,16 @@ window.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // menu toggle
-  const toggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.main-nav');
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  // menu toggle setup
+  function setupNavToggle() {
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    if (toggle && nav && !toggle.dataset.bound) {
+      toggle.dataset.bound = 'true';
+      toggle.addEventListener('click', () => nav.classList.toggle('open'));
+    }
   }
+  setupNavToggle();
 
   // insert trust strip after hero if not present
   if (!document.querySelector('.trust-strip')) {
