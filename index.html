@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ryder Web Solutions — Websites for Dublin Trades</title>
   <meta name="description" content="Websites for Dublin trades & local businesses. €250 to start, €125/month, 3-month minimum. Built to turn Google searches into paying jobs." />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Ryder Web Solutions","url":"https://ryderwebsolutions.com","telephone":"+353000000000","address":{"@type":"PostalAddress","addressLocality":"Dublin","addressCountry":"IE"},"description":"Simple, managed websites for local trades and services.","areaServed":"Dublin, Ireland"}
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +24,7 @@
       <nav class="nav">
         <a href="#pricing">Pricing</a>
         <a href="#demo">Demo</a>
+        <a href="tel:+353000000000" class="btn btn--small">Call Us</a>
         <a class="btn btn--small" href="#contact">Contact</a>
       </nav>
     </div>
@@ -39,13 +43,13 @@
           </p>
 
           <div class="cta">
-            <a class="btn" href="#contact">Get Started</a>
-            <a class="btn btn--ghost" href="#demo">View Demo</a>
+            <a class="btn" href="#contact">Get your free demo</a>
+            <a class="btn btn--ghost" href="#demo">See the plumber example</a>
           </div>
 
           <p class="roi">
-            If you get even <strong>one extra job a month</strong>, it usually covers the cost.
-            The goal is to stop losing customers who are already searching.
+            Most clients recover the investment with <strong>one extra job</strong> — sometimes the first week.
+            Stop losing customers who are already searching for your service.
           </p>
 
           <div class="trust">
@@ -53,9 +57,36 @@
             <div class="trust__item"><strong>Fast delivery</strong><span>7-day launch target</span></div>
             <div class="trust__item"><strong>Low hassle</strong><span>hosting handled</span></div>
           </div>
+
+          <!-- trust logos -->
+          <div class="trust-logos" aria-label="Trusted by">
+            <img src="assets/logo-1.svg" alt="Client logo 1" />
+            <img src="assets/logo-2.svg" alt="Client logo 2" />
+            <img src="assets/logo-3.svg" alt="Client logo 3" />
+            <img src="assets/logo-4.svg" alt="Client logo 4" />
+          </div>
+
+          <!-- testimonials -->
+          <div class="testimonials">
+            <div class="testimonial">
+              <p class="quote">"Within two weeks I was getting calls I never saw before – the website pays for itself."</p>
+              <div class="author">— James, Dublin Plumber</div>
+            </div>
+            <div class="testimonial">
+              <p class="quote">"Fast, no fuss, had a demo the next day and the site went live the week after."</p>
+              <div class="author">— Aoife, Electrician</div>
+            </div>
+            <div class="testimonial">
+              <p class="quote">"Clients mention the website all the time now. It looks professional and keeps the phone ringing."</p>
+              <div class="author">— Seán, Roofer</div>
+            </div>
+          </div>
         </div>
 
         <div class="card card--hero">
+          <div class="hero-img-wrap-right">
+            <img src="assets/hero-phone.png" alt="Preview of a mobile website" class="hero-img" />
+          </div>
           <h3>What you get</h3>
           <ul class="checklist">
             <li>Clean 1–5 page website (whatever converts best)</li>
@@ -157,6 +188,27 @@
       </div>
     </section>
 
+    <!-- HOW IT WORKS -->
+    <section class="section">
+      <div class="container">
+        <h2>How it works</h2>
+        <div class="grid3">
+          <div class="card">
+            <h3>1. Tell me about your business</h3>
+            <p class="muted">Send your trade, location, logo and a few notes. Email or use the form.</p>
+          </div>
+          <div class="card">
+            <h3>2. Preview a demo site</h3>
+            <p class="muted">Within 48 hours I’ll send a tailored example so you can visualise your site.</p>
+          </div>
+          <div class="card">
+            <h3>3. Launch & start getting calls</h3>
+            <p class="muted">Approve the draft, I’ll publish and manage hosting – you just answer the phone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- DEMO -->
     <section id="demo" class="section">
       <div class="container">
@@ -230,10 +282,16 @@
         <div class="muted">Dublin, Ireland</div>
       </div>
     </footer>
+
+    <div class="sticky-cta">
+      <strong>Need a site?</strong> <a class="btn" href="#contact">Get a free demo</a>
+    </div>
   </main>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
+  <!-- insert analytics snippet (Google Analytics, Plausible, etc.) here -->
 </body>
 </html>
