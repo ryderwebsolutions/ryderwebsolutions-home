@@ -179,6 +179,7 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
   font-weight: 900;
   border: 2px solid #0b1220;
   background: #ffffff;
+  color: #0b1220;
   min-width: 160px;
 }
 .btn.primary {
@@ -383,6 +384,11 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
   background: transparent;
   border-color: rgba(255,255,255,.25);
   color: #ffffff;
+}
+.guarantee .btn {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0b1220;
 }
 .guarantee .muted { color: rgba(255,255,255,.85); }
 
