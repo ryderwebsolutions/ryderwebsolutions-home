@@ -10,13 +10,67 @@ const includes = [
   { sel: '#include-footer', path: basePath + 'partials/footer.html' }
 ];
 
+let siteConfig = null;
+
+// fetch site configuration (phone, company name, etc.)
+function loadConfig() {
+  return fetch(basePath + 'config.json')
+    .then(r => r.ok ? r.json() : {})
+    .then(cfg => {
+      siteConfig = cfg;
+      applyConfig();
+    })
+    .catch(() => {});
+}
+
+function applyConfig() {
+  if (!siteConfig) return;
+  const phone = siteConfig.phone;
+  const ws = siteConfig.whatsapp;
+  const company = siteConfig.companyName;
+  // header call button
+  const callBtn = document.getElementById('call-now');
+  if (callBtn && phone) {
+    callBtn.href = 'tel:' + phone;
+  }
+  // mobile cta
+  const mobCall = document.getElementById('mobile-call');
+  if (mobCall && phone) {
+    mobCall.href = 'tel:' + phone;
+  }
+  const mobWs = document.getElementById('mobile-ws');
+  if (mobWs && ws) {
+    mobWs.href = 'https://wa.me/' + ws + '?text=' + encodeURIComponent('Hi, I need a plumber in Dublin.');
+  }
+  const topbarPhone = document.getElementById('topbar-phone');
+  if (topbarPhone && phone) {
+    topbarPhone.href = 'tel:' + phone;
+    topbarPhone.textContent = 'Call: ' + phone;
+  }
+  const topbarWs = document.getElementById('topbar-ws');
+  if (topbarWs && ws) {
+    topbarWs.href = 'https://wa.me/' + ws + '?text=' + encodeURIComponent('Hi, I need a plumber in Dublin.');
+  }
+}
+
 // menu toggle setup
 function setupNavToggle() {
-  const toggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.main-nav');
+  const toggle = document.querySelector('#nav-toggle');
+  const nav = document.querySelector('#main-nav');
   if (toggle && nav && !toggle.dataset.bound) {
     toggle.dataset.bound = 'true';
-    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+    const updateState = () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    };
+    toggle.addEventListener('click', updateState);
+    // keyboard support (enter/space)
+    toggle.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+        e.preventDefault();
+        updateState();
+      }
+    });
   }
 }
 
@@ -29,6 +83,8 @@ includes.forEach(({ sel, path }) => {
         el.innerHTML = html;
         // setup nav toggle after header is loaded
         if (sel === '#include-header') setupNavToggle();
+        // reapply config in case anchors were added
+        applyConfig();
       }
     })
     .catch(() => {});
@@ -42,11 +98,13 @@ function rewriteLinksAndImages() {
       a.href = basePath + target;
     }
   });
-  // convert data-src images
+  // convert data-src images (lazy load)
   document.querySelectorAll('img[data-src]').forEach(img => {
     const src = img.getAttribute('data-src');
     if (src) {
       img.src = basePath + src;
+      img.removeAttribute('data-src');
+      img.setAttribute('loading', 'lazy');
     }
   });
   // convert data-href links (e.g. stylesheet references)
@@ -61,6 +119,7 @@ function rewriteLinksAndImages() {
 
 // update copyright year if element exists
 window.addEventListener('DOMContentLoaded', () => {
+  loadConfig();
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 

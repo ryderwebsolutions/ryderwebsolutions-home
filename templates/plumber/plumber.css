@@ -236,6 +236,15 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
   font-size: 24px;
   cursor: pointer;
 }
+.nav-toggle:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+.nav-toggle[aria-expanded="true"]::after {
+  content: "\2715"; /* X */
+  display: inline-block;
+  margin-left: 4px;
+}
 .main-nav { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
 @media (max-width: 720px) {
   .site-header .header-row { flex-wrap: wrap; }
@@ -249,9 +258,10 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
     flex-direction: column;
     padding: 10px 0;
     border-top: 1px solid #d7deea;
-    transform: translateY(-200%);
     transition: transform .3s ease;
   }
+  /* when JS is active we hide the menu by default and use toggle */
+  .js .main-nav { transform: translateY(-200%); }
   .main-nav.open { transform: translateY(0); }
 }
 

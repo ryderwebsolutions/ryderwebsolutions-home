@@ -12,6 +12,8 @@ This folder contains a static HTML/CSS template designed for a Dublin-based plum
   - Paths are automatically prefixed with the script's directory (`basePath`) so the template works from a subfolder or root.
 - Utility CSS classes (`.mt-8`, `.mt-10`, etc.) for spacing.
 - Minimal, mobile-friendly design with accessibility improvements.
+- Configuration via `config.json` to centralize contact details.
+- Offline caching with a simple service worker (`sw.js`).
 - JSON‑LD schema for business and services; automatic canonical/Open Graph meta tags via JavaScript.
 
 ## Deployment
@@ -25,9 +27,10 @@ This folder contains a static HTML/CSS template designed for a Dublin-based plum
 ## Customization
 
 - Edit business details in the schema blocks in `<head>` sections.
-- Update phone numbers, WhatsApp links, and email addresses throughout the HTML or in the partials.
+- Centralize phone/WhatsApp/company name in `config.json` and let the loader apply them.
 - Replace the form `action` attribute with your endpoint (Formspree, custom backend, etc.).
 - Modify colors by adjusting CSS variables in `plumber.css`.
+- Add new partials by extending `includes.js` and assigning `id` attributes for dynamic content.
 
 ## Maintenance
 
@@ -37,3 +40,4 @@ Because the header, footer, and other common elements are stored in `partials/`,
 
 - The root `index.html` outside this folder (in repo root) is unrelated; it's a marketing site for Ryder Web Solutions.
 - When pushing changes to GitHub, connected hosts like Vercel will automatically redeploy.
+- If JavaScript is disabled the navigation remains visible thanks to the `no-js`/`js` class switch in the HTML and CSS.

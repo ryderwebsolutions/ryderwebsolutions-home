@@ -1,12 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en">
+<script>document.documentElement.className = document.documentElement.className.replace('no-js','js');</script>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Emergency Plumber Dublin | Fast Callouts, Upfront Pricing</title>
   <meta name="description" content="Need a plumber in Dublin today? Fast emergency callouts, boiler repairs, leaks and blocked drains. Fully insured, upfront pricing, guaranteed work." />
+  <link rel="preload" href="plumber.css" as="style" />
   <link rel="stylesheet" href="plumber.css" data-href="plumber.css" />
   <link rel="icon" href="assets/favicon.png" />
+  <meta name="theme-color" content="#0b1220" />
 
   <!-- Local Business Schema (edit business details per client) -->
   <script type="application/ld+json">
@@ -404,5 +407,12 @@
   <div id="include-mobilecta"></div>
 
   <script src="includes.js" defer></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(console.error);
+      });
+    }
+  </script>
 </body>
 </html>
