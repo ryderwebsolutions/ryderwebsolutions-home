@@ -388,7 +388,7 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
 .guarantee .btn {
   background: #ffffff;
   border-color: #ffffff;
-  color: #0b1220;
+  color: #0b1220 !important;
 }
 .guarantee .muted { color: rgba(255,255,255,.85); }
 
