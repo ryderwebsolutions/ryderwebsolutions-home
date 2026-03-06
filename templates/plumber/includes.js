@@ -10,12 +10,26 @@ const includes = [
   { sel: '#include-footer', path: basePath + 'partials/footer.html' }
 ];
 
+// menu toggle setup
+function setupNavToggle() {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+  if (toggle && nav && !toggle.dataset.bound) {
+    toggle.dataset.bound = 'true';
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  }
+}
+
 includes.forEach(({ sel, path }) => {
   fetch(path)
     .then(r => r.ok ? r.text() : '')
     .then(html => {
       const el = document.querySelector(sel);
-      if (el) el.innerHTML = html;
+      if (el) {
+        el.innerHTML = html;
+        // setup nav toggle after header is loaded
+        if (sel === '#include-header') setupNavToggle();
+      }
     })
     .catch(() => {});
 });
@@ -42,8 +56,8 @@ function rewriteLinksAndImages() {
       link.href = basePath + href;
     }
   });
-  // ensure nav toggle is bound if element added
-  setupNavToggle();
+  // nav toggle is now set up when header loads
+}
 }
 
 // update copyright year if element exists
@@ -51,16 +65,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // menu toggle setup
-  function setupNavToggle() {
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.main-nav');
-    if (toggle && nav && !toggle.dataset.bound) {
-      toggle.dataset.bound = 'true';
-      toggle.addEventListener('click', () => nav.classList.toggle('open'));
-    }
-  }
-  setupNavToggle();
+  // nav toggle is set up when header loads
 
   // insert trust strip after hero if not present
   if (!document.querySelector('.trust-strip')) {
