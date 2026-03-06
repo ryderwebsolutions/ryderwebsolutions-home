@@ -58,7 +58,6 @@ function rewriteLinksAndImages() {
   });
   // nav toggle is now set up when header loads
 }
-}
 
 // update copyright year if element exists
 window.addEventListener('DOMContentLoaded', () => {
