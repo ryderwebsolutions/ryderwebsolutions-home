@@ -91,12 +91,12 @@ a:hover { text-decoration: underline; }
 
 .hero__backdrop{
   position: absolute;
-  right: -40px;
-  top: 20px;
-  width: min(560px, 52vw);
-  opacity: 0.16;
+  right: -120px;
+  top: -10px;
+  width: min(520px, 48vw);
+  opacity: 0.08;
   pointer-events: none;
-  filter: saturate(1.1);
+  filter: saturate(1.05);
 }
 
 .hero__grid{
@@ -481,7 +481,7 @@ input:focus, textarea:focus{
 
 /* Responsive */
 @media (max-width: 900px){
-  .hero__backdrop{ width: min(420px, 80vw); opacity: 0.12; }
+  .hero__backdrop{ display: none; }
   .hero__grid{ grid-template-columns: 1fr; }
   .pricing{ grid-template-columns: 1fr; }
   .grid3{ grid-template-columns: 1fr; }
