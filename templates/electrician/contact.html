@@ -1,0 +1,120 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact a Dublin Electrician | Call, WhatsApp or Request a Quote</title>
+  <meta name="description" content="Contact our Dublin electricians for emergency callouts, wiring repairs, faults and blocked circuits. Call now, WhatsApp, or request a quote." />
+  <link rel="stylesheet" href="electrician.css" data-href="electrician.css" />
+</head>
+<body>
+  <div id="include-topbar"></div>
+  <div id="include-header"></div>
+
+  <!-- original header removed; using shared partial -->
+
+  <div class="pagehead">
+    <div class="container">
+      <div class="wrap">
+        <div class="breadcrumbs"><a href="#" data-link="index.html">Home</a> / Contact</div>
+        <h1 class="h1 mt-10">Contact a Dublin Electrician</h1>
+        <p class="muted">For emergencies (active fault / overflow), please call for the fastest response.</p>
+        <div class="btns">
+          <a class="btn primary" href="tel:+35315314920">Call 01 531 4920</a>
+          <a class="btn dark" href="https://wa.me/353851234567" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid two">
+        <div class="card">
+          <div class="h2">Request a Quote</div>
+          <p class="muted">Send details and we’ll get back to you as soon as possible.</p>
+
+          <!-- Replace action with your endpoint -->
+          <form class="form" method="post" action="#">
+            <div class="row">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" required />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" required />
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <label for="area">Area</label>
+                <input id="area" name="area" placeholder="Dublin 12 / Tallaght / etc." required />
+              </div>
+              <div>
+                <label for="issue">Issue type</label>
+                <select id="issue" name="issue" required>
+                  <option value="">Select one</option>
+                  <option>Emergency power outage / burning smell</option>
+                  <option>Power tripping / sockets not working</option>
+                  <option>Lighting fault / no lights</option>
+                  <option>Electrical fault finding</option>
+                  <option>Rewiring / fuse board upgrade</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="details">Details</label>
+            <textarea id="details" name="details" placeholder="What’s happening? Any photos?"></textarea>
+
+            <label for="time">Preferred contact time</label>
+            <input id="time" name="time" placeholder="Anytime / After 6pm / Tomorrow morning" />
+
+            <div class="btns">
+              <button class="btn primary" type="submit">Submit</button>
+              <a class="btn" href="#" data-link="services.html">Browse services</a>
+            </div>
+
+            <div class="note">
+              <strong>Tip:</strong> If it’s urgent, call us. Forms can be slower outside working hours.
+            </div>
+          </form>
+        </div>
+
+        <div class="hard-card">
+          <div class="h2">Call Direct</div>
+          <p class="muted">Speak to an electrician, not a call centre.</p>
+
+          <hr class="sep" />
+
+          <p><strong>Phone:</strong> <a class="link" href="tel:+35315314920">01 531 4920</a></p>
+          <p><strong>WhatsApp:</strong> <a class="link" href="https://wa.me/353851234567" target="_blank" rel="noopener">Message us</a></p>
+          <p class="muted"><strong>Coverage:</strong> Dublin 1–24 and surrounding areas</p>
+
+          <hr class="sep" />
+
+          <div class="h3">What helps us book you faster</div>
+          <ul class="checklist">
+            <li>Area in Dublin</li>
+            <li>Issue type (fault / wiring / circuit)</li>
+            <li>Urgency (now vs. schedule)</li>
+          </ul>
+
+          <div class="btns">
+            <a class="btn dark" href="https://wa.me/353851234567?text=Hi%2C%20I%20need%20a%20electrician.%20Area%3A%20____%20Issue%3A%20____%20Urgency%3A%20____" target="_blank" rel="noopener">WhatsApp with details</a>
+            <a class="btn primary" href="tel:+35315314920">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="include-footer"></div>
+  <div id="include-mobilecta"></div>
+  <script src="includes.js" defer></script>
+</body>
+</html>
+
+
