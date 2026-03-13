@@ -89,16 +89,6 @@ a:hover { text-decoration: underline; }
   padding: 56px 0 24px;
 }
 
-.hero__backdrop{
-  position: absolute;
-  right: -120px;
-  top: -10px;
-  width: min(520px, 48vw);
-  opacity: 0.08;
-  pointer-events: none;
-  filter: saturate(1.05);
-}
-
 .hero__grid{
   position: relative;
   z-index: 1;
@@ -481,7 +471,6 @@ input:focus, textarea:focus{
 
 /* Responsive */
 @media (max-width: 900px){
-  .hero__backdrop{ display: none; }
   .hero__grid{ grid-template-columns: 1fr; }
   .pricing{ grid-template-columns: 1fr; }
   .grid3{ grid-template-columns: 1fr; }
