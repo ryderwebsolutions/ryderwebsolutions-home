@@ -5,14 +5,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ryder Web Solutions — Websites for Dublin Trades</title>
-  <meta name="description" content="Websites for Dublin trades & local businesses. €250 to start, €125/month, 3-month minimum. Built to turn Google searches into paying jobs." />
+  <meta name="description" content="Websites for Dublin trades & local businesses. No signing fee, €100/month, managed for you. Built to turn Google searches into paying jobs." />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Ryder Web Solutions","url":"https://ryderwebsolutions.com","telephone":"+353000000000","address":{"@type":"PostalAddress","addressLocality":"Dublin","addressCountry":"IE"},"description":"Simple, managed websites for local trades and services.","areaServed":"Dublin, Ireland"}
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Ryder Web Solutions","url":"https://ryderwebsolutions.com","telephone":"+353838641426","address":{"@type":"PostalAddress","addressLocality":"Dublin","addressCountry":"IE"},"description":"Simple, managed websites for local trades and services.","areaServed":"Dublin, Ireland"}
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -20,11 +20,15 @@
 <body>
   <header class="header">
     <div class="container header__inner">
-      <div class="brand">Ryder Web Solutions</div>
+      <div class="brand">
+        <img src="assets/Ryderweb%20Logo.png" alt="Ryder Web Solutions logo" class="brand__logo" />
+        <span>Ryder Web Solutions</span>
+      </div>
       <nav class="nav">
         <a href="#pricing">Pricing</a>
         <a href="#demo">Demo</a>
-        <a href="tel:+353000000000" class="btn btn--small">Call Us</a>
+        <a href="sms:+353838641426" class="btn btn--small btn--ghost">Text Us</a>
+        <a href="https://wa.me/353838641426" class="btn btn--small">WhatsApp</a>
         <a class="btn btn--small" href="#contact">Contact</a>
       </nav>
     </div>
@@ -33,6 +37,7 @@
   <main>
     <!-- HERO -->
     <section class="hero">
+      <img src="assets/Ryderweb%20Backdrop.png" alt="" aria-hidden="true" class="hero__backdrop" />
       <div class="container hero__grid">
         <div>
           <p class="eyebrow">Based in Dublin • Trades & Local Services</p>
@@ -41,6 +46,8 @@
             Simple, mobile-first websites for plumbers, electricians, builders, roofers, cleaners and other local services.
             Built fast. Managed for you.
           </p>
+
+          <p class="pricing-highlight">No signing fee. Just €100/month.</p>
 
           <div class="cta">
             <a class="btn" href="#contact">Get your free demo</a>
@@ -53,39 +60,21 @@
           </p>
 
           <div class="trust">
-            <div class="trust__item"><strong>Fixed pricing</strong><span>no surprises</span></div>
+            <div class="trust__item"><strong>No signing fee</strong><span>start without upfront costs</span></div>
             <div class="trust__item"><strong>Fast delivery</strong><span>7-day launch target</span></div>
             <div class="trust__item"><strong>Low hassle</strong><span>hosting handled</span></div>
           </div>
 
-          <!-- trust logos -->
-          <div class="trust-logos" aria-label="Trusted by">
-            <img src="assets/logo-1.svg" alt="Client logo 1" />
-            <img src="assets/logo-2.svg" alt="Client logo 2" />
-            <img src="assets/logo-3.svg" alt="Client logo 3" />
-            <img src="assets/logo-4.svg" alt="Client logo 4" />
-          </div>
-
-          <!-- testimonials -->
-          <div class="testimonials">
-            <div class="testimonial">
-              <p class="quote">"Within two weeks I was getting calls I never saw before – the website pays for itself."</p>
-              <div class="author">— James, Dublin Plumber</div>
-            </div>
-            <div class="testimonial">
-              <p class="quote">"Fast, no fuss, had a demo the next day and the site went live the week after."</p>
-              <div class="author">— Aoife, Electrician</div>
-            </div>
-            <div class="testimonial">
-              <p class="quote">"Clients mention the website all the time now. It looks professional and keeps the phone ringing."</p>
-              <div class="author">— Seán, Roofer</div>
-            </div>
+          <div class="proof-box">
+            <h3>New business, clear promise.</h3>
+            <p class="muted">I am currently taking on my first client projects, so there are no made-up testimonials here.</p>
+            <p class="muted">You get a real demo first, fast response times, and transparent pricing from day one.</p>
           </div>
         </div>
 
         <div class="card card--hero">
           <div class="hero-img-wrap-right">
-            <img src="assets/hero-phone.png" alt="Preview of a mobile website" class="hero-img" />
+            <img src="assets/ExampleContactPAge.png" alt="Preview of contact page layout" class="hero-img" />
           </div>
           <h3>What you get</h3>
           <ul class="checklist">
@@ -141,17 +130,15 @@
               <p class="muted">Everything you need to look credible and convert calls.</p>
             </div>
 
+            <div class="pricing__pill">No signing fee</div>
+
             <div class="price">
               <div class="price__line">
-                <span class="price__amount">€250</span>
-                <span class="price__label">to start</span>
-              </div>
-              <div class="price__line">
-                <span class="price__amount">€125</span>
+                <span class="price__amount">€100</span>
                 <span class="price__label">/ month</span>
               </div>
               <div class="price__sub">
-                3-month minimum • after that it’s month-to-month
+                No setup fee • month-to-month support
               </div>
             </div>
 
@@ -215,12 +202,13 @@
         <h2>Demo site</h2>
 
         <div class="card demo">
-          <div>
+          <div class="demo__copy">
             <h3>Example: Dublin Plumber Layout</h3>
             <p class="muted">Mobile-first, click-to-call, services, areas served, reviews, contact.</p>
+            <p class="muted">Preview of the contact section your customers will use to request quotes fast.</p>
           </div>
-          <!-- Replace href with your demo link when ready -->
-          <a class="btn btn--ghost" href="/demo/">View Demo</a>
+          <img class="demo__preview" src="assets/ExampleContactPAge.png" alt="Contact page preview" />
+          <a class="btn btn--ghost" href="/demo/">View Live Demo</a>
         </div>
       </div>
     </section>
@@ -235,7 +223,10 @@
           </p>
 
           <div class="contact__details">
+            <div><strong>Phone:</strong> <a href="tel:+353838641426">0838641426</a></div>
             <div><strong>Email:</strong> <a href="mailto:dylan@ryderwebsolutions.com">dylan@ryderwebsolutions.com</a></div>
+            <div><strong>SMS:</strong> <a href="sms:+353838641426">Text 0838641426</a></div>
+            <div><strong>WhatsApp:</strong> <a href="https://wa.me/353838641426">Chat on WhatsApp</a></div>
           </div>
         </div>
 
@@ -269,8 +260,10 @@
           <button class="btn" type="submit">Send</button>
 
           <p class="fineprint">
-            Prefer email? Send a quick message to
-            <a href="mailto:dylan@ryderwebsolutions.com">dylan@ryderwebsolutions.com</a>.
+            Prefer direct contact? Use
+            <a href="mailto:dylan@ryderwebsolutions.com">email</a>,
+            <a href="sms:+353838641426">SMS</a>, or
+            <a href="https://wa.me/353838641426">WhatsApp</a>.
           </p>
         </form>
       </div>
@@ -284,7 +277,7 @@
     </footer>
 
     <div class="sticky-cta">
-      <strong>Need a site?</strong> <a class="btn" href="#contact">Get a free demo</a>
+      <strong>No signing fee • €100/month</strong> <a class="btn" href="#contact">Get a free demo</a>
     </div>
   </main>
 

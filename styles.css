@@ -16,7 +16,7 @@ html, body { height: 100%; }
 
 body{
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: Manrope, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background:
     radial-gradient(1200px 600px at 20% 0%, rgba(122,162,255,0.18), transparent 60%),
     radial-gradient(900px 600px at 80% 10%, rgba(156,242,198,0.10), transparent 60%),
@@ -51,8 +51,18 @@ a:hover { text-decoration: underline; }
 }
 
 .brand{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 800;
   letter-spacing: 0.2px;
+}
+
+.brand__logo{
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .nav{
@@ -74,10 +84,24 @@ a:hover { text-decoration: underline; }
 
 /* Hero */
 .hero{
+  position: relative;
+  overflow: hidden;
   padding: 56px 0 24px;
 }
 
+.hero__backdrop{
+  position: absolute;
+  right: -40px;
+  top: 20px;
+  width: min(560px, 52vw);
+  opacity: 0.16;
+  pointer-events: none;
+  filter: saturate(1.1);
+}
+
 .hero__grid{
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 20px;
@@ -115,6 +139,13 @@ h1{
   margin: 0 0 18px;
 }
 
+.pricing-highlight{
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--accent-2);
+}
+
 .cta{
   display: flex;
   gap: 12px;
@@ -147,17 +178,6 @@ h1{
 .trust__item strong{ display:block; }
 .trust__item span{ color: var(--muted); font-size: 13px; }
 
-/* logos strip */
-.trust-logos{
-  display:flex;
-  gap:18px;
-  align-items:center;
-  flex-wrap:wrap;
-  margin-top:14px;
-}
-.trust-logos img{height:32px;opacity:.6;transition:opacity .2s;}
-.trust-logos img:hover{opacity:1;}
-
 /* testimonials */
 .testimonials{
   display:grid;
@@ -173,6 +193,26 @@ h1{
 }
 .quote{font-style:italic;color:var(--text);margin:0 0 8px;}
 .author{font-weight:600;font-size:14px;color:var(--accent-2);}
+
+.proof-box{
+  margin-top: 24px;
+  border: 1px solid var(--border);
+  background: rgba(17,21,33,0.8);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.proof-box h3{
+  margin-bottom: 8px;
+}
+
+.proof-box p{
+  margin: 0 0 8px;
+}
+
+.proof-box p:last-child{
+  margin-bottom: 0;
+}
 
 /* sticky bottom CTA */
 .sticky-cta{
@@ -304,12 +344,35 @@ h3{
   margin-top: 6px;
 }
 
+.pricing__pill{
+  width: fit-content;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #0b0d12;
+  background: linear-gradient(135deg, rgba(122,162,255,0.95), rgba(156,242,198,0.92));
+}
+
 /* Demo */
 .demo{
   display:flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 12px;
+}
+
+.demo__copy{
+  max-width: 520px;
+}
+
+.demo__preview{
+  width: min(380px, 100%);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
 /* Contact */
@@ -418,6 +481,7 @@ input:focus, textarea:focus{
 
 /* Responsive */
 @media (max-width: 900px){
+  .hero__backdrop{ width: min(420px, 80vw); opacity: 0.12; }
   .hero__grid{ grid-template-columns: 1fr; }
   .pricing{ grid-template-columns: 1fr; }
   .grid3{ grid-template-columns: 1fr; }
