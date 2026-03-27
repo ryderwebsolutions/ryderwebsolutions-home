@@ -1,0 +1,17 @@
+{
+  "companyName": "White Lotus Thai Massage",
+  "tagline": "Authentic Thai Massage in Mohill, Co. Leitrim",
+  "phone": "+353871234567",
+  "phoneDisplay": "087 123 4567",
+  "whatsapp": "353871234567",
+  "whatsappMessage": "Hi, I'd like to book a massage at White Lotus Thai Massage.",
+  "email": "info@whitelotusthaimassage.ie",
+  "address": "Mohill, Co. Leitrim, Ireland",
+  "facebook": "https://www.facebook.com/whitelotusthaimassage",
+  "instagram": "https://www.instagram.com/whitelotusthaimassage",
+  "openingHours": {
+    "weekdays": "9:00am – 8:00pm",
+    "saturday": "9:00am – 6:00pm",
+    "sunday": "By Request"
+  }
+}
