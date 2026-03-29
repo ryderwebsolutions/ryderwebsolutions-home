@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iron & Oak Barber Studio</title>
+  <meta name="description" content="Classic-meets-modern barber homepage template with interactive booking and service filters." />
+  <link rel="stylesheet" href="barber.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">IRON & OAK</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#book">Book</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+    <button id="theme-toggle" class="ghost-btn" aria-label="Toggle theme">Toggle Mood</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Barber homepage template</p>
+        <h1>Precision Fades, Clean Lines, Sharp Confidence.</h1>
+        <p class="sub">Built for high-end neighborhood barbershops with bold typography and dark wood-inspired styling.</p>
+        <div class="cta-row">
+          <a href="#book" class="btn">Book Slot</a>
+          <button id="shuffle-quote" class="ghost-btn">Shuffle Vibe</button>
+        </div>
+        <p id="quote" class="quote">"A cut should feel like armor."</p>
+      </div>
+      <div class="card live-card">
+        <h2>Live Service Finder</h2>
+        <label>Style Type</label>
+        <select id="style-select">
+          <option value="all">All</option>
+          <option value="hair">Hair</option>
+          <option value="beard">Beard</option>
+          <option value="combo">Combo</option>
+        </select>
+        <div id="service-list" class="service-list"></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <article class="tile">Skin Fade</article>
+      <article class="tile">Textured Crop</article>
+      <article class="tile">Beard Sculpt</article>
+      <article class="tile">Traditional Cut</article>
+    </section>
+
+    <section id="book" class="book card">
+      <h2>Quick Booking</h2>
+      <form id="booking-form">
+        <div class="grid-2">
+          <label>Name<input required name="name" /></label>
+          <label>Phone<input required name="phone" /></label>
+        </div>
+        <div class="grid-2">
+          <label>Barber
+            <select name="barber" required>
+              <option value="">Select</option>
+              <option>Niko</option>
+              <option>Sam</option>
+              <option>Elias</option>
+            </select>
+          </label>
+          <label>Time
+            <input type="time" name="time" required />
+          </label>
+        </div>
+        <button class="btn" type="submit">Confirm Request</button>
+        <p id="book-msg" class="book-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="barber.js"></script>
+</body>
+</html>

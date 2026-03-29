@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stillpoint Yoga & Pilates</title>
+  <meta name="description" content="Yoga and pilates homepage template with breath pacer and class intensity filters." />
+  <link rel="stylesheet" href="studio.css" />
+</head>
+<body>
+  <main class="canvas">
+    <section class="intro">
+      <p class="label">Yoga / Pilates Studio</p>
+      <h1>Move With Intention. Breathe With Rhythm.</h1>
+      <p>A calm, modern wellness template focused on mindful interaction and class discovery.</p>
+    </section>
+
+    <section class="two-col">
+      <article class="card">
+        <h2>Class Flow Finder</h2>
+        <div class="tabs">
+          <button class="active" data-level="all">All</button>
+          <button data-level="gentle">Gentle</button>
+          <button data-level="medium">Medium</button>
+          <button data-level="intense">Intense</button>
+        </div>
+        <ul id="class-list"></ul>
+      </article>
+
+      <article class="card">
+        <h2>Breath Pacer</h2>
+        <p>Follow the circle: inhale while it grows, exhale while it contracts.</p>
+        <div id="pacer" class="pacer"></div>
+        <p id="phase">Ready</p>
+        <button id="start-breath">Start 1-Minute Cycle</button>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Session Builder</h2>
+      <label>Focus Area
+        <select id="focus">
+          <option value="mobility">Mobility</option>
+          <option value="core">Core</option>
+          <option value="recovery">Recovery</option>
+          <option value="posture">Posture</option>
+        </select>
+      </label>
+      <button id="build">Build 20-Min Session</button>
+      <ol id="session"></ol>
+    </section>
+  </main>
+  <script src="studio.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: #2f1532;
+  font-family: "Candara", "Segoe UI", sans-serif;
+  background: conic-gradient(from 220deg at 10% 10%, #ffe0f2, #ffe8da, #f3e8ff, #ffe0f2);
+}
+.shell { width: min(1050px, 92vw); margin: 2rem auto; display: grid; gap: 1.2rem; }
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 1rem;
+  align-items: start;
+}
+.kicker { letter-spacing: .12em; text-transform: uppercase; font-size: .82rem; color: #8b3f7d; }
+h1 { font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.05; margin: .4rem 0; }
+.card {
+  background: #ffffffcc;
+  border: 1px solid #ffffff;
+  border-radius: 18px;
+  padding: 1rem;
+  backdrop-filter: blur(4px);
+}
+label { display: grid; gap: .35rem; margin: .7rem 0; }
+.preview {
+  margin-top: .8rem;
+  min-height: 120px;
+  border-radius: 14px;
+  border: 1px solid #ffffff;
+  background: linear-gradient(135deg, hsl(320 70% 64%), hsl(40 84% 70%));
+  box-shadow: inset 0 0 20px #ffffff70;
+}
+.chips { display: flex; flex-wrap: wrap; gap: .6rem; }
+.chips button {
+  border: 0;
+  border-radius: 999px;
+  padding: .55rem .85rem;
+  background: #f6d5f4;
+  cursor: pointer;
+}
+.chips button.active { background: #34123a; color: #fff; }
+.output ul { margin: .4rem 0; padding-left: 1rem; }
+.output li { margin: .2rem 0; }
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; }
+}

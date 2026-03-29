@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>One Rep Ahead - Personal Trainer</title>
+  <meta name="description" content="Personal trainer homepage with plan estimator and live workout interval timer." />
+  <link rel="stylesheet" href="pt.css" />
+</head>
+<body>
+  <main class="layout">
+    <section class="hero">
+      <p class="stamp">Personal Trainer</p>
+      <h1>Coaching That Turns Goals Into Repeatable Systems.</h1>
+      <p>Track your starting point, generate a suggested weekly plan, and run a guided interval session.</p>
+    </section>
+
+    <section class="card">
+      <h2>Plan Estimator</h2>
+      <form id="plan-form" class="form-grid">
+        <label>Goal
+          <select name="goal" required>
+            <option value="fat-loss">Fat Loss</option>
+            <option value="muscle-gain">Muscle Gain</option>
+            <option value="performance">Performance</option>
+          </select>
+        </label>
+        <label>Sessions / week
+          <input name="sessions" type="number" min="2" max="7" value="4" required />
+        </label>
+        <label>Experience
+          <select name="level" required>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </label>
+        <button type="submit">Generate Plan</button>
+      </form>
+      <div id="plan-output" class="plan-output"></div>
+    </section>
+
+    <section class="card">
+      <h2>Interval Session</h2>
+      <div class="interval-controls">
+        <label>Work Seconds<input id="work" type="number" value="30" min="10" max="90" /></label>
+        <label>Rest Seconds<input id="rest" type="number" value="20" min="10" max="90" /></label>
+        <label>Rounds<input id="rounds" type="number" value="6" min="2" max="20" /></label>
+      </div>
+      <div class="stage" id="stage">Ready</div>
+      <div class="count" id="count">0</div>
+      <button id="start-interval">Start Intervals</button>
+    </section>
+  </main>
+
+  <script src="pt.js"></script>
+</body>
+</html>

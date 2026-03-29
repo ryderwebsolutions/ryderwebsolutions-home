@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>North Forge Gym</title>
+  <meta name="description" content="Gym homepage template with class board filters and pace challenge." />
+  <link rel="stylesheet" href="gym.css" />
+</head>
+<body>
+  <header>
+    <h1>North Forge Gym</h1>
+    <p>Strength. Cardio. Community.</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Class Board</h2>
+      <div class="filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="strength">Strength</button>
+        <button data-filter="cardio">Cardio</button>
+        <button data-filter="mobility">Mobility</button>
+      </div>
+      <div id="classes" class="classes"></div>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>BMI Snapshot</h2>
+        <form id="bmi-form">
+          <label>Height (cm)<input required name="height" type="number" min="120" max="240" /></label>
+          <label>Weight (kg)<input required name="weight" type="number" min="35" max="250" /></label>
+          <button type="submit">Calculate</button>
+        </form>
+        <p id="bmi-result"></p>
+      </article>
+
+      <article class="panel timer">
+        <h2>30s Pace Challenge</h2>
+        <p>Tap as fast as possible in 30 seconds.</p>
+        <button id="tap-btn">Tap</button>
+        <div class="stats">
+          <p id="count">Taps: 0</p>
+          <p id="time">Time: 30</p>
+        </div>
+        <button id="start-timer">Start Challenge</button>
+      </article>
+    </section>
+  </main>
+
+  <script src="gym.js"></script>
+</body>
+</html>

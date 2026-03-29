@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lustre Hair & Nail Lounge</title>
+  <meta name="description" content="Interactive salon homepage template with style mood board and service planner." />
+  <link rel="stylesheet" href="salon.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Hair + Nail Salon</p>
+        <h1>Color, Texture, Shine.<br>Designed Around Your Vibe.</h1>
+        <p>Use the style mixer to preview your palette and generate a service plan for your next appointment.</p>
+      </div>
+      <div class="mixer card">
+        <h2>Style Mixer</h2>
+        <label>Hair Color Tone <input id="tone" type="range" min="0" max="360" value="320" /></label>
+        <label>Nail Accent Tone <input id="accent" type="range" min="0" max="360" value="40" /></label>
+        <label>Finish
+          <select id="finish">
+            <option value="gloss">Gloss</option>
+            <option value="matte">Matte</option>
+            <option value="chrome">Chrome</option>
+          </select>
+        </label>
+        <div id="preview" class="preview"></div>
+      </div>
+    </section>
+
+    <section class="planner card">
+      <h2>Appointment Builder</h2>
+      <div class="chips" id="service-chips">
+        <button data-service="Cut & Blowdry">Cut & Blowdry</button>
+        <button data-service="Balayage">Balayage</button>
+        <button data-service="Gel Nails">Gel Nails</button>
+        <button data-service="Nail Art">Nail Art</button>
+        <button data-service="Brow Styling">Brow Styling</button>
+      </div>
+      <div class="output">
+        <p>Selected Services:</p>
+        <ul id="selected"></ul>
+        <p id="duration"></p>
+      </div>
+    </section>
+  </main>
+  <script src="salon.js"></script>
+</body>
+</html>
