@@ -2,12 +2,12 @@
 const CACHE_NAME = 'plumber-site-v1';
 const ASSETS = [
   '/',
-  '/templates/plumber/plumber.css',
-  '/templates/plumber/includes.js',
-  '/templates/plumber/partials/header.html',
-  '/templates/plumber/partials/footer.html',
-  '/templates/plumber/partials/topbar.html',
-  '/templates/plumber/partials/mobilecta.html'
+  '/templates/tradesmen/plumber/plumber.css',
+  '/templates/tradesmen/plumber/includes.js',
+  '/templates/tradesmen/plumber/partials/header.html',
+  '/templates/tradesmen/plumber/partials/footer.html',
+  '/templates/tradesmen/plumber/partials/topbar.html',
+  '/templates/tradesmen/plumber/partials/mobilecta.html'
 ];
 
 self.addEventListener('install', event => {

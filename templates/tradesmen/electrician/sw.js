@@ -2,12 +2,12 @@
 const CACHE_NAME = 'electrician-site-v1';
 const ASSETS = [
   '/',
-  '/templates/electrician/electrician.css',
-  '/templates/electrician/includes.js',
-  '/templates/electrician/partials/header.html',
-  '/templates/electrician/partials/footer.html',
-  '/templates/electrician/partials/topbar.html',
-  '/templates/electrician/partials/mobilecta.html'
+  '/templates/tradesmen/electrician/electrician.css',
+  '/templates/tradesmen/electrician/includes.js',
+  '/templates/tradesmen/electrician/partials/header.html',
+  '/templates/tradesmen/electrician/partials/footer.html',
+  '/templates/tradesmen/electrician/partials/topbar.html',
+  '/templates/tradesmen/electrician/partials/mobilecta.html'
 ];
 
 self.addEventListener('install', event => {
