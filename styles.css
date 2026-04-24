@@ -69,6 +69,8 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   gap: 18px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .nav a{
@@ -302,6 +304,10 @@ h3{
   gap: 14px;
 }
 
+.pricing__side .btn{
+  margin-top: auto;
+}
+
 .price{
   display:flex;
   flex-direction: column;
@@ -476,4 +482,7 @@ input:focus, textarea:focus{
   .grid3{ grid-template-columns: 1fr; }
   .contact{ grid-template-columns: 1fr; }
   .nav{ gap: 12px; }
+  .nav a[href="#pricing"],
+  .nav a[href="#growth"],
+  .nav a[href="#demo"]{ display: none; }
 }
