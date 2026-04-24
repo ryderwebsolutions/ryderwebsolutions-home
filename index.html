@@ -1,256 +1,344 @@
-<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ryder Web Solutions - Websites and Lead Systems for Dublin Businesses</title>
-  <meta name="description" content="Websites and lead systems for Dublin businesses. Get a fast, managed website from EUR100/month and add done-for-you growth systems in partnership with SnipeLead." />
+  <title>Ryder Web Solutions | Websites + Lead Systems For Business Growth</title>
+  <meta name="description" content="Ryder Web Solutions builds conversion-focused websites and lead systems for businesses in Dublin and beyond. Website plans start from EUR100/month with optional growth systems delivered with SnipeLead." />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Ryder Web Solutions","url":"https://ryderwebsolutions.com","telephone":"+353838641426","address":{"@type":"PostalAddress","addressLocality":"Dublin","addressCountry":"IE"},"description":"Websites and lead systems for service and local businesses.","areaServed":"Dublin, Ireland"}
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Ryder Web Solutions","url":"https://ryderwebsolutions.com","telephone":"+353838641426","address":{"@type":"PostalAddress","addressLocality":"Dublin","addressCountry":"IE"},"description":"Conversion-focused websites and lead systems for growing businesses.","areaServed":"Dublin, Ireland"}
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <div class="bg-orb bg-orb--one" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--two" aria-hidden="true"></div>
+
   <header class="header">
     <div class="container header__inner">
-      <div class="brand">
+      <a class="brand" href="#top">
         <img src="assets/Ryderweb%20Logo.png" alt="Ryder Web Solutions logo" class="brand__logo" />
         <span>Ryder Web Solutions</span>
-      </div>
-      <nav class="nav">
-        <a href="#pricing">Pricing</a>
-        <a href="#growth">Lead Systems</a>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#results">Results Model</a>
+        <a href="#systems">Systems</a>
+        <a href="#process">Process</a>
+        <a href="#faq">FAQ</a>
         <a href="#demo">Demo</a>
-        <a href="sms:+353838641426" class="btn btn--small btn--ghost">Text Us</a>
-        <a href="https://wa.me/353838641426" class="btn btn--small">WhatsApp</a>
-        <a class="btn btn--small" href="#contact">Contact</a>
+        <a class="btn btn--small btn--ghost" href="sms:+353838641426">SMS</a>
+        <a class="btn btn--small" href="https://wa.me/353838641426">WhatsApp</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
+  <main id="top">
+    <section class="hero section reveal">
       <div class="container hero__grid">
         <div>
-          <p class="eyebrow">Based in Dublin - Websites + Lead Systems</p>
-          <h1>Build your brand and pipeline in one growth system.</h1>
+          <p class="eyebrow">For Business Owners Who Want Predictable Pipeline</p>
+          <h1>We build your website and your lead engine as one growth system.</h1>
           <p class="lead">
-            Ryder Web Solutions now combines website development with lead generation systems,
-            so you can look credible online and keep qualified opportunities coming in.
+            Most businesses treat website design and lead generation as separate projects.
+            We do both together so your brand, offer, follow-up, and appointments all work as one conversion flow.
           </p>
 
-          <p class="pricing-highlight">No signing fee. Website plans from EUR100/month.</p>
-
-          <div class="cta">
-            <a class="btn" href="#contact">Get your growth plan</a>
-            <a class="btn btn--ghost" href="#demo">See a live demo</a>
+          <div class="hero__cta">
+            <a class="btn" href="#contact">Book A Strategy Chat</a>
+            <a class="btn btn--ghost" href="#demo">View Live Demo</a>
           </div>
 
-          <p class="roi">
-            We help businesses capture more demand with a clear website, faster follow-up,
-            and a practical lead flow system that supports real sales conversations.
-          </p>
-
-          <div class="trust">
-            <div class="trust__item"><strong>Website foundation</strong><span>build trust and conversion</span></div>
-            <div class="trust__item"><strong>Lead systems</strong><span>demand + follow-up + booking flow</span></div>
-            <div class="trust__item"><strong>One joined strategy</strong><span>brand + pipeline working together</span></div>
+          <div class="stat-strip">
+            <article class="stat">
+              <p class="stat__value" data-count="3">0</p>
+              <p class="stat__label">Core systems integrated</p>
+            </article>
+            <article class="stat">
+              <p class="stat__value" data-count="48">0</p>
+              <p class="stat__label">Hour strategy response target</p>
+            </article>
+            <article class="stat">
+              <p class="stat__value" data-count="100">0</p>
+              <p class="stat__label">EUR/month website foundation</p>
+            </article>
           </div>
 
-          <div class="proof-box">
-            <h3>Transparent model.</h3>
-            <p class="muted">Website builds are delivered by Ryder Web Solutions.</p>
-            <p class="muted">Lead systems are delivered in partnership with SnipeLead so you get specialist execution as your pipeline scales.</p>
+          <div class="proof-note">
+            <strong>Transparent delivery model:</strong>
+            <span>Website builds are delivered by Ryder Web Solutions. Advanced growth systems are delivered in partnership with SnipeLead.</span>
           </div>
         </div>
 
-        <div class="card card--hero">
-          <h3>What you get</h3>
-          <p class="muted">A complete client acquisition setup, not just a brochure site.</p>
-          <ul class="checklist">
-            <li>High-converting website for your business model</li>
-            <li>Mobile-first UX with clear offer and CTA structure</li>
-            <li>Lead capture and response workflow setup</li>
-            <li>Automated follow-up pathways for new enquiries</li>
-            <li>Optional appointment setting support via SnipeLead</li>
-          </ul>
-          <p class="note">
-            Built for service businesses, e-commerce brands, and local operators that want predictable growth.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHO THIS IS FOR -->
-    <section class="section">
-      <div class="container">
-        <h2>Built for business owners who want predictable growth.</h2>
-        <p class="muted">
-          If you have good service but inconsistent lead flow, this model gives you the website credibility
-          and growth mechanics needed to generate opportunities more consistently.
-        </p>
-
-        <div class="grid3">
-          <div class="card">
-            <h3>Local businesses</h3>
-            <p>Clinics, studios, agencies, consultants, and in-person service brands.</p>
-          </div>
-          <div class="card">
-            <h3>Growth-stage teams</h3>
-            <p>Businesses with a working offer that need better volume and better quality leads.</p>
-          </div>
-          <div class="card">
-            <h3>Owner-led operators</h3>
-            <p>Founders who want one practical strategy instead of disconnected marketing tactics.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section id="pricing" class="section section--alt">
-      <div class="container">
-        <h2>Simple offers. Clear outcomes.</h2>
-        <p class="muted">Start with a website foundation, then layer in full lead systems when ready.</p>
-
-        <div class="pricing">
-          <div class="card pricing__card">
-            <div class="pricing__top">
+        <aside class="hero-panel card reveal">
+          <h2>Pick your growth path</h2>
+          <div class="path-list">
+            <article class="path-item">
               <h3>Website Foundation</h3>
-              <p class="muted">Everything you need to look credible and convert enquiries.</p>
-            </div>
-
-            <div class="pricing__pill">No signing fee</div>
-
-            <div class="price">
-              <div class="price__line">
-                <span class="price__amount">€100</span>
-                <span class="price__label">/ month</span>
-              </div>
-              <div class="price__sub">
-                No setup fee • month-to-month support
-              </div>
-            </div>
-
-            <ul class="checklist">
-              <li>Hosting + SSL included</li>
-              <li>Minor text and image updates included</li>
-              <li>2 revision rounds at launch</li>
-              <li>Support response within 24–48 hours</li>
-            </ul>
-
-            <p class="note">
-              New pages, redesigns, and new features are quoted separately.
-            </p>
-
-            <a class="btn" href="#contact">Start a Project</a>
+              <p>Fast, conversion-focused website with clear messaging, strong CTA flow, and managed hosting.</p>
+            </article>
+            <article class="path-item">
+              <h3>Growth Engine</h3>
+              <p>Demand generation, lead capture, and follow-up systems designed to produce more qualified calls.</p>
+            </article>
           </div>
 
-          <div id="growth" class="card pricing__card pricing__side">
-            <h3>Growth Systems (Partner Delivery)</h3>
-            <p class="muted">
-              Lead generation and appointment systems are delivered in partnership with SnipeLead,
-              then integrated into your website and sales process.
-            </p>
-
-            <ul class="checklist">
-              <li>Consistent demand generation</li>
-              <li>Lead capture and automated follow-up</li>
-              <li>Qualified 1-on-1 appointment booking support</li>
-            </ul>
-
-            <div class="divider"></div>
-
-            <h3>Pricing for growth systems</h3>
-            <p class="muted">
-              Scoped per business based on niche, market size, and acquisition goals.
-              Book a strategy call for a tailored quote.
-            </p>
-
-            <a class="btn btn--ghost" href="#contact">Book a Strategy Call</a>
+          <div class="panel-cta">
+            <a class="btn btn--full" href="#contact">Get My Plan</a>
+            <p class="muted">No signing fee on website plans.</p>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
-    <!-- HOW IT WORKS -->
-    <section class="section">
+    <section id="results" class="section reveal">
       <div class="container">
-        <h2>How it works</h2>
-        <div class="grid3">
-          <div class="card">
-            <h3>1. Strategy + positioning</h3>
-            <p class="muted">We define your offer, audience, and funnel priorities.</p>
-          </div>
-          <div class="card">
-            <h3>2. Website + systems setup</h3>
-            <p class="muted">Your website, lead capture, and follow-up workflows are built as one system.</p>
-          </div>
-          <div class="card">
-            <h3>3. Launch + optimize</h3>
-            <p class="muted">We launch, monitor lead flow, and improve conversion quality over time.</p>
-          </div>
+        <div class="section-head">
+          <p class="kicker">Results Model</p>
+          <h2>How this turns into real pipeline</h2>
+          <p class="muted">The goal is simple: more qualified conversations, less wasted attention.</p>
+        </div>
+
+        <div class="results-grid">
+          <article class="result-card card">
+            <p class="result-card__tag">Step 01</p>
+            <h3>Demand Capture</h3>
+            <p>We position your offer and funnel traffic into clear conversion points instead of dead-end pages.</p>
+          </article>
+          <article class="result-card card">
+            <p class="result-card__tag">Step 02</p>
+            <h3>Instant Lead Handling</h3>
+            <p>Leads are acknowledged quickly with structured follow-up so opportunities do not cool off.</p>
+          </article>
+          <article class="result-card card">
+            <p class="result-card__tag">Step 03</p>
+            <h3>Booked Conversations</h3>
+            <p>Enquiries are qualified and routed toward appointment outcomes your team can close.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- DEMO -->
-    <section id="demo" class="section">
+    <section id="systems" class="section section--alt reveal">
       <div class="container">
-        <h2>Live demo example</h2>
+        <div class="section-head">
+          <p class="kicker">What We Install</p>
+          <h2>Detailed systems, not one-off tactics</h2>
+        </div>
 
-        <div class="card demo">
-          <div class="demo__copy">
-            <h3>Current demo: Plumber template</h3>
-            <p class="muted">A live example of our conversion-first build style and enquiry flow structure.</p>
-            <p class="muted">We adapt this approach for your industry, offer, and customer journey.</p>
-          </div>
-          <img class="demo__preview" src="assets/ExampleContactPAge.png" alt="Contact page preview" />
-          <a class="btn btn--ghost" href="/demo/">View Demo</a>
+        <div class="systems-grid">
+          <article class="card system-card">
+            <h3>Conversion Website Layer</h3>
+            <ul class="checklist">
+              <li>Offer-led messaging architecture</li>
+              <li>Mobile-first UX and speed baseline</li>
+              <li>Intent-based contact pathways</li>
+            </ul>
+          </article>
+
+          <article class="card system-card">
+            <h3>Lead Capture And Follow-Up Layer</h3>
+            <ul class="checklist">
+              <li>Enquiry routing and tagging setup</li>
+              <li>Automated first-response sequences</li>
+              <li>Human takeover points for closing</li>
+            </ul>
+          </article>
+
+          <article class="card system-card">
+            <h3>Pipeline Optimization Layer</h3>
+            <ul class="checklist">
+              <li>Drop-off analysis across funnel stages</li>
+              <li>Message and CTA iteration cycles</li>
+              <li>Appointment quality refinement</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section section--alt">
-      <div class="container contact">
+    <section id="pricing" class="section reveal">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Offers</p>
+          <h2>Start lean, then scale into full acquisition</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="card pricing-card pricing-card--featured">
+            <p class="pill">Website Foundation</p>
+            <div class="price-row">
+              <span class="price">EUR100</span>
+              <span class="price-label">per month</span>
+            </div>
+            <p class="muted">No signing fee. Managed, conversion-focused website setup.</p>
+            <ul class="checklist">
+              <li>Hosting and SSL included</li>
+              <li>Content and layout support</li>
+              <li>Minor updates included monthly</li>
+            </ul>
+            <a class="btn" href="#contact">Start Website Plan</a>
+          </article>
+
+          <article class="card pricing-card">
+            <p class="pill pill--ghost">Growth Engine</p>
+            <p class="muted">Delivered with SnipeLead partnership for businesses ready to scale lead flow.</p>
+            <ul class="checklist">
+              <li>Demand generation strategy</li>
+              <li>Lead handling automation</li>
+              <li>Appointment pipeline support</li>
+            </ul>
+            <p class="muted">Pricing is scoped to niche, market size, and growth target.</p>
+            <a class="btn btn--ghost" href="#contact">Request Growth Scope</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section section--alt reveal">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Process</p>
+          <h2>From strategy to live pipeline</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item card">
+            <span class="timeline__step">01</span>
+            <div>
+              <h3>Business Deep Dive</h3>
+              <p class="muted">We map your offer, audience, and current lead bottlenecks.</p>
+            </div>
+          </li>
+          <li class="timeline__item card">
+            <span class="timeline__step">02</span>
+            <div>
+              <h3>Website And Funnel Build</h3>
+              <p class="muted">Your website and lead pathways are built to support one conversion objective.</p>
+            </div>
+          </li>
+          <li class="timeline__item card">
+            <span class="timeline__step">03</span>
+            <div>
+              <h3>Launch And Routing</h3>
+              <p class="muted">Traffic, forms, and follow-up flows go live with tracking in place.</p>
+            </div>
+          </li>
+          <li class="timeline__item card">
+            <span class="timeline__step">04</span>
+            <div>
+              <h3>Optimization Sprint</h3>
+              <p class="muted">We refine messaging, handling, and conversion quality based on live lead behavior.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="demo" class="section reveal">
+      <div class="container demo-wrap card">
+        <div class="demo-copy">
+          <p class="kicker">Live Example</p>
+          <h2>Current demo: plumber conversion template</h2>
+          <p class="muted">This is a live build style example. The same structure is adapted to your industry, offer, and sales process.</p>
+          <div class="hero__cta">
+            <a class="btn btn--ghost" href="/demo/">Open Demo</a>
+            <a class="btn" href="#contact">Request Your Industry Version</a>
+          </div>
+        </div>
+        <img class="demo-preview" src="assets/ExampleContactPAge.png" alt="Preview of website contact section" />
+      </div>
+    </section>
+
+    <section id="faq" class="section section--alt reveal">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">FAQ</p>
+          <h2>Common questions before we start</h2>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item card">
+            <button class="faq-trigger" type="button" aria-expanded="false">
+              <span>Do you only work with trades?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <p class="muted">No. We now work across all business types where qualified pipeline and conversion clarity matter.</p>
+            </div>
+          </article>
+
+          <article class="faq-item card">
+            <button class="faq-trigger" type="button" aria-expanded="false">
+              <span>Can I start with just the website?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <p class="muted">Yes. Many clients start on the website foundation plan and then add growth systems once they are ready.</p>
+            </div>
+          </article>
+
+          <article class="faq-item card">
+            <button class="faq-trigger" type="button" aria-expanded="false">
+              <span>How does the SnipeLead partnership work?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <p class="muted">Ryder handles the web and conversion foundation. SnipeLead supports advanced lead system execution where required.</p>
+            </div>
+          </article>
+
+          <article class="faq-item card">
+            <button class="faq-trigger" type="button" aria-expanded="false">
+              <span>How fast can we begin?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              <p class="muted">After your strategy call, we can usually start planning immediately and move into build in the same week.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="container contact-grid">
         <div>
-          <h2>Get your website and growth plan.</h2>
-          <p class="muted">
-            Tell me about your business and goals. I will map out the right mix of website and lead systems.
-          </p>
+          <p class="kicker">Contact</p>
+          <h2>Tell me where you are now and where you want to be.</h2>
+          <p class="muted">You will get a practical next-step plan for website, lead handling, and pipeline setup.</p>
 
-          <div class="contact__details">
-            <div><strong>Phone:</strong> <a href="tel:+353838641426">0838641426</a></div>
-            <div><strong>Email:</strong> <a href="mailto:dylan@ryderwebsolutions.com">dylan@ryderwebsolutions.com</a></div>
-            <div><strong>SMS:</strong> <a href="sms:+353838641426">Text 0838641426</a></div>
-            <div><strong>WhatsApp:</strong> <a href="https://wa.me/353838641426">Chat on WhatsApp</a></div>
+          <div class="contact-links card">
+            <p><strong>Phone:</strong> <a href="tel:+353838641426">0838641426</a></p>
+            <p><strong>Email:</strong> <a href="mailto:dylan@ryderwebsolutions.com">dylan@ryderwebsolutions.com</a></p>
+            <p><strong>SMS:</strong> <a href="sms:+353838641426">Text 0838641426</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/353838641426">Chat on WhatsApp</a></p>
           </div>
         </div>
 
-        <!-- Replace ACTION_URL with your Formspree endpoint -->
-        <form class="form" method="POST" action="ACTION_URL">
+        <form class="card form" method="POST" action="ACTION_URL">
           <label>
             Name
-            <input name="name" required placeholder="John" />
+            <input name="name" required placeholder="Your name" />
           </label>
 
           <label>
             Business name
-            <input name="business" required placeholder="Your Business Name" />
+            <input name="business" required placeholder="Your business" />
           </label>
 
           <label>
-            What do you need?
-            <input name="service_needed" required placeholder="Website only, Lead systems, or Both" />
+            Service needed
+            <select name="service_needed" required>
+              <option value="">Choose one</option>
+              <option>Website foundation</option>
+              <option>Growth systems</option>
+              <option>Both</option>
+            </select>
           </label>
 
           <label>
@@ -264,38 +352,77 @@
           </label>
 
           <label>
-            What do you do and where are you based?
-            <textarea name="message" required rows="5" placeholder="Tell me what you sell, who you serve, and your current lead goals."></textarea>
+            What are you trying to improve?
+            <textarea name="message" rows="5" required placeholder="Share your current lead flow, bottlenecks, and target outcomes."></textarea>
           </label>
 
-          <button class="btn" type="submit">Send</button>
-
-          <p class="fineprint">
-            Prefer direct contact? Use
-            <a href="mailto:dylan@ryderwebsolutions.com">email</a>,
-            <a href="sms:+353838641426">SMS</a>, or
-            <a href="https://wa.me/353838641426">WhatsApp</a>.
-          </p>
+          <button class="btn" type="submit">Send Request</button>
+          <p class="fineprint">Prefer direct contact? Email, SMS, or WhatsApp works best.</p>
         </form>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container footer__inner">
-        <div>© <span id="year"></span> Ryder Web Solutions</div>
-        <div class="muted">Dublin, Ireland</div>
+        <p>© <span id="year"></span> Ryder Web Solutions</p>
+        <p class="muted">Dublin, Ireland</p>
       </div>
     </footer>
 
     <div class="sticky-cta">
-      <strong>Website + Lead Systems</strong> <a class="btn" href="#contact">Book your strategy chat</a>
+      <p>Ready for a cleaner pipeline?</p>
+      <a class="btn btn--small" href="#contact">Book Strategy Chat</a>
     </div>
   </main>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 
-  <!-- insert analytics snippet (Google Analytics, Plausible, etc.) here -->
+    const faqButtons = document.querySelectorAll('.faq-trigger');
+    faqButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      });
+    });
+
+    const revealItems = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealItems.forEach((item) => revealObserver.observe(item));
+
+    const countNodes = document.querySelectorAll('[data-count]');
+    const animateCount = (node) => {
+      const target = Number(node.dataset.count);
+      const duration = 900;
+      const start = performance.now();
+      const tick = (now) => {
+        const progress = Math.min((now - start) / duration, 1);
+        node.textContent = Math.floor(progress * target);
+        if (progress < 1) {
+          requestAnimationFrame(tick);
+        } else {
+          node.textContent = target;
+        }
+      };
+      requestAnimationFrame(tick);
+    };
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.6 });
+    countNodes.forEach((node) => counterObserver.observe(node));
+  </script>
 </body>
 </html>
