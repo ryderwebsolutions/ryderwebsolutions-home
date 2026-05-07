@@ -641,6 +641,42 @@ a {
   border-color: var(--ivory);
 }
 
+.platform-buttons {
+  margin-top: var(--space-3);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.platform-buttons .btn {
+  width: 100%;
+  margin: 0;
+}
+
+.platform-buttons .btn--primary {
+  background: var(--ivory);
+  color: var(--charcoal);
+  border-color: var(--ivory);
+}
+
+.platform-buttons .btn--primary:hover {
+  background: transparent;
+  color: var(--ivory);
+  border-color: var(--ivory);
+}
+
+.platform-buttons .btn--secondary {
+  background: transparent;
+  color: var(--ivory);
+  border-color: rgba(251, 248, 243, 0.7);
+}
+
+.platform-buttons .btn--secondary:hover {
+  background: var(--ivory);
+  color: var(--charcoal);
+  border-color: var(--ivory);
+}
+
 .contact-cta-note {
   font-size: 0.78rem;
   color: rgba(251, 248, 243, 0.72);
@@ -794,6 +830,10 @@ a {
   }
 
   .hours-table {
+    grid-template-columns: 1fr;
+  }
+
+  .platform-buttons {
     grid-template-columns: 1fr;
   }
 
