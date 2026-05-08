@@ -1131,6 +1131,13 @@ p {
   line-height: 1.5;
 }
 
+.dark-results__disclaimer {
+  margin-top: 1rem;
+  font-size: 0.78rem;
+  color: #8e98ad;
+  line-height: 1.6;
+}
+
 .campaign-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
