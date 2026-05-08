@@ -606,13 +606,117 @@ select:focus {
   transform: translateY(0);
 }
 
+/* ── Premium card highlight ── */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+  pointer-events: none;
+}
+
+/* ── Trust badge ── */
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.5rem;
+}
+.trust-badge__stars {
+  color: var(--warning);
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+}
+.trust-badge__text {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ── Testimonials ── */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1.4rem;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.45);
+}
+
+.testimonial-card__stars {
+  color: var(--warning);
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+}
+
+.testimonial-card__quote {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text);
+  font-style: italic;
+}
+
+.testimonial-card__author {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.testimonial-card__avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #05191d;
+  flex-shrink: 0;
+}
+
+.testimonial-card__name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.testimonial-card__biz {
+  font-size: 0.76rem;
+  color: var(--muted);
+  margin: 0;
+}
+
 @media (max-width: 980px) {
   .hero__grid,
   .results-grid,
   .systems-grid,
   .pricing-grid,
   .demo-wrap,
-  .contact-grid {
+  .contact-grid,
+  .testimonials-grid {
     grid-template-columns: 1fr;
   }
 
@@ -622,6 +726,7 @@ select:focus {
 
   .nav a[href="#results"],
   .nav a[href="#systems"],
+  .nav a[href="#clients"],
   .nav a[href="#process"],
   .nav a[href="#faq"],
   .nav a[href="#demo"] {
