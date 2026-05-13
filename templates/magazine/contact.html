@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Greenzine Ireland for collaborations, editorial submissions and partnerships." />
+  <title>Contact | Greenzine Ireland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./magazine.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="brand" href="./index.html" aria-label="Greenzine Ireland home">
+        <span class="brand-mark">G</span>
+        <span class="brand-text">Greenzine Ireland</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./features.html">Magazine</a>
+        <a class="is-active" href="./contact.html">Contact</a>
+        <a class="nav-cta" href="./contact.html">Collaborate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section-space">
+      <div class="wrap section-head reveal">
+        <p class="eyebrow">Let's Connect</p>
+        <h1>Collaborations, partnerships and editorial enquiries.</h1>
+        <p class="lead">Whether you are a creative studio, cultural institution, brand, or independent contributor, we welcome thoughtful collaborations.</p>
+      </div>
+    </section>
+
+    <section class="section-space section-soft">
+      <div class="wrap contact-grid">
+        <article class="contact-card reveal">
+          <h2>Send an enquiry</h2>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your idea or project"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit Enquiry</button>
+          </form>
+        </article>
+
+        <article class="contact-card reveal">
+          <h3>Editorial Office</h3>
+          <p class="muted">Greenzine Ireland</p>
+          <p class="muted">Dublin, Ireland</p>
+          <p><a href="mailto:hello@greenzine.ie">hello@greenzine.ie</a></p>
+          <p><a href="tel:+353100000000">+353 1 000 0000</a></p>
+          <br />
+          <h3>Social</h3>
+          <p><a href="#">Instagram</a></p>
+          <p><a href="#">LinkedIn</a></p>
+          <p><a href="#">X</a></p>
+        </article>
+
+        <article class="contact-card reveal">
+          <p class="eyebrow">Partnerships</p>
+          <h3>Who we work with</h3>
+          <p>Independent studios, sustainability initiatives, local events, design schools and community programmes.</p>
+          <p class="muted">For media kits, collaboration decks, or issue planning call details, email us directly and our partnerships team will respond.</p>
+          <a class="btn btn-ghost" href="mailto:partners@greenzine.ie">Partnership Enquiry</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <p>Greenzine Ireland. Printed perspectives for modern Ireland.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+      <p class="copyright">&copy; <span data-year></span> Greenzine Ireland</p>
+    </div>
+  </footer>
+
+  <script src="./magazine.js"></script>
+</body>
+</html>

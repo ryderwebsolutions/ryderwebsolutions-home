@@ -493,7 +493,10 @@
           </div>
         </div>
 
-        <form class="contact-form" method="POST" action="ACTION_URL">
+        <form class="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+          <!-- Replace YOUR_FORM_ID with the ID from your Formspree dashboard -->
+          <input type="hidden" name="_subject" value="New enquiry from Ryder Web Solutions" />
+          <input type="hidden" name="_next" value="https://ryderwebsolutions.com/thank-you.html" />
           <label>
             Name
             <input name="name" required placeholder="Your name" />
