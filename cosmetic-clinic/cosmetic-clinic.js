@@ -285,25 +285,49 @@ class MultiStepForm {
     }
     
     initCalendly() {
+        const calendlyContainer = document.getElementById('calendly-container');
+        const embedHeight = window.matchMedia('(max-width: 768px)').matches ? 1320 : 1700;
+
+        if (!calendlyContainer) return;
+
+        // Ensure a single widget instance if this method is ever called again.
+        calendlyContainer.innerHTML = '';
+
+        const enforceCalendlyHeight = () => {
+            if (!calendlyContainer) return;
+
+            calendlyContainer.style.setProperty('min-height', `${embedHeight}px`, 'important');
+
+            const widget = calendlyContainer.querySelector('.calendly-inline-widget');
+            if (widget) {
+                widget.style.setProperty('height', `${embedHeight}px`, 'important');
+            }
+
+            const iframe = calendlyContainer.querySelector('iframe');
+            if (iframe) {
+                iframe.style.setProperty('height', `${embedHeight}px`, 'important');
+            }
+        };
+
         // Initialize Calendly embed
         if (window.Calendly) {
             window.Calendly.initInlineWidget({
                 url: 'https://calendly.com/dylan-ryderwebsolutions/30min',
-                parentElement: document.getElementById('calendly-container'),
+                parentElement: calendlyContainer,
                 prefill: {
                     name: this.formData.your_name || '',
                     email: this.formData.work_email || ''
                 }
             });
-        }
-        
-        // Set up button fallback
-        const calendlyButton = document.getElementById('calendly-button');
-        if (calendlyButton) {
-            calendlyButton.addEventListener('click', () => {
-                // Open Calendly in new window
-                window.open('https://calendly.com/dylan-ryderwebsolutions/30min', '_blank');
-            });
+
+            // Calendly injects inline styles at runtime, so enforce height after mount.
+            enforceCalendlyHeight();
+            setTimeout(enforceCalendlyHeight, 300);
+            setTimeout(enforceCalendlyHeight, 1000);
+
+            const observer = new MutationObserver(() => enforceCalendlyHeight());
+            observer.observe(calendlyContainer, { childList: true, subtree: true });
+            setTimeout(() => observer.disconnect(), 5000);
         }
     }
 }
