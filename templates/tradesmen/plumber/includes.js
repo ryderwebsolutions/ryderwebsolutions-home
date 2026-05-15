@@ -131,7 +131,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (hero) {
       const strip = document.createElement('section');
       strip.className = 'trust-strip';
-      strip.innerHTML = '<div class="container"><div class="flex"><div><span aria-hidden="true">✅</span> 30-day guarantee</div><div><span aria-hidden="true">⚡</span> Fast callouts</div><div><span aria-hidden="true">💬</span> 4.9★ Google rating</div></div></div>';
+      strip.innerHTML = '<div class="container"><div class="flex"><div>SEAI Registered Installers</div><div>Fast Professional Service</div><div>5-Year Workmanship Warranty</div></div></div>';
       hero.after(strip);
     }
   }
