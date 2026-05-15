@@ -2,19 +2,25 @@
 // determine base path from script src
 const scriptEl = document.currentScript || document.querySelector('script[src$="includes.js"]');
 const basePath = scriptEl ? scriptEl.src.replace(/includes\.js$/, '') : './';
+const ASSET_VERSION = '2026-05-15-1';
+
+const withVersion = (path) => {
+  const sep = path.includes('?') ? '&' : '?';
+  return path + sep + 'v=' + ASSET_VERSION;
+};
 
 const includes = [
-  { sel: '#include-topbar', path: basePath + 'partials/topbar.html' },
-  { sel: '#include-header', path: basePath + 'partials/header.html' },
-  { sel: '#include-mobilecta', path: basePath + 'partials/mobilecta.html' },
-  { sel: '#include-footer', path: basePath + 'partials/footer.html' }
+  { sel: '#include-topbar', path: withVersion(basePath + 'partials/topbar.html') },
+  { sel: '#include-header', path: withVersion(basePath + 'partials/header.html') },
+  { sel: '#include-mobilecta', path: withVersion(basePath + 'partials/mobilecta.html') },
+  { sel: '#include-footer', path: withVersion(basePath + 'partials/footer.html') }
 ];
 
 let siteConfig = null;
 
 // fetch site configuration (phone, company name, etc.)
 function loadConfig() {
-  return fetch(basePath + 'config.json')
+  return fetch(withVersion(basePath + 'config.json'), { cache: 'no-store' })
     .then(r => r.ok ? r.json() : {})
     .then(cfg => {
       siteConfig = cfg;

@@ -1,25 +1,36 @@
-// basic service worker for offline support
-const CACHE_NAME = 'plumber-site-v1';
-const ASSETS = [
-  '/',
-  '/templates/tradesmen/plumber/plumber.css',
-  '/templates/tradesmen/plumber/includes.js',
-  '/templates/tradesmen/plumber/partials/header.html',
-  '/templates/tradesmen/plumber/partials/footer.html',
-  '/templates/tradesmen/plumber/partials/topbar.html',
-  '/templates/tradesmen/plumber/partials/mobilecta.html'
-];
+// update-safe service worker for the plumber template
+const CACHE_NAME = 'plumber-site-v2';
 
-self.addEventListener('install', event => {
+self.addEventListener('install', (event) => {
+  self.skipWaiting();
+  event.waitUntil(Promise.resolve());
+});
+
+self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS))
+    caches.keys().then((keys) =>
+      Promise.all(
+        keys
+          .filter((key) => key.startsWith('plumber-site-') && key !== CACHE_NAME)
+          .map((key) => caches.delete(key))
+      )
+    ).then(() => self.clients.claim())
   );
 });
 
-self.addEventListener('fetch', event => {
+self.addEventListener('fetch', (event) => {
+  if (event.request.method !== 'GET') return;
+
+  const url = new URL(event.request.url);
+  if (url.origin !== self.location.origin) return;
+
   event.respondWith(
-    caches.match(event.request).then(resp => {
-      return resp || fetch(event.request);
-    })
+    fetch(event.request)
+      .then((networkResponse) => {
+        const cloned = networkResponse.clone();
+        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, cloned));
+        return networkResponse;
+      })
+      .catch(() => caches.match(event.request))
   );
 });
