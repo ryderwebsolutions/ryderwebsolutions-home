@@ -593,6 +593,12 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
 .service-img-placeholder {
   background: linear-gradient(135deg, #0b1f3d 0%, #ff6633 100%);
 }
+.service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .service-photo-card .service-title {
   font-weight: 900;
   font-size: 14px;
