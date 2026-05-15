@@ -28,7 +28,10 @@
         <img src="assets/Ryderweb%20Logo.png" alt="Ryder Web Solutions" class="brand__logo" />
         <span>Ryder Web Solutions</span>
       </a>
-      <nav class="nav" aria-label="Main navigation">
+      <button class="mobile-nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
         <a href="#top">Home</a>
         <a href="services/">What We Do</a>
         <a href="what-weve-done/">What We've Done</a>
@@ -180,6 +183,37 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const siteNav = document.getElementById('site-nav');
+
+    if (mobileNavToggle && siteNav) {
+      const closeMobileNav = () => {
+        siteNav.classList.remove('nav--open');
+        mobileNavToggle.setAttribute('aria-expanded', 'false');
+        mobileNavToggle.setAttribute('aria-label', 'Open navigation menu');
+      };
+
+      mobileNavToggle.addEventListener('click', () => {
+        const isOpen = siteNav.classList.toggle('nav--open');
+        mobileNavToggle.setAttribute('aria-expanded', String(isOpen));
+        mobileNavToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      });
+
+      siteNav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          if (window.matchMedia('(max-width: 900px)').matches) {
+            closeMobileNav();
+          }
+        });
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 900) {
+          closeMobileNav();
+        }
+      });
+    }
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((e) => {

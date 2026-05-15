@@ -312,6 +312,21 @@ textarea {
     margin-bottom: var(--spacing-lg);
 }
 
+.success-home-link {
+    display: inline-flex;
+    margin-top: 1.1rem;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-size: 0.88rem;
+    border-bottom: 1px solid transparent;
+    transition: color var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.success-home-link:hover {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
 #calendly-container {
     width: min(96vw, 1320px);
     min-height: 1300px;

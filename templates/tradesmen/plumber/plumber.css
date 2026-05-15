@@ -1,10 +1,12 @@
 /* plumber.css — dense, high-contrast, trade-utility styling */
 
 :root {
-  --color-primary: #ef4444;
-  --color-dark: #0b1220;
-  --color-bg: #f5f7fb;
-  --color-text: #0b1220;
+  --color-primary: #ff6633;
+  --color-dark: #0b1f3d;
+  --color-bg: #f0f3f8;
+  --color-text: #0b1f3d;
+  --color-accent: #ff6633;
+  --color-navy: #0b1f3d;
 }
 
 /* --- Base / Reset --- */
@@ -435,6 +437,21 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
 @media (max-width: 860px) { .footer .cols { grid-template-columns: 1fr; } }
 .footer a.link { text-decoration: underline; }
 
+/* --- Social Links --- */
+.social-links {
+  margin-top: 12px;
+}
+.social-link {
+  color: #ff6633;
+  text-decoration: none;
+  font-weight: 900;
+  transition: color 0.2s ease;
+}
+.social-link:hover {
+  color: #0b1f3d;
+  text-decoration: underline;
+}
+
 /* --- Sticky mobile CTA --- */
 .mobile-cta {
   position: fixed;
@@ -497,6 +514,143 @@ hr.sep { border: 0; border-top: 1px solid #d7deea; margin: 18px 0; }
   text-align: left;
 }
 .table th { background: #f8fafc; font-weight: 900; }
+
+/* --- Trust Badges --- */
+.trust-badges-section { background: #f0f3f8; }
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+  margin-top: 14px;
+}
+.trust-item {
+  background: #fff;
+  border: 2px solid #0b1f3d;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(11,31,61,0.08);
+}
+.badge-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.badge-title {
+  font-weight: 900;
+  font-size: 14px;
+  color: #0b1f3d;
+  margin-bottom: 6px;
+}
+.badge-desc {
+  font-size: 12px;
+  color: #475569;
+}
+
+/* --- Service Grid with Image Placeholders --- */
+.service-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.service-photo-card {
+  border: 2px solid #0b1f3d;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(11,31,61,0.06);
+  transition: transform .2s, box-shadow .2s;
+  position: relative;
+}
+.service-photo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(11,31,61,0.12);
+}
+.service-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff6633;
+  color: #fff;
+  font-weight: 900;
+  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  z-index: 2;
+}
+.service-photo-card .img-wrap {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, #0b1f3d 0%, #ff6633 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+}
+.service-img-placeholder {
+  background: linear-gradient(135deg, #0b1f3d 0%, #ff6633 100%);
+}
+.service-photo-card .service-title {
+  font-weight: 900;
+  font-size: 14px;
+  padding: 12px 14px 6px;
+  color: #0b1f3d;
+}
+.service-photo-card .service-body {
+  font-size: 13px;
+  color: #475569;
+  padding: 0 14px 14px;
+}
+
+/* --- Project Cards --- */
+.project-card {
+  background: #fff;
+  border: 2px solid #0b1f3d;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(11,31,61,0.06);
+}
+.project-card .project-img-placeholder {
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(135deg, #ff6633 0%, #0b1f3d 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* --- FAQ Styling --- */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+.faq-item {
+  background: #fff;
+  border: 2px solid #0b1f3d;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(11,31,61,0.05);
+}
+.faq-q {
+  font-weight: 900;
+  font-size: 14px;
+  color: #0b1f3d;
+  margin-bottom: 8px;
+}
+.faq-a {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.6;
+}
 
 /* New service photo grid */
 .service-photo-grid{
