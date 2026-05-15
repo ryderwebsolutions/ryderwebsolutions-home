@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #f7f2ec;
+  --lavender: #b499c8;
+  --lilac: #cab7d8;
+  --dusty: #8f759d;
+  --blush: #dfc0ca;
+  --sage: #a6b39a;
+  --charcoal: #40393f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  color: var(--charcoal);
+  background:
+    radial-gradient(circle at 8% 10%, rgba(202, 183, 216, 0.35), transparent 30%),
+    radial-gradient(circle at 90% 8%, rgba(223, 192, 202, 0.35), transparent 34%),
+    linear-gradient(180deg, #f9f5ef 0%, #f5f1eb 48%, #f7f2ec 100%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  letter-spacing: 0.015em;
+}
+
+.page-enter {
+  animation: fadeUp 0.8s ease-out both;
+}
+
+.soft-card {
+  background: rgba(255, 255, 255, 0.74);
+  backdrop-filter: blur(4px);
+}
+
+.organic-shape {
+  border-radius: 58% 42% 35% 65% / 44% 33% 67% 56%;
+}
+
+.photo-curve {
+  border-radius: 24px;
+}
+
+@media (max-width: 768px) {
+  .photo-curve {
+    border-radius: 18px;
+  }
+}
