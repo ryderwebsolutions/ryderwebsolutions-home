@@ -1,8 +1,8 @@
 // simple client-side include loader for static templates
 // determine base path from script src
-const scriptEl = document.currentScript || document.querySelector('script[src$="includes.js"]');
-const basePath = scriptEl ? scriptEl.src.replace(/includes\.js$/, '') : './';
-const ASSET_VERSION = '2026-05-15-1';
+const scriptEl = document.currentScript || document.querySelector('script[src*="includes.js"]');
+const basePath = scriptEl ? scriptEl.src.replace(/includes\.js(?:\?.*)?$/, '') : './';
+const ASSET_VERSION = '2026-05-15-2';
 
 const withVersion = (path) => {
   const sep = path.includes('?') ? '&' : '?';
@@ -121,7 +121,7 @@ function rewriteLinksAndImages() {
   document.querySelectorAll('link[data-href]').forEach(link => {
     const href = link.getAttribute('data-href');
     if (href) {
-      link.href = basePath + href;
+      link.href = withVersion(basePath + href);
     }
   });
   // nav toggle is now set up when header loads

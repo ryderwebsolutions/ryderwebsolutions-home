@@ -7,7 +7,7 @@
   <title>DPH Plumbing Ltd | SEAI & RGI Registered Heating Specialists</title>
   <meta name="description" content="SEAI & RGI Registered Heating Specialists. Viessmann Vitocal 151-A systems, heat pump installations, underfloor heating, smart controls, and SEAI grant support across South East Ireland and Greater Dublin." />
   <link rel="preload" href="plumber.css" as="style" />
-  <link rel="stylesheet" href="plumber.css" data-href="plumber.css" />
+  <link rel="stylesheet" href="plumber.css?v=20260515-2" data-href="plumber.css" />
   <link rel="icon" href="assets/favicon.png" />
   <meta name="theme-color" content="#0b1f3a" />
 
@@ -323,7 +323,7 @@
   <div id="include-footer"></div>
   <div id="include-mobilecta"></div>
 
-  <script src="includes.js" defer></script>
+  <script src="includes.js?v=20260515-2" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const items = Array.from(document.querySelectorAll('.accordion .faq-item'));
@@ -352,7 +352,7 @@
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js').catch(() => {});
+        navigator.serviceWorker.register('sw.js?v=20260515-2').catch(() => {});
       });
     }
   </script>
