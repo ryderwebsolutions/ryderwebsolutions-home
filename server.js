@@ -1,0 +1,254 @@
+const express = require('express');
+const cors = require('cors');
+const nodemailer = require('nodemailer');
+require('dotenv').config();
+
+const app = express();
+
+// Middleware
+app.use(cors());
+app.use(express.json({ limit: '10mb' }));
+app.use(express.static(__dirname));
+
+// Email configuration
+const createEmailTransporter = () => {
+    // Support for Resend API or Nodemailer with SMTP
+    const emailService = process.env.EMAIL_SERVICE || 'smtp';
+    
+    if (emailService === 'resend') {
+        // Resend API integration (if using Resend)
+        return {
+            send: async (mailOptions) => {
+                try {
+                    const { Resend } = require('resend');
+                    const resend = new Resend(process.env.RESEND_API_KEY);
+                    
+                    return resend.emails.send({
+                        from: process.env.EMAIL_FROM || 'forms@ryderwebsolutions.com',
+                        to: mailOptions.to,
+                        subject: mailOptions.subject,
+                        html: mailOptions.html,
+                        replyTo: mailOptions.replyTo || mailOptions.from
+                    });
+                } catch (error) {
+                    console.error('Resend error:', error);
+                    throw error;
+                }
+            }
+        };
+    }
+    
+    // Default: Nodemailer with SMTP
+    return nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT || 587,
+        secure: process.env.SMTP_SECURE === 'true',
+        auth: {
+            user: process.env.SMTP_USER,
+            pass: process.env.SMTP_PASSWORD
+        }
+    });
+};
+
+// Validate required fields
+const validateFormData = (data) => {
+    const requiredFields = [
+        'clinic_name',
+        'your_name',
+        'work_email',
+        'phone_number',
+        'clinic_location',
+        'business_type',
+        'main_goal',
+        'biggest_challenge',
+        'timeline'
+    ];
+    
+    for (let field of requiredFields) {
+        if (!data[field] || !String(data[field]).trim()) {
+            return {
+                valid: false,
+                error: `Missing required field: ${field}`
+            };
+        }
+    }
+    
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(data.work_email)) {
+        return {
+            valid: false,
+            error: 'Invalid email format'
+        };
+    }
+    
+    // Validate phone format (basic check)
+    const phoneDigits = data.phone_number.replace(/\D/g, '');
+    if (phoneDigits.length < 10) {
+        return {
+            valid: false,
+            error: 'Invalid phone number'
+        };
+    }
+    
+    return { valid: true };
+};
+
+// Format form data for email
+const formatEmailBody = (data) => {
+    return `
+    <h2>Cosmetic Clinic Assessment Submission</h2>
+    
+    <h3>Lead Information:</h3>
+    <ul>
+        <li><strong>Clinic Name:</strong> ${escapeHtml(data.clinic_name)}</li>
+        <li><strong>Owner Name:</strong> ${escapeHtml(data.your_name)}</li>
+        <li><strong>Email:</strong> ${escapeHtml(data.work_email)}</li>
+        <li><strong>Phone:</strong> ${escapeHtml(data.phone_number)}</li>
+        <li><strong>Location:</strong> ${escapeHtml(data.clinic_location)}</li>
+    </ul>
+    
+    <h3>Business & Goals:</h3>
+    <ul>
+        <li><strong>Business Type:</strong> ${escapeHtml(data.business_type)}</li>
+        <li><strong>Main Goal:</strong> ${escapeHtml(data.main_goal)}</li>
+        <li><strong>Biggest Challenge:</strong> ${escapeHtml(data.biggest_challenge)}</li>
+        <li><strong>Timeline:</strong> ${escapeHtml(data.timeline)}</li>
+    </ul>
+    
+    <h3>Submission Details:</h3>
+    <ul>
+        <li><strong>Date:</strong> ${new Date(data.submission_date).toLocaleString()}</li>
+        <li><strong>Page URL:</strong> ${escapeHtml(data.page_url)}</li>
+    </ul>
+    
+    <p style="font-size: 12px; color: #666; margin-top: 30px;">
+        This is an automated email. Please follow up with the lead promptly.
+    </p>
+    `;
+};
+
+// Escape HTML to prevent injection
+const escapeHtml = (text) => {
+    if (!text) return '';
+    return String(text)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+};
+
+// API Route: Cosmetic Clinic Assessment
+app.post('/api/cosmetic-clinic-assessment', async (req, res) => {
+    try {
+        // Validate form data
+        const validation = validateFormData(req.body);
+        if (!validation.valid) {
+            return res.status(400).json({
+                success: false,
+                error: validation.error
+            });
+        }
+        
+        // Check honeypot (should be empty)
+        if (req.body.website) {
+            console.warn('Honeypot field filled - spam detected');
+            // Return success anyway to confuse bots
+            return res.status(200).json({ success: true });
+        }
+        
+        // Rate limiting check (optional - can be implemented with Redis)
+        // For now, we'll trust the frontend validation
+        
+        // Prepare email
+        const transporter = createEmailTransporter();
+        const emailBody = formatEmailBody(req.body);
+        
+        const mailOptions = {
+            from: process.env.EMAIL_FROM || 'forms@ryderwebsolutions.com',
+            to: process.env.FORM_RECIPIENT_EMAIL || 'dylan@ryderwebsolutions.com',
+            subject: `New Cosmetic Clinic Assessment: ${req.body.clinic_name}`,
+            html: emailBody,
+            replyTo: req.body.work_email
+        };
+        
+        // Send email
+        let emailResult;
+        if (process.env.EMAIL_SERVICE === 'resend') {
+            emailResult = await transporter.send(mailOptions);
+        } else {
+            emailResult = await transporter.sendMail(mailOptions);
+        }
+        
+        console.log('Email sent successfully:', {
+            clinic: req.body.clinic_name,
+            email: req.body.work_email,
+            timestamp: new Date().toISOString()
+        });
+        
+        // Return success
+        return res.status(200).json({
+            success: true,
+            message: 'Assessment received. We will contact you within 24 hours.'
+        });
+        
+    } catch (error) {
+        console.error('Form submission error:', error);
+        
+        return res.status(500).json({
+            success: false,
+            error: 'Unable to process submission. Please try again later.'
+        });
+    }
+});
+
+// Health check endpoint
+app.get('/api/health', (req, res) => {
+    res.status(200).json({
+        status: 'OK',
+        timestamp: new Date().toISOString(),
+        service: 'Ryder Web Solutions - Form Handler'
+    });
+});
+
+// Serve static files for cosmetic clinic
+app.use('/cosmetic-clinic', express.static(__dirname + '/cosmetic-clinic'));
+
+// Serve cosmetic clinic index
+app.get('/cosmetic-clinic/', (req, res) => {
+    res.sendFile(__dirname + '/cosmetic-clinic/index.html');
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error('Server error:', err);
+    res.status(500).json({
+        success: false,
+        error: 'Internal server error'
+    });
+});
+
+// 404 handler
+app.use((req, res) => {
+    res.status(404).json({
+        success: false,
+        error: 'Endpoint not found'
+    });
+});
+
+// Start server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`
+    ========================================
+    Ryder Web Solutions - Form Handler
+    ========================================
+    Server running on port ${PORT}
+    Environment: ${process.env.NODE_ENV || 'development'}
+    Email Service: ${process.env.EMAIL_SERVICE || 'SMTP'}
+    ========================================
+    `);
+});
+
+module.exports = app;
