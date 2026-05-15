@@ -112,7 +112,7 @@ class MultiStepForm {
     
     validateCurrentQuestion() {
         const question = this.questions[this.currentQuestion];
-        const inputs = question.querySelectorAll('input[required]');
+        const inputs = question.querySelectorAll('input[required], select[required]');
         
         for (let input of inputs) {
             if (input.type === 'radio') {
@@ -129,9 +129,9 @@ class MultiStepForm {
                     return false;
                 }
             } else if (input.type === 'tel') {
-                // Validate phone - at least 10 characters
+                // Validate local phone number (country code is selected separately)
                 const phoneValue = input.value.replace(/\D/g, '');
-                if (phoneValue.length < 10) {
+                if (phoneValue.length < 6) {
                     return false;
                 }
             } else {
@@ -147,7 +147,7 @@ class MultiStepForm {
     
     saveCurrentQuestion() {
         const question = this.questions[this.currentQuestion];
-        const inputs = question.querySelectorAll('input');
+        const inputs = question.querySelectorAll('input, select');
         
         inputs.forEach(input => {
             if (input.type === 'radio') {
@@ -240,8 +240,12 @@ class MultiStepForm {
     }
     
     async submitForm() {
+        const countryCode = (this.formData.phone_country_code || '').trim();
+        const localPhone = (this.formData.phone_number || '').trim();
+
         const payload = {
             ...this.formData,
+            phone_number: `${countryCode} ${localPhone}`.trim(),
             submission_date: new Date().toISOString(),
             page_url: window.location.href
         };

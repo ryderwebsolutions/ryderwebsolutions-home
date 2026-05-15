@@ -56,7 +56,21 @@
                         <!-- Question 4: Phone Number -->
                         <div class="form-question" data-question="4">
                             <label for="phone-number">Best phone number to reach you</label>
-                            <input type="tel" id="phone-number" name="phone_number" placeholder="Enter phone number" required>
+                            <div class="phone-input-group">
+                                <select id="phone-country-code" name="phone_country_code" required>
+                                    <option value="+353" selected>Ireland (+353)</option>
+                                    <option value="+44">UK (+44)</option>
+                                    <option value="+1">US/Canada (+1)</option>
+                                    <option value="+61">Australia (+61)</option>
+                                    <option value="+971">UAE (+971)</option>
+                                    <option value="+49">Germany (+49)</option>
+                                    <option value="+33">France (+33)</option>
+                                    <option value="+34">Spain (+34)</option>
+                                    <option value="+39">Italy (+39)</option>
+                                    <option value="+31">Netherlands (+31)</option>
+                                </select>
+                                <input type="tel" id="phone-number" name="phone_number" placeholder="Enter phone number" required>
+                            </div>
                         </div>
 
                         <!-- Question 5: Clinic Location -->
