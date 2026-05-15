@@ -15,31 +15,38 @@
         <section class="form-section" id="form-section">
             <div class="section-content">
                 <div class="section-header">
-                    <h1>Book Your Strategy Consultation</h1>
-                    <p>Share your details in under 2 minutes, then book your call instantly.</p>
+                    <h1>Book Your Free Strategy Call</h1>
+                    <p>Takes under 2 minutes. Book your call instantly on the next screen.</p>
                 </div>
 
                 <div class="form-container">
-                    <form id="assessment-form" class="assessment-form">
+                    <form id="assessment-form" class="multi-step-form">
+                        <div class="form-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <p class="progress-text"><span class="current-question">1</span> of <span class="total-questions">7</span></p>
+                        </div>
+
                         <input type="text" name="website" class="honeypot" style="display: none;" tabindex="-1" autocomplete="off">
 
-                        <div class="form-group">
-                            <label for="business-name">Business name</label>
-                            <input type="text" id="business-name" name="business_name" placeholder="Enter business name" autocomplete="organization" required>
+                        <div class="form-question active" data-question="1">
+                            <label for="business-name">What's the name of your business?</label>
+                            <input type="text" id="business-name" name="business_name" placeholder="Your business name" autocomplete="organization" required>
                         </div>
 
-                        <div class="form-group">
-                            <label for="your-name">Your full name</label>
-                            <input type="text" id="your-name" name="your_name" placeholder="Enter your name" autocomplete="name" required>
+                        <div class="form-question" data-question="2">
+                            <label for="your-name">Who should we reach out to?</label>
+                            <input type="text" id="your-name" name="your_name" placeholder="Your full name" autocomplete="name" required>
                         </div>
 
-                        <div class="form-group">
-                            <label for="work-email">Work email address</label>
-                            <input type="email" id="work-email" name="work_email" placeholder="Enter your email" autocomplete="email" required>
+                        <div class="form-question" data-question="3">
+                            <label for="work-email">Best email to reach you</label>
+                            <input type="email" id="work-email" name="work_email" placeholder="your@email.com" autocomplete="email" required>
                         </div>
 
-                        <div class="form-group">
-                            <label for="phone-number">Best phone number</label>
+                        <div class="form-question" data-question="4">
+                            <label for="phone-number">Best number to reach you</label>
                             <div class="phone-input-group">
                                 <select id="phone-country-code" name="phone_country_code" required>
                                     <option value="+353" selected>Ireland (+353)</option>
@@ -57,29 +64,48 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="business-location">Business location</label>
+                        <div class="form-question" data-question="5">
+                            <label for="business-location">Where are you based?</label>
                             <input type="text" id="business-location" name="business_location" placeholder="City, Country" autocomplete="address-level2" required>
                         </div>
 
-                        <div class="form-group">
-                            <label for="service-interest">What are you looking for?</label>
-                            <select id="service-interest" name="service_interest" required>
-                                <option value="" selected disabled>Select one option</option>
-                                <option value="Digital transformation">Digital transformation</option>
-                                <option value="Marketing campaign">Marketing campaign</option>
-                                <option value="Booking systems">Booking systems</option>
-                                <option value="Custom software">Custom software</option>
-                                <option value="Other">Other</option>
-                            </select>
+                        <div class="form-question" data-question="6">
+                            <label>What do you need most right now?</label>
+                            <div class="form-options">
+                                <label class="option-label">
+                                    <input type="radio" name="service_interest" value="Digital transformation" required>
+                                    <span>Digital transformation</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="service_interest" value="Marketing campaign">
+                                    <span>Marketing campaign</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="service_interest" value="Booking systems">
+                                    <span>Booking systems</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="service_interest" value="Custom software">
+                                    <span>Custom software</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="service_interest" value="Other">
+                                    <span>Other</span>
+                                </label>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="problems-facing">What problems are you facing? (optional)</label>
-                            <textarea id="problems-facing" name="problems_facing" rows="4" placeholder="Share the main blockers or pain points you want to fix"></textarea>
+                        <div class="form-question" data-question="7">
+                            <label for="problems-facing">What's the main thing holding you back?</label>
+                            <textarea id="problems-facing" name="problems_facing" rows="4" placeholder="Optional — anything specific you want us to know before the call"></textarea>
                         </div>
 
-                        <button type="submit" class="cta-button" id="submit-button">Submit And Continue To Booking</button>
+                        <div class="form-navigation">
+                            <button type="button" class="nav-button nav-back" id="back-button">← Back</button>
+                            <button type="button" class="nav-button nav-next" id="next-button">Next →</button>
+                            <button type="submit" class="nav-button nav-submit" id="submit-button" style="display: none;">Submit And Continue To Booking</button>
+                        </div>
+
                         <div class="form-error" id="form-error" aria-live="polite"></div>
                     </form>
                 </div>

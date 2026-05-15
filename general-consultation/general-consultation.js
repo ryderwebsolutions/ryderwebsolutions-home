@@ -1,98 +1,196 @@
 class GeneralConsultationForm {
     constructor() {
         this.form = document.getElementById('assessment-form');
-        this.formSection = document.getElementById('form-section');
-        this.successSection = document.getElementById('success-section');
+        this.questions = Array.from(document.querySelectorAll('.form-question'));
+        this.totalQuestions = this.questions.length;
+        this.currentQuestion = 0;
+        this.formData = {};
+
+        this.backButton = document.getElementById('back-button');
+        this.nextButton = document.getElementById('next-button');
         this.submitButton = document.getElementById('submit-button');
         this.errorDisplay = document.getElementById('form-error');
+
+        this.formSection = document.getElementById('form-section');
+        this.successSection = document.getElementById('success-section');
         this.isSubmitting = false;
 
         this.init();
     }
 
     init() {
-        if (!this.form) return;
+        if (!this.form || !this.questions.length) return;
 
-        this.form.addEventListener('submit', (event) => this.handleSubmit(event));
+        this.updateProgressBar();
+        this.updateNavigationButtons();
+
+        this.nextButton.addEventListener('click', () => this.handleNext());
+        this.backButton.addEventListener('click', () => this.handleBack());
+        this.submitButton.addEventListener('click', (event) => this.handleSubmit(event));
+        this.form.addEventListener('submit', (event) => event.preventDefault());
+
+        this.form.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter' && event.target.tagName !== 'TEXTAREA') {
+                event.preventDefault();
+                if (this.currentQuestion < this.totalQuestions - 1) {
+                    this.handleNext();
+                } else {
+                    this.handleSubmit();
+                }
+            }
+        });
     }
 
-    validateForm(formData) {
-        const requiredFields = [
-            'business_name',
-            'your_name',
-            'work_email',
-            'phone_country_code',
-            'phone_number',
-            'business_location',
-            'service_interest'
-        ];
+    handleNext() {
+        if (!this.validateCurrentQuestion()) {
+            this.showError('Please fill in this field');
+            return;
+        }
 
-        for (const field of requiredFields) {
-            const value = (formData.get(field) || '').toString().trim();
-            if (!value) {
-                return { valid: false, error: 'Please complete all required fields.' };
+        this.clearError();
+        this.saveCurrentQuestion();
+
+        if (this.currentQuestion < this.totalQuestions - 1) {
+            this.moveToQuestion(this.currentQuestion + 1);
+        }
+    }
+
+    handleBack() {
+        if (this.currentQuestion === 0) return;
+
+        this.clearError();
+        this.saveCurrentQuestion();
+        this.moveToQuestion(this.currentQuestion - 1);
+    }
+
+    moveToQuestion(questionNumber) {
+        this.questions[this.currentQuestion].classList.remove('active');
+        this.questions[this.currentQuestion].classList.add('previous');
+
+        this.currentQuestion = questionNumber;
+
+        this.questions[this.currentQuestion].classList.remove('previous');
+        this.questions[this.currentQuestion].classList.add('active');
+
+        this.updateProgressBar();
+        this.updateNavigationButtons();
+
+        setTimeout(() => {
+            const firstField = this.questions[this.currentQuestion].querySelector('input, select, textarea');
+            if (firstField) firstField.focus();
+        }, 100);
+    }
+
+    validateCurrentQuestion() {
+        const question = this.questions[this.currentQuestion];
+        const requiredInputs = question.querySelectorAll('input[required], select[required], textarea[required]');
+
+        for (const input of requiredInputs) {
+            if (input.type === 'radio') {
+                const selected = this.form.querySelector(`input[name="${input.name}"]:checked`);
+                if (!selected) return false;
+                continue;
+            }
+
+            const value = (input.value || '').trim();
+
+            if (!value) return false;
+
+            if (input.type === 'email') {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(value)) return false;
+            }
+
+            if (input.type === 'tel') {
+                const phoneDigits = value.replace(/\D/g, '');
+                if (phoneDigits.length < 6) return false;
             }
         }
 
-        const emailValue = String(formData.get('work_email') || '').trim();
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(emailValue)) {
-            return { valid: false, error: 'Please enter a valid email address.' };
-        }
+        return true;
+    }
 
-        const phoneDigits = String(formData.get('phone_number') || '').replace(/\D/g, '');
-        if (phoneDigits.length < 6) {
-            return { valid: false, error: 'Please enter a valid phone number.' };
-        }
+    saveCurrentQuestion() {
+        const question = this.questions[this.currentQuestion];
+        const inputs = question.querySelectorAll('input, select, textarea');
 
-        return { valid: true };
+        inputs.forEach((input) => {
+            if (input.name === 'website') return;
+
+            if (input.type === 'radio') {
+                if (input.checked) this.formData[input.name] = input.value;
+                return;
+            }
+
+            this.formData[input.name] = (input.value || '').trim();
+        });
+    }
+
+    updateProgressBar() {
+        const progress = ((this.currentQuestion + 1) / this.totalQuestions) * 100;
+        const progressFill = document.querySelector('.progress-fill');
+        const currentQuestionText = document.querySelector('.current-question');
+        const totalQuestionText = document.querySelector('.total-questions');
+
+        if (progressFill) progressFill.style.width = `${progress}%`;
+        if (currentQuestionText) currentQuestionText.textContent = String(this.currentQuestion + 1);
+        if (totalQuestionText) totalQuestionText.textContent = String(this.totalQuestions);
+    }
+
+    updateNavigationButtons() {
+        this.backButton.disabled = this.currentQuestion === 0;
+
+        if (this.currentQuestion === this.totalQuestions - 1) {
+            this.nextButton.style.display = 'none';
+            this.submitButton.style.display = 'block';
+        } else {
+            this.nextButton.style.display = 'block';
+            this.submitButton.style.display = 'none';
+        }
     }
 
     showError(message) {
         this.errorDisplay.textContent = message;
+        this.errorDisplay.style.opacity = '1';
     }
 
     clearError() {
         this.errorDisplay.textContent = '';
-    }
-
-    setSubmittingState(isSubmitting) {
-        this.isSubmitting = isSubmitting;
-        this.submitButton.disabled = isSubmitting;
-        this.submitButton.textContent = isSubmitting
-            ? 'Submitting...'
-            : 'Submit And Continue To Booking';
+        this.errorDisplay.style.opacity = '0';
     }
 
     async handleSubmit(event) {
-        event.preventDefault();
+        if (event) event.preventDefault();
         if (this.isSubmitting) return;
 
-        const formData = new FormData(this.form);
-
-        if ((formData.get('website') || '').toString().trim()) {
-            this.showSuccess({ your_name: formData.get('your_name') || '', work_email: formData.get('work_email') || '' });
+        if (!this.validateCurrentQuestion()) {
+            this.showError('Please fill in this field');
             return;
         }
 
-        const validation = this.validateForm(formData);
-        if (!validation.valid) {
-            this.showError(validation.error);
+        this.saveCurrentQuestion();
+
+        const honeypot = this.form.querySelector('input[name="website"]');
+        if (honeypot && honeypot.value.trim()) {
+            this.showSuccess({ your_name: this.formData.your_name || '', work_email: this.formData.work_email || '' });
             return;
         }
 
         this.clearError();
         this.setSubmittingState(true);
 
+        const countryCode = (this.formData.phone_country_code || '').trim();
+        const localPhone = (this.formData.phone_number || '').trim();
+
         const payload = {
-            business_name: String(formData.get('business_name') || '').trim(),
-            your_name: String(formData.get('your_name') || '').trim(),
-            work_email: String(formData.get('work_email') || '').trim(),
-            phone_country_code: String(formData.get('phone_country_code') || '').trim(),
-            phone_number: `${String(formData.get('phone_country_code') || '').trim()} ${String(formData.get('phone_number') || '').trim()}`.trim(),
-            business_location: String(formData.get('business_location') || '').trim(),
-            service_interest: String(formData.get('service_interest') || '').trim(),
-            problems_facing: String(formData.get('problems_facing') || '').trim(),
+            business_name: (this.formData.business_name || '').trim(),
+            your_name: (this.formData.your_name || '').trim(),
+            work_email: (this.formData.work_email || '').trim(),
+            phone_country_code: countryCode,
+            phone_number: `${countryCode} ${localPhone}`.trim(),
+            business_location: (this.formData.business_location || '').trim(),
+            service_interest: (this.formData.service_interest || '').trim(),
+            problems_facing: (this.formData.problems_facing || '').trim(),
             submission_date: new Date().toISOString(),
             page_url: window.location.href
         };
@@ -116,6 +214,14 @@ class GeneralConsultationForm {
             this.showError('Unable to submit right now. Please try again in a moment.');
             this.setSubmittingState(false);
         }
+    }
+
+    setSubmittingState(isSubmitting) {
+        this.isSubmitting = isSubmitting;
+        this.submitButton.disabled = isSubmitting;
+        this.submitButton.innerHTML = isSubmitting
+            ? '<span class="loading-spinner"></span>Submitting...'
+            : 'Submit And Continue To Booking';
     }
 
     showSuccess(payload) {
