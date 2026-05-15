@@ -2,6 +2,18 @@
   "version": 2,
   "routes": [
     {
+      "src": "/templates/interior/assets/(.*)",
+      "dest": "/templates/interior/dist/assets/$1"
+    },
+    {
+      "src": "/templates/interior$",
+      "dest": "/templates/interior/dist/index.html"
+    },
+    {
+      "src": "/templates/interior/(.*)",
+      "dest": "/templates/interior/dist/index.html"
+    },
+    {
       "src": "/cosmetic-clinic",
       "dest": "/cosmetic-clinic/index.html"
     }

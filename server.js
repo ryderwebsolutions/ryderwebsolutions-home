@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
@@ -9,7 +10,12 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
+app.use('/templates/interior', express.static(path.join(__dirname, 'templates/interior/dist')));
 app.use(express.static(__dirname));
+
+app.get(['/templates/interior', '/templates/interior/*'], (req, res) => {
+    res.sendFile(path.join(__dirname, 'templates/interior/dist/index.html'));
+});
 
 // Email configuration
 const createEmailTransporter = () => {
@@ -49,6 +55,14 @@ const createEmailTransporter = () => {
             pass: process.env.SMTP_PASSWORD
         }
     });
+};
+
+const sendEmail = async (transporter, mailOptions) => {
+    if (process.env.EMAIL_SERVICE === 'resend') {
+        return transporter.send(mailOptions);
+    }
+
+    return transporter.sendMail(mailOptions);
 };
 
 // Validate required fields
@@ -129,6 +143,55 @@ const formatEmailBody = (data) => {
     `;
 };
 
+const validateInteriorContactData = (data) => {
+    const requiredFields = ['name', 'email', 'service', 'message'];
+
+    for (const field of requiredFields) {
+        if (!data[field] || !String(data[field]).trim()) {
+            return {
+                valid: false,
+                error: `Missing required field: ${field}`
+            };
+        }
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(data.email)) {
+        return {
+            valid: false,
+            error: 'Invalid email format'
+        };
+    }
+
+    return { valid: true };
+};
+
+const formatInteriorContactEmailBody = (data) => {
+    return `
+    <h2>New Ceire Dunne Interiors Inquiry</h2>
+
+    <h3>Contact Details</h3>
+    <ul>
+        <li><strong>Name:</strong> ${escapeHtml(data.name)}</li>
+        <li><strong>Email:</strong> ${escapeHtml(data.email)}</li>
+        <li><strong>Service:</strong> ${escapeHtml(data.service)}</li>
+    </ul>
+
+    <h3>Project Notes</h3>
+    <p>${escapeHtml(data.message).replace(/\n/g, '<br />')}</p>
+
+    <h3>Submission Details</h3>
+    <ul>
+        <li><strong>Date:</strong> ${new Date().toLocaleString()}</li>
+        <li><strong>Page URL:</strong> ${escapeHtml(data.page_url || '')}</li>
+    </ul>
+
+    <p style="font-size: 12px; color: #666; margin-top: 30px;">
+        This inquiry was sent from the Ceire Dunne Interiors website.
+    </p>
+    `;
+};
+
 // Escape HTML to prevent injection
 const escapeHtml = (text) => {
     if (!text) return '';
@@ -175,12 +238,7 @@ app.post('/api/cosmetic-clinic-assessment', async (req, res) => {
         };
         
         // Send email
-        let emailResult;
-        if (process.env.EMAIL_SERVICE === 'resend') {
-            emailResult = await transporter.send(mailOptions);
-        } else {
-            emailResult = await transporter.sendMail(mailOptions);
-        }
+        await sendEmail(transporter, mailOptions);
         
         console.log('Email sent successfully:', {
             clinic: req.body.clinic_name,
@@ -200,6 +258,54 @@ app.post('/api/cosmetic-clinic-assessment', async (req, res) => {
         return res.status(500).json({
             success: false,
             error: 'Unable to process submission. Please try again later.'
+        });
+    }
+});
+
+app.post('/api/interior-contact', async (req, res) => {
+    try {
+        const validation = validateInteriorContactData(req.body);
+        if (!validation.valid) {
+            return res.status(400).json({
+                success: false,
+                error: validation.error
+            });
+        }
+
+        if (req.body.website) {
+            console.warn('Interior contact honeypot triggered');
+            return res.status(200).json({ success: true });
+        }
+
+        const transporter = createEmailTransporter();
+        const emailBody = formatInteriorContactEmailBody(req.body);
+        const mailOptions = {
+            from: process.env.EMAIL_FROM || 'forms@ryderwebsolutions.com',
+            to: process.env.INTERIOR_FORM_RECIPIENT_EMAIL || 'ceiredunneinteriors@gmail.com',
+            subject: `New Interior Inquiry: ${req.body.service}`,
+            html: emailBody,
+            replyTo: req.body.email
+        };
+
+        await sendEmail(transporter, mailOptions);
+
+        console.log('Interior inquiry sent successfully:', {
+            name: req.body.name,
+            email: req.body.email,
+            service: req.body.service,
+            timestamp: new Date().toISOString()
+        });
+
+        return res.status(200).json({
+            success: true,
+            message: 'Inquiry received. We will be in touch shortly.'
+        });
+    } catch (error) {
+        console.error('Interior contact submission error:', error);
+
+        return res.status(500).json({
+            success: false,
+            error: 'Unable to send your inquiry right now. Please try again later.'
         });
     }
 });

@@ -1,8 +1,54 @@
+import { useState } from "react";
 import SectionHeading from "../components/SectionHeading";
 
 function ContactPage() {
-  const handleSubmit = (event) => {
+  const [status, setStatus] = useState({ type: "idle", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      service: formData.get("service"),
+      message: formData.get("message"),
+      website: formData.get("website"),
+      page_url: window.location.href,
+    };
+
+    setIsSubmitting(true);
+    setStatus({ type: "idle", message: "" });
+
+    try {
+      const response = await fetch("/api/interior-contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Unable to send your inquiry.");
+      }
+
+      event.currentTarget.reset();
+      setStatus({
+        type: "success",
+        message: result.message || "Inquiry received. We will be in touch shortly.",
+      });
+    } catch (error) {
+      setStatus({
+        type: "error",
+        message: error.message || "Unable to send your inquiry right now.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -41,6 +87,8 @@ function ContactPage() {
           <p className="mt-2 text-charcoal/75">Tell us about your home and what support you need.</p>
 
           <div className="mt-6 grid gap-5">
+            <input type="text" name="website" className="hidden" tabIndex="-1" autoComplete="off" />
+
             <label className="text-sm font-medium text-charcoal">
               Full Name
               <input
@@ -94,11 +142,23 @@ function ContactPage() {
             </label>
           </div>
 
+          {status.type !== "idle" ? (
+            <p
+              className={`mt-5 text-sm ${
+                status.type === "success" ? "text-green-700" : "text-red-700"
+              }`}
+              role="status"
+            >
+              {status.message}
+            </p>
+          ) : null}
+
           <button
             type="submit"
+            disabled={isSubmitting}
             className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-dusty px-6 py-3 text-sm font-medium tracking-wide text-white transition duration-300 hover:-translate-y-0.5 hover:bg-lavender hover:shadow-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dusty"
           >
-            Send Inquiry
+            {isSubmitting ? "Sending..." : "Send Inquiry"}
           </button>
         </form>
       </section>
