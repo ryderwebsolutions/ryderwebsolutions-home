@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
+const generalAssessmentHandler = require('./api/general-assessment');
 require('dotenv').config();
 
 const app = express();
@@ -203,6 +204,11 @@ app.post('/api/cosmetic-clinic-assessment', async (req, res) => {
     }
 });
 
+// API Route: General Consultation Assessment
+app.post('/api/general-assessment', (req, res) => {
+    return generalAssessmentHandler(req, res);
+});
+
 // Health check endpoint
 app.get('/api/health', (req, res) => {
     res.status(200).json({
@@ -215,9 +221,17 @@ app.get('/api/health', (req, res) => {
 // Serve static files for cosmetic clinic
 app.use('/cosmetic-clinic', express.static(__dirname + '/cosmetic-clinic'));
 
+// Serve static files for general consultation page
+app.use('/general-consultation', express.static(__dirname + '/general-consultation'));
+
 // Serve cosmetic clinic index
 app.get('/cosmetic-clinic/', (req, res) => {
     res.sendFile(__dirname + '/cosmetic-clinic/index.html');
+});
+
+// Serve general consultation index
+app.get('/general-consultation/', (req, res) => {
+    res.sendFile(__dirname + '/general-consultation/index.html');
 });
 
 // Error handling middleware

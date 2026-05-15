@@ -38,19 +38,19 @@
                         <!-- Question 1: Clinic Name -->
                         <div class="form-question active" data-question="1">
                             <label for="clinic-name">What's the name of your clinic?</label>
-                            <input type="text" id="clinic-name" name="clinic_name" placeholder="Enter clinic name" required>
+                            <input type="text" id="clinic-name" name="clinic_name" placeholder="Enter clinic name" autocomplete="organization" required>
                         </div>
 
                         <!-- Question 2: Your Name -->
                         <div class="form-question" data-question="2">
                             <label for="your-name">Your full name</label>
-                            <input type="text" id="your-name" name="your_name" placeholder="Enter your name" required>
+                            <input type="text" id="your-name" name="your_name" placeholder="Enter your name" autocomplete="name" required>
                         </div>
 
                         <!-- Question 3: Work Email -->
                         <div class="form-question" data-question="3">
                             <label for="work-email">Work email address</label>
-                            <input type="email" id="work-email" name="work_email" placeholder="Enter your email" required>
+                            <input type="email" id="work-email" name="work_email" placeholder="Enter your email" autocomplete="email" required>
                         </div>
 
                         <!-- Question 4: Phone Number -->
@@ -69,14 +69,14 @@
                                     <option value="+39">Italy (+39)</option>
                                     <option value="+31">Netherlands (+31)</option>
                                 </select>
-                                <input type="tel" id="phone-number" name="phone_number" placeholder="Enter phone number" required>
+                                <input type="tel" id="phone-number" name="phone_number" placeholder="Enter phone number" autocomplete="tel-national" inputmode="tel" required>
                             </div>
                         </div>
 
                         <!-- Question 5: Clinic Location -->
                         <div class="form-question" data-question="5">
                             <label for="clinic-location">Where is your clinic located?</label>
-                            <input type="text" id="clinic-location" name="clinic_location" placeholder="City, Country" required>
+                            <input type="text" id="clinic-location" name="clinic_location" placeholder="City, Country" autocomplete="address-level2" required>
                         </div>
 
                         <!-- Question 6: Business Type -->

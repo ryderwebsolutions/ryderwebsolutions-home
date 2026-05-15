@@ -19,7 +19,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header class="header">
     <div class="container header__inner">
@@ -28,16 +29,17 @@
         <span>Ryder Web Solutions</span>
       </a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="#how-it-works">How It Works</a>
-        <a href="#client-campaigns">Campaigns</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn btn--nav" href="https://wa.me/353838641426">WhatsApp Us</a>
+        <a href="#top">Home</a>
+        <a href="services/">What We Do</a>
+        <a href="what-weve-done/">What We've Done</a>
+        <a href="about/">How We Do It</a>
+        <a href="contact/">Contact</a>
+        <a class="btn btn--nav" href="general-consultation/">Book your free strategy call now</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
+  <main id="main-content">
 
     <!-- HERO -->
     <section class="hero">
@@ -50,18 +52,18 @@
             <em>on repeat.</em>
           </h1>
           <p class="hero__sub">
-            Ryder Web Solutions builds sharp, conversion-focused websites for trades, wellness, and health businesses across Dublin, designed to turn attention into qualified enquiries instead of wasted clicks.
+            We build conversion-focused websites and lead systems for local businesses that want more qualified enquiries and more booked calls.
           </p>
           <div class="hero__cta">
-            <a class="btn" href="#contact">Book a Free Strategy Chat</a>
-            <a class="btn btn--outline" href="#client-campaigns">See Client Results</a>
+            <a class="btn" href="general-consultation/">Book your free strategy call</a>
+            <a class="btn btn--outline" href="what-weve-done/">See What We've Done</a>
           </div>
           <div class="hero__meta">
-            <span>Plans from €100/month</span>
+            <span>Fast, focused strategy call</span>
             <span class="dot">·</span>
-            <span>No signing fee</span>
+            <span>Clear next steps</span>
             <span class="dot">·</span>
-            <span>Built for local lead gen</span>
+            <span>No pressure</span>
           </div>
         </div>
 
@@ -108,24 +110,10 @@
       </div>
     </section>
 
-    <!-- CLIENT STRIP -->
-    <div class="client-strip">
-      <div class="container">
-        <p class="client-strip__label">Public Dublin businesses used for benchmark modeling</p>
-        <div class="client-strip__list">
-          <span>PhysioCare Ireland</span>
-          <span class="client-strip__sep">—</span>
-          <span>SPARC</span>
-          <span class="client-strip__sep">—</span>
-          <span>Dublin Plumber 24hrs</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- HOW IT WORKS -->
+    <!-- HOW WE DO IT -->
     <section id="how-it-works" class="section">
       <div class="container">
-        <p class="eyebrow">How It Works</p>
+        <p class="eyebrow">How We Do It</p>
         <h2>The three systems that turn a website into pipeline</h2>
         <div class="steps">
           <div class="step reveal">
@@ -147,321 +135,12 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section id="clients" class="section section--tinted">
-      <div class="container">
-        <p class="eyebrow">Client Results</p>
-        <h2>Benchmark profiles for the same Dublin businesses</h2>
-        <p class="testimonials__intro">These are planning profiles (not direct testimonials) showing how each business model can improve enquiry quality and booking outcomes with stronger conversion flow.</p>
-
-        <div class="testimonials">
-
-          <article class="testimonial reveal">
-            <div class="testimonial__topline">
-              <p class="testimonial__sector">Physiotherapy</p>
-              <span class="testimonial__result">Assessment booking focus</span>
-            </div>
-            <blockquote class="testimonial__quote">
-              PhysioCare Ireland benchmark profile: improve intent-led landing pages and simplify the booking path so more treatment enquiries become scheduled assessments.
-            </blockquote>
-            <div class="testimonial__metrics">
-              <p><span>Priority metric</span><strong>Booked assessments</strong></p>
-              <p><span>Primary channel</span><strong>Organic + local search</strong></p>
-            </div>
-            <footer class="testimonial__footer">
-              <div class="testimonial__avatar">PC</div>
-              <div>
-                <p class="testimonial__name">PhysioCare Ireland</p>
-                <p class="testimonial__biz">physio.ie · Dublin</p>
-              </div>
-            </footer>
-          </article>
-
-          <article class="testimonial reveal">
-            <div class="testimonial__topline">
-              <p class="testimonial__sector">Sports Therapy</p>
-              <span class="testimonial__result">Consultation growth focus</span>
-            </div>
-            <blockquote class="testimonial__quote">
-              SPARC benchmark profile: tighten service-page hierarchy, clarify treatment pathways, and reduce friction from first click to consultation booking.
-            </blockquote>
-            <div class="testimonial__metrics">
-              <p><span>Priority metric</span><strong>New consultations</strong></p>
-              <p><span>Primary channel</span><strong>Local + branded search</strong></p>
-            </div>
-            <footer class="testimonial__footer">
-              <div class="testimonial__avatar">SP</div>
-              <div>
-                <p class="testimonial__name">SPARC</p>
-                <p class="testimonial__biz">sparc.ie · South Dublin clinics</p>
-              </div>
-            </footer>
-          </article>
-
-          <article class="testimonial reveal">
-            <div class="testimonial__topline">
-              <p class="testimonial__sector">Emergency Plumbing</p>
-              <span class="testimonial__result">Service appointment focus</span>
-            </div>
-            <blockquote class="testimonial__quote">
-              Dublin Plumber 24hrs benchmark profile: optimize emergency-intent messaging and call-first pathways to convert high urgency traffic into booked jobs.
-            </blockquote>
-            <div class="testimonial__metrics">
-              <p><span>Priority metric</span><strong>Qualified callouts</strong></p>
-              <p><span>Primary channel</span><strong>High-intent search</strong></p>
-            </div>
-            <footer class="testimonial__footer">
-              <div class="testimonial__avatar">DP</div>
-              <div>
-                <p class="testimonial__name">Dublin Plumber 24hrs</p>
-                <p class="testimonial__biz">dublinplumber24hrs.ie · Rathfarnham, Dublin</p>
-              </div>
-            </footer>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section id="pricing" class="section reveal">
-      <div class="container">
-        <p class="eyebrow">Pricing</p>
-        <h2>Start with the foundation. Scale with intent.</h2>
-        <p class="pricing-intro">Begin with a strong conversion foundation, then layer in acquisition and follow-up systems once the website is doing its job properly.</p>
-        <div class="pricing-grid">
-
-          <article class="pricing-card pricing-card--featured">
-            <p class="plan-name">Website Foundation</p>
-            <div class="plan-price">
-              <span class="price-amount">€100</span>
-              <span class="price-period">/ month</span>
-            </div>
-            <p class="plan-note">No signing fee. Cancel with 30 days notice.</p>
-            <ul class="feature-list">
-              <li>Conversion-focused design and copy</li>
-              <li>Mobile-first, fast loading</li>
-              <li>Hosting and SSL included</li>
-              <li>Minor monthly updates included</li>
-              <li>Clear enquiry pathways and CTAs</li>
-            </ul>
-            <a class="btn btn--full" href="#contact">Start My Website</a>
-          </article>
-
-          <article class="pricing-card">
-            <p class="plan-name">Growth Engine</p>
-            <p class="plan-price-custom">Custom pricing</p>
-            <p class="plan-note">Scoped to your niche, market size, and growth target. Delivered with SnipeLead partnership.</p>
-            <ul class="feature-list">
-              <li>Everything in Website Foundation</li>
-              <li>Lead handling automation</li>
-              <li>Automated follow-up sequences</li>
-              <li>Appointment pipeline support</li>
-              <li>Drop-off analysis and refinement</li>
-            </ul>
-            <a class="btn btn--outline btn--full" href="#contact">Request Growth Scope</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section id="process" class="section section--tinted reveal">
-      <div class="container process-wrap">
-        <div class="process-intro">
-          <p class="eyebrow">The Process</p>
-          <h2>From strategy call to working pipeline</h2>
-          <p class="process-intro__copy">Every stage is built to reduce guesswork, improve conversion quality, and give you a clearer path from traffic to booked work.</p>
-        </div>
-        <ol class="process-list">
-          <li class="process-step">
-            <span class="process-step__num">01</span>
-            <div>
-              <h3>Business Deep Dive</h3>
-              <p>We map your offer, who you're trying to reach, and what's stopping them from contacting you.</p>
-            </div>
-          </li>
-          <li class="process-step">
-            <span class="process-step__num">02</span>
-            <div>
-              <h3>Website and Funnel Build</h3>
-              <p>Your site and lead pathways are built around one clear conversion objective.</p>
-            </div>
-          </li>
-          <li class="process-step">
-            <span class="process-step__num">03</span>
-            <div>
-              <h3>Launch and Routing</h3>
-              <p>Traffic, forms, and follow-up go live with tracking in place from day one.</p>
-            </div>
-          </li>
-          <li class="process-step">
-            <span class="process-step__num">04</span>
-            <div>
-              <h3>Refine and Improve</h3>
-              <p>We review what's working and sharpen messaging, handling, and conversion quality based on real lead behaviour.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- DEMO -->
-    <section id="demo" class="section reveal">
-      <div class="container demo-wrap">
-        <div class="demo-copy">
-          <p class="eyebrow">Live Example</p>
-          <h2>See how a local service site is structured to convert</h2>
-          <p>A live build example showing how Ryder Web Solutions shapes layout, offer flow, and contact friction around booked work rather than passive browsing.</p>
-          <div class="demo-actions">
-            <a class="btn btn--outline" href="templates/Wellness/massage/">Open Demo</a>
-            <a class="btn" href="#contact">Request Your Build</a>
-          </div>
-        </div>
-        <div class="demo-visual">
-          <img src="Screenshot 2026-05-08 140520.png" alt="Preview of a website contact section" />
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section section--tinted reveal">
-      <div class="container faq-wrap">
-        <div class="faq-intro">
-          <p class="eyebrow">FAQ</p>
-          <h2>Questions that usually come up first</h2>
-        </div>
-        <div class="faq-list">
-
-          <article class="faq-item">
-            <button class="faq-trigger" type="button" aria-expanded="false">
-              Do you only work with trades?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-panel">
-              <p>No. We work across all business types where qualified pipeline and conversion clarity matter — trades, wellness, health, and beyond.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-trigger" type="button" aria-expanded="false">
-              Can I start with just the website?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-panel">
-              <p>Yes. Most clients start on the website foundation plan and add growth systems when they're ready to scale.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-trigger" type="button" aria-expanded="false">
-              How does the SnipeLead partnership work?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-panel">
-              <p>Ryder handles the web and conversion foundation. SnipeLead supports advanced lead system execution for growth clients where required.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-trigger" type="button" aria-expanded="false">
-              How fast can we start?
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-panel">
-              <p>After your strategy call, we can usually begin planning immediately and move into build the same week.</p>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CLIENT CAMPAIGNS -->
-    <section id="client-campaigns" class="section dark-results reveal">
-      <div class="container">
-        <div class="dark-results__intro">
-          <div>
-            <p class="dark-results__eyebrow">Client Results</p>
-            <h2 class="dark-results__title">Dublin campaign benchmarks by business type</h2>
-            <p class="dark-results__subheading">Public-facing benchmark models for three Dublin businesses, showing realistic lead and booking ranges based on local service demand patterns.</p>
-          </div>
-          <div class="dark-results__summary" aria-label="Campaign summary">
-            <p><strong>38-112</strong><span>Monthly enquiry benchmark range</span></p>
-            <p><strong>EUR52K-EUR154K</strong><span>Pipeline benchmark range across models</span></p>
-          </div>
-        </div>
-
-        <div class="campaign-grid">
-          <article class="campaign-card">
-            <div class="campaign-card__topline">
-              <p class="campaign-card__type">PhysioCare Ireland (physio.ie) · Dublin</p>
-              <span class="campaign-card__badge">Booked appointment focus</span>
-            </div>
-            <h3 class="campaign-card__headline">18-30 Monthly Treatment Enquiries (Benchmark)</h3>
-            <p class="campaign-card__timeline">Timeline: 28 Days</p>
-            <div class="campaign-kpis">
-              <p><span>Projected Leads</span><strong>18-30</strong></p>
-              <p><span>Cost Per Lead Range</span><strong>EUR38-EUR55</strong></p>
-              <p><span>Projected Booked Assessments</span><strong>8-14</strong></p>
-              <p><span>Treatment Pipeline Range</span><strong>EUR24K-EUR42K</strong></p>
-            </div>
-            <div class="campaign-chart" aria-hidden="true">
-              <svg viewBox="0 0 320 96" preserveAspectRatio="none" role="presentation">
-                <polyline points="0,82 58,72 118,58 190,36 255,24 320,10"></polyline>
-                <circle cx="320" cy="10" r="4"></circle>
-              </svg>
-            </div>
-            <p class="campaign-card__footnote">Landing page rebuild, local intent messaging, and speed-to-lead follow-up.</p>
-          </article>
-
-          <article class="campaign-card">
-            <div class="campaign-card__topline">
-              <p class="campaign-card__type">SPARC (sparc.ie) · Sandyford / Rathfarnham</p>
-              <span class="campaign-card__badge">Consultation growth</span>
-            </div>
-            <h3 class="campaign-card__headline">26-44 Monthly New Patient Enquiries (Benchmark)</h3>
-            <p class="campaign-card__timeline">Timeline: 30 Days</p>
-            <div class="campaign-kpis">
-              <p><span>Projected Leads</span><strong>26-44</strong></p>
-              <p><span>Projected Booked Consultations</span><strong>12-22</strong></p>
-              <p><span>Projected Returning Clients</span><strong>7-14</strong></p>
-              <p><span>Revenue Pipeline Range</span><strong>EUR36K-EUR74K</strong></p>
-            </div>
-            <div class="campaign-chart" aria-hidden="true">
-              <svg viewBox="0 0 320 96" preserveAspectRatio="none" role="presentation">
-                <polyline points="0,84 56,77 122,60 184,44 248,22 320,8"></polyline>
-                <circle cx="320" cy="8" r="4"></circle>
-              </svg>
-            </div>
-            <p class="campaign-card__footnote">Offer reframing, consultation-first CTA flow, and tighter retargeting intent.</p>
-          </article>
-
-          <article class="campaign-card">
-            <div class="campaign-card__topline">
-              <p class="campaign-card__type">Dublin Plumber 24hrs (dublinplumber24hrs.ie)</p>
-              <span class="campaign-card__badge">Service call demand</span>
-            </div>
-            <h3 class="campaign-card__headline">34-52 Qualified Service Appointments (Benchmark)</h3>
-            <p class="campaign-card__timeline">Timeline: 21 Days</p>
-            <div class="campaign-kpis">
-              <p><span>Projected Leads</span><strong>34-52</strong></p>
-              <p><span>Show Rate Range</span><strong>74%-84%</strong></p>
-              <p><span>Projected Closed Jobs</span><strong>14-24</strong></p>
-              <p><span>Revenue Range</span><strong>EUR28K-EUR52K</strong></p>
-            </div>
-            <div class="campaign-chart" aria-hidden="true">
-              <svg viewBox="0 0 320 96" preserveAspectRatio="none" role="presentation">
-                <polyline points="0,86 48,69 112,55 176,33 244,19 320,12"></polyline>
-                <circle cx="320" cy="12" r="4"></circle>
-              </svg>
-            </div>
-            <p class="campaign-card__footnote">Emergency-service positioning, tighter locality signals, and rapid-response conversion flow.</p>
-          </article>
-        </div>
-
-        <p class="dark-results__disclaimer">Business names are public websites supplied by you. Metrics shown are planning benchmarks and directional ranges, not audited client performance or guaranteed outcomes.</p>
+    <section class="section section--tinted reveal">
+      <div class="container dark-cta__inner">
+        <p class="dark-cta__eyebrow">What We've Done</p>
+        <h2>See campaign benchmarks by business type</h2>
+        <p>View our standalone What We've Done page for benchmark campaign models, projected lead ranges, and conversion-focused positioning examples.</p>
+        <a class="dark-cta__button" href="what-weve-done/">Open What We've Done</a>
       </div>
     </section>
 
@@ -474,61 +153,8 @@
           Imagine having a steady stream of qualified local enquiries coming in consistently without relying entirely on referrals or inconsistent outreach.
           We build systems that help local service businesses generate demand, capture leads, and turn interest into real bookings.
         </p>
-        <a class="dark-cta__button" href="#contact">Book Your Strategy Call</a>
+        <a class="dark-cta__button" href="general-consultation/">Book your free strategy call</a>
         <p class="dark-cta__note">Built for local service businesses that need more predictable pipeline, not more guesswork.</p>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section reveal">
-      <div class="container contact-wrap">
-        <div class="contact-intro">
-          <p class="eyebrow">Get In Touch</p>
-          <h2>Tell me where you are and where you want to be.</h2>
-          <p>You'll get a practical next-step plan — no sales pitch, no obligation.</p>
-          <div class="contact-direct">
-            <p><strong>Phone:</strong> <a href="tel:+353838641426">083 864 1426</a></p>
-            <p><strong>Email:</strong> <a href="mailto:dylan@ryderwebsolutions.com">dylan@ryderwebsolutions.com</a></p>
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/353838641426">Chat on WhatsApp</a></p>
-          </div>
-        </div>
-
-        <form class="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
-          <!-- Replace YOUR_FORM_ID with the ID from your Formspree dashboard -->
-          <input type="hidden" name="_subject" value="New enquiry from Ryder Web Solutions" />
-          <input type="hidden" name="_next" value="https://ryderwebsolutions.com/thank-you.html" />
-          <label>
-            Name
-            <input name="name" required placeholder="Your name" />
-          </label>
-          <label>
-            Business name
-            <input name="business" required placeholder="Your business" />
-          </label>
-          <label>
-            Service needed
-            <select name="service_needed" required>
-              <option value="">Choose one</option>
-              <option>Website foundation</option>
-              <option>Growth systems</option>
-              <option>Both</option>
-            </select>
-          </label>
-          <label>
-            Phone
-            <input name="phone" required placeholder="+353 ..." />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" required placeholder="you@business.com" />
-          </label>
-          <label>
-            What are you trying to improve?
-            <textarea name="message" rows="4" required placeholder="Current situation, goals, any bottlenecks."></textarea>
-          </label>
-          <button class="btn btn--full" type="submit">Send Request</button>
-          <p class="form-note">Prefer direct contact? Phone, email, or WhatsApp works just as well.</p>
-        </form>
       </div>
     </section>
 
@@ -538,23 +164,22 @@
     <div class="container footer__inner">
       <p>© <span id="year"></span> Ryder Web Solutions · Dublin, Ireland</p>
       <p><a href="mailto:dylan@ryderwebsolutions.com">dylan@ryderwebsolutions.com</a></p>
+      <p class="footer-links"><a href="#top" class="is-active" aria-current="page">Home</a> · <a href="services/">What We Do</a> · <a href="what-weve-done/">What We've Done</a> · <a href="about/">How We Do It</a> · <a href="contact/">Contact</a></p>
     </div>
   </footer>
 
   <div class="sticky-bar">
-    <p>Ready to get more from your website?</p>
-    <a class="btn btn--sticky" href="#contact">Book Strategy Chat</a>
+    <p>Ready to book your strategy call?</p>
+    <a class="sticky-link" href="#top">Home</a>
+    <a class="sticky-link" href="services/">What We Do</a>
+    <a class="sticky-link" href="what-weve-done/">What We've Done</a>
+    <a class="sticky-link" href="about/">How We Do It</a>
+    <a class="sticky-link" href="contact/">Contact</a>
+    <a class="btn btn--sticky" href="general-consultation/">Book your free strategy call</a>
   </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    document.querySelectorAll('.faq-trigger').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const open = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', open ? 'false' : 'true');
-      });
-    });
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((e) => {

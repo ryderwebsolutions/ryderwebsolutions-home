@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a strategy consultation with Ryder Web Solutions. Tell us your goals and challenges, then choose your call time.">
+    <meta name="theme-color" content="#050608">
+    <title>Strategy Consultation | Ryder Web Solutions</title>
+
+    <link rel="stylesheet" href="general-consultation.css">
+    <script src="general-consultation.js" defer></script>
+</head>
+<body>
+    <div class="page-container">
+        <section class="form-section" id="form-section">
+            <div class="section-content">
+                <div class="section-header">
+                    <h1>Book Your Strategy Consultation</h1>
+                    <p>Share your details in under 2 minutes, then book your call instantly.</p>
+                </div>
+
+                <div class="form-container">
+                    <form id="assessment-form" class="assessment-form">
+                        <input type="text" name="website" class="honeypot" style="display: none;" tabindex="-1" autocomplete="off">
+
+                        <div class="form-group">
+                            <label for="business-name">Business name</label>
+                            <input type="text" id="business-name" name="business_name" placeholder="Enter business name" autocomplete="organization" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="your-name">Your full name</label>
+                            <input type="text" id="your-name" name="your_name" placeholder="Enter your name" autocomplete="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="work-email">Work email address</label>
+                            <input type="email" id="work-email" name="work_email" placeholder="Enter your email" autocomplete="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone-number">Best phone number</label>
+                            <div class="phone-input-group">
+                                <select id="phone-country-code" name="phone_country_code" required>
+                                    <option value="+353" selected>Ireland (+353)</option>
+                                    <option value="+44">UK (+44)</option>
+                                    <option value="+1">US/Canada (+1)</option>
+                                    <option value="+61">Australia (+61)</option>
+                                    <option value="+971">UAE (+971)</option>
+                                    <option value="+49">Germany (+49)</option>
+                                    <option value="+33">France (+33)</option>
+                                    <option value="+34">Spain (+34)</option>
+                                    <option value="+39">Italy (+39)</option>
+                                    <option value="+31">Netherlands (+31)</option>
+                                </select>
+                                <input type="tel" id="phone-number" name="phone_number" placeholder="Enter phone number" autocomplete="tel-national" inputmode="tel" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="business-location">Business location</label>
+                            <input type="text" id="business-location" name="business_location" placeholder="City, Country" autocomplete="address-level2" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service-interest">What are you looking for?</label>
+                            <select id="service-interest" name="service_interest" required>
+                                <option value="" selected disabled>Select one option</option>
+                                <option value="Digital transformation">Digital transformation</option>
+                                <option value="Marketing campaign">Marketing campaign</option>
+                                <option value="Booking systems">Booking systems</option>
+                                <option value="Custom software">Custom software</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="problems-facing">What problems are you facing? (optional)</label>
+                            <textarea id="problems-facing" name="problems_facing" rows="4" placeholder="Share the main blockers or pain points you want to fix"></textarea>
+                        </div>
+
+                        <button type="submit" class="cta-button" id="submit-button">Submit And Continue To Booking</button>
+                        <div class="form-error" id="form-error" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="success-section" id="success-section" style="display: none;">
+            <div class="section-content">
+                <div class="success-content">
+                    <div class="success-icon">✓</div>
+                    <h2>Thanks. Your details are in.</h2>
+                    <p>Choose your preferred time below to confirm your consultation.</p>
+
+                    <div class="success-divider"></div>
+
+                    <h3>Next step: Book your call</h3>
+                    <p class="success-subtext">Pick a time that suits you and lock it in.</p>
+
+                    <div id="calendly-container"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://assets.calendly.com/assets/external/widget.js" defer></script>
+</body>
+</html>

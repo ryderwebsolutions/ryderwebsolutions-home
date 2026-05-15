@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Ryder Web Solutions</title>
+  <meta name="description" content="Contact Ryder Web Solutions on WhatsApp, Facebook, or Instagram, or book your free strategy call." />
+  <meta name="theme-color" content="#050608" />
+  <link rel="icon" type="image/png" href="../assets/Ryderweb%20Logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html#top">
+        <img src="../assets/Ryderweb%20Logo.png" alt="Ryder Web Solutions" class="brand__logo" />
+        <span>Ryder Web Solutions</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../index.html#top">Home</a>
+        <a href="../services/">What We Do</a>
+        <a href="../what-weve-done/">What We've Done</a>
+        <a href="../about/">How We Do It</a>
+        <a href="../contact/" class="is-active" aria-current="page">Contact</a>
+        <a class="btn btn--nav" href="../general-consultation/">Book your free strategy call now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section about-hero">
+      <div class="container about-hero__wrap">
+        <p class="eyebrow">Contact</p>
+        <h1>Choose the channel that suits you best.</h1>
+        <p>Reach out directly on social platforms or jump straight to booking your free strategy call.</p>
+      </div>
+    </section>
+
+    <section class="section section--tinted reveal">
+      <div class="container social-connect social-connect--contact">
+        <div class="social-connect__intro">
+          <p class="eyebrow">Direct Channels</p>
+          <h2>Talk to Ryder Web Solutions</h2>
+          <p>For quick questions, use WhatsApp or social. For deeper planning, book the strategy call and we will map your next steps properly.</p>
+        </div>
+        <div class="social-connect__cards">
+          <a class="social-card" href="https://wa.me/353838641426">
+            <span class="social-card__label">WhatsApp</span>
+            <strong>0838641426</strong>
+          </a>
+          <a class="social-card" href="https://www.facebook.com/profile.php?id=61589480671566">
+            <span class="social-card__label">Facebook</span>
+            <strong>facebook.com/profile.php?id=61589480671566</strong>
+          </a>
+          <a class="social-card" href="https://www.instagram.com/ryderwebsolutions/">
+            <span class="social-card__label">Instagram</span>
+            <strong>@ryderwebsolutions</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-cta reveal">
+      <div class="container dark-cta__inner">
+        <p class="dark-cta__eyebrow">Ryder Web Solutions</p>
+        <h2>Ready to make your website work harder?</h2>
+        <p>Book your free strategy call now and we will map what to fix first for stronger enquiry flow and better conversion quality.</p>
+        <a class="dark-cta__button" href="../general-consultation/">Book your free strategy call now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Ryder Web Solutions · Dublin, Ireland</p>
+      <p><a href="mailto:dylan@ryderwebsolutions.com">dylan@ryderwebsolutions.com</a></p>
+      <p class="footer-links"><a href="../index.html#top">Home</a> · <a href="../services/">What We Do</a> · <a href="../what-weve-done/">What We've Done</a> · <a href="../about/">How We Do It</a> · <a href="../contact/" class="is-active" aria-current="page">Contact</a></p>
+    </div>
+  </footer>
+
+  <div class="sticky-bar">
+    <p>Ready to book your strategy call?</p>
+    <a class="sticky-link" href="../index.html#top">Home</a>
+    <a class="sticky-link" href="../services/">What We Do</a>
+    <a class="sticky-link" href="../what-weve-done/">What We've Done</a>
+    <a class="sticky-link" href="../about/">How We Do It</a>
+    <a class="sticky-link is-active" href="../contact/" aria-current="page">Contact</a>
+    <a class="btn btn--sticky" href="../general-consultation/">Book your free strategy call</a>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
