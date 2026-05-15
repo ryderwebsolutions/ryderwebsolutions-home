@@ -605,7 +605,8 @@ a:hover {
 }
 
 .success-content {
-    max-width: 600px;
+    width: 100%;
+    max-width: 920px;
     text-align: center;
     animation: fadeIn 0.6s var(--transition-smooth);
 }
@@ -645,7 +646,12 @@ a:hover {
 
 #calendly-container {
     margin: var(--spacing-xl) 0;
-    min-height: 600px;
+    min-height: 760px;
+}
+
+#calendly-container .calendly-inline-widget {
+    min-width: 320px;
+    height: 760px;
 }
 
 /* ============================================
@@ -813,7 +819,11 @@ a:hover {
     }
 
     #calendly-container {
-        min-height: 800px;
+        min-height: 860px;
+    }
+
+    #calendly-container .calendly-inline-widget {
+        height: 860px;
     }
 
     .success-content h2 {
