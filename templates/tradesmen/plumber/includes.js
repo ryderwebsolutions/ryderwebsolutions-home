@@ -28,6 +28,10 @@ function applyConfig() {
   const phone = siteConfig.phone;
   const ws = siteConfig.whatsapp;
   const company = siteConfig.companyName;
+  let displayPhone = phone && phone.startsWith('+353') ? '0' + phone.slice(4) : phone;
+  if (displayPhone && /^0\d{9}$/.test(displayPhone)) {
+    displayPhone = displayPhone.replace(/^(\d{3})(\d{3})(\d{4})$/, '$1 $2 $3');
+  }
   // header call button
   const callBtn = document.getElementById('call-now');
   if (callBtn && phone) {
@@ -40,16 +44,16 @@ function applyConfig() {
   }
   const mobWs = document.getElementById('mobile-ws');
   if (mobWs && ws) {
-    mobWs.href = 'https://wa.me/' + ws + '?text=' + encodeURIComponent('Hi, I need a plumber in Dublin.');
+    mobWs.href = 'https://wa.me/' + ws + '?text=' + encodeURIComponent('Hi, I need a heating consultation from DPH Plumbing Ltd.');
   }
   const topbarPhone = document.getElementById('topbar-phone');
   if (topbarPhone && phone) {
     topbarPhone.href = 'tel:' + phone;
-    topbarPhone.textContent = 'Call: ' + phone;
+    topbarPhone.textContent = 'Call: ' + displayPhone;
   }
   const topbarWs = document.getElementById('topbar-ws');
   if (topbarWs && ws) {
-    topbarWs.href = 'https://wa.me/' + ws + '?text=' + encodeURIComponent('Hi, I need a plumber in Dublin.');
+    topbarWs.href = 'https://wa.me/' + ws + '?text=' + encodeURIComponent('Hi, I need a heating consultation from DPH Plumbing Ltd.');
   }
 }
 
@@ -131,7 +135,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (hero) {
       const strip = document.createElement('section');
       strip.className = 'trust-strip';
-      strip.innerHTML = '<div class="container"><div class="flex"><div>SEAI Registered Installers</div><div>Fast Professional Service</div><div>5-Year Workmanship Warranty</div></div></div>';
+      strip.innerHTML = '<div class="container"><div class="flex"><div>SEAI Registered</div><div>RGI Registered</div><div>Viessmann Vitocal 151-A Specialist</div><div>SEAI Grant Support</div></div></div>';
       hero.after(strip);
     }
   }
