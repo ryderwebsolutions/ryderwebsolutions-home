@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium conversion systems for cosmetic clinics looking to generate more consultation bookings through Meta ads, funnels and booking systems.">
+    <meta name="theme-color" content="#000000">
+    <meta name="keywords" content="cosmetic clinic lead generation, aesthetic clinic booking system, med spa conversion funnel, cosmetic dentistry leads">
+    
+    <title>Cosmetic Clinic Lead Generation | Ryder Web Solutions</title>
+    
+    <link rel="stylesheet" href="cosmetic-clinic.css">
+    <script src="cosmetic-clinic.js" defer></script>
+</head>
+<body>
+    <div class="page-container">
+        <!-- HERO SECTION -->
+        <section class="hero" id="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-headline">Premium Clinics Should Have Premium Conversion Systems.</h1>
+                <p class="hero-subheadline">We help cosmetic clinics generate more consultation bookings through Meta ads, conversion-focused websites, booking systems and lead funnels.</p>
+                
+                <button class="cta-button hero-cta" data-scroll-to="form-section">
+                    Start Quick Assessment
+                </button>
+                
+                <p class="hero-trust">Built for cosmetic clinics, aesthetic clinics and med spas</p>
+            </div>
+            
+            <div class="hero-background"></div>
+        </section>
+
+        <!-- PROBLEM SECTION -->
+        <section class="problem-section">
+            <div class="section-content">
+                <div class="section-header">
+                    <h2>Your Clinic Has Interest. But Are You Converting?</h2>
+                    <p>Many clinics already get attention from Instagram, Google and paid ads. But they lose potential patients because:</p>
+                </div>
+
+                <div class="problem-grid">
+                    <div class="problem-item">
+                        <div class="problem-icon">📱</div>
+                        <h3>Weak Booking Flow</h3>
+                        <p>Enquiries get lost in DMs. No clear path from interest to booked consultation.</p>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-icon">📧</div>
+                        <h3>Messy Enquiries</h3>
+                        <p>Messages scattered across platforms. No centralized system to track leads.</p>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-icon">⏰</div>
+                        <h3>Poor Follow-Up</h3>
+                        <p>No automated reminders or structured follow-up sequences. Leads fall through the cracks.</p>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-icon">🗺️</div>
+                        <h3>Unclear Online Journey</h3>
+                        <p>Potential patients don't know what to expect or how to move forward.</p>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <div class="problem-icon">⚙️</div>
+                        <h3>No Conversion System</h3>
+                        <p>No integrated system connecting ads → website → booking → follow-up.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLUTION SECTION -->
+        <section class="solution-section">
+            <div class="section-content">
+                <div class="section-header">
+                    <h2>What Premium Clinics Actually Need</h2>
+                    <p>A complete conversion system built for aesthetic businesses.</p>
+                </div>
+
+                <div class="solution-grid">
+                    <div class="solution-card">
+                        <div class="card-icon">📞</div>
+                        <h3>More Consultation Bookings</h3>
+                        <p>Clear, streamlined booking flow that turns interested prospects into scheduled consultations.</p>
+                    </div>
+                    
+                    <div class="solution-card">
+                        <div class="card-icon">📋</div>
+                        <h3>Cleaner Lead Systems</h3>
+                        <p>Centralized lead management. No more lost enquiries. Track every interaction.</p>
+                    </div>
+                    
+                    <div class="solution-card">
+                        <div class="card-icon">✨</div>
+                        <h3>Better Booking Flow</h3>
+                        <p>Premium, intuitive booking experience that reflects your clinic's standards.</p>
+                    </div>
+                    
+                    <div class="solution-card">
+                        <div class="card-icon">📊</div>
+                        <h3>Meta Ads + Funnel Strategy</h3>
+                        <p>Strategic campaigns built to nurture prospects through a proven conversion funnel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORM SECTION -->
+        <section class="form-section" id="form-section">
+            <div class="section-content">
+                <div class="section-header">
+                    <h2>Quick Assessment</h2>
+                    <p>Help us understand your clinic's needs (2 minutes)</p>
+                </div>
+
+                <div class="form-container">
+                    <form id="assessment-form" class="multi-step-form">
+                        <!-- Progress Bar -->
+                        <div class="form-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <p class="progress-text"><span class="current-question">1</span> of <span class="total-questions">9</span></p>
+                        </div>
+
+                        <!-- Honeypot field for spam protection -->
+                        <input type="text" name="website" class="honeypot" style="display: none;">
+
+                        <!-- Question 1: Clinic Name -->
+                        <div class="form-question active" data-question="1">
+                            <label for="clinic-name">What's the name of your clinic?</label>
+                            <input type="text" id="clinic-name" name="clinic_name" placeholder="Enter clinic name" required>
+                        </div>
+
+                        <!-- Question 2: Your Name -->
+                        <div class="form-question" data-question="2">
+                            <label for="your-name">Your full name</label>
+                            <input type="text" id="your-name" name="your_name" placeholder="Enter your name" required>
+                        </div>
+
+                        <!-- Question 3: Work Email -->
+                        <div class="form-question" data-question="3">
+                            <label for="work-email">Work email address</label>
+                            <input type="email" id="work-email" name="work_email" placeholder="Enter your email" required>
+                        </div>
+
+                        <!-- Question 4: Phone Number -->
+                        <div class="form-question" data-question="4">
+                            <label for="phone-number">Best phone number to reach you</label>
+                            <input type="tel" id="phone-number" name="phone_number" placeholder="Enter phone number" required>
+                        </div>
+
+                        <!-- Question 5: Clinic Location -->
+                        <div class="form-question" data-question="5">
+                            <label for="clinic-location">Where is your clinic located?</label>
+                            <input type="text" id="clinic-location" name="clinic_location" placeholder="City, Country" required>
+                        </div>
+
+                        <!-- Question 6: Business Type -->
+                        <div class="form-question" data-question="6">
+                            <label>What best describes your business?</label>
+                            <div class="form-options">
+                                <label class="option-label">
+                                    <input type="radio" name="business_type" value="Cosmetic Clinic" required>
+                                    <span>Cosmetic Clinic</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="business_type" value="Aesthetic Clinic">
+                                    <span>Aesthetic Clinic</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="business_type" value="Med Spa">
+                                    <span>Med Spa</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="business_type" value="Skin Clinic">
+                                    <span>Skin Clinic</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="business_type" value="Cosmetic Dentistry">
+                                    <span>Cosmetic Dentistry</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="business_type" value="Other">
+                                    <span>Other</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 7: Main Goal -->
+                        <div class="form-question" data-question="7">
+                            <label>What are you mainly looking to improve?</label>
+                            <div class="form-options">
+                                <label class="option-label">
+                                    <input type="radio" name="main_goal" value="More consultation bookings" required>
+                                    <span>More consultation bookings</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="main_goal" value="Better lead conversion">
+                                    <span>Better lead conversion</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="main_goal" value="Meta advertising">
+                                    <span>Meta advertising</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="main_goal" value="Cleaner booking system">
+                                    <span>Cleaner booking system</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="main_goal" value="Better online presence">
+                                    <span>Better online presence</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 8: Biggest Challenge -->
+                        <div class="form-question" data-question="8">
+                            <label>What is your biggest challenge right now?</label>
+                            <div class="form-options">
+                                <label class="option-label">
+                                    <input type="radio" name="biggest_challenge" value="Too few enquiries" required>
+                                    <span>Too few enquiries</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="biggest_challenge" value="Enquiries not converting">
+                                    <span>Enquiries not converting</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="biggest_challenge" value="Relying too much on Instagram DMs">
+                                    <span>Relying too much on Instagram DMs</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="biggest_challenge" value="Weak website/booking flow">
+                                    <span>Weak website/booking flow</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="biggest_challenge" value="No consistent lead system">
+                                    <span>No consistent lead system</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="biggest_challenge" value="Other">
+                                    <span>Other</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 9: Timeline -->
+                        <div class="form-question" data-question="9">
+                            <label>What's your timeline?</label>
+                            <div class="form-options">
+                                <label class="option-label">
+                                    <input type="radio" name="timeline" value="Immediately" required>
+                                    <span>Immediately</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="timeline" value="Within 30 days">
+                                    <span>Within 30 days</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="timeline" value="1–3 months">
+                                    <span>1–3 months</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="timeline" value="Just exploring">
+                                    <span>Just exploring</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Form Navigation -->
+                        <div class="form-navigation">
+                            <button type="button" class="nav-button nav-back" id="back-button">
+                                ← Back
+                            </button>
+                            <button type="button" class="nav-button nav-next" id="next-button">
+                                Next →
+                            </button>
+                            <button type="submit" class="nav-button nav-submit" id="submit-button" style="display: none;">
+                                Submit Assessment
+                            </button>
+                        </div>
+
+                        <!-- Error Message -->
+                        <div class="form-error" id="form-error"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUCCESS SCREEN -->
+        <section class="success-section" id="success-section" style="display: none;">
+            <div class="section-content">
+                <div class="success-content">
+                    <div class="success-icon">✓</div>
+                    <h2>Thanks — your assessment has been received.</h2>
+                    <p>We'll review your clinic's needs and reach out within 24 hours with recommendations.</p>
+                    
+                    <div class="success-divider"></div>
+                    
+                    <h3>Next step: Book your 15-minute consultation</h3>
+                    <p class="success-subtext">Let's discuss how we can help your clinic convert more consultations.</p>
+                    
+                    <div id="calendly-container"></div>
+                    
+                    <button class="cta-button success-cta" id="calendly-button">
+                        Book Your Consultation on Calendly
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Calendly Script -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/cosmetic-clinic",
+      "dest": "/cosmetic-clinic/index.html"
+    }
+  ]
+}
