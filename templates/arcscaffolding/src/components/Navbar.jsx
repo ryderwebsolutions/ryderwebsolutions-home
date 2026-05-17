@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { site } from "../data/siteContent";
 
+const brandLogoSrc = `${import.meta.env.BASE_URL}arcscaffoldinglogo.jpg`;
+
 const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Safety", href: "#safety" },
@@ -31,16 +33,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-[72px]">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 flex-shrink-0 group">
-            <div className="w-9 h-9 bg-arc-orange rounded flex items-center justify-center flex-shrink-0 group-hover:bg-arc-orange-dark transition-colors">
-              <span className="text-white font-black text-base leading-none">A</span>
-            </div>
-            <div className="leading-none">
-              <span className="text-white font-black text-[15px] tracking-wide block">ARC</span>
-              <span className="text-arc-orange text-[11px] font-semibold uppercase tracking-widest block mt-0.5">
-                Scaffold Services
-              </span>
-            </div>
+          <a href="#" className="flex items-center flex-shrink-0 group" aria-label="ARC Scaffold Services home">
+            <img
+              src={brandLogoSrc}
+              alt="ARC Scaffold Services"
+              className="h-11 w-auto object-contain sm:h-12 lg:h-14 transition-transform duration-200 group-hover:scale-[1.01]"
+              loading="eager"
+              decoding="async"
+            />
           </a>
 
           {/* Desktop Nav */}

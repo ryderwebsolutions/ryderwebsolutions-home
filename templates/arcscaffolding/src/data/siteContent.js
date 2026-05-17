@@ -6,7 +6,7 @@ export const site = {
   phone: "083 188 5888",
   phoneTel: "0831885888",
   contacts: "Keith or Daniel",
-  instagram: "#",
+  instagram: "https://www.instagram.com/arcscaffoldservices/",
   facebook: "#",
 };
 
