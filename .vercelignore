@@ -1,0 +1,4 @@
+# Exclude source index.html files for React template builds
+# The built dist/index.html files are served instead via vercel.json rewrites
+templates/arcscaffolding/index.html
+templates/interior/index.html

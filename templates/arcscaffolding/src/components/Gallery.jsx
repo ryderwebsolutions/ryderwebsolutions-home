@@ -13,7 +13,7 @@ function ProjectCard({ item, index }) {
     >
       {/* Image */}
       <img
-        src={`/images/${item.name}`}
+        src={`${import.meta.env.BASE_URL}images/${item.name}`}
         alt={item.label}
         className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 ${
           isLoaded ? "opacity-100" : "opacity-0"

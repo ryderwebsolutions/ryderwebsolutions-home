@@ -56,7 +56,7 @@ export default function Safety() {
 
             {/* Supporting safety image */}
             <img
-              src="/images/residential-scaffold-access.jpg"
+              src={`${import.meta.env.BASE_URL}images/residential-scaffold-access.jpg`}
               alt="Residential property scaffolding safety setup with proper access and protective barriers"
               className="w-full rounded-lg object-cover shadow-card border border-white/40 h-96"
             />          </div>
