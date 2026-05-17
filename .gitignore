@@ -22,6 +22,8 @@ Thumbs.db
 # Build outputs
 dist/
 build/
+!templates/interior/dist/
+!templates/interior/dist/**
 
 # Logs
 *.log
