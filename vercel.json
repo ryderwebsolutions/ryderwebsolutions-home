@@ -10,7 +10,7 @@
       "destination": "/templates/arcscaffolding/dist/images/:path*"
     },
     {
-      "source": "/templates/arcscaffolding/:path*",
+      "source": "/templates/arcscaffolding(.*)",
       "destination": "/templates/arcscaffolding/dist/index.html"
     },
     {
@@ -22,7 +22,7 @@
       "destination": "/templates/interior/dist/images/:path*"
     },
     {
-      "source": "/templates/interior/:path*",
+      "source": "/templates/interior(.*)",
       "destination": "/templates/interior/dist/index.html"
     }
   ]
