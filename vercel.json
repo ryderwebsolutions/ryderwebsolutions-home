@@ -1,29 +1,29 @@
 {
   "version": 2,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/templates/arcscaffolding/assets/(.*)",
-      "dest": "/templates/arcscaffolding/dist/assets/$1"
+      "source": "/templates/arcscaffolding/assets/:path*",
+      "destination": "/templates/arcscaffolding/dist/assets/:path*"
     },
     {
-      "src": "/templates/arcscaffolding/images/(.*)",
-      "dest": "/templates/arcscaffolding/dist/images/$1"
+      "source": "/templates/arcscaffolding/images/:path*",
+      "destination": "/templates/arcscaffolding/dist/images/:path*"
     },
     {
-      "src": "/templates/arcscaffolding/(.*)",
-      "dest": "/templates/arcscaffolding/dist/index.html"
+      "source": "/templates/arcscaffolding/:path*",
+      "destination": "/templates/arcscaffolding/dist/index.html"
     },
     {
-      "src": "/templates/interior/assets/(.*)",
-      "dest": "/templates/interior/dist/assets/$1"
+      "source": "/templates/interior/assets/:path*",
+      "destination": "/templates/interior/dist/assets/:path*"
     },
     {
-      "src": "/templates/interior/images/(.*)",
-      "dest": "/templates/interior/dist/images/$1"
+      "source": "/templates/interior/images/:path*",
+      "destination": "/templates/interior/dist/images/:path*"
     },
     {
-      "src": "/templates/interior/(.*)",
-      "dest": "/templates/interior/dist/index.html"
+      "source": "/templates/interior/:path*",
+      "destination": "/templates/interior/dist/index.html"
     }
   ]
 }

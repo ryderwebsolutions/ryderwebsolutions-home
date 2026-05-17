@@ -24,6 +24,8 @@ dist/
 build/
 !templates/interior/dist/
 !templates/interior/dist/**
+!templates/arcscaffolding/dist/
+!templates/arcscaffolding/dist/**
 
 # Logs
 *.log
