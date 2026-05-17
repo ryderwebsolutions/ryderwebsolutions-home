@@ -1,5 +1,19 @@
 {
-    "outputDirectory":  "templates/interior/dist",
-    "buildCommand":  "npm run build:interior",
-    "version":  2
+    "version": 2,
+    "buildCommand": "npm run build:interior",
+    "outputDirectory": "templates/interior/dist",
+    "rewrites": [
+        {
+            "source": "/templates/interior/assets/:path*",
+            "destination": "/assets/:path*"
+        },
+        {
+            "source": "/templates/interior/:path*",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/templates/interior",
+            "destination": "/index.html"
+        }
+    ]
 }
