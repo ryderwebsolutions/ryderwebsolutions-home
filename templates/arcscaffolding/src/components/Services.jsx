@@ -108,8 +108,8 @@ export default function Services() {
           <div className="hidden lg:flex flex-col gap-4">
             {/* Main image */}
             <img
-              src="/images/project-01.jpg"
-              alt="Commercial scaffolding project"
+              src="/images/commercial-multistory-scaffold.jpg"
+              alt="Commercial multi-story scaffolding project showcasing professional framework"
               className="w-full h-72 rounded-lg object-cover shadow-card border border-white/40 hover:shadow-card-hover transition-shadow duration-300"
             />
             {/* Supporting badge */}

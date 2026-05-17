@@ -56,8 +56,8 @@ export default function Safety() {
 
             {/* Supporting safety image */}
             <img
-              src="/images/project-04.jpg"
-              alt="Residential scaffolding safety setup"
+              src="/images/residential-scaffold-access.jpg"
+              alt="Residential property scaffolding safety setup with proper access and protective barriers"
               className="w-full rounded-lg object-cover shadow-card border border-white/40 h-96"
             />          </div>
 

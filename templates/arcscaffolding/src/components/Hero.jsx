@@ -13,7 +13,7 @@ export default function Hero() {
     <section
       className="relative min-h-screen bg-navy flex flex-col justify-center overflow-hidden pt-16 bg-cover bg-center"
       style={{
-        backgroundImage: `url('/images/project-02.jpg')`,
+        backgroundImage: `url('/images/commercial-multistory-scaffold.jpg')`,
         backgroundAttachment: 'fixed',
       }}
       aria-label="Hero"
