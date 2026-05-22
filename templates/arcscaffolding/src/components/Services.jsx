@@ -1,4 +1,5 @@
 import { services } from "../data/siteContent";
+import { servicesFeatureImage } from "../data/imageAssets";
 
 const icons = {
   building: (
@@ -108,8 +109,8 @@ export default function Services() {
           <div className="hidden lg:flex flex-col gap-4">
             {/* Main image */}
             <img
-              src={`${import.meta.env.BASE_URL}images/commercial-multistory-scaffold.jpg`}
-              alt="Commercial multi-story scaffolding project showcasing professional framework"
+              src={`${import.meta.env.BASE_URL}${servicesFeatureImage.path}`}
+              alt={servicesFeatureImage.alt}
               className="w-full h-72 rounded-lg object-cover shadow-card border border-white/40 hover:shadow-card-hover transition-shadow duration-300"
             />
             {/* Supporting badge */}

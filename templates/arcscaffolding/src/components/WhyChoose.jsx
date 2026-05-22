@@ -1,4 +1,5 @@
 import { whyChoose } from "../data/siteContent";
+import { aboutFeatureImage } from "../data/imageAssets";
 
 const whyIcons = [
   // Experience
@@ -59,6 +60,15 @@ export default function WhyChoose() {
               <div className="text-gray-400 text-sm font-medium">{stat.label}</div>
             </div>
           ))}
+        </div>
+
+        <div className="mb-10">
+          <img
+            src={`${import.meta.env.BASE_URL}${aboutFeatureImage.path}`}
+            alt={aboutFeatureImage.alt}
+            className="w-full h-64 lg:h-72 object-cover rounded-xl border border-white/10 shadow-card"
+            loading="lazy"
+          />
         </div>
 
         {/* Why choose grid */}

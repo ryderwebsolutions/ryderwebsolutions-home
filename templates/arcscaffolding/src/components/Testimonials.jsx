@@ -1,3 +1,5 @@
+import { trustFeatureImage } from "../data/imageAssets";
+
 export default function Testimonials() {
   return (
     <section className="bg-white py-20 lg:py-28">
@@ -13,10 +15,18 @@ export default function Testimonials() {
           <div className="w-14 h-1 bg-arc-orange mx-auto" aria-hidden="true" />
         </div>
 
-        <div className="max-w-4xl mx-auto bg-arc-grey border border-gray-200 rounded-xl p-8 lg:p-10">
-          <p className="text-arc-steel text-base sm:text-lg leading-relaxed text-center">
-            ARC Scaffold focuses on safe, reliable and professional scaffolding services across residential and commercial projects.
-          </p>
+        <div className="max-w-5xl mx-auto bg-arc-grey border border-gray-200 rounded-xl p-6 lg:p-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            <img
+              src={`${import.meta.env.BASE_URL}${trustFeatureImage.path}`}
+              alt={trustFeatureImage.alt}
+              className="w-full aspect-[4/3] object-cover rounded-lg shadow-card"
+              loading="lazy"
+            />
+            <p className="text-arc-steel text-base sm:text-lg leading-relaxed">
+              ARC Scaffold focuses on safe, reliable and professional scaffolding services across residential and commercial projects.
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { site } from "../data/siteContent";
+import { heroImage } from "../data/imageAssets";
 
 const trustBadges = [
   { label: "Commercial & Residential" },
@@ -9,11 +10,13 @@ const trustBadges = [
 ];
 
 export default function Hero() {
+  const heroBackground = `${import.meta.env.BASE_URL}${heroImage.path}`;
+
   return (
     <section
       className="relative min-h-screen bg-navy flex flex-col justify-center overflow-hidden pt-16 bg-cover bg-center"
       style={{
-        backgroundImage: `url('${import.meta.env.BASE_URL}images/commercial-multistory-scaffold.jpg')`,
+        backgroundImage: `url('${heroBackground}')`,
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
       }}

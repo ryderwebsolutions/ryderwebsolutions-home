@@ -1,4 +1,5 @@
 import { safetyPoints } from "../data/siteContent";
+import { safetyFeatureImage } from "../data/imageAssets";
 
 export default function Safety() {
   return (
@@ -56,8 +57,8 @@ export default function Safety() {
 
             {/* Supporting safety image */}
             <img
-              src={`${import.meta.env.BASE_URL}images/residential-scaffold-access.jpg`}
-              alt="Residential property scaffolding safety setup with proper access and protective barriers"
+              src={`${import.meta.env.BASE_URL}${safetyFeatureImage.path}`}
+              alt={safetyFeatureImage.alt}
               className="w-full rounded-lg object-cover shadow-card border border-white/40 h-96"
             />          </div>
 
