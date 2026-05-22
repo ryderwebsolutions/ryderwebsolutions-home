@@ -60,14 +60,14 @@ export default function Navbar() {
           {/* Desktop CTA + Mobile Hamburger */}
           <div className="flex items-center gap-4">
             <a
-              href="tel:0831885888"
+              href={`tel:${site.phoneTel}`}
               className="hidden xl:flex items-center gap-2 text-gray-300 hover:text-white text-sm font-medium transition-colors"
-              aria-label="Call 083 188 5888"
+              aria-label={`Call ${site.phone}`}
             >
               <svg className="w-4 h-4 text-arc-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              083 188 5888
+              {site.phone}
             </a>
             <a
               href="#contact"
@@ -109,14 +109,14 @@ export default function Navbar() {
             ))}
             <div className="px-4 pt-3 pb-2 space-y-2">
               <a
-                href="tel:0831885888"
+                href={`tel:${site.phoneTel}`}
                 className="flex items-center justify-center gap-2 border border-white/20 hover:border-white/40 text-white font-semibold text-sm px-5 py-3 rounded transition-colors"
                 onClick={handleLinkClick}
               >
                 <svg className="w-4 h-4 text-arc-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                Call 083 188 5888
+                Call {site.phone}
               </a>
               <a
                 href="#contact"

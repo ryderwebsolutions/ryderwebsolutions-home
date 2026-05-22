@@ -46,14 +46,14 @@ export default function FinalCTA() {
           {/* Left — text */}
           <div>
             <span className="inline-block text-arc-orange font-semibold text-sm uppercase tracking-widest mb-3">
-              Get In Touch
+              Get a Free Quote
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4 leading-tight">
-              Need Safe, Reliable Scaffolding For Your Next Project?
+              Speak With ARC Scaffold
             </h2>
             <div className="w-14 h-1 bg-arc-orange mb-7" aria-hidden="true" />
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-8">
-              Contact {site.contacts} today to discuss scaffolding, trade support, temporary roofing, inspections, or project requirements.
+              Contact {site.contacts} to discuss your scaffolding requirements for residential or commercial works.
             </p>
 
             {/* Contact details */}
@@ -140,7 +140,7 @@ export default function FinalCTA() {
               </div>
             ) : (
               <>
-                <h3 className="text-navy font-black text-xl mb-1">Request A Scaffolding Quote</h3>
+                <h3 className="text-navy font-black text-xl mb-1">Request a Quote</h3>
                 <p className="text-arc-steel text-sm mb-6">Fill in your details and we'll get back to you promptly.</p>
 
                 <form onSubmit={handleSubmit} noValidate className="space-y-4">
@@ -173,7 +173,7 @@ export default function FinalCTA() {
                         autoComplete="tel"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="083 000 0000"
+                        placeholder="+353 85 156 9641"
                         className="w-full border border-gray-200 rounded-lg px-4 py-3 text-navy text-sm placeholder:text-gray-400 focus:outline-none focus:border-arc-orange focus:ring-2 focus:ring-arc-orange/15 transition-colors"
                       />
                     </div>

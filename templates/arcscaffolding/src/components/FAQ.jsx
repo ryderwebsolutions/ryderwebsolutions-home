@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { faqs } from "../data/siteContent";
+import { faqs, site } from "../data/siteContent";
 
 function FAQItem({ faq, isOpen, onToggle }) {
   return (
@@ -46,8 +46,8 @@ export default function FAQ() {
           </h2>
           <div className="w-14 h-1 bg-arc-orange mx-auto mb-5" aria-hidden="true" />
           <p className="text-arc-steel text-base leading-relaxed">
-            Common questions about ARC Scaffold Services. Can't find what you're looking for? Call Keith or Daniel directly on{" "}
-            <a href="tel:0831885888" className="text-arc-orange font-semibold hover:underline">083 188 5888</a>.
+            Common questions about ARC Scaffold Services. Can't find what you're looking for? Call Dan directly on{" "}
+            <a href={`tel:${site.phoneTel}`} className="text-arc-orange font-semibold hover:underline">{site.phone}</a>.
           </p>
         </div>
 

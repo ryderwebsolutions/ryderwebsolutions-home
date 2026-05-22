@@ -57,7 +57,7 @@ export default function Services() {
           </h2>
           <div className="w-14 h-1 bg-arc-orange mx-auto mb-5" aria-hidden="true" />
           <p className="text-arc-steel text-base sm:text-lg leading-relaxed">
-            From single-storey residential jobs to complex commercial builds — ARC Scaffold Services delivers safe, structured access solutions for every requirement.
+            ARC Scaffold Services provides safe, compliant scaffolding for residential and commercial works across Ireland.
           </p>
         </div>
 
@@ -114,8 +114,8 @@ export default function Services() {
             />
             {/* Supporting badge */}
             <div className="bg-white rounded-lg p-4 border border-arc-orange/20">
-              <p className="text-arc-orange font-semibold text-xs uppercase tracking-widest mb-1">Premium Service</p>
-              <p className="text-navy font-bold text-sm">Every project backed by 20+ years of expertise</p>
+              <p className="text-arc-orange font-semibold text-xs uppercase tracking-widest mb-1">Professional Support</p>
+              <p className="text-navy font-bold text-sm">Planned, erected, and managed with safety and compliance in mind</p>
             </div>
           </div>
         </div>

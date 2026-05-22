@@ -42,20 +42,20 @@ export default function WhyChoose() {
           </h2>
           <div className="w-14 h-1 bg-arc-orange mx-auto mb-5" aria-hidden="true" />
           <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
-            Built on over two decades of experience — we bring reliability, safety, and expert knowledge to every project.
+            We bring experienced, safety-focused scaffolding support to residential and commercial sites.
           </p>
         </div>
 
-        {/* Stats bar */}
+        {/* Trust points */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 rounded-xl overflow-hidden mb-14">
           {[
-            { value: "20+", label: "Years Experience" },
-            { value: "500+", label: "Projects Completed" },
-            { value: "100%", label: "Safety Compliant" },
-            { value: "2", label: "Contacts: Keith & Daniel" },
+            { value: "Safety", label: "Site-first approach" },
+            { value: "Compliance", label: "Inspections and tagging" },
+            { value: "Planning", label: "Project-specific access" },
+            { value: "Support", label: "Dan: +353 85 156 9641" },
           ].map((stat) => (
             <div key={stat.label} className="bg-navy-light px-6 py-7 text-center">
-              <div className="text-3xl sm:text-4xl font-black text-arc-orange mb-1">{stat.value}</div>
+              <div className="text-2xl sm:text-3xl font-black text-arc-orange mb-1">{stat.value}</div>
               <div className="text-gray-400 text-sm font-medium">{stat.label}</div>
             </div>
           ))}

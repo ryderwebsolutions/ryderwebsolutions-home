@@ -1,11 +1,11 @@
 export const site = {
   name: "ARC Scaffold Services",
-  tagline: "Building the foundation for your project's success.",
+  tagline: "Safe and professional scaffolding services across Ireland.",
   domain: "arcscaffolding.ie",
   email: "arcscaffold@outlook.ie",
-  phone: "083 188 5888",
-  phoneTel: "0831885888",
-  contacts: "Keith or Daniel",
+  phone: "+353 85 156 9641",
+  phoneTel: "+353851569641",
+  contacts: "Dan",
   instagram: "https://www.instagram.com/arcscaffoldservices/",
   facebook: "#",
 };
@@ -118,8 +118,8 @@ export const safetyPoints = [
 export const process = [
   {
     step: "01",
-    title: "Project Enquiry",
-    body: "Contact Keith or Daniel by phone or through the quote form. Tell us about your project, location, and timeline.",
+    title: "Initial Enquiry",
+    body: "Contact Dan by phone or through the quote form. Share your project type, location, and timeline.",
   },
   {
     step: "02",
@@ -140,22 +140,10 @@ export const process = [
 
 export const testimonials = [
   {
-    name: "Seán Mulligan",
-    role: "Site Manager, Dublin",
+    name: "ARC Scaffold Services",
+    role: "Professional Scaffolding Contractor",
     quote:
-      "ARC have been our go-to scaffolding contractor for three years. Reliable, professional, and always on time. The inspection and tagging process gives us complete confidence on site.",
-  },
-  {
-    name: "Aoife Carroll",
-    role: "Homeowner, Wicklow",
-    quote:
-      "Keith and the team were brilliant from start to finish. Clear communication, the scaffold was up quickly, and it was rock solid throughout our entire roof renovation.",
-  },
-  {
-    name: "Mark O'Brien",
-    role: "Roofing Contractor, Kildare",
-    quote:
-      "ARC understand what tradespeople actually need. The access was perfectly planned for our crew and the structure was exactly right for the job. Wouldn't use anyone else.",
+      "ARC Scaffold focuses on safe, reliable and professional scaffolding services across residential and commercial projects.",
   },
 ];
 
@@ -188,12 +176,12 @@ export const faqs = [
   {
     question: "What areas do you cover?",
     answer:
-      "ARC Scaffold Services operates across Ireland. Contact Keith or Daniel directly on 083 188 5888 to discuss your location and project requirements.",
+      "ARC Scaffold Services operates across Ireland. Contact Dan directly on +353 85 156 9641 to discuss your location and project requirements.",
   },
   {
     question: "How do I request a quote?",
     answer:
-      "Fill in the quote form on this page or call Keith or Daniel directly on 083 188 5888. We respond promptly and can usually arrange a site visit within days.",
+      "Fill in the quote form on this page or call Dan directly on +353 85 156 9641. We respond promptly and can usually arrange a site visit within days.",
   },
 ];
 

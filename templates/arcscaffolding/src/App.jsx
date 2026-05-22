@@ -9,10 +9,11 @@ import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
+import MobileContactBar from "./components/MobileContactBar";
 
 export default function App() {
   return (
-    <div className="min-h-screen font-sans">
+    <div className="min-h-screen font-sans pb-[76px] lg:pb-0">
       <Navbar />
       <main>
         <Hero />
@@ -26,6 +27,7 @@ export default function App() {
         <FinalCTA />
       </main>
       <Footer />
+      <MobileContactBar />
     </div>
   );
 }
