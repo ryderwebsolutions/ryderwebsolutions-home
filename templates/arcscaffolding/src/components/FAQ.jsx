@@ -46,8 +46,10 @@ export default function FAQ() {
           </h2>
           <div className="w-14 h-1 bg-arc-orange mx-auto mb-5" aria-hidden="true" />
           <p className="text-arc-steel text-base leading-relaxed">
-            Common questions about ARC Scaffold Services. Can't find what you're looking for? Call Dan directly on{" "}
-            <a href={`tel:${site.phoneTel}`} className="text-arc-orange font-semibold hover:underline">{site.phone}</a>.
+            Common questions about ARC Scaffold Services. Can't find what you're looking for? Call{" "}
+            <a href={`tel:${site.phoneTel}`} className="text-arc-orange font-semibold hover:underline">Dan: {site.phone}</a>
+            {" "}or{" "}
+            <a href={`tel:${site.phoneTelSecondary}`} className="text-arc-orange font-semibold hover:underline">Keith: {site.phoneSecondary}</a>.
           </p>
         </div>
 

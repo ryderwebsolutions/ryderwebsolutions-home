@@ -61,7 +61,7 @@ export default function FinalCTA() {
               <a
                 href={`tel:${site.phoneTel}`}
                 className="flex items-center gap-4 group"
-                aria-label={`Call ${site.phone}`}
+                aria-label={`Call Dan on ${site.phone}`}
               >
                 <div className="w-12 h-12 bg-arc-orange/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-arc-orange transition-colors duration-200">
                   <svg className="w-5 h-5 text-arc-orange group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -70,8 +70,25 @@ export default function FinalCTA() {
                 </div>
                 <div>
                   <p className="text-gray-400 text-xs font-medium uppercase tracking-widest">Phone</p>
-                  <p className="text-white font-bold text-lg">{site.phone}</p>
-                  <p className="text-gray-400 text-xs">{site.contacts}</p>
+                  <p className="text-white font-bold text-lg">Dan: {site.phone}</p>
+                  <p className="text-gray-400 text-xs">Primary contact</p>
+                </div>
+              </a>
+
+              <a
+                href={`tel:${site.phoneTelSecondary}`}
+                className="flex items-center gap-4 group"
+                aria-label={`Call Keith on ${site.phoneSecondary}`}
+              >
+                <div className="w-12 h-12 bg-arc-orange/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-arc-orange transition-colors duration-200">
+                  <svg className="w-5 h-5 text-arc-orange group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-gray-400 text-xs font-medium uppercase tracking-widest">Phone</p>
+                  <p className="text-white font-bold text-lg">Keith: {site.phoneSecondary}</p>
+                  <p className="text-gray-400 text-xs">Secondary contact</p>
                 </div>
               </a>
 
@@ -116,7 +133,16 @@ export default function FinalCTA() {
               <svg className="w-4 h-4 text-arc-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              Call {site.phone}
+              Call Dan: {site.phone}
+            </a>
+            <a
+              href={`tel:${site.phoneTelSecondary}`}
+              className="inline-flex items-center gap-2.5 ml-0 sm:ml-3 mt-3 sm:mt-0 border-2 border-white/30 hover:border-white/60 hover:bg-white/8 text-white font-bold text-sm px-7 py-3.5 rounded transition-all duration-200"
+            >
+              <svg className="w-4 h-4 text-arc-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              Call Keith: {site.phoneSecondary}
             </a>
           </div>
 
@@ -135,7 +161,9 @@ export default function FinalCTA() {
                 </p>
                 <p className="text-arc-steel text-sm mt-3">
                   Or call directly:{" "}
-                  <a href={`tel:${site.phoneTel}`} className="text-arc-orange font-bold hover:underline">{site.phone}</a>
+                  <a href={`tel:${site.phoneTel}`} className="text-arc-orange font-bold hover:underline">Dan: {site.phone}</a>
+                  {" "}or{" "}
+                  <a href={`tel:${site.phoneTelSecondary}`} className="text-arc-orange font-bold hover:underline">Keith: {site.phoneSecondary}</a>
                 </p>
               </div>
             ) : (

@@ -8,7 +8,7 @@ const InstagramIcon = () => (
   </svg>
 );
 
-function ProjectCard({ item, index, category }) {
+function ProjectCard({ item, index }) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
@@ -34,19 +34,8 @@ function ProjectCard({ item, index, category }) {
         <div className="absolute inset-0 bg-gradient-to-br from-gray-300 to-gray-200 animate-pulse" />
       )}
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
       {/* Orange accent line — top */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-arc-orange transform -translate-y-1 group-hover:translate-y-0 transition-transform duration-300" aria-hidden="true" />
-
-      {/* Project label — bottom */}
-      <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-        <span className="inline-block bg-arc-orange text-white text-xs font-semibold px-2.5 py-1 rounded mb-2">
-          {category}
-        </span>
-        <p className="text-white font-semibold text-sm leading-tight">{item.label}</p>
-      </div>
 
       {/* Icon — top left */}
       <div className="absolute top-4 left-4 w-8 h-8 bg-black/30 backdrop-blur-sm rounded flex items-center justify-center text-white/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -58,29 +47,7 @@ function ProjectCard({ item, index, category }) {
   );
 }
 
-function PlaceholderCard({ label }) {
-  return (
-    <div className="relative rounded-lg overflow-hidden aspect-[4/3] border border-dashed border-white/25 bg-white/5 p-5 flex flex-col justify-between">
-      <span className="inline-block bg-white/10 text-white text-xs font-semibold px-2.5 py-1 rounded w-fit">
-        Commercial
-      </span>
-      <div>
-        <p className="text-white font-semibold text-sm leading-tight">{label}</p>
-        <p className="text-gray-400 text-xs mt-2">Image placeholder ready for client upload</p>
-      </div>
-    </div>
-  );
-}
-
 export default function Gallery() {
-  const residentialImages = galleryImages.filter((item) => item.type === "residential");
-  const commercialImages = galleryImages.filter((item) => item.type !== "residential");
-  const commercialPlaceholders = [
-    "Additional Commercial Project (Pending)",
-    "Additional Commercial Project (Pending)",
-    "Additional Commercial Project (Pending)",
-  ];
-
   return (
     <section id="gallery" className="bg-navy-dark py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -94,35 +61,20 @@ export default function Gallery() {
           </h2>
           <div className="w-14 h-1 bg-arc-orange mx-auto mb-5" aria-hidden="true" />
           <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
-            Recent ARC Scaffold projects are organised below by residential and commercial scaffolding work.
+            A selection of recent scaffolding projects completed by ARC Scaffold Services.
           </p>
         </div>
 
-        <div className="mb-12">
-          <h3 className="text-white font-bold text-xl mb-5">Residential Scaffolding</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {residentialImages.map((item, index) => (
-              <ProjectCard key={`res-${index}`} item={item} index={index} category="Residential" />
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <h3 className="text-white font-bold text-xl mb-5">Commercial Scaffolding</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {commercialImages.map((item, index) => (
-              <ProjectCard key={`com-${index}`} item={item} index={index} category="Commercial" />
-            ))}
-            {commercialPlaceholders.map((label, index) => (
-              <PlaceholderCard key={`ph-${index}`} label={label} />
-            ))}
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {galleryImages.map((item, index) => (
+            <ProjectCard key={index} item={item} index={index} />
+          ))}
         </div>
 
         {/* CTA below gallery */}
         <div className="text-center mt-12">
           <p className="text-gray-400 text-sm mb-4">
-            Additional commercial project images will be added as they are provided.
+            Follow ARC Scaffold Services for more project updates.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a

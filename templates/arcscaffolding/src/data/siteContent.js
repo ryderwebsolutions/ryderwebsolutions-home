@@ -5,7 +5,9 @@ export const site = {
   email: "arcscaffold@outlook.ie",
   phone: "+353 85 156 9641",
   phoneTel: "+353851569641",
-  contacts: "Dan",
+  phoneSecondary: "+353 83 188 5888",
+  phoneTelSecondary: "+353831885888",
+  contacts: "Dan and Keith",
   instagram: "https://www.instagram.com/arcscaffoldservices/",
   facebook: "#",
 };
