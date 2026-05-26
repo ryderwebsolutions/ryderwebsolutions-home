@@ -2,6 +2,14 @@
   "version": 2,
   "rewrites": [
     {
+      "source": "/templates/construction",
+      "destination": "/templates/construction/index.html"
+    },
+    {
+      "source": "/templates/construction/",
+      "destination": "/templates/construction/index.html"
+    },
+    {
       "source": "/templates/arcscaffolding/assets/:path*",
       "destination": "/templates/arcscaffolding/dist/assets/:path*"
     },

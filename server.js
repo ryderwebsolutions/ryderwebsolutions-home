@@ -14,12 +14,14 @@ app.use(express.json({ limit: '10mb' }));
 // Template routes with explicit paths
 const interiorDistPath = path.join(__dirname, 'templates/interior/dist');
 const arcscaffoldingDistPath = path.join(__dirname, 'templates/arcscaffolding/dist');
+const constructionPath = path.join(__dirname, 'templates/construction');
 
 // Serve static assets from dist folders
 app.use('/templates/interior/assets', express.static(path.join(interiorDistPath, 'assets')));
 app.use('/templates/interior/images', express.static(path.join(interiorDistPath, 'images')));
 app.use('/templates/arcscaffolding/assets', express.static(path.join(arcscaffoldingDistPath, 'assets')));
 app.use('/templates/arcscaffolding/images', express.static(path.join(arcscaffoldingDistPath, 'images')));
+app.use('/templates/construction', express.static(constructionPath));
 
 // Serve root static files  
 app.use(express.static(__dirname));
@@ -31,6 +33,10 @@ app.get(['/templates/interior', '/templates/interior/*'], (req, res) => {
 
 app.get(['/templates/arcscaffolding', '/templates/arcscaffolding/*'], (req, res) => {
     res.sendFile(path.join(arcscaffoldingDistPath, 'index.html'));
+});
+
+app.get(['/templates/construction', '/templates/construction/'], (req, res) => {
+    res.sendFile(path.join(constructionPath, 'index.html'));
 });
 
 // Email configuration
