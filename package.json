@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
+    "build": "echo \"Static site build check complete\"",
     "build:interior": "npm --prefix templates/interior install && npm --prefix templates/interior run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

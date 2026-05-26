@@ -1,0 +1,129 @@
+.page-hero {
+    padding: 4.4rem 0 2.3rem;
+}
+
+.page-hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.page-hero-visual {
+    border-radius: 16px;
+    border: 1px solid rgba(226, 180, 65, 0.28);
+    overflow: hidden;
+    min-height: 320px;
+    box-shadow: var(--shadow);
+}
+
+.page-hero-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.split-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.split-content .panel-card {
+    padding: 1.2rem;
+}
+
+.split-content ul {
+    margin: 0.7rem 0 0;
+    padding-left: 1rem;
+    color: #ded8bf;
+}
+
+.mosaic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.8rem;
+}
+
+.mosaic img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(226, 180, 65, 0.2);
+}
+
+.timeline {
+    display: grid;
+    gap: 0.9rem;
+}
+
+.timeline-step {
+    border-left: 2px solid rgba(226, 180, 65, 0.65);
+    padding: 0.25rem 0 0.35rem 1rem;
+}
+
+.timeline-step span {
+    color: var(--accent-soft);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contact-form {
+    display: grid;
+    gap: 0.7rem;
+}
+
+.contact-form label {
+    display: grid;
+    gap: 0.35rem;
+    font-size: 0.85rem;
+    color: #ddd8c4;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    border-radius: 10px;
+    border: 1px solid rgba(226, 180, 65, 0.35);
+    background: #11120f;
+    color: #faf8ef;
+    padding: 0.7rem 0.75rem;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.service-detail .feature-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 1rem;
+}
+
+.service-detail .feature-grid img {
+    border-radius: 14px;
+    border: 1px solid rgba(226, 180, 65, 0.2);
+    height: 100%;
+    min-height: 290px;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .page-hero-inner,
+    .split-content,
+    .mosaic,
+    .contact-layout,
+    .service-detail .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}

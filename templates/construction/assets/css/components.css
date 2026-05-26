@@ -1,0 +1,119 @@
+.gallery-section .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.gallery-card {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(226, 180, 65, 0.2);
+    background: #181915;
+    box-shadow: var(--shadow);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.gallery-card p {
+    padding: 0.85rem 0.9rem;
+    color: #dbd6c0;
+    font-size: 0.86rem;
+}
+
+.testimonials-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-slider {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.testimonial-slide {
+    background: #151611;
+    border: 1px solid rgba(226, 180, 65, 0.24);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.testimonial-slide img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.testimonial-slide blockquote {
+    margin: 0;
+    padding: 0.95rem 1rem 1rem;
+    color: #e2dfce;
+    font-size: 0.9rem;
+}
+
+.testimonial-controls {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.testimonial-controls button {
+    border: 1px solid rgba(226, 180, 65, 0.5);
+    background: rgba(226, 180, 65, 0.12);
+    color: var(--accent-soft);
+    border-radius: 999px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.cta-block {
+    border-top: 1px solid rgba(226, 180, 65, 0.2);
+    border-bottom: 1px solid rgba(226, 180, 65, 0.2);
+    background:
+        linear-gradient(120deg, rgba(226, 180, 65, 0.11), rgba(12, 13, 13, 0.6)),
+        url("/templates/construction/assets/images/projects/project-stone-patio.jpeg") center / cover no-repeat;
+    margin-top: 1rem;
+}
+
+.cta-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.2rem 0;
+}
+
+.cta-inner h2 {
+    max-width: 18ch;
+}
+
+.cta-inner p {
+    color: #f2ebcf;
+}
+
+@media (max-width: 1024px) {
+    .gallery-section .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .testimonial-slider {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .gallery-section .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-card img,
+    .testimonial-slide img {
+        height: 220px;
+    }
+}
