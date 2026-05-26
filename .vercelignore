@@ -2,3 +2,28 @@
 # The built dist/index.html files are served instead via vercel.json rewrites
 templates/arcscaffolding/index.html
 templates/interior/index.html
+
+# Dependencies and local build artifacts
+node_modules
+**/node_modules
+.git
+.github
+npm-debug.log
+yarn-error.log
+
+# Keep only built output for SPA templates
+templates/interior/src
+templates/interior/public
+templates/interior/package-lock.json
+templates/interior/package.json
+templates/interior/vite.config.js
+templates/interior/tailwind.config.js
+templates/interior/postcss.config.js
+
+templates/arcscaffolding/src
+templates/arcscaffolding/public
+templates/arcscaffolding/package-lock.json
+templates/arcscaffolding/package.json
+templates/arcscaffolding/vite.config.js
+templates/arcscaffolding/tailwind.config.js
+templates/arcscaffolding/postcss.config.js
