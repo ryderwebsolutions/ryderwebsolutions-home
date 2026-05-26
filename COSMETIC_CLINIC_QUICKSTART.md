@@ -251,17 +251,17 @@ When a user submits, Dylan receives an email with:
 
 ## ✅ Pre-Launch Checklist
 
-- [ ] `.env` configured with email settings
-- [ ] Test form submission locally
-- [ ] Verify email is received
-- [ ] Test on mobile device
-- [ ] Check Calendly link is correct
-- [ ] Deploy to production
-- [ ] Set env vars in production platform
-- [ ] Test form on production URL
-- [ ] Check SEO title/description
-- [ ] Monitor spam submissions
-- [ ] Set up analytics/tracking
+- [x] `.env` configured with email settings
+- [x] Test form submission locally
+- [ ] Verify email is received (requires inbox access)
+- [ ] Test on mobile device (requires physical device QA)
+- [x] Check Calendly link is correct
+- [ ] Deploy to production (manual release step)
+- [ ] Set env vars in production platform (requires platform access)
+- [ ] Test form on production URL (requires deployed URL)
+- [x] Check SEO title/description
+- [ ] Monitor spam submissions (post-launch ongoing)
+- [ ] Set up analytics/tracking (requires analytics account)
 
 ---
 
