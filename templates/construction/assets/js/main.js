@@ -48,6 +48,8 @@ function initMobileNav() {
 }
 
 function initReveal() {
+    document.documentElement.classList.add("js-reveal");
+
     const blocks = document.querySelectorAll(".reveal-on-scroll");
     if (!blocks.length) {
         return;

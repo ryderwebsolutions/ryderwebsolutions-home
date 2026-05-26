@@ -246,8 +246,18 @@ p {
     width: 40px;
     height: 40px;
     border-radius: 8px;
-    object-fit: cover;
+    display: grid;
+    place-items: center;
     border: 1px solid rgba(226, 180, 65, 0.45);
+}
+
+.brand-monogram {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #15130d;
+    background: linear-gradient(140deg, var(--accent), var(--accent-soft));
 }
 
 .brand-title {
@@ -338,6 +348,23 @@ p {
     font-size: 0.82rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+}
+
+.proof-points {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.proof-points span {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #d6cfb1;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(226, 180, 65, 0.17);
+    border-radius: 999px;
+    padding: 0.5rem 0.75rem;
 }
 
 .hero-content p {
@@ -457,13 +484,14 @@ p {
     margin-top: 1.8rem;
 }
 
-.reveal-on-scroll {
+.js-reveal .reveal-on-scroll {
     opacity: 0;
     transform: translateY(12px);
     transition: opacity 360ms ease, transform 360ms ease;
 }
 
-.reveal-on-scroll.is-visible {
+.reveal-on-scroll,
+.js-reveal .reveal-on-scroll.is-visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -515,17 +543,10 @@ p {
         width: min(46%, 250px);
         right: -1%;
     }
+
 }
 
-@media (max-width: 760px) {
-    .container {
-        width: min(var(--max-width), calc(100% - 1.5rem));
-    }
-
-    .section {
-        padding: 3.2rem 0;
-    }
-
+@media (max-width: 920px) {
     .topline {
         display: none;
     }
@@ -552,6 +573,20 @@ p {
 
     .header-shell.is-open .nav-links {
         display: flex;
+    }
+}
+
+@media (max-width: 760px) {
+    .container {
+        width: min(var(--max-width), calc(100% - 1.5rem));
+    }
+
+    .section {
+        padding: 3.2rem 0;
+    }
+
+    .proof-points {
+        grid-template-columns: 1fr;
     }
 
     .hero-grid,
