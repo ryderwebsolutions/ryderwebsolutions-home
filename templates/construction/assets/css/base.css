@@ -23,6 +23,10 @@ body {
     min-height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Sora", "Segoe UI", sans-serif;
     background:
@@ -50,7 +54,7 @@ a {
 }
 
 .section {
-    padding: 4.6rem 0;
+    padding: 3.9rem 0;
 }
 
 .section-alt {
@@ -71,12 +75,12 @@ h3 {
 }
 
 h1 {
-    font-size: clamp(2.25rem, 5vw, 4.25rem);
+    font-size: clamp(2.05rem, 4.2vw, 3.55rem);
     letter-spacing: 0.01em;
 }
 
 h2 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-size: clamp(1.65rem, 3.5vw, 2.55rem);
 }
 
 h3 {
@@ -96,8 +100,8 @@ p {
 }
 
 .lead {
-    font-size: 1.08rem;
-    max-width: 62ch;
+    font-size: 1rem;
+    max-width: 58ch;
     color: #e6e2d5;
 }
 
@@ -161,7 +165,7 @@ p {
 
 .hero-visual-premium {
     position: relative;
-    min-height: 520px;
+    min-height: 460px;
     display: grid;
     align-items: stretch;
 }
@@ -178,7 +182,7 @@ p {
 .hero-main img {
     width: 100%;
     height: 100%;
-    min-height: 460px;
+    min-height: 400px;
     object-fit: cover;
     object-position: center 42%;
     border-radius: 0;
@@ -207,7 +211,7 @@ p {
 
 .hero-support-frame img {
     width: 100%;
-    height: 160px;
+    height: 140px;
     object-fit: cover;
     object-position: center 58%;
     border: 0;
@@ -292,7 +296,7 @@ p {
 .hero {
     position: relative;
     overflow: hidden;
-    padding: 4.6rem 0 3.2rem;
+    padding: 4rem 0 2.7rem;
 }
 
 .hero-grid {
@@ -307,6 +311,33 @@ p {
     border: 1px solid rgba(226, 180, 65, 0.28);
     border-radius: var(--radius);
     padding: 1.75rem;
+}
+
+.hero-trust {
+    margin-top: 0.9rem;
+    font-size: 0.84rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.trust-band {
+    border-top: 1px solid rgba(226, 180, 65, 0.16);
+    border-bottom: 1px solid rgba(226, 180, 65, 0.16);
+    background: rgba(13, 14, 13, 0.68);
+}
+
+.trust-band .container {
+    padding: 0.78rem 0;
+}
+
+.trust-band p {
+    margin: 0;
+    text-align: center;
+    color: #d6cfb1;
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .hero-content p {
@@ -371,7 +402,7 @@ p {
 
 .service-card img {
     width: 100%;
-    height: 230px;
+    height: 180px;
     object-fit: cover;
 }
 
@@ -428,8 +459,8 @@ p {
 
 .reveal-on-scroll {
     opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 520ms ease, transform 520ms ease;
+    transform: translateY(12px);
+    transition: opacity 360ms ease, transform 360ms ease;
 }
 
 .reveal-on-scroll.is-visible {
@@ -477,7 +508,7 @@ p {
     }
 
     .hero-main img {
-        min-height: 400px;
+        min-height: 350px;
     }
 
     .hero-support-frame {
@@ -492,7 +523,7 @@ p {
     }
 
     .section {
-        padding: 3.8rem 0;
+        padding: 3.2rem 0;
     }
 
     .topline {
@@ -535,7 +566,7 @@ p {
     }
 
     .hero-main img {
-        min-height: 330px;
+        min-height: 290px;
         object-position: center 38%;
     }
 
@@ -548,7 +579,7 @@ p {
     }
 
     .hero-support-frame img {
-        height: 150px;
+        height: 130px;
     }
 
     .site-footer .container {

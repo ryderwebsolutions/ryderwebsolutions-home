@@ -1,11 +1,11 @@
 .page-hero {
-    padding: 3.8rem 0 2rem;
+    padding: 3.2rem 0 1.6rem;
 }
 
 .page-hero-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 1.2rem;
     align-items: center;
 }
 
@@ -13,7 +13,7 @@
     border-radius: 16px;
     border: 1px solid rgba(226, 180, 65, 0.28);
     overflow: hidden;
-    min-height: 260px;
+    min-height: 220px;
     box-shadow: var(--shadow);
 }
 
@@ -41,13 +41,13 @@
 
 .mosaic {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 0.8rem;
 }
 
 .mosaic img {
     width: 100%;
-    height: 185px;
+    height: 150px;
     object-fit: cover;
     border-radius: 12px;
     border: 1px solid rgba(226, 180, 65, 0.2);
@@ -114,8 +114,26 @@
     border-radius: 14px;
     border: 1px solid rgba(226, 180, 65, 0.2);
     height: 100%;
-    min-height: 235px;
+    min-height: 185px;
     object-fit: cover;
+}
+
+.mosaic-projects {
+    grid-template-columns: 1fr 1fr;
+}
+
+.mosaic-projects img {
+    height: 170px;
+}
+
+.about-feature-image {
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid rgba(226, 180, 65, 0.22);
+    box-shadow: var(--shadow);
 }
 
 @media (max-width: 1024px) {

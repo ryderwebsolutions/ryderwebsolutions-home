@@ -53,6 +53,15 @@ function initReveal() {
         return;
     }
 
+    const showAll = () => {
+        blocks.forEach((block) => block.classList.add("is-visible"));
+    };
+
+    if (!("IntersectionObserver" in window)) {
+        showAll();
+        return;
+    }
+
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
@@ -66,6 +75,15 @@ function initReveal() {
     );
 
     blocks.forEach((block) => observer.observe(block));
+
+    // Safety fallback: never leave sections hidden if observer callbacks are delayed.
+    window.setTimeout(() => {
+        blocks.forEach((block) => {
+            if (!block.classList.contains("is-visible")) {
+                block.classList.add("is-visible");
+            }
+        });
+    }, 1200);
 }
 
 function initFooterYear() {
