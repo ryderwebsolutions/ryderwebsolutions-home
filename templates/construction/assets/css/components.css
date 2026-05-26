@@ -15,7 +15,7 @@
 }
 
 .editorial-feature {
-    min-height: 560px;
+    min-height: 420px;
 }
 
 .editorial-feature img,
@@ -26,7 +26,7 @@
 }
 
 .editorial-feature img {
-    min-height: 560px;
+    min-height: 420px;
     object-position: center 56%;
 }
 
@@ -37,11 +37,11 @@
 }
 
 .editorial-support .gallery-card {
-    min-height: 175px;
+    min-height: 140px;
 }
 
 .editorial-support .gallery-card img {
-    min-height: 175px;
+    min-height: 140px;
 }
 
 .editorial-feature::after,
@@ -59,7 +59,7 @@
     right: 0;
     bottom: 0;
     z-index: 2;
-    padding: 1rem 1rem 1.1rem;
+    padding: 0.8rem 0.85rem 0.9rem;
 }
 
 .story-step {
@@ -73,14 +73,14 @@
 
 .gallery-meta h3 {
     margin: 0;
-    font-size: 1.05rem;
+    font-size: 0.98rem;
     color: #fffcf4;
 }
 
 .gallery-meta p {
     margin: 0.35rem 0 0;
     color: #dad6ca;
-    font-size: 0.88rem;
+    font-size: 0.83rem;
 }
 
 .testimonials-wrap {
@@ -103,15 +103,8 @@
 
 .testimonial-slide img {
     width: 100%;
-    height: 240px;
+    height: 220px;
     object-fit: cover;
-}
-
-.testimonial-slide blockquote {
-    margin: 0;
-    padding: 0.95rem 1rem 1rem;
-    color: #e2dfce;
-    font-size: 0.9rem;
 }
 
 .testimonial-controls {
@@ -131,29 +124,41 @@
 }
 
 .cta-block {
-    border-top: 1px solid rgba(226, 180, 65, 0.2);
-    border-bottom: 1px solid rgba(226, 180, 65, 0.2);
-    background:
-        linear-gradient(120deg, rgba(226, 180, 65, 0.11), rgba(12, 13, 13, 0.6)),
-        url("/templates/construction/assets/images/projects/project-stone-patio.jpeg") center / cover no-repeat;
+    border-top: 1px solid rgba(226, 180, 65, 0.24);
+    border-bottom: 1px solid rgba(226, 180, 65, 0.24);
+    background: linear-gradient(135deg, #101110 0%, #141511 72%, #171811 100%);
     margin-top: 1rem;
 }
 
 .cta-inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    padding: 2.2rem 0;
+    gap: 1.15rem;
+    text-align: center;
+    padding: 2rem 0;
 }
 
-.cta-inner h2 {
-    max-width: 18ch;
+.cta-copy {
+    max-width: 66ch;
 }
 
 .cta-inner p {
-    color: #f2ebcf;
+    color: #ded8bf;
+}
+
+.cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.cta-social {
+    font-size: 0.84rem;
+    color: var(--accent-soft);
+    border-bottom: 1px solid rgba(226, 180, 65, 0.45);
 }
 
 @media (max-width: 1024px) {
@@ -163,7 +168,7 @@
 
     .editorial-feature,
     .editorial-feature img {
-        min-height: 460px;
+        min-height: 360px;
     }
 
     .editorial-support {
@@ -183,16 +188,20 @@
 
     .editorial-feature,
     .editorial-feature img {
-        min-height: 360px;
+        min-height: 300px;
         object-position: center 52%;
     }
 
     .editorial-support .gallery-card,
     .editorial-support .gallery-card img {
-        min-height: 220px;
+        min-height: 180px;
     }
 
     .testimonial-slide img {
-        height: 220px;
+        height: 200px;
+    }
+
+    .cta-inner {
+        padding: 1.7rem 0;
     }
 }

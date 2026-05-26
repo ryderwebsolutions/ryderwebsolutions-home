@@ -50,7 +50,7 @@ a {
 }
 
 .section {
-    padding: 5.25rem 0;
+    padding: 4.6rem 0;
 }
 
 .section-alt {
@@ -146,6 +146,11 @@ p {
     font-size: 0.75rem;
 }
 
+.topline a {
+    color: var(--accent-soft);
+    border-bottom: 1px solid rgba(226, 180, 65, 0.4);
+}
+
 .topline .container {
     display: flex;
     justify-content: space-between;
@@ -173,7 +178,7 @@ p {
 .hero-main img {
     width: 100%;
     height: 100%;
-    min-height: 520px;
+    min-height: 460px;
     object-fit: cover;
     object-position: center 42%;
     border-radius: 0;
@@ -202,7 +207,7 @@ p {
 
 .hero-support-frame img {
     width: 100%;
-    height: 180px;
+    height: 160px;
     object-fit: cover;
     object-position: center 58%;
     border: 0;
@@ -287,7 +292,7 @@ p {
 .hero {
     position: relative;
     overflow: hidden;
-    padding: 5.2rem 0 4rem;
+    padding: 4.6rem 0 3.2rem;
 }
 
 .hero-grid {
@@ -301,7 +306,7 @@ p {
     background: linear-gradient(140deg, rgba(24, 23, 19, 0.9), rgba(24, 23, 19, 0.72));
     border: 1px solid rgba(226, 180, 65, 0.28);
     border-radius: var(--radius);
-    padding: 2rem;
+    padding: 1.75rem;
 }
 
 .hero-content p {
@@ -472,7 +477,7 @@ p {
     }
 
     .hero-main img {
-        min-height: 460px;
+        min-height: 400px;
     }
 
     .hero-support-frame {
@@ -530,7 +535,7 @@ p {
     }
 
     .hero-main img {
-        min-height: 390px;
+        min-height: 330px;
         object-position: center 38%;
     }
 
