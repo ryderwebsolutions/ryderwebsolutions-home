@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get more plumbing leads with a professional website, Meta ads, and a booking funnel built for tradesmen. Book a free strategy call today.">
+    <meta name="theme-color" content="#000000">
+    <meta name="keywords" content="plumber lead generation, plumbing website, plumber marketing Ireland, plumber Meta ads, plumbing booking system">
+
+    <title>More Plumbing Leads | Ryder Web Solutions</title>
+
+    <link rel="stylesheet" href="/cosmetic-clinic/cosmetic-clinic.css">
+    <link rel="stylesheet" href="plumbing.css">
+    <script src="plumbing.js" defer></script>
+</head>
+<body>
+    <div class="page-container">
+        <!-- FORM SECTION -->
+        <section class="form-section" id="form-section">
+            <div class="section-content">
+                <div class="section-header">
+                    <h1>Get More Plumbing Jobs</h1>
+                    <p>Complete this 2-minute form, then book your free strategy call instantly.</p>
+                </div>
+
+                <div class="form-container">
+                    <form id="assessment-form" class="multi-step-form">
+                        <!-- Progress Bar -->
+                        <div class="form-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <p class="progress-text"><span class="current-question">1</span> of <span class="total-questions">9</span></p>
+                        </div>
+
+                        <!-- Honeypot field for spam protection -->
+                        <input type="text" name="website" class="honeypot" style="display: none;">
+
+                        <!-- Question 1: Business Name -->
+                        <div class="form-question active" data-question="1">
+                            <label for="business-name">What's the name of your plumbing business?</label>
+                            <input type="text" id="business-name" name="business_name" placeholder="e.g. Murphy Plumbing Services" autocomplete="organization" required>
+                        </div>
+
+                        <!-- Question 2: Your Name -->
+                        <div class="form-question" data-question="2">
+                            <label for="your-name">Your full name</label>
+                            <input type="text" id="your-name" name="your_name" placeholder="Enter your name" autocomplete="name" required>
+                        </div>
+
+                        <!-- Question 3: Work Email -->
+                        <div class="form-question" data-question="3">
+                            <label for="work-email">Work email address</label>
+                            <input type="email" id="work-email" name="work_email" placeholder="Enter your email" autocomplete="email" required>
+                        </div>
+
+                        <!-- Question 4: Phone Number -->
+                        <div class="form-question" data-question="4">
+                            <label for="phone-number">Best phone number to reach you</label>
+                            <div class="phone-input-group">
+                                <select id="phone-country-code" name="phone_country_code" required>
+                                    <option value="+353" selected>Ireland (+353)</option>
+                                    <option value="+44">UK (+44)</option>
+                                    <option value="+1">US/Canada (+1)</option>
+                                    <option value="+61">Australia (+61)</option>
+                                    <option value="+971">UAE (+971)</option>
+                                    <option value="+49">Germany (+49)</option>
+                                    <option value="+33">France (+33)</option>
+                                    <option value="+34">Spain (+34)</option>
+                                    <option value="+39">Italy (+39)</option>
+                                    <option value="+31">Netherlands (+31)</option>
+                                </select>
+                                <input type="tel" id="phone-number" name="phone_number" placeholder="Enter phone number" autocomplete="tel-national" inputmode="tel" required>
+                            </div>
+                        </div>
+
+                        <!-- Question 5: Business Location -->
+                        <div class="form-question" data-question="5">
+                            <label for="business-location">Where is your business based?</label>
+                            <input type="text" id="business-location" name="business_location" placeholder="City, County" autocomplete="address-level2" required>
+                        </div>
+
+                        <!-- Question 6: Business Type -->
+                        <div class="form-question" data-question="6">
+                            <label>What best describes your business?</label>
+                            <div class="form-options">
+                                <label class="option-label">
+                                    <input type="radio" name="business_type" value="Residential Plumbing" required>
+                                    <span>Residential Plumbing</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="business_type" value="Commercial Plumbing">
+                                    <span>Commercial Plumbing</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="business_type" value="Emergency Call-Outs">
+                                    <span>Emergency Call-Outs</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="business_type" value="Gas & Heating">
+                                    <span>Gas &amp; Heating</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="business_type" value="Bathroom Installation">
+                                    <span>Bathroom Installation</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="business_type" value="Other">
+                                    <span>Other</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 7: Main Goal -->
+                        <div class="form-question" data-question="7">
+                            <label>What are you mainly looking to improve?</label>
+                            <div class="form-options">
+                                <label class="option-label">
+                                    <input type="radio" name="main_goal" value="More job enquiries" required>
+                                    <span>More job enquiries</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="main_goal" value="Better lead conversion">
+                                    <span>Better lead conversion</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="main_goal" value="Meta advertising">
+                                    <span>Meta advertising</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="main_goal" value="Professional website">
+                                    <span>Professional website</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="main_goal" value="Online quoting / booking">
+                                    <span>Online quoting / booking</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 8: Biggest Challenge -->
+                        <div class="form-question" data-question="8">
+                            <label>What is your biggest challenge right now?</label>
+                            <div class="form-options">
+                                <label class="option-label">
+                                    <input type="radio" name="biggest_challenge" value="Too few enquiries" required>
+                                    <span>Too few enquiries</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="biggest_challenge" value="Relying on word-of-mouth">
+                                    <span>Relying on word-of-mouth</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="biggest_challenge" value="No consistent online presence">
+                                    <span>No consistent online presence</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="biggest_challenge" value="Website visitors don't convert">
+                                    <span>Website visitors don't convert</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="biggest_challenge" value="No lead follow-up system">
+                                    <span>No lead follow-up system</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="biggest_challenge" value="Other">
+                                    <span>Other</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 9: Timeline -->
+                        <div class="form-question" data-question="9">
+                            <label>What's your timeline?</label>
+                            <div class="form-options">
+                                <label class="option-label">
+                                    <input type="radio" name="timeline" value="Immediately" required>
+                                    <span>Immediately</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="timeline" value="Within 30 days">
+                                    <span>Within 30 days</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="timeline" value="1–3 months">
+                                    <span>1–3 months</span>
+                                </label>
+                                <label class="option-label">
+                                    <input type="radio" name="timeline" value="Just exploring">
+                                    <span>Just exploring</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Form Navigation -->
+                        <div class="form-navigation">
+                            <button type="button" class="nav-button nav-back" id="back-button">
+                                ← Back
+                            </button>
+                            <button type="button" class="nav-button nav-next" id="next-button">
+                                Next →
+                            </button>
+                            <button type="submit" class="nav-button nav-submit" id="submit-button" style="display: none;">
+                                Submit Assessment
+                            </button>
+                        </div>
+
+                        <!-- Error Message -->
+                        <div class="form-error" id="form-error"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUCCESS SCREEN -->
+        <section class="success-section" id="success-section" style="display: none;">
+            <div class="section-content">
+                <div class="success-content">
+                    <div class="success-icon">✓</div>
+                    <h2>Thanks. Your details are in.</h2>
+                    <p>Choose your time below to lock in your strategy call now.</p>
+
+                    <div class="success-divider"></div>
+
+                    <h3>Next step: Book your free strategy call</h3>
+                    <p class="success-subtext">Fast booking. No back-and-forth.</p>
+
+                    <div id="calendly-container"></div>
+                    <a class="success-home-link" href="../">Continue to Home</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Calendly Script -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" defer></script>
+</body>
+</html>

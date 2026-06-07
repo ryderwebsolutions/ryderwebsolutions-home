@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const generalAssessmentHandler = require('./api/general-assessment');
+const plumbingAssessmentHandler = require('./api/plumbing-assessment');
 require('dotenv').config();
 
 const app = express();
@@ -337,6 +338,11 @@ app.post('/api/general-assessment', (req, res) => {
     return generalAssessmentHandler(req, res);
 });
 
+// API Route: Plumbing Assessment
+app.post('/api/plumbing-assessment', (req, res) => {
+    return plumbingAssessmentHandler(req, res);
+});
+
 // Health check endpoint
 app.get('/api/health', (req, res) => {
     res.status(200).json({
@@ -352,6 +358,9 @@ app.use('/cosmetic-clinic', express.static(__dirname + '/cosmetic-clinic'));
 // Serve static files for general consultation page
 app.use('/general-consultation', express.static(__dirname + '/general-consultation'));
 
+// Serve static files for plumbing funnel
+app.use('/plumbing', express.static(__dirname + '/plumbing'));
+
 // Serve cosmetic clinic index
 app.get('/cosmetic-clinic/', (req, res) => {
     res.sendFile(__dirname + '/cosmetic-clinic/index.html');
@@ -360,6 +369,16 @@ app.get('/cosmetic-clinic/', (req, res) => {
 // Serve general consultation index
 app.get('/general-consultation/', (req, res) => {
     res.sendFile(__dirname + '/general-consultation/index.html');
+});
+
+// Serve plumbing funnel index
+app.get('/plumbing/', (req, res) => {
+    res.sendFile(__dirname + '/plumbing/index.html');
+});
+
+// Serve plumbing post-booking landing page
+app.get('/plumbing/landing/', (req, res) => {
+    res.sendFile(__dirname + '/plumbing/landing/index.html');
 });
 
 // Error handling middleware
