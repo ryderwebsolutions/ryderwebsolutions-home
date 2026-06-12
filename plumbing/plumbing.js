@@ -1,5 +1,10 @@
 /* ============================================
-   PLUMBING FORM - JAVASCRIPT LOGIC
+   PLUMBING — JAVASCRIPT
+   Multi-step form + Carousel + Counters
+   ============================================ */
+
+/* ============================================
+   MULTI-STEP FORM
    ============================================ */
 
 class MultiStepForm {
@@ -43,11 +48,11 @@ class MultiStepForm {
             }
         });
 
-        // Listen for Calendly booking completion → redirect to landing page
         window.addEventListener('message', (e) => {
             if (e.origin !== 'https://calendly.com') return;
             if (e.data && e.data.event === 'calendly.event_scheduled') {
-                window.location.href = '/plumbing/landing/';
+                if (typeof fbq !== 'undefined') fbq('track', 'Schedule');
+                window.location.href = '/free-review/landing/';
             }
         });
 
@@ -66,7 +71,6 @@ class MultiStepForm {
             this.showError('Please fill in this field');
             return;
         }
-
         this.clearError();
         this.saveCurrentQuestion();
 
@@ -115,8 +119,7 @@ class MultiStepForm {
 
         for (let input of inputs) {
             if (input.type === 'radio') {
-                const name = input.name;
-                const isChecked = this.form.querySelector(`input[name="${name}"]:checked`);
+                const isChecked = this.form.querySelector(`input[name="${input.name}"]:checked`);
                 if (!isChecked) return false;
             } else if (input.type === 'email') {
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -128,7 +131,6 @@ class MultiStepForm {
                 if (!input.value.trim()) return false;
             }
         }
-
         return true;
     }
 
@@ -138,9 +140,7 @@ class MultiStepForm {
 
         inputs.forEach(input => {
             if (input.type === 'radio') {
-                if (input.checked) {
-                    this.formData[input.name] = input.value;
-                }
+                if (input.checked) this.formData[input.name] = input.value;
             } else if (input.type !== 'hidden' && input.name !== 'website') {
                 this.formData[input.name] = input.value.trim();
             }
@@ -151,9 +151,8 @@ class MultiStepForm {
         const progress = ((this.currentQuestion + 1) / this.totalQuestions) * 100;
         const progressFill = document.querySelector('.progress-fill');
         const currentText = document.querySelector('.current-question');
-
-        progressFill.style.width = progress + '%';
-        currentText.textContent = this.currentQuestion + 1;
+        if (progressFill) progressFill.style.width = progress + '%';
+        if (currentText) currentText.textContent = this.currentQuestion + 1;
     }
 
     updateNavigationButtons() {
@@ -189,7 +188,7 @@ class MultiStepForm {
         this.saveCurrentQuestion();
 
         const honeypot = this.form.querySelector('input[name="website"]');
-        if (honeypot.value) {
+        if (honeypot && honeypot.value) {
             this.showSuccess();
             return;
         }
@@ -200,8 +199,8 @@ class MultiStepForm {
 
         try {
             const response = await this.submitForm();
-
             if (response.ok) {
+                if (typeof fbq !== 'undefined') fbq('track', 'Lead');
                 this.showSuccess();
             } else {
                 this.showError('Submission failed. Please try again.');
@@ -236,7 +235,7 @@ class MultiStepForm {
 
     resetSubmitButton() {
         this.submitButton.disabled = false;
-        this.submitButton.innerHTML = 'Submit Assessment';
+        this.submitButton.innerHTML = 'Get My Free Review &#8594;';
         this.isSubmitting = false;
     }
 
@@ -255,23 +254,15 @@ class MultiStepForm {
         const embedHeight = window.matchMedia('(max-width: 768px)').matches ? 1320 : 1700;
 
         if (!calendlyContainer) return;
-
         calendlyContainer.innerHTML = '';
 
         const enforceCalendlyHeight = () => {
             if (!calendlyContainer) return;
-
             calendlyContainer.style.setProperty('min-height', `${embedHeight}px`, 'important');
-
             const widget = calendlyContainer.querySelector('.calendly-inline-widget');
-            if (widget) {
-                widget.style.setProperty('height', `${embedHeight}px`, 'important');
-            }
-
+            if (widget) widget.style.setProperty('height', `${embedHeight}px`, 'important');
             const iframe = calendlyContainer.querySelector('iframe');
-            if (iframe) {
-                iframe.style.setProperty('height', `${embedHeight}px`, 'important');
-            }
+            if (iframe) iframe.style.setProperty('height', `${embedHeight}px`, 'important');
         };
 
         if (window.Calendly) {
@@ -295,6 +286,189 @@ class MultiStepForm {
     }
 }
 
+/* ============================================
+   PROJECT CAROUSEL
+   ============================================ */
+
+class ProjectCarousel {
+    constructor() {
+        this.wrapper = document.getElementById('carouselWrapper');
+        this.track = document.getElementById('carouselTrack');
+        if (!this.wrapper || !this.track) return;
+
+        this.cards = Array.from(this.track.querySelectorAll('.carousel-card'));
+        this.dotsContainer = document.getElementById('carouselDots');
+        this.prevBtn = document.getElementById('carouselPrev');
+        this.nextBtn = document.getElementById('carouselNext');
+        this.dots = [];
+        this.currentIndex = 0;
+        this.isScrolling = false;
+
+        this.init();
+    }
+
+    init() {
+        this.buildDots();
+        this.setupToggleButtons();
+        this.setupNavButtons();
+        this.setupScrollTracking();
+        this.updateButtonStates();
+    }
+
+    buildDots() {
+        if (!this.dotsContainer) return;
+        this.cards.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+            dot.addEventListener('click', () => this.scrollToCard(i));
+            this.dotsContainer.appendChild(dot);
+            this.dots.push(dot);
+        });
+    }
+
+    setupToggleButtons() {
+        this.cards.forEach(card => {
+            const btns = card.querySelectorAll('.toggle-btn');
+            const mobileView = card.querySelector('.view-mobile');
+            const desktopView = card.querySelector('.view-desktop');
+
+            btns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const view = btn.dataset.view;
+
+                    btns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    if (view === 'mobile') {
+                        desktopView.classList.remove('active');
+                        mobileView.classList.add('active');
+                    } else {
+                        mobileView.classList.remove('active');
+                        desktopView.classList.add('active');
+                    }
+                });
+            });
+        });
+    }
+
+    setupNavButtons() {
+        if (this.prevBtn) this.prevBtn.addEventListener('click', () => this.prev());
+        if (this.nextBtn) this.nextBtn.addEventListener('click', () => this.next());
+    }
+
+    setupScrollTracking() {
+        let scrollTimer;
+        this.wrapper.addEventListener('scroll', () => {
+            clearTimeout(scrollTimer);
+            scrollTimer = setTimeout(() => {
+                this.updateActiveFromScroll();
+            }, 80);
+        }, { passive: true });
+    }
+
+    updateActiveFromScroll() {
+        const wrapperLeft = this.wrapper.getBoundingClientRect().left;
+        let closest = 0;
+        let closestDist = Infinity;
+
+        this.cards.forEach((card, i) => {
+            const dist = Math.abs(card.getBoundingClientRect().left - wrapperLeft);
+            if (dist < closestDist) {
+                closestDist = dist;
+                closest = i;
+            }
+        });
+
+        if (closest !== this.currentIndex) {
+            this.currentIndex = closest;
+            this.updateDots();
+            this.updateButtonStates();
+        }
+    }
+
+    scrollToCard(index) {
+        const card = this.cards[index];
+        if (!card) return;
+
+        const wrapperPadding = parseInt(getComputedStyle(this.wrapper).paddingLeft) || 24;
+        const targetScrollLeft = card.offsetLeft - wrapperPadding;
+
+        this.wrapper.scrollTo({ left: targetScrollLeft, behavior: 'smooth' });
+        this.currentIndex = index;
+        this.updateDots();
+        this.updateButtonStates();
+    }
+
+    next() {
+        if (this.currentIndex < this.cards.length - 1) {
+            this.scrollToCard(this.currentIndex + 1);
+        }
+    }
+
+    prev() {
+        if (this.currentIndex > 0) {
+            this.scrollToCard(this.currentIndex - 1);
+        }
+    }
+
+    updateDots() {
+        this.dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === this.currentIndex);
+        });
+    }
+
+    updateButtonStates() {
+        if (this.prevBtn) this.prevBtn.disabled = this.currentIndex === 0;
+        if (this.nextBtn) this.nextBtn.disabled = this.currentIndex === this.cards.length - 1;
+    }
+}
+
+/* ============================================
+   ANIMATED COUNTERS
+   ============================================ */
+
+function initCounters() {
+    const counters = document.querySelectorAll('.trust-number');
+    if (!counters.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.dataset.animated) {
+                entry.target.dataset.animated = '1';
+                animateCounter(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => observer.observe(counter));
+}
+
+function animateCounter(el) {
+    const target = parseInt(el.dataset.target, 10);
+    const suffix = el.dataset.suffix || '';
+    const duration = 1400;
+    const startTime = Date.now();
+
+    const update = () => {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(eased * target);
+        el.textContent = current + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+    };
+
+    requestAnimationFrame(update);
+}
+
+/* ============================================
+   INIT
+   ============================================ */
+
 document.addEventListener('DOMContentLoaded', () => {
     new MultiStepForm();
+    new ProjectCarousel();
+    initCounters();
 });

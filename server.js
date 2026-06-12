@@ -24,7 +24,10 @@ app.use('/templates/arcscaffolding/assets', express.static(path.join(arcscaffold
 app.use('/templates/arcscaffolding/images', express.static(path.join(arcscaffoldingDistPath, 'images')));
 app.use('/templates/construction', express.static(constructionPath));
 
-// Serve root static files  
+// Redirect /plumbing/ → /free-review/ (301 permanent — Meta ad URLs now canonical)
+app.get(['/plumbing', '/plumbing/'], (req, res) => res.redirect(301, '/free-review/'));
+
+// Serve root static files
 app.use(express.static(__dirname));
 
 // SPA routes - serve index.html for all paths under these templates
@@ -361,6 +364,9 @@ app.use('/general-consultation', express.static(__dirname + '/general-consultati
 // Serve static files for plumbing funnel
 app.use('/plumbing', express.static(__dirname + '/plumbing'));
 
+// Serve free-review (primary landing page — same files, aliased from /plumbing)
+app.use('/free-review', express.static(__dirname + '/plumbing'));
+
 // Serve cosmetic clinic index
 app.get('/cosmetic-clinic/', (req, res) => {
     res.sendFile(__dirname + '/cosmetic-clinic/index.html');
@@ -378,6 +384,14 @@ app.get('/plumbing/', (req, res) => {
 
 // Serve plumbing post-booking landing page
 app.get('/plumbing/landing/', (req, res) => {
+    res.sendFile(__dirname + '/plumbing/landing/index.html');
+});
+
+// Free-review routes (primary landing page)
+app.get(['/free-review', '/free-review/'], (req, res) => {
+    res.sendFile(__dirname + '/plumbing/index.html');
+});
+app.get(['/free-review/landing', '/free-review/landing/'], (req, res) => {
     res.sendFile(__dirname + '/plumbing/landing/index.html');
 });
 

@@ -5,6 +5,26 @@
   "outputDirectory": ".",
   "rewrites": [
     {
+      "source": "/free-review",
+      "destination": "/plumbing/index.html"
+    },
+    {
+      "source": "/free-review/",
+      "destination": "/plumbing/index.html"
+    },
+    {
+      "source": "/free-review/landing",
+      "destination": "/plumbing/landing/index.html"
+    },
+    {
+      "source": "/free-review/landing/",
+      "destination": "/plumbing/landing/index.html"
+    },
+    {
+      "source": "/free-review/:path*",
+      "destination": "/plumbing/:path*"
+    },
+    {
       "source": "/templates/construction",
       "destination": "/templates/construction/index.html"
     },

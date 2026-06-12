@@ -3,236 +3,503 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get more plumbing leads with a professional website, Meta ads, and a booking funnel built for tradesmen. Book a free strategy call today.">
+    <meta name="description" content="Get a free review of your business website and online presence. We identify exactly where you're losing enquiries — and how to fix it. No obligation.">
     <meta name="theme-color" content="#000000">
-    <meta name="keywords" content="plumber lead generation, plumbing website, plumber marketing Ireland, plumber Meta ads, plumbing booking system">
+    <meta name="keywords" content="local business website Ireland, trade website design, website lead generation Ireland, plumber website, contractor website Ireland">
 
-    <title>More Plumbing Leads | Ryder Web Solutions</title>
+    <title>Free Website & Enquiry Review | Ryder Web Solutions</title>
 
     <link rel="stylesheet" href="/cosmetic-clinic/cosmetic-clinic.css">
     <link rel="stylesheet" href="plumbing.css">
     <script src="plumbing.js" defer></script>
 </head>
 <body>
-    <div class="page-container">
-        <!-- FORM SECTION -->
-        <section class="form-section" id="form-section">
-            <div class="section-content">
-                <div class="section-header">
-                    <h1>Get More Plumbing Jobs</h1>
-                    <p>Complete this 2-minute form, then book your free strategy call instantly.</p>
+<div class="page-container">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="top">
+        <div class="hero-background"></div>
+
+        <div class="page-header">
+            <span class="brand-name">Ryder Web Solutions</span>
+            <a href="#form-section" class="header-cta-btn">Get Free Review</a>
+        </div>
+
+        <div class="hero-content">
+            <p class="hero-eyebrow">For Trades &amp; Local Service Businesses</p>
+            <h1 class="hero-headline">Get Your Free Website &amp; Enquiry Review</h1>
+            <p class="hero-subheadline">We'll review your online presence and show you exactly where you're losing enquiries — and what to do about it.</p>
+            <div class="hero-cta">
+                <a href="#form-section" class="cta-button hero-cta-btn">Get My Free Review &rarr;</a>
+                <p class="hero-cta-micro">Takes 2 minutes &nbsp;&middot;&nbsp; No obligation &nbsp;&middot;&nbsp; Instant booking</p>
+            </div>
+            <p class="hero-trust">Already working with businesses across plumbing, waterproofing, scaffolding, construction &amp; more</p>
+        </div>
+    </section>
+
+    <!-- ===== PROBLEM SECTION ===== -->
+    <section class="problem-section">
+        <div class="section-content">
+            <div class="section-header">
+                <h2>Does this sound like your business?</h2>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-item">
+                    <div class="problem-icon">📞</div>
+                    <h3>Relying on word of mouth</h3>
+                    <p>Referrals are great — but unpredictable. When they dry up, you have no backup plan.</p>
                 </div>
-
-                <div class="form-container">
-                    <form id="assessment-form" class="multi-step-form">
-                        <!-- Progress Bar -->
-                        <div class="form-progress">
-                            <div class="progress-bar">
-                                <div class="progress-fill"></div>
-                            </div>
-                            <p class="progress-text"><span class="current-question">1</span> of <span class="total-questions">9</span></p>
-                        </div>
-
-                        <!-- Honeypot field for spam protection -->
-                        <input type="text" name="website" class="honeypot" style="display: none;">
-
-                        <!-- Question 1: Business Name -->
-                        <div class="form-question active" data-question="1">
-                            <label for="business-name">What's the name of your plumbing business?</label>
-                            <input type="text" id="business-name" name="business_name" placeholder="e.g. Murphy Plumbing Services" autocomplete="organization" required>
-                        </div>
-
-                        <!-- Question 2: Your Name -->
-                        <div class="form-question" data-question="2">
-                            <label for="your-name">Your full name</label>
-                            <input type="text" id="your-name" name="your_name" placeholder="Enter your name" autocomplete="name" required>
-                        </div>
-
-                        <!-- Question 3: Work Email -->
-                        <div class="form-question" data-question="3">
-                            <label for="work-email">Work email address</label>
-                            <input type="email" id="work-email" name="work_email" placeholder="Enter your email" autocomplete="email" required>
-                        </div>
-
-                        <!-- Question 4: Phone Number -->
-                        <div class="form-question" data-question="4">
-                            <label for="phone-number">Best phone number to reach you</label>
-                            <div class="phone-input-group">
-                                <select id="phone-country-code" name="phone_country_code" required>
-                                    <option value="+353" selected>Ireland (+353)</option>
-                                    <option value="+44">UK (+44)</option>
-                                    <option value="+1">US/Canada (+1)</option>
-                                    <option value="+61">Australia (+61)</option>
-                                    <option value="+971">UAE (+971)</option>
-                                    <option value="+49">Germany (+49)</option>
-                                    <option value="+33">France (+33)</option>
-                                    <option value="+34">Spain (+34)</option>
-                                    <option value="+39">Italy (+39)</option>
-                                    <option value="+31">Netherlands (+31)</option>
-                                </select>
-                                <input type="tel" id="phone-number" name="phone_number" placeholder="Enter phone number" autocomplete="tel-national" inputmode="tel" required>
-                            </div>
-                        </div>
-
-                        <!-- Question 5: Business Location -->
-                        <div class="form-question" data-question="5">
-                            <label for="business-location">Where is your business based?</label>
-                            <input type="text" id="business-location" name="business_location" placeholder="City, County" autocomplete="address-level2" required>
-                        </div>
-
-                        <!-- Question 6: Business Type -->
-                        <div class="form-question" data-question="6">
-                            <label>What best describes your business?</label>
-                            <div class="form-options">
-                                <label class="option-label">
-                                    <input type="radio" name="business_type" value="Residential Plumbing" required>
-                                    <span>Residential Plumbing</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="business_type" value="Commercial Plumbing">
-                                    <span>Commercial Plumbing</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="business_type" value="Emergency Call-Outs">
-                                    <span>Emergency Call-Outs</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="business_type" value="Gas & Heating">
-                                    <span>Gas &amp; Heating</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="business_type" value="Bathroom Installation">
-                                    <span>Bathroom Installation</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="business_type" value="Other">
-                                    <span>Other</span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- Question 7: Main Goal -->
-                        <div class="form-question" data-question="7">
-                            <label>What are you mainly looking to improve?</label>
-                            <div class="form-options">
-                                <label class="option-label">
-                                    <input type="radio" name="main_goal" value="More job enquiries" required>
-                                    <span>More job enquiries</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="main_goal" value="Better lead conversion">
-                                    <span>Better lead conversion</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="main_goal" value="Meta advertising">
-                                    <span>Meta advertising</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="main_goal" value="Professional website">
-                                    <span>Professional website</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="main_goal" value="Online quoting / booking">
-                                    <span>Online quoting / booking</span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- Question 8: Biggest Challenge -->
-                        <div class="form-question" data-question="8">
-                            <label>What is your biggest challenge right now?</label>
-                            <div class="form-options">
-                                <label class="option-label">
-                                    <input type="radio" name="biggest_challenge" value="Too few enquiries" required>
-                                    <span>Too few enquiries</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="biggest_challenge" value="Relying on word-of-mouth">
-                                    <span>Relying on word-of-mouth</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="biggest_challenge" value="No consistent online presence">
-                                    <span>No consistent online presence</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="biggest_challenge" value="Website visitors don't convert">
-                                    <span>Website visitors don't convert</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="biggest_challenge" value="No lead follow-up system">
-                                    <span>No lead follow-up system</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="biggest_challenge" value="Other">
-                                    <span>Other</span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- Question 9: Timeline -->
-                        <div class="form-question" data-question="9">
-                            <label>What's your timeline?</label>
-                            <div class="form-options">
-                                <label class="option-label">
-                                    <input type="radio" name="timeline" value="Immediately" required>
-                                    <span>Immediately</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="timeline" value="Within 30 days">
-                                    <span>Within 30 days</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="timeline" value="1–3 months">
-                                    <span>1–3 months</span>
-                                </label>
-                                <label class="option-label">
-                                    <input type="radio" name="timeline" value="Just exploring">
-                                    <span>Just exploring</span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- Form Navigation -->
-                        <div class="form-navigation">
-                            <button type="button" class="nav-button nav-back" id="back-button">
-                                ← Back
-                            </button>
-                            <button type="button" class="nav-button nav-next" id="next-button">
-                                Next →
-                            </button>
-                            <button type="submit" class="nav-button nav-submit" id="submit-button" style="display: none;">
-                                Submit Assessment
-                            </button>
-                        </div>
-
-                        <!-- Error Message -->
-                        <div class="form-error" id="form-error"></div>
-                    </form>
+                <div class="problem-item">
+                    <div class="problem-icon">🌐</div>
+                    <h3>Website that doesn't generate calls</h3>
+                    <p>Visitors land, look around, and leave. No enquiry. No phone call. Just traffic going nowhere.</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">📉</div>
+                    <h3>Losing jobs to better-looking competitors</h3>
+                    <p>Businesses with a professional online presence get the call first — even when your work is better.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- SUCCESS SCREEN -->
-        <section class="success-section" id="success-section" style="display: none;">
-            <div class="section-content">
-                <div class="success-content">
-                    <div class="success-icon">✓</div>
-                    <h2>Thanks. Your details are in.</h2>
-                    <p>Choose your time below to lock in your strategy call now.</p>
-
-                    <div class="success-divider"></div>
-
-                    <h3>Next step: Book your free strategy call</h3>
-                    <p class="success-subtext">Fast booking. No back-and-forth.</p>
-
-                    <div id="calendly-container"></div>
-                    <a class="success-home-link" href="../">Continue to Home</a>
+    <!-- ===== TRUST BAR ===== -->
+    <section class="trust-bar-section">
+        <div class="section-content">
+            <div class="trust-stats">
+                <div class="trust-stat">
+                    <span class="trust-number" data-target="7" data-suffix="+">0+</span>
+                    <span class="trust-label">Websites Delivered</span>
+                </div>
+                <div class="trust-divider"></div>
+                <div class="trust-stat">
+                    <span class="trust-number" data-target="6" data-suffix="+">0+</span>
+                    <span class="trust-label">Industries Worked With</span>
+                </div>
+                <div class="trust-divider"></div>
+                <div class="trust-stat">
+                    <span class="trust-number" data-target="7" data-suffix="">0</span>
+                    <span class="trust-label">Projects Currently Live</span>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <!-- Calendly Script -->
-    <script src="https://assets.calendly.com/assets/external/widget.js" defer></script>
+    <!-- ===== PORTFOLIO CAROUSEL ===== -->
+    <section class="portfolio-section">
+        <div class="section-content portfolio-header-wrap">
+            <div class="section-header">
+                <h2>Websites We've Built For Real Businesses</h2>
+                <p>A selection of websites we've designed and launched across multiple industries.</p>
+            </div>
+        </div>
+
+        <div class="carousel-outer">
+            <div class="carousel-track-wrapper" id="carouselWrapper">
+                <div class="carousel-track" id="carouselTrack">
+
+                    <!-- Card 1: DPH Plumbing -->
+                    <div class="carousel-card">
+                        <div class="card-meta">
+                            <span class="card-project-name">DPH Plumbing</span>
+                            <span class="industry-tag">Plumbing</span>
+                        </div>
+                        <div class="card-device-area">
+                            <div class="device-view view-mobile active">
+                                <div class="phone-mockup">
+                                    <div class="phone-island"></div>
+                                    <div class="phone-screen-wrapper">
+                                        <img src="dphplumbingmobile.jpg" alt="DPH Plumbing mobile website" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="device-view view-desktop">
+                                <div class="browser-mockup">
+                                    <div class="browser-bar">
+                                        <span class="browser-dot browser-dot-red"></span>
+                                        <span class="browser-dot browser-dot-yellow"></span>
+                                        <span class="browser-dot browser-dot-green"></span>
+                                        <span class="browser-url">www.dphplumbing.ie</span>
+                                    </div>
+                                    <div class="browser-screen">
+                                        <img src="Screenshot_12-6-2026_173957_www.dphplumbing.ie.jpeg" alt="DPH Plumbing desktop website" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-toggle">
+                            <button class="toggle-btn active" data-view="mobile">📱 Mobile</button>
+                            <button class="toggle-btn" data-view="desktop">💻 Desktop</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: PrimeSeal Waterproofing -->
+                    <div class="carousel-card">
+                        <div class="card-meta">
+                            <span class="card-project-name">PrimeSeal Waterproofing</span>
+                            <span class="industry-tag">Waterproofing</span>
+                        </div>
+                        <div class="card-device-area">
+                            <div class="device-view view-mobile active">
+                                <div class="phone-mockup">
+                                    <div class="phone-island"></div>
+                                    <div class="phone-screen-wrapper">
+                                        <img src="primesealmobile.jpg" alt="PrimeSeal Waterproofing mobile" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="device-view view-desktop">
+                                <div class="browser-mockup">
+                                    <div class="browser-bar">
+                                        <span class="browser-dot browser-dot-red"></span>
+                                        <span class="browser-dot browser-dot-yellow"></span>
+                                        <span class="browser-dot browser-dot-green"></span>
+                                        <span class="browser-url">primesealwaterproofing.ie</span>
+                                    </div>
+                                    <div class="browser-screen">
+                                        <img src="Screenshot_12-6-2026_173742_www.primesealwaterproofing.ie.jpeg" alt="PrimeSeal Waterproofing desktop" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-toggle">
+                            <button class="toggle-btn active" data-view="mobile">📱 Mobile</button>
+                            <button class="toggle-btn" data-view="desktop">💻 Desktop</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Arc Scaffolding -->
+                    <div class="carousel-card">
+                        <div class="card-meta">
+                            <span class="card-project-name">Arc Scaffolding</span>
+                            <span class="industry-tag">Scaffolding</span>
+                        </div>
+                        <div class="card-device-area">
+                            <div class="device-view view-mobile active">
+                                <div class="phone-mockup">
+                                    <div class="phone-island"></div>
+                                    <div class="phone-screen-wrapper">
+                                        <img src="arcscaffoldmobile.jpg" alt="Arc Scaffolding mobile" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="device-view view-desktop">
+                                <div class="browser-mockup">
+                                    <div class="browser-bar">
+                                        <span class="browser-dot browser-dot-red"></span>
+                                        <span class="browser-dot browser-dot-yellow"></span>
+                                        <span class="browser-dot browser-dot-green"></span>
+                                        <span class="browser-url">www.arcscaffold.ie</span>
+                                    </div>
+                                    <div class="browser-screen">
+                                        <img src="Screenshot_10-6-2026_0188_www.arcscaffold.ie.jpeg" alt="Arc Scaffolding desktop" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-toggle">
+                            <button class="toggle-btn active" data-view="mobile">📱 Mobile</button>
+                            <button class="toggle-btn" data-view="desktop">💻 Desktop</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Blitz Concrete -->
+                    <div class="carousel-card">
+                        <div class="card-meta">
+                            <span class="card-project-name">Blitz Concrete</span>
+                            <span class="industry-tag">Construction</span>
+                        </div>
+                        <div class="card-device-area">
+                            <div class="device-view view-mobile active">
+                                <div class="phone-mockup">
+                                    <div class="phone-island"></div>
+                                    <div class="phone-screen-wrapper">
+                                        <img src="blitzconcretemobile.jpg" alt="Blitz Concrete mobile" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="device-view view-desktop">
+                                <div class="browser-mockup">
+                                    <div class="browser-bar">
+                                        <span class="browser-dot browser-dot-red"></span>
+                                        <span class="browser-dot browser-dot-yellow"></span>
+                                        <span class="browser-dot browser-dot-green"></span>
+                                        <span class="browser-url">www.blitzconcrete.ie</span>
+                                    </div>
+                                    <div class="browser-screen">
+                                        <img src="Screenshot_10-6-2026_0199_www.blitzconcrete.ie.jpeg" alt="Blitz Concrete desktop" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-toggle">
+                            <button class="toggle-btn active" data-view="mobile">📱 Mobile</button>
+                            <button class="toggle-btn" data-view="desktop">💻 Desktop</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Ceire Dunne Interiors -->
+                    <div class="carousel-card">
+                        <div class="card-meta">
+                            <span class="card-project-name">Ceire Dunne Interiors</span>
+                            <span class="industry-tag">Interior Design</span>
+                        </div>
+                        <div class="card-device-area">
+                            <div class="device-view view-mobile active">
+                                <div class="phone-mockup">
+                                    <div class="phone-island"></div>
+                                    <div class="phone-screen-wrapper">
+                                        <img src="ceiredunneinteriorsmobile.jpg" alt="Ceire Dunne Interiors mobile" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="device-view view-desktop">
+                                <div class="browser-mockup">
+                                    <div class="browser-bar">
+                                        <span class="browser-dot browser-dot-red"></span>
+                                        <span class="browser-dot browser-dot-yellow"></span>
+                                        <span class="browser-dot browser-dot-green"></span>
+                                        <span class="browser-url">ceiredunneinteriors.ie</span>
+                                    </div>
+                                    <div class="browser-screen">
+                                        <img src="Ceiredunneinteriorsasset.jpeg" alt="Ceire Dunne Interiors desktop" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-toggle">
+                            <button class="toggle-btn active" data-view="mobile">📱 Mobile</button>
+                            <button class="toggle-btn" data-view="desktop">💻 Desktop</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: FTBB Magazine -->
+                    <div class="carousel-card">
+                        <div class="card-meta">
+                            <span class="card-project-name">FTBB Magazine</span>
+                            <span class="industry-tag">Media</span>
+                        </div>
+                        <div class="card-device-area">
+                            <div class="device-view view-mobile active">
+                                <div class="phone-mockup">
+                                    <div class="phone-island"></div>
+                                    <div class="phone-screen-wrapper">
+                                        <img src="ftbbmobile.png" alt="FTBB Magazine mobile" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="device-view view-desktop">
+                                <div class="browser-mockup">
+                                    <div class="browser-bar">
+                                        <span class="browser-dot browser-dot-red"></span>
+                                        <span class="browser-dot browser-dot-yellow"></span>
+                                        <span class="browser-dot browser-dot-green"></span>
+                                        <span class="browser-url">ftbbmagazine.com</span>
+                                    </div>
+                                    <div class="browser-screen">
+                                        <img src="ftbbscreenshot.png" alt="FTBB Magazine desktop" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-toggle">
+                            <button class="toggle-btn active" data-view="mobile">📱 Mobile</button>
+                            <button class="toggle-btn" data-view="desktop">💻 Desktop</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Greenzine Ireland -->
+                    <div class="carousel-card">
+                        <div class="card-meta">
+                            <span class="card-project-name">Greenzine Ireland</span>
+                            <span class="industry-tag">Media &amp; Publishing</span>
+                        </div>
+                        <div class="card-device-area">
+                            <div class="device-view view-mobile active">
+                                <div class="phone-mockup">
+                                    <div class="phone-island"></div>
+                                    <div class="phone-screen-wrapper">
+                                        <img src="greenezinemobile.jpg" alt="Greenzine Ireland mobile" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="device-view view-desktop">
+                                <div class="browser-mockup">
+                                    <div class="browser-bar">
+                                        <span class="browser-dot browser-dot-red"></span>
+                                        <span class="browser-dot browser-dot-yellow"></span>
+                                        <span class="browser-dot browser-dot-green"></span>
+                                        <span class="browser-url">greenezine.com</span>
+                                    </div>
+                                    <div class="browser-screen">
+                                        <img src="Screenshot_12-6-2026_173834_greenezine.com.jpeg" alt="Greenzine Ireland desktop" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-toggle">
+                            <button class="toggle-btn active" data-view="mobile">📱 Mobile</button>
+                            <button class="toggle-btn" data-view="desktop">💻 Desktop</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous project">&#8592;</button>
+            <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next project">&#8594;</button>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+    </section>
+
+    <!-- ===== FOUNDER SECTION ===== -->
+    <section class="founder-section">
+        <div class="section-content">
+            <div class="founder-card">
+                <div class="founder-avatar-wrap">
+                    <div class="founder-avatar">
+                        <img src="dylanportrait.png" alt="Dylan Ryder, founder of Ryder Web Solutions">
+                    </div>
+                </div>
+                <div class="founder-text">
+                    <h2 class="founder-heading">Hi, I'm Dylan.</h2>
+                    <p class="founder-role">Founder, Ryder Web Solutions</p>
+                    <div class="founder-body">
+                        <p>I'm the founder of Ryder Web Solutions. I've worked with businesses across multiple industries to build professional websites and enquiry systems designed to help generate more business online.</p>
+                        <p>As a Computer Science student and web developer, I focus on creating websites that look professional, load quickly and convert visitors into enquiries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RECENT PROJECTS ===== -->
+    <section class="recent-projects-section">
+        <div class="section-content">
+            <div class="section-header">
+                <h2>Recent Projects</h2>
+                <p>Live websites built for local businesses across Ireland.</p>
+            </div>
+            <div class="recent-projects-grid">
+
+                <a href="https://www.primesealwaterproofing.ie" target="_blank" rel="noopener noreferrer" class="rp-card">
+                    <div class="rp-tag">Waterproofing</div>
+                    <h3 class="rp-name">PrimeSeal Waterproofing</h3>
+                    <p class="rp-desc">Professional waterproofing services website with online enquiry system.</p>
+                    <span class="rp-link-label">View live website &rarr;</span>
+                </a>
+
+                <!-- TODO: Replace href="#" with the FTBB Magazine URL -->
+                <a href="#" target="_blank" rel="noopener noreferrer" class="rp-card">
+                    <div class="rp-tag">Media</div>
+                    <h3 class="rp-name">FTBB Magazine</h3>
+                    <p class="rp-desc">Online magazine with modern design and editorial content management.</p>
+                    <span class="rp-link-label">View live website &rarr;</span>
+                </a>
+
+                <a href="https://greenezine.com" target="_blank" rel="noopener noreferrer" class="rp-card">
+                    <div class="rp-tag">Media &amp; Publishing</div>
+                    <h3 class="rp-name">Greenzine Ireland</h3>
+                    <p class="rp-desc">Eco-focused digital publication with clean, modern design.</p>
+                    <span class="rp-link-label">View live website &rarr;</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FORM SECTION ===== -->
+    <section class="form-section" id="form-section">
+        <div class="section-content">
+
+            <p class="scarcity-text">
+                <span class="scarcity-dot"></span>
+                Currently working with a limited number of local service businesses to ensure every project receives proper attention.
+            </p>
+
+            <div class="section-header">
+                <h2>Get Your Free Website &amp; Enquiry Review</h2>
+                <p>We'll review your online presence and show you exactly where you're losing enquiries. No obligation — just straight answers.</p>
+            </div>
+
+            <div class="form-container">
+                <form id="assessment-form" class="multi-step-form">
+
+                    <div class="form-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <p class="progress-text"><span class="current-question">1</span> of <span class="total-questions">4</span></p>
+                    </div>
+
+                    <input type="text" name="website" class="honeypot" style="display: none;">
+
+                    <div class="form-question active" data-question="1">
+                        <label for="business-name">What's the name of your business?</label>
+                        <input type="text" id="business-name" name="business_name" placeholder="e.g. Murphy Plumbing Services" autocomplete="organization" required>
+                    </div>
+
+                    <div class="form-question" data-question="2">
+                        <label for="your-name">Your name</label>
+                        <input type="text" id="your-name" name="your_name" placeholder="Enter your name" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-question" data-question="3">
+                        <label for="work-email">Your email address</label>
+                        <input type="email" id="work-email" name="work_email" placeholder="Enter your email" autocomplete="email" inputmode="email" required>
+                    </div>
+
+                    <div class="form-question" data-question="4">
+                        <label for="phone-number">Best phone number to reach you</label>
+                        <div class="phone-input-group">
+                            <select id="phone-country-code" name="phone_country_code" required>
+                                <option value="+353" selected>Ireland (+353)</option>
+                                <option value="+44">UK (+44)</option>
+                                <option value="+1">US/Canada (+1)</option>
+                                <option value="+61">Australia (+61)</option>
+                                <option value="+971">UAE (+971)</option>
+                                <option value="+49">Germany (+49)</option>
+                                <option value="+33">France (+33)</option>
+                                <option value="+34">Spain (+34)</option>
+                                <option value="+39">Italy (+39)</option>
+                                <option value="+31">Netherlands (+31)</option>
+                            </select>
+                            <input type="tel" id="phone-number" name="phone_number" placeholder="Enter phone number" autocomplete="tel-national" inputmode="tel" required>
+                        </div>
+                    </div>
+
+                    <div class="form-navigation">
+                        <button type="button" class="nav-button nav-back" id="back-button">&#8592; Back</button>
+                        <button type="button" class="nav-button nav-next" id="next-button">Next &#8594;</button>
+                        <!-- Meta Pixel: fire fbq('track', 'Lead') on click — see plumbing.js showSuccess() -->
+                        <button type="submit" class="nav-button nav-submit" id="submit-button" style="display: none;">Get My Free Review &#8594;</button>
+                    </div>
+
+                    <div class="form-error" id="form-error"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SUCCESS SECTION ===== -->
+    <section class="success-section" id="success-section" style="display: none;">
+        <div class="section-content">
+            <div class="success-content">
+                <div class="success-icon">&#10003;</div>
+                <h2>You're in. We'll take a look.</h2>
+                <p>Now pick a time below — we'll walk through your online presence and show you where to find more enquiries.</p>
+                <div class="success-divider"></div>
+                <h3>Book your free strategy call</h3>
+                <p class="success-subtext">15 minutes. No hard sell. Just straight answers.</p>
+                <div id="calendly-container"></div>
+                <a class="success-home-link" href="../">Continue to Home</a>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" defer></script>
 </body>
 </html>
