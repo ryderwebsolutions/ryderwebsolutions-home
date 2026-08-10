@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
   // Mobile nav toggle
   var navToggle = document.getElementById('nav-toggle');
   var nav = document.getElementById('main-nav');
@@ -58,28 +56,5 @@ document.addEventListener('DOMContentLoaded', function () {
     document
       .querySelectorAll('.reveal, .reveal-media, .divider')
       .forEach(function (el) { el.classList.add('visible'); });
-  }
-
-  // Subtle hero parallax
-  var heroImg = document.getElementById('hero-img');
-  if (heroImg && !reduceMotion) {
-    var ticking = false;
-    var updateParallax = function () {
-      var y = window.scrollY;
-      if (y < window.innerHeight * 1.2) {
-        heroImg.style.transform = 'translateY(' + (y * 0.14) + 'px)';
-      }
-      ticking = false;
-    };
-    window.addEventListener(
-      'scroll',
-      function () {
-        if (!ticking) {
-          window.requestAnimationFrame(updateParallax);
-          ticking = true;
-        }
-      },
-      { passive: true }
-    );
   }
 });
