@@ -36,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Scroll reveals
+  var revealEls = document.querySelectorAll('.reveal, .reveal-media, .divider');
+
   if ('IntersectionObserver' in window) {
     var observer = new IntersectionObserver(
       function (entries) {
@@ -49,12 +51,15 @@ document.addEventListener('DOMContentLoaded', function () {
       { threshold: 0.14, rootMargin: '0px 0px -60px 0px' }
     );
 
-    document
-      .querySelectorAll('.reveal, .reveal-media, .divider')
-      .forEach(function (el) { observer.observe(el); });
+    revealEls.forEach(function (el) { observer.observe(el); });
   } else {
-    document
-      .querySelectorAll('.reveal, .reveal-media, .divider')
-      .forEach(function (el) { el.classList.add('visible'); });
+    revealEls.forEach(function (el) { el.classList.add('visible'); });
   }
+
+  // Failsafe: guarantee content (especially photography) is never permanently
+  // hidden if the observer never fires for an element — crawlers, link-preview
+  // bots and some assistive tools render the page without a real scroll event.
+  window.setTimeout(function () {
+    revealEls.forEach(function (el) { el.classList.add('visible'); });
+  }, 2500);
 });
