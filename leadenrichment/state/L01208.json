@@ -1,0 +1,23 @@
+{
+  "lead_id": "L01208",
+  "name": "Mobile Key",
+  "phone": "+353 86 262 9404",
+  "normalized_phone": "0862629404",
+  "address": "3 Bridge St, Balbriggan, Co. Dublin, K32 RX83",
+  "city": "Balbriggan",
+  "state": "Co. Dublin",
+  "category": "Emergency locksmith service",
+  "place_id": "ChIJzzITjugiZ0gRDOiAOkx0l5g",
+  "status": "DONE",
+  "email": "mobilekey68@gmail.com",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/MobileKeyBalbriggan/",
+  "google_business_url": "https://www.google.com/maps/place/Mobile+Key/@53.608995699999994,-6.1830359999999995,14z/data=!4m8!1m2!2m1!1sMobile+Key!3m4!1s0x486722e88e1332cf:0x9897744c3a80e80c!8m2!3d53.608995699999994!4d-6.1830359999999995",
+  "other_listing_url": "https://www.goldenpages.ie/mobile-key-locksmith-balbriggan-K32/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Mobile+Key/@53.608995699999994,-6.1830359999999995,14z/data=!4m8!1m2!2m1!1sMobile+Key!3m4!1s0x486722e88e1332cf:0x9897744c3a80e80c!8m2!3d53.608995699999994!4d-6.1830359999999995 (existing dataset / place_id ChIJzzITjugiZ0gRDOiAOkx0l5g); email:https://www.goldenpages.ie/mobile-key-locksmith-balbriggan-K32/; other_listing_url:https://www.goldenpages.ie/mobile-key-locksmith-balbriggan-K32/; facebook_url:https://www.facebook.com/MobileKeyBalbriggan/",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "Golden Pages listing independently confirms exact phone (086 262 9404) and address (3 Bridge St, Balbriggan) match; email mobilekey68@gmail.com sourced from that listing = HIGH confidence. Facebook page 'Mobile Key | Balbriggan' matches by name+town but WebFetch was blocked/returned no verifiable phone/address, so treat facebook_url specifically as MEDIUM confidence only. No Instagram profile found.",
+  "processed_at": "2026-08-11T00:00:00Z",
+  "status": "DONE"
+}

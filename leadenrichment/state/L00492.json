@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00492",
+  "name": "Michael Lenehan Motor Factors",
+  "phone": "+353 44 934 2415",
+  "normalized_phone": "0449342415",
+  "address": "19 Zone A, Mullingar Business Park, Mullingar, Co. Westmeath, N91 KR23",
+  "city": "Mullingar",
+  "state": "Co. Westmeath",
+  "category": "Auto parts store",
+  "place_id": "ChIJQSKGXgPAXUgRUzGNL2oiFSw",
+  "status": "DONE",
+  "email": "lenehanmotorfactors@gmail.com",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/lenehanmotorfactors/",
+  "google_business_url": "https://www.google.com/maps/place/Michael+Lenehan+Motor+Factors/@53.5212443,-7.3437253,14z/data=!4m8!1m2!2m1!1sMichael+Lenehan+Motor+Factors!3m4!1s0x485dc0035e862241:0x2c15226a2f8d3153!8m2!3d53.5212443!4d-7.3437253",
+  "other_listing_url": "https://www.goldenpages.ie/michael-lenehan-motor-factors-mullingar/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Michael+Lenehan+Motor+Factors/@53.5212443,-7.3437253,14z/data=!4m8!1m2!2m1!1sMichael+Lenehan+Motor+Factors!3m4!1s0x485dc0035e862241:0x2c15226a2f8d3153!8m2!3d53.5212443!4d-7.3437253 (existing dataset / place_id ChIJQSKGXgPAXUgRUzGNL2oiFSw); email:https://www.goldenpages.ie/michael-lenehan-motor-factors-mullingar/ (WebFetch, phone independently confirmed exact match (044)9342415); other_listing_url:https://www.goldenpages.ie/michael-lenehan-motor-factors-mullingar/ (WebFetch); facebook_url:https://www.facebook.com/lenehanmotorfactors/ (WebSearch, 935 likes)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "Golden Pages listing independently confirms exact phone match and provides the business email. Facebook page name+town matches (935 likes, 'leading vehicle parts and accessory suppliers in the area') but not independently phone-verified via fetch (blocked). A second, apparently duplicate/older Facebook page 'Lenehan Motor Factors' also exists (facebook.com/p/Lenehan-Motor-Factors-100054338959489/) - not recorded, mentioned for reference. No Instagram found.",
+  "processed_at": "2026-08-11T12:00:00Z"
+}

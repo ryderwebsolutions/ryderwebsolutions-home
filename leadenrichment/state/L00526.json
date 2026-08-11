@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00526",
+  "name": "PG AUTO STOP",
+  "phone": "+353 85 222 2237",
+  "normalized_phone": "0852222237",
+  "address": "Seafield business centre, Seafield, Youghal, Co. Cork, P36 XC92",
+  "city": "Youghal",
+  "state": "Co. Cork",
+  "category": "Mechanic",
+  "place_id": "ChIJ4QFWN9FtQ0gRYc-KAhkVw9w",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/PG+AUTO+STOP/@51.9410149,-7.858822999999999,14z/data=!4m8!1m2!2m1!1sPG+AUTO+STOP!3m4!1s0x48436dd1375601e1:0xdcc31519028acf61!8m2!3d51.9410149!4d-7.858822999999999",
+  "other_listing_url": "https://irish-pages.ie/listing/ireland/youghal/mechanics/pg-auto-stop",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/PG+AUTO+STOP/@51.9410149,-7.858822999999999,14z/data=!4m8!1m2!2m1!1sPG+AUTO+STOP!3m4!1s0x48436dd1375601e1:0xdcc31519028acf61!8m2!3d51.9410149!4d-7.858822999999999 (existing dataset / place_id ChIJ4QFWN9FtQ0gRYc-KAhkVw9w); other_listing_url:https://irish-pages.ie/listing/ireland/youghal/mechanics/pg-auto-stop",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "No Facebook or Instagram page found for this specific Youghal business (several similarly-named PG Auto pages exist elsewhere - Worcester MA, Prince George BC, UK - not matched, different location). Not listed on Golden Pages Youghal garages page. Found irish-pages.ie directory listing with phone +353852222237 exactly matching normalized_phone, confirming HIGH confidence for that listing. No public email found (irish-pages.ie listing is unverified, no email shown).",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

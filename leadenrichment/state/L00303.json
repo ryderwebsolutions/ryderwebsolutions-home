@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00303",
+  "name": "Eoin Donnelly Motors",
+  "phone": "+353 87 609 1107",
+  "normalized_phone": "0876091107",
+  "address": "Hibernian Insurance Industrial Estate, Unit 2, Greenhills Rd, Dublin 24, D24 V265",
+  "city": "Dublin 24",
+  "state": "",
+  "category": "Auto body shop",
+  "place_id": "ChIJtzWCalULZ0gRqnZBp2O7v5Q",
+  "status": "PENDING",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Eoin+Donnelly+Motors/@53.2932585,-6.354070999999999,14z/data=!4m8!1m2!2m1!1sEoin+Donnelly+Motors!3m4!1s0x48670b556a8235b7:0x94bfbb63a74176aa!8m2!3d53.2932585!4d-6.354070999999999",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Eoin+Donnelly+Motors/@53.2932585,-6.354070999999999,14z/data=!4m8!1m2!2m1!1sEoin+Donnelly+Motors!3m4!1s0x48670b556a8235b7:0x94bfbb63a74176aa!8m2!3d53.2932585!4d-6.354070999999999 (existing dataset / place_id ChIJtzWCalULZ0gRqnZBp2O7v5Q)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "",
+  "processed_at": null
+}

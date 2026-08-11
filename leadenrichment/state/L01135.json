@@ -1,0 +1,23 @@
+{
+  "lead_id": "L01135",
+  "name": "Car Park",
+  "phone": "",
+  "normalized_phone": "",
+  "address": "1 King St, Brigown, Mitchelstown, Co. Cork, P67 N290",
+  "city": "Mitchelstown",
+  "state": "Co. Cork",
+  "category": "Parking lot",
+  "place_id": "ChIJ6ZelQQBXQ0gRPAvvirKMsmM",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Car+Park/@52.2661891,-8.2709583,14z/data=!4m8!1m2!2m1!1sCar+Park!3m4!1s0x4843570041a597e9:0x63b28cb28aef0b3c!8m2!3d52.2661891!4d-8.2709583",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Car+Park/@52.2661891,-8.2709583,14z/data=!4m8!1m2!2m1!1sCar+Park!3m4!1s0x4843570041a597e9:0x63b28cb28aef0b3c!8m2!3d52.2661891!4d-8.2709583 (existing dataset / place_id ChIJ6ZelQQBXQ0gRPAvvirKMsmM)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "NOT_FOUND",
+  "notes": "This entry is a generic public/municipal car park ('Car Park', 1 King St, Brigown, Mitchelstown) rather than a distinctly-named private business - no phone number in baseline data to match against. Searched Golden Pages, Facebook, and general web for a King Street Mitchelstown car park; found only unrelated nearby businesses (BC Car Valeting on King St) and the Mitchelstown Business Association Facebook page mentioning parking generally, plus Parkopedia's generic Mitchelstown parking directory (no dedicated page for this specific lot). No email, social media, or dedicated listing exists for this specific car park - likely a Cork County Council / town public car park with no independent web presence.",
+  "processed_at": "2026-08-11T00:00:00Z",
+  "status": "DONE"
+}

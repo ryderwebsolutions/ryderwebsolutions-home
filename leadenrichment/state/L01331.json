@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01331",
+  "name": "Autoservice.LTD",
+  "phone": "+353 85 202 3662",
+  "normalized_phone": "0852023662",
+  "address": "4 N Circular Rd, Kilrush, Limerick, V94 P99F",
+  "city": "Limerick",
+  "state": "",
+  "category": "Auto repair shop",
+  "place_id": "ChIJ_2LCpbNdW0gReo4XJiju2Z4",
+  "status": "PENDING",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Autoservice.LTD/@52.6662524,-8.650905,14z/data=!4m8!1m2!2m1!1sAutoservice.LTD!3m4!1s0x485b5db3a5c262ff:0x9ed9ee2826178e7a!8m2!3d52.6662524!4d-8.650905",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Autoservice.LTD/@52.6662524,-8.650905,14z/data=!4m8!1m2!2m1!1sAutoservice.LTD!3m4!1s0x485b5db3a5c262ff:0x9ed9ee2826178e7a!8m2!3d52.6662524!4d-8.650905 (existing dataset / place_id ChIJ_2LCpbNdW0gReo4XJiju2Z4)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "",
+  "processed_at": null
+}

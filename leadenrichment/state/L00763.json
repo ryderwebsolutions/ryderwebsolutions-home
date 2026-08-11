@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00763",
+  "name": "Car treats valeting & tyre centre",
+  "phone": "+353 85 847 2496",
+  "normalized_phone": "0858472496",
+  "address": "Derry House, Caheraderry, Lahinch, Co. Clare, V95 E516",
+  "city": "Lahinch",
+  "state": "Co. Clare",
+  "category": "Tire shop",
+  "place_id": "ChIJ35dBj_YGW0gRUB3Tht_h4MM",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/cartreatsvaleting/",
+  "google_business_url": "https://www.google.com/maps/place/Car+treats+valeting+%26+tyre+centre/@52.964376599999994,-9.3324552,14z/data=!4m8!1m2!2m1!1sCar+treats+valeting+%26+tyre+centre!3m4!1s0x485b06f68f4197df:0xc3e0e1df86d31d50!8m2!3d52.964376599999994!4d-9.3324552",
+  "other_listing_url": "https://irish-pages.ie/listing/ireland/lahinch/tire-shop/car-treats-valeting-tyre-centre",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Car+treats+valeting+%26+tyre+centre/@52.964376599999994,-9.3324552,14z/data=!4m8!1m2!2m1!1sCar+treats+valeting+%26+tyre+centre!3m4!1s0x485b06f68f4197df:0xc3e0e1df86d31d50!8m2!3d52.964376599999994!4d-9.3324552 (existing dataset / place_id ChIJ35dBj_YGW0gRUB3Tht_h4MM); facebook_url:https://www.facebook.com/cartreatsvaleting/; other_listing_url:https://irish-pages.ie/listing/ireland/lahinch/tire-shop/car-treats-valeting-tyre-centre",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "Facebook page 'Car Treats Valeting & Tyre Centre Lahinch' matches name+town exactly. Phone +353858472496 independently confirmed on irish-pages.ie directory listing (matches normalized_phone). No public email found. No Instagram profile found via search.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

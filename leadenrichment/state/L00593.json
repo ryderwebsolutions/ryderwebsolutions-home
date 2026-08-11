@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00593",
+  "name": "C3 phone service",
+  "phone": "+353 87 115 0805",
+  "normalized_phone": "0871150805",
+  "address": "Main St, Ballypheasan, Roscommon, F42 F862",
+  "city": "Roscommon",
+  "state": "",
+  "category": "Repair service",
+  "place_id": "ChIJTxuKo6w8XEgRe3PyLp3Izow",
+  "status": "DONE",
+  "email": "c3.phoneservices@gmail.com",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/p/C3-Phone-Service-100065293188600/",
+  "google_business_url": "https://www.google.com/maps/place/C3+phone+service/@53.6301178,-8.1898131,14z/data=!4m8!1m2!2m1!1sC3+phone+service!3m4!1s0x485c3caca38a1b4f:0x8ccec89d2ef2737b!8m2!3d53.6301178!4d-8.1898131",
+  "other_listing_url": "https://www.repairmystuff.ie/business/c3-phone-service/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/C3+phone+service/@53.6301178,-8.1898131,14z/data=!4m8!1m2!2m1!1sC3+phone+service!3m4!1s0x485c3caca38a1b4f:0x8ccec89d2ef2737b!8m2!3d53.6301178!4d-8.1898131 (existing dataset / place_id ChIJTxuKo6w8XEgRe3PyLp3Izow); email:https://www.repairmystuff.ie/business/c3-phone-service/; facebook_url:https://www.facebook.com/p/C3-Phone-Service-100065293188600/; other_listing_url:https://www.repairmystuff.ie/business/c3-phone-service/",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "Strong match: vymaps.com search result title explicitly showed 'C3 Phone Service, Roscommon (0871150805)' matching normalized_phone exactly. repairmystuff.ie directory (fetched) confirms business name, 40 Main Street Roscommon address (consistent with lead's Main St, Roscommon address), and email c3.phoneservices@gmail.com. Facebook page found via search (87 likes, name+town match) but WebFetch was blocked by Facebook login wall so on-page phone/address could not be independently re-verified there - facebook_url recorded at MEDIUM-level verification even though overall confidence is HIGH due to phone-matched email source. No Instagram found.",
+  "processed_at": "2026-08-11T12:38:29Z"
+}

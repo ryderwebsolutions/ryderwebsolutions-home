@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01298",
+  "name": "Ashgrove Mechanical Services",
+  "phone": "+353 1 554 5777",
+  "normalized_phone": "015545777",
+  "address": "Colm House, 91 Pembroke Rd, Ballsbridge, Dublin 4, D04 EC42",
+  "city": "Dublin 4",
+  "state": "",
+  "category": "",
+  "place_id": "ChIJI5q60sAOZ0gRMZuuHAKJYng",
+  "status": "DONE",
+  "email": "info@ashgroveireland.ie",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/p/Ashgrove-Mechanical-Services-Ltd-100054264381644/",
+  "google_business_url": "https://www.google.com/maps/place/Ashgrove+Mechanical+Services/@53.330666199999996,-6.2341618,14z/data=!4m8!1m2!2m1!1sAshgrove+Mechanical+Services!3m4!1s0x48670ec0d2ba9a23:0x786289021cae9b31!8m2!3d53.330666199999996!4d-6.2341618",
+  "other_listing_url": "https://www.ashgroveireland.ie/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Ashgrove+Mechanical+Services/@53.330666199999996,-6.2341618,14z/data=!4m8!1m2!2m1!1sAshgrove+Mechanical+Services!3m4!1s0x48670ec0d2ba9a23:0x786289021cae9b31!8m2!3d53.330666199999996!4d-6.2341618 (existing dataset / place_id ChIJI5q60sAOZ0gRMZuuHAKJYng); email:https://www.ashgroveireland.ie/ (WebFetch, phone independently confirmed as exact match +353-(0)1-5545777); other_listing_url:https://www.ashgroveireland.ie/ (WebFetch); facebook_url:https://www.facebook.com/p/Ashgrove-Mechanical-Services-Ltd-100054264381644/ (WebSearch)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "DISCREPANCY TO FLAG: lead address is 'Colm House, 91 Pembroke Rd, Ballsbridge, Dublin 4' (Colm House is commonly used as a registered/company-formation address in Ireland), but the company's own website and other directories list the operating address as 32 Stadium Business Park, Ballycoolin, Dublin 11. Despite this, phone +353 1 554 5777 matches EXACTLY across the lead data, ashgroveireland.ie, and independent search sources, confirming same company (likely registered office vs. trading office). Facebook page matched by name but not independently phone-verified (fetch blocked by login wall). No Instagram found.",
+  "processed_at": "2026-08-11T12:00:00Z"
+}

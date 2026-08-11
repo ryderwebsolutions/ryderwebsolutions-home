@@ -1,0 +1,23 @@
+{
+  "lead_id": "L01058",
+  "name": "ronnie healy garden machinery",
+  "phone": "+353 87 276 2155",
+  "normalized_phone": "0872762155",
+  "address": "50 Saunders Ln, Merrymeeting, Rathnew, Co. Wicklow, A67 D430",
+  "city": "Rathnew",
+  "state": "Co. Wicklow",
+  "category": "Garden machinery supplier",
+  "place_id": "ChIJPSXyv0G7Z0gRPV2V_cneoI0",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/ronnie+healy+garden+machinery/@52.988698899999996,-6.0794735,14z/data=!4m8!1m2!2m1!1sronnie+healy+garden+machinery!3m4!1s0x4867bb41bff2253d:0x8da0dec9fd955d3d!8m2!3d52.988698899999996!4d-6.0794735",
+  "other_listing_url": "https://missedcallireland.com/Business/425666/Healy-Ronnie--Rathnew",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/ronnie+healy+garden+machinery/@52.988698899999996,-6.0794735,14z/data=!4m8!1m2!2m1!1sronnie+healy+garden+machinery!3m4!1s0x4867bb41bff2253d:0x8da0dec9fd955d3d!8m2!3d52.988698899999996!4d-6.0794735 (existing dataset / place_id ChIJPSXyv0G7Z0gRPV2V_cneoI0); other_listing_url:https://missedcallireland.com/Business/425666/Healy-Ronnie--Rathnew",
+  "match_confidence": "HIGH",
+  "enrichment_status": "NEEDS_REVIEW",
+  "notes": "MissedCallIreland directory listing for 'Healy Ronnie, Rathnew' independently confirms the distinctive townland 'Merrymeeting, Rathnew, Co. Wicklow' (matches baseline address) though it shows a different (landline) phone 0404-68915 vs the lead's mobile 0872762155 - plausibly a second business line for the same sole trader. Also found a SoloCheck company registry entry for 'Ronnie Healy (Grass Machinery)' in Wicklow, 20 yrs trading, consistent with this being a real long-running business. The only social media hit was a personal Facebook profile 'Ronnie Healy' (facebook.com/ronnie.healy.16), not a Facebook Page - per instructions this was NOT recorded as facebook_url since it is not clearly a business page; flagging for human review to confirm whether that personal profile is used as the de facto business contact. No email, Instagram, or confirmed business Facebook Page found.",
+  "processed_at": "2026-08-11T00:00:00Z",
+  "status": "DONE"
+}

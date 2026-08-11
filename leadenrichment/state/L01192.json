@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01192",
+  "name": "Car Wash & Valeting Service Ballina",
+  "phone": "+353 87 267 4218",
+  "normalized_phone": "0872674218",
+  "address": "25-21, Circular Rd, Ballina, Co. Mayo, F26 V0R9",
+  "city": "Ballina",
+  "state": "Co. Mayo",
+  "category": "Car wash",
+  "place_id": "ChIJRcIEGXY3WUgRkDcMEyCTgSk",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Car+Wash+%26+Valeting+Service+Ballina/@54.117048399999995,-9.1554053,14z/data=!4m8!1m2!2m1!1sCar+Wash+%26+Valeting+Service+Ballina!3m4!1s0x485937761904c245:0x29819320130c3790!8m2!3d54.117048399999995!4d-9.1554053",
+  "other_listing_url": "https://is.maptons.com/p/6077525307",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Car+Wash+%26+Valeting+Service+Ballina/@54.117048399999995,-9.1554053,14z/data=!4m8!1m2!2m1!1sCar+Wash+%26+Valeting+Service+Ballina!3m4!1s0x485937761904c245:0x29819320130c3790!8m2!3d54.117048399999995!4d-9.1554053 (existing dataset / place_id ChIJRcIEGXY3WUgRkDcMEyCTgSk); other_listing_url:https://is.maptons.com/p/6077525307 (WebSearch snippet confirms exact business name, address 25-21 Circular Rd, and exact phone +353 87 267 4218)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "No dedicated Facebook/Instagram/email found for this exact business name. Several OTHER car wash/valeting businesses exist in Ballina (Car Care Ballina, LD Detailing & Valeting, Crystal Hand Carwash and Valeting, Ballina Valeting Centre) but these are at different addresses (e.g. Foxford Rd) and were deliberately NOT recorded here to avoid misattributing a different business's social pages to this lead. maptons.com directory listing independently confirms exact name, address, and phone.",
+  "processed_at": "2026-08-11T12:00:00Z"
+}

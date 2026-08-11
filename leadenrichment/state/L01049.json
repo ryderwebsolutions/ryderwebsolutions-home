@@ -1,0 +1,23 @@
+{
+  "lead_id": "L01049",
+  "name": "Kelco Solutions",
+  "phone": "",
+  "normalized_phone": "",
+  "address": "A42 WT04, R122, Grallagh, Co. Dublin",
+  "city": "",
+  "state": "Co. Dublin",
+  "category": "Mechanic",
+  "place_id": "ChIJW2wfvsoVZ0gRw8yySzg5GnY",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Kelco+Solutions/@53.5492923,-6.3264051,14z/data=!4m8!1m2!2m1!1sKelco+Solutions!3m4!1s0x486715cabe1f6c5b:0x761a39384bb2ccc3!8m2!3d53.5492923!4d-6.3264051",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Kelco+Solutions/@53.5492923,-6.3264051,14z/data=!4m8!1m2!2m1!1sKelco+Solutions!3m4!1s0x486715cabe1f6c5b:0x761a39384bb2ccc3!8m2!3d53.5492923!4d-6.3264051 (existing dataset / place_id ChIJW2wfvsoVZ0gRw8yySzg5GnY)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "No phone number in baseline data to confirm matches against. Searched for 'Kelco Solutions' mechanic/garage near Grallagh, Co. Dublin across web, Golden Pages, and Facebook/Instagram; only unrelated same-name businesses found (Kelco Services plumbing in Leopardstown, Kelco Communications/Vodafone in the West of Ireland, Kelco Energy Solutions in Newcastle West) - none in Grallagh or matching the mechanic category. No confirmable email, social media, or directory listing found after reasonable search effort.",
+  "processed_at": "2026-08-11T00:00:00Z",
+  "status": "DONE"
+}

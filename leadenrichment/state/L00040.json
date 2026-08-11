@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00040",
+  "name": "DKL Autopitstop",
+  "phone": "+353 89 274 2205",
+  "normalized_phone": "0892742205",
+  "address": "Hill St, Townparks, Dundalk, Co. Louth, A91 E5W4",
+  "city": "Dundalk",
+  "state": "Co. Louth",
+  "category": "Automobiļu remontdarbnīca",
+  "place_id": "ChIJAwU7k7rNYEgR3Gjrf1cNZAM",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/DKL+Autopitstop/@53.9959923,-6.4061305,14z/data=!4m8!1m2!2m1!1sDKL+Autopitstop!3m4!1s0x4860cdba933b0503:0x3640d577feb68dc!8m2!3d53.9959923!4d-6.4061305",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/DKL+Autopitstop/@53.9959923,-6.4061305,14z/data=!4m8!1m2!2m1!1sDKL+Autopitstop!3m4!1s0x4860cdba933b0503:0x3640d577feb68dc!8m2!3d53.9959923!4d-6.4061305 (existing dataset / place_id ChIJAwU7k7rNYEgR3Gjrf1cNZAM)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "No Facebook, Instagram, email, or other directory listing found for this specific Dundalk, Co. Louth business after multiple searches. Several similarly named businesses exist elsewhere (DKL Automotive - Cambridge/NZ, Autopitstop - South Africa/Indonesia/Coventry) but none match Dundalk, Ireland - not used. No new fields populated.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

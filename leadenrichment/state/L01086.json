@@ -1,0 +1,23 @@
+{
+  "lead_id": "L01086",
+  "name": "Webster's Garage Ltd.",
+  "phone": "+353 56 776 7476",
+  "normalized_phone": "0567767476",
+  "address": "Threecastles, Co. Kilkenny, R95 HN76",
+  "city": "Threecastles",
+  "state": "Co. Kilkenny",
+  "category": "Mechanic",
+  "place_id": "ChIJGy8hoZM7XUgR_icFvXNe2z8",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Webster%27s+Garage+Ltd./@52.7117644,-7.3284934999999995,14z/data=!4m8!1m2!2m1!1sWebster%27s+Garage+Ltd.!3m4!1s0x485d3b93a1212f1b:0x3fdb5e73bd0527fe!8m2!3d52.7117644!4d-7.3284934999999995",
+  "other_listing_url": "https://www.goldenpages.ie/webster-s-garage-kilkenny-kilkenny-R95/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Webster%27s+Garage+Ltd./@52.7117644,-7.3284934999999995,14z/data=!4m8!1m2!2m1!1sWebster%27s+Garage+Ltd.!3m4!1s0x485d3b93a1212f1b:0x3fdb5e73bd0527fe!8m2!3d52.7117644!4d-7.3284934999999995 (existing dataset / place_id ChIJGy8hoZM7XUgR_icFvXNe2z8); other_listing_url:https://www.goldenpages.ie/webster-s-garage-kilkenny-kilkenny-R95/",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "Golden Pages listing independently confirms exact phone (056 7767476) and exact address (Three Castles, Kilkenny, R95 HN76) = HIGH confidence match. No email listed on the Golden Pages page. Searched for a Facebook/Instagram business page under 'Webster's Garage' / 'Websters Garage' Kilkenny but found none matching this business (only unrelated same-name garages in the US/UK). SoloCheck/GlobalDatabase company registry entries confirm Webster's Garage Limited is registered at Three Castles with Mark Webster as principal shareholder, consistent with the business identity, but these were not used as the primary listing since Golden Pages already independently verifies phone+address.",
+  "processed_at": "2026-08-11T00:00:00Z",
+  "status": "DONE"
+}

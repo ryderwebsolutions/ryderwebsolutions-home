@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01091",
+  "name": "Yan Motos",
+  "phone": "+353 85 866 9139",
+  "normalized_phone": "0858669139",
+  "address": "Rear of 74, Tory Top Rd, Ballyphehane, Cork, T12 V0RV",
+  "city": "Cork",
+  "state": "",
+  "category": "Motorcycle repair shop",
+  "place_id": "ChIJVxbj7xGPREgRtIXaBWe3NSg",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Yan+Motos/@51.8839896,-8.4756202,14z/data=!4m8!1m2!2m1!1sYan+Motos!3m4!1s0x48448f11efe31657:0x2835b76705da85b4!8m2!3d51.8839896!4d-8.4756202",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Yan+Motos/@51.8839896,-8.4756202,14z/data=!4m8!1m2!2m1!1sYan+Motos!3m4!1s0x48448f11efe31657:0x2835b76705da85b4!8m2!3d51.8839896!4d-8.4756202 (existing dataset / place_id ChIJVxbj7xGPREgRtIXaBWe3NSg)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "Searched multiple variations (business name + Cork/Ballyphehane/Tory Top Rd + Facebook/Instagram/Golden Pages). An Instagram account @yan_motos_ was found but its posts are in Portuguese referencing Brazilian motorcycle brands (DAFRA/ZIG) -- almost certainly a different 'Yan Motos' in Brazil, not the Cork motorcycle repair shop, so it was NOT recorded. No Golden Pages, Facebook Page, or email found for this specific Cork business. Likely a very small/informal operation with no public web presence beyond the Google Maps listing.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

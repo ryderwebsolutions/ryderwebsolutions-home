@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01191",
+  "name": "Roscrea Motor Works",
+  "phone": "+353 505 21005",
+  "normalized_phone": "050521005",
+  "address": "Church St, Townparks, Roscrea, Co. Tipperary",
+  "city": "Roscrea",
+  "state": "Co. Tipperary",
+  "category": "Auto repair shop",
+  "place_id": "ChIJPQSIFs7kXEgRAhsXxQHQoI0",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Roscrea+Motor+Works/@52.9562454,-7.794341299999999,14z/data=!4m8!1m2!2m1!1sRoscrea+Motor+Works!3m4!1s0x485ce4ce1688043d:0x8da0d001c5171b02!8m2!3d52.9562454!4d-7.794341299999999",
+  "other_listing_url": "https://www.yelp.com/biz/roscrea-motor-works-roscrea",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Roscrea+Motor+Works/@52.9562454,-7.794341299999999,14z/data=!4m8!1m2!2m1!1sRoscrea+Motor+Works!3m4!1s0x485ce4ce1688043d:0x8da0d001c5171b02!8m2!3d52.9562454!4d-7.794341299999999 (existing dataset / place_id ChIJPQSIFs7kXEgRAhsXxQHQoI0); other_listing_url:https://www.yelp.com/biz/roscrea-motor-works-roscrea",
+  "match_confidence": "LOW",
+  "enrichment_status": "PARTIAL",
+  "notes": "No Facebook, Instagram, or email found under the exact name 'Roscrea Motor Works'. A Yelp listing exists at the correct address (Church Street, Roscrea) but WebFetch was blocked (403) so phone/contact could not be independently verified. Local news (Tipp FM / Ireland Live) planning articles indicate the Roscrea Motor Works site at the junction of Lourdes Rd/Church St (incorporating 'Milan Motors') has planning lodged for demolition/apartment redevelopment, suggesting the business may be inactive or closed. Nearby similarly-named businesses (Tipperary Car Parts Roscrea, Roscrea Motor Factors) are at a different address (Rosemary Square) and were NOT used as they appear to be distinct entities.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

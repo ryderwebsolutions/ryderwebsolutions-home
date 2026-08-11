@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00243",
+  "name": "FT Autos",
+  "phone": "+353 1 453 6830",
+  "normalized_phone": "014536830",
+  "address": "65B Crumlin Rd, Crumlin, Dublin 12, D12 CPR2",
+  "city": "Dublin 12",
+  "state": "",
+  "category": "Car repair and maintenance service",
+  "place_id": "ChIJ45os92oMZ0gRMrrnqzWn1Ek",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "https://www.instagram.com/ftautos_/",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/FT+Autos/@53.3305857,-6.2960226,14z/data=!4m8!1m2!2m1!1sFT+Autos!3m4!1s0x48670c6af72c9ae3:0x49d4a735abe7ba32!8m2!3d53.3305857!4d-6.2960226",
+  "other_listing_url": "http://dublin-12-du.irelands-advisor.com/ft-autos/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/FT+Autos/@53.3305857,-6.2960226,14z/data=!4m8!1m2!2m1!1sFT+Autos!3m4!1s0x48670c6af72c9ae3:0x49d4a735abe7ba32!8m2!3d53.3305857!4d-6.2960226 (existing dataset / place_id ChIJ45os92oMZ0gRMrrnqzWn1Ek); instagram_url:https://www.instagram.com/ftautos_/; other_listing_url:http://dublin-12-du.irelands-advisor.com/ft-autos/",
+  "match_confidence": "MEDIUM",
+  "enrichment_status": "ENRICHED",
+  "notes": "Found Instagram account @ftautos_ (724 followers) via search - exact business name match, but Instagram itself returned a login-wall/blocked fetch so phone/address could not be independently confirmed on-page (MEDIUM confidence only, per known Instagram fetch limitation). No Facebook page found for this business (searches only returned unrelated Crumlin Road/United FC results). No public email found. Directory listing on irelands-advisor.com and near-place.com show exact matching address (65B Crumlin Road, Crumlin, Dublin 12) but incomplete/no phone data and no email; goldenpages.ie search did not surface a specific FT Autos listing.",
+  "processed_at": "2026-08-11T12:38:29Z"
+}

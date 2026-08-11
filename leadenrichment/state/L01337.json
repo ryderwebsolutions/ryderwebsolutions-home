@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01337",
+  "name": "Walsh Motors",
+  "phone": "+353 86 346 6299",
+  "normalized_phone": "0863466299",
+  "address": "Ballykale, Ballycale, Co. Wexford, Y25 HP76",
+  "city": "Ballycale",
+  "state": "Co. Wexford",
+  "category": "Mechanic",
+  "place_id": "ChIJNfre0ufnZ0gRFAV73th6VE8",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Walsh+Motors/@52.6449086,-6.3015529,14z/data=!4m8!1m2!2m1!1sWalsh+Motors!3m4!1s0x4867e7e7d2defa35:0x4f547ad8de7b0514!8m2!3d52.6449086!4d-6.3015529",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Walsh+Motors/@52.6449086,-6.3015529,14z/data=!4m8!1m2!2m1!1sWalsh+Motors!3m4!1s0x4867e7e7d2defa35:0x4f547ad8de7b0514!8m2!3d52.6449086!4d-6.3015529 (existing dataset / place_id ChIJNfre0ufnZ0gRFAV73th6VE8)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "'Walsh Motors' is a very common Irish garage name. Searched combining the business name with Wexford, Ballykale/Ballycale, New Ross, and Taghmon, plus the phone number directly -- no matching Facebook, Instagram, email, or directory listing found for a Walsh Motors in this specific Ballycale/Ballykale, Co. Wexford location. Other same-named businesses found (Walsh Motors Belfast, Walsh's Car Sales Waterford, James Walsh Motor Parts) are clearly different entities in different counties and were not used. No new public contact info found despite reasonable search effort.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

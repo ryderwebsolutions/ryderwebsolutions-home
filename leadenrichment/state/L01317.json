@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01317",
+  "name": "Annacotty Service Station",
+  "phone": "",
+  "normalized_phone": "",
+  "address": "Mountshannon Road, Garraunykee, Annacotty, Co. Limerick, V94 D5YP",
+  "city": "Annacotty",
+  "state": "Co. Limerick",
+  "category": "Car repair and maintenance service",
+  "place_id": "ChIJHRz2pH1fW0gREZoZ3tuv4RY",
+  "status": "PENDING",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Annacotty+Service+Station/@52.675393899999996,-8.530349,14z/data=!4m8!1m2!2m1!1sAnnacotty+Service+Station!3m4!1s0x485b5f7da4f61c1d:0x16e1afdbde199a11!8m2!3d52.675393899999996!4d-8.530349",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Annacotty+Service+Station/@52.675393899999996,-8.530349,14z/data=!4m8!1m2!2m1!1sAnnacotty+Service+Station!3m4!1s0x485b5f7da4f61c1d:0x16e1afdbde199a11!8m2!3d52.675393899999996!4d-8.530349 (existing dataset / place_id ChIJHRz2pH1fW0gREZoZ3tuv4RY)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "",
+  "processed_at": null
+}

@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00109",
+  "name": "Dublin Diesel Services",
+  "phone": "+353 1 559 4000",
+  "normalized_phone": "015594000",
+  "address": "121 N Strand Rd, North Strand, Dublin 3, D03 NH95",
+  "city": "Dublin 3",
+  "state": "",
+  "category": "Diesel engine repair service",
+  "place_id": "ChIJOWDEJeYPZ0gRUIXVbdjPJbo",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Dublin+Diesel+Services/@53.3585601,-6.2406799,14z/data=!4m8!1m2!2m1!1sDublin+Diesel+Services!3m4!1s0x48670fe625c46039:0xba25cfd86dd58550!8m2!3d53.3585601!4d-6.2406799",
+  "other_listing_url": "https://ie.near-place.com/dublin-diesel-services-121-north-strand-road-north-strand-dublin-3",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Dublin+Diesel+Services/@53.3585601,-6.2406799,14z/data=!4m8!1m2!2m1!1sDublin+Diesel+Services!3m4!1s0x48670fe625c46039:0xba25cfd86dd58550!8m2!3d53.3585601!4d-6.2406799 (existing dataset / place_id ChIJOWDEJeYPZ0gRUIXVbdjPJbo); other_listing_url:https://ie.near-place.com/dublin-diesel-services-121-north-strand-road-north-strand-dublin-3",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "near-place.com listing independently confirms phone +353 1 559 4000 and exact address 121 North Strand Road, D03 NH95, Dublin 3 -- HIGH confidence match for this directory listing. An email 'abbeydiesel@gmail.com' appeared in an aggregated search summary but could NOT be confirmed on the actual source page when fetched directly (the near-place.com page shows only phone/address, no email), so per the no-guessing rule it was NOT recorded. No Facebook or Instagram page could be found/confirmed for this business (goldenpages.ie and irelandlookup.com listings also show no social links). No email recorded.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

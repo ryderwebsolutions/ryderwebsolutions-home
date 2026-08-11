@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01373",
+  "name": "Davis Garage",
+  "phone": "+353 43 332 4104",
+  "normalized_phone": "0433324104",
+  "address": "1 Loughan Hill, Drumlish, Co. Longford, N39 HF79",
+  "city": "Drumlish",
+  "state": "Co. Longford",
+  "category": "Mechanic",
+  "place_id": "ChIJp2w8FtXVXUgRhCBHymt5xBw",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Davis+Garage/@53.8186921,-7.771562299999999,14z/data=!4m8!1m2!2m1!1sDavis+Garage!3m4!1s0x485dd5d5163c6ca7:0x1cc4796bca472084!8m2!3d53.8186921!4d-7.771562299999999",
+  "other_listing_url": "https://www.goldenpages.ie/davis-s-garage-drumlish-N39/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Davis+Garage/@53.8186921,-7.771562299999999,14z/data=!4m8!1m2!2m1!1sDavis+Garage!3m4!1s0x485dd5d5163c6ca7:0x1cc4796bca472084!8m2!3d53.8186921!4d-7.771562299999999 (existing dataset / place_id ChIJp2w8FtXVXUgRhCBHymt5xBw); other_listing_url:https://www.goldenpages.ie/davis-s-garage-drumlish-N39/",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "Found Golden Pages Ireland listing 'Davis's Garage', Longford Rd, Drumlish - phone (043)3324104 exactly matches normalized_phone, confirming HIGH confidence. No email, website, Facebook or Instagram listed there or found via search. Note: unrelated 'Padraic Davis Auctioneers' (real estate, same village) appeared in search results but was excluded as a different business/category.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

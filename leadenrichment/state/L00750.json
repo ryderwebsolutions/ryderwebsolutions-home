@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00750",
+  "name": "Mahons mobile mechanics",
+  "phone": "+353 87 356 0346",
+  "normalized_phone": "0873560346",
+  "address": "Dublin Rd, Friarspark (1st Division), Trim, Co. Meath",
+  "city": "Trim",
+  "state": "Co. Meath",
+  "category": "Mechanic",
+  "place_id": "ChIJV5Wva0lfZ0gRI_fwaghnEJ8",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/people/Mahons-Mobile-mechanics/100063578319876/",
+  "google_business_url": "https://www.google.com/maps/place/Mahons+mobile+mechanics/@53.5523065,-6.7764403,14z/data=!4m8!1m2!2m1!1sMahons+mobile+mechanics!3m4!1s0x48675f496baf9557:0x9f1067086af0f723!8m2!3d53.5523065!4d-6.7764403",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Mahons+mobile+mechanics/@53.5523065,-6.7764403,14z/data=!4m8!1m2!2m1!1sMahons+mobile+mechanics!3m4!1s0x48675f496baf9557:0x9f1067086af0f723!8m2!3d53.5523065!4d-6.7764403 (existing dataset / place_id ChIJV5Wva0lfZ0gRI_fwaghnEJ8); facebook_url:https://www.facebook.com/people/Mahons-Mobile-mechanics/100063578319876/",
+  "match_confidence": "LOW",
+  "enrichment_status": "NEEDS_REVIEW",
+  "notes": "Only Facebook page found with this exact business name ('Mahons Mobile mechanics') is tagged as located in Dunshaughlin, Co. Meath, not Trim (the lead's address). Dunshaughlin and Trim are ~20km apart in the same county; since this is a mobile mechanic (no fixed shop needed), it's plausible the FB location tag is just where the owner lives/bases from, but this could not be independently confirmed (WebFetch on the FB page returned no phone/address, only the town name). No email, Instagram, or other directory listing found. Flagging for human review due to town mismatch rather than asserting a confident match.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

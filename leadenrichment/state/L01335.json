@@ -1,0 +1,23 @@
+{
+  "lead_id": "L01335",
+  "name": "CarAirsprings",
+  "phone": "+353 45 875 996",
+  "normalized_phone": "045875996",
+  "address": "Unit B, Naas Industrial Estate, An Nás, Co. Contae Chill Dara",
+  "city": "Naas",
+  "state": "Co. Kildare",
+  "category": "Auto parts store",
+  "place_id": "ChIJgfnXmvV4Z0gRgrj8Su4wPY8",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/CarAirsprings/@53.230908,-6.636387,14z/data=!4m8!1m2!2m1!1sCarAirsprings!3m4!1s0x486778f59ad7f981:0x8f3d30ee4afcb882!8m2!3d53.230908!4d-6.636387",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/CarAirsprings/@53.230908,-6.636387,14z/data=!4m8!1m2!2m1!1sCarAirsprings!3m4!1s0x486778f59ad7f981:0x8f3d30ee4afcb882!8m2!3d53.230908!4d-6.636387 (existing dataset / place_id ChIJgfnXmvV4Z0gRgrj8Su4wPY8)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "Searched for 'CarAirsprings' and 'Car Air Springs' in Naas/Kildare across Facebook, Instagram, Golden Pages, and general web; only found an unrelated Dublin-based competitor (Air Suspension Ireland) and general Naas Industrial Estate occupier listings that did not mention this business. No email, social media, or directory listing could be found for this specific business after reasonable search effort - it may operate purely on a trade/B2B basis without a public web presence.",
+  "processed_at": "2026-08-11T00:00:00Z",
+  "status": "DONE"
+}

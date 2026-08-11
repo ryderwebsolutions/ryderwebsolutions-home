@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01032",
+  "name": "Deise Parts",
+  "phone": "",
+  "normalized_phone": "",
+  "address": "48 Parnell St, Waterford, X91 R653",
+  "city": "Waterford",
+  "state": "",
+  "category": "Auto parts store",
+  "place_id": "ChIJPx6nQ5nGQkgRwZ-Ub3jYaps",
+  "status": "DONE",
+  "email": "deiseparts@eircom.net",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/p/Deise-Parts-61573648358132/",
+  "google_business_url": "https://www.google.com/maps/place/Deise+Parts/@52.2585732,-7.1084439999999995,14z/data=!4m8!1m2!2m1!1sDeise+Parts!3m4!1s0x4842c69943a71e3f:0x9b6ad8786f949fc1!8m2!3d52.2585732!4d-7.1084439999999995",
+  "other_listing_url": "https://www.goldenpages.ie/deise-parts-waterford-X91/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Deise+Parts/@52.2585732,-7.1084439999999995,14z/data=!4m8!1m2!2m1!1sDeise+Parts!3m4!1s0x4842c69943a71e3f:0x9b6ad8786f949fc1!8m2!3d52.2585732!4d-7.1084439999999995 (existing dataset / place_id ChIJPx6nQ5nGQkgRwZ-Ub3jYaps); other_listing_url:https://www.goldenpages.ie/deise-parts-waterford-X91/; email:https://www.goldenpages.ie/deise-parts-waterford-X91/; facebook_url:https://www.facebook.com/61573648358132",
+  "match_confidence": "MEDIUM",
+  "enrichment_status": "NEEDS_REVIEW",
+  "notes": "IMPORTANT DISCREPANCY: Golden Pages, phonebook.ie, Yelp, and irelandlookup.com all list 'Deise Parts' (same unique business name, same city Waterford, same 'Motor Factors/Auto parts' category) at 67 Johnstown, Waterford, X91 E290 -- a DIFFERENT street and eircode than the lead's Google-Maps-derived address of 48 Parnell St, X91 R653. Golden Pages explicitly distinguishes 48 Parnell St as the address of a different business (Deevy's Motor & Marine Accessories). Since the lead record has no phone number to cross-check, this could not be independently resolved -- it may be a relocation (Google listing outdated) or a mismatch. Recorded email (deiseparts@eircom.net), phone (051)843330 [not written to phone field per instructions], and Facebook page found under the Johnstown address; a human should confirm whether this is the same Deise Parts before treating as fully verified.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00201",
+  "name": "Hehirs Kilkenny Tyre Specialists",
+  "phone": "+353 56 776 5930",
+  "normalized_phone": "0567765930",
+  "address": "Hebron Industrial Estate, Hebron Rd, Leggetsrath West, Kilkenny, R95 RH4X",
+  "city": "Kilkenny",
+  "state": "",
+  "category": "Tire shop",
+  "place_id": "ChIJWeGsvAc6XUgReSE6ijYjBTI",
+  "status": "PENDING",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Hehirs+Kilkenny+Tyre+Specialists/@52.655557599999995,-7.2298931,14z/data=!4m8!1m2!2m1!1sHehirs+Kilkenny+Tyre+Specialists!3m4!1s0x485d3a07bcace159:0x320523368a3a2179!8m2!3d52.655557599999995!4d-7.2298931",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Hehirs+Kilkenny+Tyre+Specialists/@52.655557599999995,-7.2298931,14z/data=!4m8!1m2!2m1!1sHehirs+Kilkenny+Tyre+Specialists!3m4!1s0x485d3a07bcace159:0x320523368a3a2179!8m2!3d52.655557599999995!4d-7.2298931 (existing dataset / place_id ChIJWeGsvAc6XUgReSE6ijYjBTI)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "",
+  "processed_at": null
+}

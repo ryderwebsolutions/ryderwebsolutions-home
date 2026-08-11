@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00601",
+  "name": "Gerry Lavelles garage",
+  "phone": "",
+  "normalized_phone": "",
+  "address": "Ballymote, Co. Sligo",
+  "city": "Ballymote",
+  "state": "Co. Sligo",
+  "category": "Car accessories store",
+  "place_id": "ChIJUWtxVyu_XkgRbN9f0fh6irU",
+  "status": "DONE",
+  "email": "gerrylavelleford@yahoo.co.uk",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/Lavelles-Garage-Ballymote-1569133526655130/",
+  "google_business_url": "https://www.google.com/maps/place/Gerry+Lavelles+garage/@54.0897035,-8.5151447,14z/data=!4m8!1m2!2m1!1sGerry+Lavelles+garage!3m4!1s0x485ebf2b57716b51:0xb58a7af8d15fdf6c!8m2!3d54.0897035!4d-8.5151447",
+  "other_listing_url": "https://www.goldenpages.ie/lavelles-garage-sligo-F56/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Gerry+Lavelles+garage/@54.0897035,-8.5151447,14z/data=!4m8!1m2!2m1!1sGerry+Lavelles+garage!3m4!1s0x485ebf2b57716b51:0xb58a7af8d15fdf6c!8m2!3d54.0897035!4d-8.5151447 (existing dataset / place_id ChIJUWtxVyu_XkgRbN9f0fh6irU); email:https://lavellesgarage.wixsite.com/repair/contact (WebFetch, business's own official website contact page); facebook_url:https://www.facebook.com/Lavelles-Garage-Ballymote-1569133526655130/ (WebSearch); other_listing_url:https://www.goldenpages.ie/lavelles-garage-sligo-F56/ (WebSearch)",
+  "match_confidence": "MEDIUM",
+  "enrichment_status": "ENRICHED",
+  "notes": "Lead record has no phone number or street address, so independent on-page verification against the lead's own data was not possible - matched on the distinctive owner name 'Gerry Lavelle' + town 'Ballymote' + consistent category (garage/auto). Business's own website (lavellesgarage.wixsite.com/repair) lists phone 087 6188000 and email gerrylavelleford@yahoo.co.uk; Golden Pages lists the garage at Pearse Rd, Ballymote, Co. Sligo, F56 FR53. Two similar Facebook pages exist for 'Lavelle's Garage Ballymote' (ids 1569133526655130 and 100054545825269) - recorded the first, noting the likely duplicate. Confidence capped at MEDIUM per rules since no phone/address on the lead itself could be cross-checked.",
+  "processed_at": "2026-08-11T12:00:00Z"
+}

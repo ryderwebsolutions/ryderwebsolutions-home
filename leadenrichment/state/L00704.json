@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00704",
+  "name": "Matts Garage",
+  "phone": "+353 86 835 0419",
+  "normalized_phone": "0868350419",
+  "address": "Botley Ln, Kilmalogue, Portarlington, Co. Laois",
+  "city": "Portarlington",
+  "state": "Co. Laois",
+  "category": "Car repair and maintenance service",
+  "place_id": "ChIJDxGWR3p1XUgRLb0Q92lJTgM",
+  "status": "PENDING",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Matts+Garage/@53.1649677,-7.1945790999999994,14z/data=!4m8!1m2!2m1!1sMatts+Garage!3m4!1s0x485d757a4796110f:0x34e4969f710bd2d!8m2!3d53.1649677!4d-7.1945790999999994",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Matts+Garage/@53.1649677,-7.1945790999999994,14z/data=!4m8!1m2!2m1!1sMatts+Garage!3m4!1s0x485d757a4796110f:0x34e4969f710bd2d!8m2!3d53.1649677!4d-7.1945790999999994 (existing dataset / place_id ChIJDxGWR3p1XUgRLb0Q92lJTgM)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "",
+  "processed_at": null
+}

@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00951",
+  "name": "Kerry Caddy Repairs",
+  "phone": "+353 86 601 8694",
+  "normalized_phone": "0866018694",
+  "address": "Renard, Reenard, Cahersiveen, Co. Kerry, V23 EN80",
+  "city": "Cahersiveen",
+  "state": "Co. Kerry",
+  "category": "Repair service",
+  "place_id": "ChIJTa2Gre_zT0gRssllS8sU9PQ",
+  "status": "PENDING",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Kerry+Caddy+Repairs/@51.9314286,-10.268903,14z/data=!4m8!1m2!2m1!1sKerry+Caddy+Repairs!3m4!1s0x484ff3efad86ad4d:0xf4f414cb4b65c9b2!8m2!3d51.9314286!4d-10.268903",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Kerry+Caddy+Repairs/@51.9314286,-10.268903,14z/data=!4m8!1m2!2m1!1sKerry+Caddy+Repairs!3m4!1s0x484ff3efad86ad4d:0xf4f414cb4b65c9b2!8m2!3d51.9314286!4d-10.268903 (existing dataset / place_id ChIJTa2Gre_zT0gRssllS8sU9PQ)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "",
+  "processed_at": null
+}

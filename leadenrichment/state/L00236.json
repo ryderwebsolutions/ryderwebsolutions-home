@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00236",
+  "name": "Daniel Mechanic",
+  "phone": "+353 87 384 0432",
+  "normalized_phone": "0873840432",
+  "address": "112 Long Mile Rd, Walkinstown, Dublin 12, D12 FN50",
+  "city": "Dublin 12",
+  "state": "",
+  "category": "Parking garage",
+  "place_id": "ChIJfZtNG5EMZ0gR-R6KO5zQlEg",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Daniel+Mechanic/@53.3228036,-6.3378361,14z/data=!4m8!1m2!2m1!1sDaniel+Mechanic!3m4!1s0x48670c911b4d9b7d:0x4894d09c3b8a1ef9!8m2!3d53.3228036!4d-6.3378361",
+  "other_listing_url": "https://irish-pages.ie/listing/ireland/dublin/parking-garage/daniel-mechanic",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Daniel+Mechanic/@53.3228036,-6.3378361,14z/data=!4m8!1m2!2m1!1sDaniel+Mechanic!3m4!1s0x48670c911b4d9b7d:0x4894d09c3b8a1ef9!8m2!3d53.3228036!4d-6.3378361 (existing dataset / place_id ChIJfZtNG5EMZ0gR-R6KO5zQlEg); other_listing_url:https://irish-pages.ie/listing/ireland/dublin/parking-garage/daniel-mechanic (WebFetch confirmed exact phone +353873840432 and exact address 112 Long Mile Rd Walkinstown Dublin 12 D12 FN50)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "No dedicated Facebook, Instagram, or email found despite multiple searches (small/informal operation, possibly not present on social media under this exact name). irish-pages.ie directory listing independently confirms exact phone and exact address match = HIGH confidence for that page. Golden Pages only has generic 'Garages/Car Servicing in Walkinstown' category pages, no listing specific to this business name found.",
+  "processed_at": "2026-08-11T12:00:00Z"
+}

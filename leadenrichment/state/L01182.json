@@ -1,0 +1,23 @@
+{
+  "lead_id": "L01182",
+  "name": "Applegreen XL Townspark Service Station",
+  "phone": "+353 52 744 2786",
+  "normalized_phone": "0527442786",
+  "address": "Clonmel Rd, Townparks, Cahir, Co. Tipperary, E21 YH92",
+  "city": "Cahir",
+  "state": "Co. Tipperary",
+  "category": "Gas station",
+  "place_id": "ChIJrUH6eYs1Q0gR3ZW-TWjmCS8",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/p/Applegreen-Service-Station-Cahir-100057643201277/",
+  "google_business_url": "https://www.google.com/maps/place/Applegreen+XL+Townspark+Service+Station/@52.375738999999996,-7.921131099999999,14z/data=!4m8!1m2!2m1!1sApplegreen+XL+Townspark+Service+Station!3m4!1s0x4843358b79fa41ad:0x2f09e6684dbe95dd!8m2!3d52.375738999999996!4d-7.921131099999999",
+  "other_listing_url": "https://locations.applegreen.com/locations/cahir/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Applegreen+XL+Townspark+Service+Station/@52.375738999999996,-7.921131099999999,14z/data=!4m8!1m2!2m1!1sApplegreen+XL+Townspark+Service+Station!3m4!1s0x4843358b79fa41ad:0x2f09e6684dbe95dd!8m2!3d52.375738999999996!4d-7.921131099999999 (existing dataset / place_id ChIJrUH6eYs1Q0gR3ZW-TWjmCS8); other_listing_url:https://locations.applegreen.com/locations/cahir/; facebook_url:https://www.facebook.com/p/Applegreen-Service-Station-Cahir-100057643201277/",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "Official Applegreen store-locator page independently confirms exact phone (+353 52 744 2786) and exact address (Clonmel Road, Cahir) = HIGH confidence for business identity/other_listing_url. That official page only links to Applegreen's corporate-wide Facebook (goapplegreen) and Instagram (_applegreen_), not location-specific. However a separate location-specific page 'Applegreen Service Station Cahir' (2,498 likes) was found via search and used as facebook_url - name+town match only, not independently fetched/verified, so treat as MEDIUM confidence specifically. No Cahir-specific Instagram found (only corporate). No location-specific email found; Applegreen's public corporate emails (feedback@applegreen.ie, loyalty@applegreen.ie) are generic customer-service addresses, not this location's own contact, so not recorded per instructions against guessing/generic emails.",
+  "processed_at": "2026-08-11T00:00:00Z",
+  "status": "DONE"
+}

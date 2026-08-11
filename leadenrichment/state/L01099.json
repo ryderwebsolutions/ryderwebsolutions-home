@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01099",
+  "name": "Scotts for Tools",
+  "phone": "+353 21 427 0800",
+  "normalized_phone": "0214270800",
+  "address": "30 N Main St, Centre, Cork, T12 FN20",
+  "city": "Cork",
+  "state": "",
+  "category": "Tool store",
+  "place_id": "ChIJb_rI0haQREgRMaJdrRgVX7A",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/SCOTTSFORTOOLS",
+  "google_business_url": "https://www.google.com/maps/place/Scotts+for+Tools/@51.8998014,-8.4783343,14z/data=!4m8!1m2!2m1!1sScotts+for+Tools!3m4!1s0x48449016d2c8fa6f:0xb05f1518ad5da231!8m2!3d51.8998014!4d-8.4783343",
+  "other_listing_url": "https://www.yourlocal.ie/company/379243378282496",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Scotts+for+Tools/@51.8998014,-8.4783343,14z/data=!4m8!1m2!2m1!1sScotts+for+Tools!3m4!1s0x48449016d2c8fa6f:0xb05f1518ad5da231!8m2!3d51.8998014!4d-8.4783343 (existing dataset / place_id ChIJb_rI0haQREgRMaJdrRgVX7A); other_listing_url:https://www.yourlocal.ie/company/379243378282496 (WebFetch confirmed exact address '30 North Main Street, Cork' and exact phone 021 427 0800); facebook_url:https://www.facebook.com/SCOTTSFORTOOLS (WebSearch, 'SCOTTS FOR TOOLS | Cork', 2570 likes)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "IMPORTANT: there is a separate/possibly related 'Scotts For Tools' presence in Carlow/Bray/Ballincollig - different phone numbers, a different Golden Pages listing (goldenpages.ie/scotts-for-tools-cork-P31, actually Ballincollig P31 FT68, phone 021 4870955 - confirmed NOT a match), and website scottsfortools.ie (lists only Carlow/Bray phone numbers, plus Instagram @scotts_for_tools and Facebook ScottsForToolsOriginal). These were deliberately NOT recorded against this lead since they do not match the North Main Street/T12/021 427 0800 identity. The Cork-specific Facebook page 'SCOTTS FOR TOOLS' is a strong name+city match but could not be independently phone-verified via fetch (blocked). No email or Cork-specific Instagram found.",
+  "processed_at": "2026-08-11T12:00:00Z"
+}

@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00946",
+  "name": "FixIt Parts & Repairs Limited",
+  "phone": "+353 83 389 8990",
+  "normalized_phone": "0833898990",
+  "address": "Inside Noel Turley Car Sales, Dublin Rd, Loughrea, Co. Galway, H62 K652",
+  "city": "Loughrea",
+  "state": "Co. Galway",
+  "category": "Oficina de máquinas",
+  "place_id": "ChIJMRNjl-V5XEgRo7tqSAX6CL8",
+  "status": "PENDING",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/FixIt+Parts+%26+Repairs+Limited/@53.204778,-8.5448302,14z/data=!4m8!1m2!2m1!1sFixIt+Parts+%26+Repairs+Limited!3m4!1s0x485c79e597631331:0xbf08fa05486abba3!8m2!3d53.204778!4d-8.5448302",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/FixIt+Parts+%26+Repairs+Limited/@53.204778,-8.5448302,14z/data=!4m8!1m2!2m1!1sFixIt+Parts+%26+Repairs+Limited!3m4!1s0x485c79e597631331:0xbf08fa05486abba3!8m2!3d53.204778!4d-8.5448302 (existing dataset / place_id ChIJMRNjl-V5XEgRo7tqSAX6CL8)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "",
+  "processed_at": null
+}

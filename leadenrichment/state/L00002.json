@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00002",
+  "name": "C.A.R.S Carrickmacross",
+  "phone": "+353 86 251 3324",
+  "normalized_phone": "0862513324",
+  "address": "Quinns Filling Station 6, Cloghvally Upper, Carrickmacross, Co. Monaghan, A81 FW58",
+  "city": "Carrickmacross",
+  "state": "Co. Monaghan",
+  "category": "Auto repair shop",
+  "place_id": "ChIJ52ywvV2zYEgRJUaRyfopMSw",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/C.A.R.S+Carrickmacross/@53.980948,-6.7185916,14z/data=!4m8!1m2!2m1!1sC.A.R.S+Carrickmacross!3m4!1s0x4860b35dbdb06ce7:0x2c3129fac9914625!8m2!3d53.980948!4d-6.7185916",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/C.A.R.S+Carrickmacross/@53.980948,-6.7185916,14z/data=!4m8!1m2!2m1!1sC.A.R.S+Carrickmacross!3m4!1s0x4860b35dbdb06ce7:0x2c3129fac9914625!8m2!3d53.980948!4d-6.7185916 (existing dataset / place_id ChIJ52ywvV2zYEgRJUaRyfopMSw)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "No confirmed Facebook, Instagram, email, or directory listing found for this specific business (C.A.R.S = likely 'Complete Auto Repair Service', 6 Quinns Filling Station, Cloghvally Upper). An Instagram '@carspecialists' (name 'C.A.R.S') and a 'DPF Cleaning Service Ireland' listing at the exact same address (6 Quinns Filling Station, Carrickmacross) were found, but neither could be independently verified against this business's phone/name - too ambiguous to record as a match. irish-pages.ie shows an unverified listing with a different phone number (+353 2821461), not matching normalized_phone - excluded as likely a data error or different entity. C.A.R.S Celbridge (Co. Kildare) is a separate, unrelated location of a similarly-branded chain - excluded due to different county.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

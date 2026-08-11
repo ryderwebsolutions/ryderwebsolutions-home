@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00537",
+  "name": "Mallow Brakes Limited",
+  "phone": "+353 22 22842",
+  "normalized_phone": "02222842",
+  "address": "Mallow, Goulds Hill, Co. Cork",
+  "city": "Goulds Hill",
+  "state": "Co. Cork",
+  "category": "Auto parts store",
+  "place_id": "ChIJr0jkEre-REgRHe5iGjoJ9XM",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/people/Mallow-Brakes/100054394965235/",
+  "google_business_url": "https://www.google.com/maps/place/Mallow+Brakes+Limited/@52.1198537,-8.6608475,14z/data=!4m8!1m2!2m1!1sMallow+Brakes+Limited!3m4!1s0x4844beb712e448af:0x73f5093a1a62ee1d!8m2!3d52.1198537!4d-8.6608475",
+  "other_listing_url": "https://www.irelandlookup.com/1875534/Motor_Factors/Cork/Mallow_Brakes_Ltd/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Mallow+Brakes+Limited/@52.1198537,-8.6608475,14z/data=!4m8!1m2!2m1!1sMallow+Brakes+Limited!3m4!1s0x4844beb712e448af:0x73f5093a1a62ee1d!8m2!3d52.1198537!4d-8.6608475 (existing dataset / place_id ChIJr0jkEre-REgRHe5iGjoJ9XM); other_listing_url:https://www.irelandlookup.com/1875534/Motor_Factors/Cork/Mallow_Brakes_Ltd/; facebook_url:https://www.facebook.com/people/Mallow-Brakes/100054394965235/",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "irelandlookup.com listing for Mallow Brakes Ltd independently confirms phone (022)22842 and address 'Gouldshill Mallow Cork' matching the lead exactly -- HIGH confidence for that listing. A Facebook page 'Mallow Brakes | Mallow' (name+town match in search results) was also found and recorded at MEDIUM-level confidence for the social link specifically (WebFetch on the FB page was blocked/truncated so phone could not be re-verified there directly, but the irelandlookup cross-check strongly supports it being the same business). A second, less certain FB page (facebook.com/p/Mallow-Brakes-100057889650047/) also exists and may be a duplicate/older page -- not used as primary. No email or Instagram found.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

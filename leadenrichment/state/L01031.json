@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01031",
+  "name": "FREEMANAUTOBODYREPAIRS",
+  "phone": "+353 89 973 8806",
+  "normalized_phone": "0899738806",
+  "address": "Ballinamona Park, Ballinamona, Co. Waterford, X91 W1W3",
+  "city": "",
+  "state": "Co. Waterford",
+  "category": "Auto painting",
+  "place_id": "ChIJ27hNHhPDQkgRrDyMtA2HwMI",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/FREEMANAUTOBODYREPAIRS/@52.2186229,-7.111951299999999,14z/data=!4m8!1m2!2m1!1sFREEMANAUTOBODYREPAIRS!3m4!1s0x4842c3131e4db8db:0xc2c0870db48c3cac!8m2!3d52.2186229!4d-7.111951299999999",
+  "other_listing_url": "https://waterfordcouncil.ie/app/uploads/2025/10/Register-of-Decopaints-October.pdf",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/FREEMANAUTOBODYREPAIRS/@52.2186229,-7.111951299999999,14z/data=!4m8!1m2!2m1!1sFREEMANAUTOBODYREPAIRS!3m4!1s0x4842c3131e4db8db:0xc2c0870db48c3cac!8m2!3d52.2186229!4d-7.111951299999999 (existing dataset / place_id ChIJ27hNHhPDQkgRrDyMtA2HwMI); other_listing_url:https://waterfordcouncil.ie/app/uploads/2025/10/Register-of-Decopaints-October.pdf",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "No email, Instagram, or verifiable Facebook Page found. However, Waterford City & County Council's public 'Register of Decopaints' (spray-painting facility register, PDF) independently confirms 'Freeman Autobody Repairs' operating at Ballinamona Park, Ballinamona, Co. Waterford, run by Daniel Dembek -- exact address match to the lead, HIGH confidence official public listing. A Facebook page 'Freeman Autobody' (facebook.com/freemanautobodyandglass) was found but WebFetch could not confirm its location (page content did not load); given several unrelated US 'Freeman Auto Body' businesses also exist, it was NOT recorded to avoid a false match. An Instagram 'freemanmotorco' also appears to be an unrelated US business.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

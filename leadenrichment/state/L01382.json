@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01382",
+  "name": "Listowel Tyre Centre Limited",
+  "phone": "+353 68 53800",
+  "normalized_phone": "06853800",
+  "address": "Unit 5a Clieveragh Industrial Estate, Listowel, Co. Kerry",
+  "city": "",
+  "state": "Co. Kerry",
+  "category": "Chauffeur service",
+  "place_id": "ChIJl0iJuP_QWkgR-iqha4QAANE",
+  "status": "PENDING",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Listowel+Tyre+Centre+Limited/@52.451937799999996,-9.4895402,14z/data=!4m8!1m2!2m1!1sListowel+Tyre+Centre+Limited!3m4!1s0x485ad0ffb8894897:0xd10000846ba12afa!8m2!3d52.451937799999996!4d-9.4895402",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Listowel+Tyre+Centre+Limited/@52.451937799999996,-9.4895402,14z/data=!4m8!1m2!2m1!1sListowel+Tyre+Centre+Limited!3m4!1s0x485ad0ffb8894897:0xd10000846ba12afa!8m2!3d52.451937799999996!4d-9.4895402 (existing dataset / place_id ChIJl0iJuP_QWkgR-iqha4QAANE)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "",
+  "processed_at": null
+}

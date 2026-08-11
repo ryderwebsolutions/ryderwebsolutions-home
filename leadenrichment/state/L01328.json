@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01328",
+  "name": "Pat Franklin's Shoe Repair & Key Cutting",
+  "phone": "+353 61 312 773",
+  "normalized_phone": "061312773",
+  "address": "71 Catherine St, Prior's-Land, Limerick, V94 H3C8",
+  "city": "Limerick",
+  "state": "",
+  "category": "Shoe repair shop",
+  "place_id": "ChIJ4y3kfmZcW0gRF2SFCBDGvNo",
+  "status": "DONE",
+  "email": "patfranklinshoerepair@hotmail.com",
+  "instagram_url": "https://www.instagram.com/patfranklinshoerepair/",
+  "facebook_url": "https://www.facebook.com/PatFranklinShoeRepair/",
+  "google_business_url": "https://www.google.com/maps/place/Pat+Franklin%27s+Shoe+Repair+%26+Key+Cutting/@52.6624045,-8.6265539,14z/data=!4m8!1m2!2m1!1sPat+Franklin%27s+Shoe+Repair+%26+Key+Cutting!3m4!1s0x485b5c667ee42de3:0xdabcc61008856417!8m2!3d52.6624045!4d-8.6265539",
+  "other_listing_url": "https://www.patfranklinshoerepair.ie/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Pat+Franklin%27s+Shoe+Repair+%26+Key+Cutting/@52.6624045,-8.6265539,14z/data=!4m8!1m2!2m1!1sPat+Franklin%27s+Shoe+Repair+%26+Key+Cutting!3m4!1s0x485b5c667ee42de3:0xdabcc61008856417!8m2!3d52.6624045!4d-8.6265539 (existing dataset / place_id ChIJ4y3kfmZcW0gRF2SFCBDGvNo); email:WebSearch aggregation of bizireland.com/whatsthedamage.net (exact phone +353 61 312 773 and address 71 Catherine Street confirmed); instagram_url:https://www.instagram.com/patfranklinshoerepair/ (WebSearch); facebook_url:https://www.facebook.com/PatFranklinShoeRepair/ (WebSearch); other_listing_url:https://www.patfranklinshoerepair.ie/ (WebSearch, official business website)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "Strong multi-source match: official website, Facebook, and Instagram all consistently use the 'patfranklinshoerepair' branding, and exact phone (+353 61 312 773) and address (71 Catherine Street) are corroborated across bizireland.com and whatsthedamage.net independent listings. Care was taken NOT to confuse this business with a separate, differently-addressed business 'Franklins Shoe Store' at 27 O'Connell Street, Limerick (goldenpages.ie/franklins-shoe-store-limerick-city-V94) - that is a different entity and was excluded.",
+  "processed_at": "2026-08-11T12:00:00Z"
+}

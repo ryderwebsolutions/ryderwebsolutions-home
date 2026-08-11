@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00164",
+  "name": "Whites Garage",
+  "phone": "+353 57 935 1350",
+  "normalized_phone": "0579351350",
+  "address": "Tullamore, Co. Offaly",
+  "city": "Tullamore",
+  "state": "Co. Offaly",
+  "category": "Auto repair shop",
+  "place_id": "ChIJg3vVdI-lXUgRQcmQveaJBWg",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Whites+Garage/@53.2732196,-7.4887102,14z/data=!4m8!1m2!2m1!1sWhites+Garage!3m4!1s0x485da58f74d57b83:0x680589e6bd90c941!8m2!3d53.2732196!4d-7.4887102",
+  "other_listing_url": "https://irish-pages.ie/listing/ireland/tullamore/auto-repair-shop/whites-garage",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Whites+Garage/@53.2732196,-7.4887102,14z/data=!4m8!1m2!2m1!1sWhites+Garage!3m4!1s0x485da58f74d57b83:0x680589e6bd90c941!8m2!3d53.2732196!4d-7.4887102 (existing dataset / place_id ChIJg3vVdI-lXUgRQcmQveaJBWg); other_listing_url:https://irish-pages.ie/listing/ireland/tullamore/auto-repair-shop/whites-garage (WebFetch confirmed exact phone match +353 57 935 1350)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "No Facebook, Instagram, or email found despite multiple targeted searches, including a site:facebook.com search - all Facebook results named 'Whites Garage' belonged to unrelated businesses in other locations (Newcastle West Co. Limerick, Bridport UK, Allora QLD Australia, Leeds Kent UK), none matching this Tullamore, Co. Offaly business, so none were recorded. irish-pages.ie directory listing independently confirms exact phone match. Other directory mentions found but not used as primary: Yelp, missedcallireland.com, and a QSN Triska trade article (WebFetch returned 403 Forbidden).",
+  "processed_at": "2026-08-11T12:00:00Z"
+}

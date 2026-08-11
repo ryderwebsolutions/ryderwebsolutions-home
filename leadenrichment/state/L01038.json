@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01038",
+  "name": "Jason Farrell Autobody Repairs",
+  "phone": "+353 86 819 8350",
+  "normalized_phone": "0868198350",
+  "address": "Ballyamon, Tombrack, Ferns, Co. Wexford, Y21 AW24",
+  "city": "Ferns",
+  "state": "Co. Wexford",
+  "category": "Auto body shop",
+  "place_id": "ChIJK79wOWX5Z0gRg2Ws9aADjZk",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/p/Farrell-Autobody-Repairs-100037660435970/",
+  "google_business_url": "https://www.google.com/maps/place/Jason+Farrell+Autobody+Repairs/@52.6223957,-6.5548468,14z/data=!4m8!1m2!2m1!1sJason+Farrell+Autobody+Repairs!3m4!1s0x4867f9653970bf2b:0x998d03a0f5ac6583!8m2!3d52.6223957!4d-6.5548468",
+  "other_listing_url": "https://www.goldenpages.ie/farrell-jason-auto-body-repair-ferns/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Jason+Farrell+Autobody+Repairs/@52.6223957,-6.5548468,14z/data=!4m8!1m2!2m1!1sJason+Farrell+Autobody+Repairs!3m4!1s0x4867f9653970bf2b:0x998d03a0f5ac6583!8m2!3d52.6223957!4d-6.5548468 (existing dataset / place_id ChIJK79wOWX5Z0gRg2Ws9aADjZk); other_listing_url:https://www.goldenpages.ie/farrell-jason-auto-body-repair-ferns/ (WebFetch confirmed exact address Tombrack, Ferns, Co. Wexford); facebook_url:https://www.facebook.com/p/Farrell-Autobody-Repairs-100037660435970/ (WebSearch, 'Farrell Autobody Repairs | Tombrack', 213 likes)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "Business also has its own website farrellautobody.ie (referenced by multiple independent search sources as live) but WebFetch could not resolve it in this environment (DNS error) so it was not used as the recorded source. Golden Pages lists phone (053) 9367939, a landline that differs from the lead's mobile +353 86 819 8350 - plausibly the same business using both a shop landline and the owner's mobile (registered with Google), but noting the phone numbers themselves do not match; name and address match exactly instead. Facebook page name+town matches but was not independently phone-verified via fetch (blocked by login wall).",
+  "processed_at": "2026-08-11T12:00:00Z"
+}

@@ -1,0 +1,23 @@
+{
+  "lead_id": "L01078",
+  "name": "Ridge motors",
+  "phone": "+353 83 466 7699",
+  "normalized_phone": "0834667699",
+  "address": "Ridge, The Ridge, Co. Carlow, R93 H9K2",
+  "city": "The Ridge",
+  "state": "Co. Carlow",
+  "category": "Mechanic",
+  "place_id": "ChIJL8FOefxBXUgR7fGDNvZ7ZiM",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Ridge+motors/@52.753652599999995,-7.0621725,14z/data=!4m8!1m2!2m1!1sRidge+motors!3m4!1s0x485d41fc794ec12f:0x23667bf63683f1ed!8m2!3d52.753652599999995!4d-7.0621725",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Ridge+motors/@52.753652599999995,-7.0621725,14z/data=!4m8!1m2!2m1!1sRidge+motors!3m4!1s0x485d41fc794ec12f:0x23667bf63683f1ed!8m2!3d52.753652599999995!4d-7.0621725 (existing dataset / place_id ChIJL8FOefxBXUgR7fGDNvZ7ZiM)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "Searched Golden Pages, Facebook, and general web for 'Ridge Motors' Carlow mechanic and directly for the phone number 0834667699; found only unrelated same-name dealerships in the US/Canada (Ridge Quality Motors, Ridgeview Motors, etc.) and no Irish match. This appears to be a very small rural sole-trader mechanic (named after the townland 'The Ridge') with no discoverable online presence (no directory listing, social media, or email found) after reasonable search effort.",
+  "processed_at": "2026-08-11T00:00:00Z",
+  "status": "DONE"
+}

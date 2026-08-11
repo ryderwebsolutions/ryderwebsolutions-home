@@ -1,0 +1,23 @@
+{
+  "lead_id": "L01259",
+  "name": "Carrick on Shannon Motor Factors",
+  "phone": "+353 71 962 0686",
+  "normalized_phone": "0719620686",
+  "address": "3 Castlecara Rd, Attifinlay, Carrick-On-Shannon, Co. Leitrim",
+  "city": "Carrick-On-Shannon",
+  "state": "Co. Leitrim",
+  "category": "Auto parts store",
+  "place_id": "ChIJA_0-ArWFXkgRlmaRB43sZDc",
+  "status": "DONE",
+  "email": "cmf1@eircom.net",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/p/Carrick-on-Shannon-Motor-Factors-100054212724666/",
+  "google_business_url": "https://www.google.com/maps/place/Carrick+on+Shannon+Motor+Factors/@53.9473704,-8.0735207,14z/data=!4m8!1m2!2m1!1sCarrick+on+Shannon+Motor+Factors!3m4!1s0x485e85b5023efd03:0x3764ec8d07916696!8m2!3d53.9473704!4d-8.0735207",
+  "other_listing_url": "https://www.goldenpages.ie/carrick-motor-factors-carrick-on-shannon/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Carrick+on+Shannon+Motor+Factors/@53.9473704,-8.0735207,14z/data=!4m8!1m2!2m1!1sCarrick+on+Shannon+Motor+Factors!3m4!1s0x485e85b5023efd03:0x3764ec8d07916696!8m2!3d53.9473704!4d-8.0735207 (existing dataset / place_id ChIJA_0-ArWFXkgRlmaRB43sZDc); email:https://www.goldenpages.ie/carrick-motor-factors-carrick-on-shannon/; other_listing_url:https://www.goldenpages.ie/carrick-motor-factors-carrick-on-shannon/; facebook_url:https://www.facebook.com/p/Carrick-on-Shannon-Motor-Factors-100054212724666/",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "Golden Pages listing (business listed there as 'Carrick Motor Factors', a shortened form of the same name) independently confirms exact phone match (071 9620686) = HIGH confidence; email cmf1@eircom.net sourced from that same verified listing. Facebook page 'Carrick on Shannon Motor Factors' (365 likes, Attyfinlay/Carrick-on-Shannon) matches by name+town, not independently fetch-verified, so treat facebook_url specifically as MEDIUM confidence. Note: Autotrade.ie reports this business was acquired by Alliance Automotive Group (AAG) - it may now operate under AAG ownership but retains the original trading name/number per the Golden Pages listing. No Instagram found.",
+  "processed_at": "2026-08-11T00:00:00Z",
+  "status": "DONE"
+}

@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00880",
+  "name": "James Lannon Motor Repairs",
+  "phone": "+353 86 817 2250",
+  "normalized_phone": "0868172250",
+  "address": "Curlew View, Warren Or Drum, Co. Roscommon",
+  "city": "",
+  "state": "Co. Roscommon",
+  "category": "Auto repair shop",
+  "place_id": "ChIJefz1zVWXXkgRUEMfhksx4vo",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/James+Lannon+Motor+Repairs/@53.9756982,-8.2932387,14z/data=!4m8!1m2!2m1!1sJames+Lannon+Motor+Repairs!3m4!1s0x485e9755cdf5fc79:0xfae2314b861f4350!8m2!3d53.9756982!4d-8.2932387",
+  "other_listing_url": "https://www.goldenpages.ie/lannon-james-boyle/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/James+Lannon+Motor+Repairs/@53.9756982,-8.2932387,14z/data=!4m8!1m2!2m1!1sJames+Lannon+Motor+Repairs!3m4!1s0x485e9755cdf5fc79:0xfae2314b861f4350!8m2!3d53.9756982!4d-8.2932387 (existing dataset / place_id ChIJefz1zVWXXkgRUEMfhksx4vo); other_listing_url:https://www.goldenpages.ie/lannon-james-boyle/",
+  "match_confidence": "MEDIUM",
+  "enrichment_status": "NEEDS_REVIEW",
+  "notes": "Exact business-name match 'James Lannon Motor/Crash Repairs' found in Golden Pages, carservicerepair.ie, alltrack.org, localbusinesspages.ie and SoloCheck (business registered 15-17 yrs), all in Co. Roscommon and same 'Garages'/auto repair category - consistent with lead. HOWEVER address given on these listings is 'Tiovanagh, Boyle, Co. Roscommon' (landline (071) 9663056) which does NOT match the lead's address 'Curlew View, Warren Or Drum, Co. Roscommon' or its mobile number 0868172250 - plausibly the same rural sole-trader business (landline for shop + personal mobile, townland naming varies by source) but this could not be independently confirmed, so flagged for human review rather than treated as a confident match. Also found a Boyle GAA Facebook sponsorship post naming 'James Lannon Motor Repairs' and a personal Facebook profile 'James Lannon' (facebook.com/james.lannon.1232) - the latter is a personal profile, not a business Page, so per rules it was NOT recorded as facebook_url. No email or Instagram found for this business anywhere.",
+  "processed_at": "2026-08-11T12:38:29Z"
+}

@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01281",
+  "name": "PM Auto Repair",
+  "phone": "+353 86 365 8177",
+  "normalized_phone": "0863658177",
+  "address": "Muchgrange, Dundalk, Co. Louth, A91 N447",
+  "city": "Dundalk",
+  "state": "Co. Louth",
+  "category": "Mechanic",
+  "place_id": "ChIJi2LiV4HXYEgROpoCkUPzds4",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "https://www.instagram.com/pmautorepair/",
+  "facebook_url": "https://www.facebook.com/p/PM-Auto-Repair-100066495230557/",
+  "google_business_url": "https://www.google.com/maps/place/PM+Auto+Repair/@54.020291,-6.142258099999999,14z/data=!4m8!1m2!2m1!1sPM+Auto+Repair!3m4!1s0x4860d78157e2628b:0xce76f34391029a3a!8m2!3d54.020291!4d-6.142258099999999",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/PM+Auto+Repair/@54.020291,-6.142258099999999,14z/data=!4m8!1m2!2m1!1sPM+Auto+Repair!3m4!1s0x4860d78157e2628b:0xce76f34391029a3a!8m2!3d54.020291!4d-6.142258099999999 (existing dataset / place_id ChIJi2LiV4HXYEgROpoCkUPzds4); instagram_url:https://www.instagram.com/pmautorepair/ (WebSearch, profile tagged Dundalk); facebook_url:https://www.facebook.com/p/PM-Auto-Repair-100066495230557/ (WebSearch, page 'PM Auto Repair | Greenore', 729 likes, auto repair/NCT/CVRT services)",
+  "match_confidence": "MEDIUM",
+  "enrichment_status": "ENRICHED",
+  "notes": "Found Facebook page 'PM Auto Repair | Greenore' (auto repair/NCT/CVRT services matching category) and Instagram @pmautorepair tagged Dundalk. Greenore is a village on the Cooley Peninsula, Co. Louth, near the Muchgrange/Dundalk area, consistent with lead county/category. Could NOT independently verify phone or exact address on either page - WebFetch on both Facebook and Instagram was blocked (login wall / no content returned), so confidence capped at MEDIUM per rules. No email or additional directory listing surfaced within search budget.",
+  "processed_at": "2026-08-11T12:00:00Z"
+}

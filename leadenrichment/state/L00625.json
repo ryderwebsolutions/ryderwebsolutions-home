@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00625",
+  "name": "BD Recovery & Repairs",
+  "phone": "+353 83 302 1982",
+  "normalized_phone": "0833021982",
+  "address": "Tullyarb, Carrickafoden, Co. Donegal, F93 YN3A",
+  "city": "Carrickafoden",
+  "state": "Co. Donegal",
+  "category": "Car repair and maintenance service",
+  "place_id": "ChIJTY2U1cwBYEgRBjyXEdnXxqU",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/BdRecovery/",
+  "google_business_url": "https://www.google.com/maps/place/BD+Recovery+%26+Repairs/@55.2710017,-7.2393643,14z/data=!4m8!1m2!2m1!1sBD+Recovery+%26+Repairs!3m4!1s0x486001ccd5948d4d:0xa5c6d7d911973c06!8m2!3d55.2710017!4d-7.2393643",
+  "other_listing_url": "https://www.yelp.com/biz/bd-recovery-24-inishowen",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/BD+Recovery+%26+Repairs/@55.2710017,-7.2393643,14z/data=!4m8!1m2!2m1!1sBD+Recovery+%26+Repairs!3m4!1s0x486001ccd5948d4d:0xa5c6d7d911973c06!8m2!3d55.2710017!4d-7.2393643 (existing dataset / place_id ChIJTY2U1cwBYEgRBjyXEdnXxqU); facebook_url:https://www.facebook.com/BdRecovery/; other_listing_url:https://www.yelp.com/biz/bd-recovery-24-inishowen",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "Facebook page 'BD Recovery & Repairs | Carndonagh' found (facebook.com/BdRecovery) - name matches exactly and Carndonagh is the nearest town to Carrickafoden/Tullyarb in Inishowen, Co. Donegal, consistent with lead's address and category. Yelp listing 'BD RECOVERY 24 - Inishowen, Co. Donegal' independently surfaced phone (083) 302 1982 in its search snippet, an exact match to normalized_phone 0833021982, giving HIGH confidence despite direct WebFetch of Facebook/Yelp being blocked by login/anti-bot walls (403). No email or Instagram found; inishnews.com ad listing found but had no phone/email, so Yelp used as other_listing_url instead due to the phone match.",
+  "processed_at": "2026-08-11T12:38:29Z"
+}

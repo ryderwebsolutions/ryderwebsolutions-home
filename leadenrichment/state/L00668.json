@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00668",
+  "name": "Costello's Cars and Commercials",
+  "phone": "+353 87 466 0464",
+  "normalized_phone": "0874660464",
+  "address": "Seaview Ave, Baldoyle, Dublin",
+  "city": "Dublin",
+  "state": "",
+  "category": "Towing service",
+  "place_id": "ChIJN90nwrwFZ0gRD2pmwUUKous",
+  "status": "PENDING",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Costello%27s+Cars+and+Commercials/@53.398975699999994,-6.129256499999999,14z/data=!4m8!1m2!2m1!1sCostello%27s+Cars+and+Commercials!3m4!1s0x486705bcc227dd37:0xeba20a45c1666a0f!8m2!3d53.398975699999994!4d-6.129256499999999",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Costello%27s+Cars+and+Commercials/@53.398975699999994,-6.129256499999999,14z/data=!4m8!1m2!2m1!1sCostello%27s+Cars+and+Commercials!3m4!1s0x486705bcc227dd37:0xeba20a45c1666a0f!8m2!3d53.398975699999994!4d-6.129256499999999 (existing dataset / place_id ChIJN90nwrwFZ0gRD2pmwUUKous)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "",
+  "processed_at": null
+}

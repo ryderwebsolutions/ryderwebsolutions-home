@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00076",
+  "name": "Hill Motors",
+  "phone": "+353 1 288 2894",
+  "normalized_phone": "012882894",
+  "address": "3 Bath Pl, Blackrock, Dublin, A94 RH98",
+  "city": "Dublin",
+  "state": "",
+  "category": "Mechanic",
+  "place_id": "ChIJJU4T4MYIZ0gR6NBExqZUByU",
+  "status": "PENDING",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Hill+Motors/@53.302735299999995,-6.1791941999999995,14z/data=!4m8!1m2!2m1!1sHill+Motors!3m4!1s0x486708c6e0134e25:0x250754a6c644d0e8!8m2!3d53.302735299999995!4d-6.1791941999999995",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Hill+Motors/@53.302735299999995,-6.1791941999999995,14z/data=!4m8!1m2!2m1!1sHill+Motors!3m4!1s0x486708c6e0134e25:0x250754a6c644d0e8!8m2!3d53.302735299999995!4d-6.1791941999999995 (existing dataset / place_id ChIJJU4T4MYIZ0gR6NBExqZUByU)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "",
+  "processed_at": null
+}

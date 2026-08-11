@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00392",
+  "name": "GT Tyre Service",
+  "phone": "+353 49 555 2544",
+  "normalized_phone": "0495552544",
+  "address": "Church St, Magheranure, Cootehill, Co. Cavan",
+  "city": "Cootehill",
+  "state": "Co. Cavan",
+  "category": "Tire shop",
+  "place_id": "ChIJi1pMS94cXkgRUtNIOvIxyCo",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/GT+Tyre+Service/@54.0714593,-7.0801165,14z/data=!4m8!1m2!2m1!1sGT+Tyre+Service!3m4!1s0x485e1cde4b4c5a8b:0x2ac831f23a48d352!8m2!3d54.0714593!4d-7.0801165",
+  "other_listing_url": "https://www.goldenpages.ie/gt-tyre-services-cootehill-H16/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/GT+Tyre+Service/@54.0714593,-7.0801165,14z/data=!4m8!1m2!2m1!1sGT+Tyre+Service!3m4!1s0x485e1cde4b4c5a8b:0x2ac831f23a48d352!8m2!3d54.0714593!4d-7.0801165 (existing dataset / place_id ChIJi1pMS94cXkgRUtNIOvIxyCo); other_listing_url:https://www.goldenpages.ie/gt-tyre-services-cootehill-H16/",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "No public email or Facebook/Instagram page found despite searches (irish-pages.ie, esda.ie, locallife.ie, centralindex.com and irelands-advisor.com listings also found but are generic aggregator/directory scrapes, not owned social profiles). Golden Pages listing confirmed via matching phone number (049) 5552544 and address Church St, Cootehill, Co. Cavan - recorded as other_listing_url (HIGH confidence, phone-verified). No dedicated social media presence discoverable for this business.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

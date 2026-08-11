@@ -1,0 +1,22 @@
+{
+  "lead_id": "L01330",
+  "name": "Auto Body Stores",
+  "phone": "+353 61 437 804",
+  "normalized_phone": "061437804",
+  "address": "Unit 16, Eastlink Business Park, Ballysimon Rd, Monaclinoe, Limerick, V94 EV88",
+  "city": "Limerick",
+  "state": "",
+  "category": "Car accessories store",
+  "place_id": "ChIJI4lFxwZcW0gRb2BI1szfHxA",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "https://www.facebook.com/ABSLimk/",
+  "google_business_url": "https://www.google.com/maps/place/Auto+Body+Stores/@52.6520428,-8.586415299999999,14z/data=!4m8!1m2!2m1!1sAuto+Body+Stores!3m4!1s0x485b5c06c7458923:0x101fdfccd648606f!8m2!3d52.6520428!4d-8.586415299999999",
+  "other_listing_url": "https://autobodystores.com/",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Auto+Body+Stores/@52.6520428,-8.586415299999999,14z/data=!4m8!1m2!2m1!1sAuto+Body+Stores!3m4!1s0x485b5c06c7458923:0x101fdfccd648606f!8m2!3d52.6520428!4d-8.586415299999999 (existing dataset / place_id ChIJI4lFxwZcW0gRb2BI1szfHxA); other_listing_url:https://autobodystores.com/; facebook_url:https://www.facebook.com/ABSLimk/",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "Found business's own website autobodystores.com - search snippet confirms 'Unit 16 Eastlink Business park, Limerick' and phone 061437804, exactly matching address/normalized_phone (HIGH confidence). WebFetch of the site itself returned no content (likely JS-rendered/blocked), so relying on search snippet for verification. Also found Facebook page 'Auto Body Stores Limerick' (facebook.com/ABSLimk) - strong name+town match but WebFetch could not load page content to independently verify phone/address, so this element is only MEDIUM confidence. No public email or Instagram found. Note: many unrelated 'Limerick Auto Body' results are for Limerick, Pennsylvania, USA - excluded.",
+  "processed_at": "2026-08-11T00:00:00Z"
+}

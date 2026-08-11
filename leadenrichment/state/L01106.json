@@ -1,0 +1,23 @@
+{
+  "lead_id": "L01106",
+  "name": "Brian Murphy Motors",
+  "phone": "+353 86 052 8953",
+  "normalized_phone": "0860528953",
+  "address": "unit 3, pat dwyer industrial estate, Corbally North, Glanmire, Co. Cork",
+  "city": "Glanmire",
+  "state": "Co. Cork",
+  "category": "Car repair and maintenance service",
+  "place_id": "ChIJDxHTA3qbREgRBuiLrx-xtQ4",
+  "status": "DONE",
+  "email": "",
+  "instagram_url": "https://www.instagram.com/brianmurphymotors/",
+  "facebook_url": "https://www.facebook.com/Brianmurphymotors/",
+  "google_business_url": "https://www.google.com/maps/place/Brian+Murphy+Motors/@51.930245899999996,-8.367539599999999,14z/data=!4m8!1m2!2m1!1sBrian+Murphy+Motors!3m4!1s0x48449b7a03d3110f:0xeb5b11faf8be806!8m2!3d51.930245899999996!4d-8.367539599999999",
+  "other_listing_url": "https://irish-pages.ie/listing/ireland/glanmire/car-repair-and-maintenance-service/brian-murphy-motors",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Brian+Murphy+Motors/@51.930245899999996,-8.367539599999999,14z/data=!4m8!1m2!2m1!1sBrian+Murphy+Motors!3m4!1s0x48449b7a03d3110f:0xeb5b11faf8be806!8m2!3d51.930245899999996!4d-8.367539599999999 (existing dataset / place_id ChIJDxHTA3qbREgRBuiLrx-xtQ4); other_listing_url:https://irish-pages.ie/listing/ireland/glanmire/car-repair-and-maintenance-service/brian-murphy-motors; facebook_url:https://www.facebook.com/Brianmurphymotors/; instagram_url:https://www.instagram.com/brianmurphymotors/",
+  "match_confidence": "HIGH",
+  "enrichment_status": "ENRICHED",
+  "notes": "irish-pages.ie directory listing independently confirms exact phone (+353860528953) and exact address (unit 3, Pat Dwyer Industrial Estate, Corbally North, Glanmire, Co. Cork) = HIGH confidence for business identity. Facebook page 'Brian Murphy Motors | Glanmire' (1,164 likes, 96% recommend) and Instagram @brianmurphymotors both match by name+town; WebFetch on Facebook confirmed the page references Glanmire and automotive services but could not surface phone/address (login-walled), so those two channels are MEDIUM confidence specifically. No published email address found.",
+  "processed_at": "2026-08-11T00:00:00Z",
+  "status": "DONE"
+}

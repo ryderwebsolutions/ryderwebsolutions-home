@@ -1,0 +1,22 @@
+{
+  "lead_id": "L00240",
+  "name": "Custom Auto Repair",
+  "phone": "+353 89 958 6587",
+  "normalized_phone": "0899586587",
+  "address": "Unit 7, The Old Sawmills, Ballymount Rd Lower, Walkinstown, Dublin 12, D12 CR97",
+  "city": "Dublin 12",
+  "state": "",
+  "category": "Transmission shop",
+  "place_id": "ChIJneGW_uwNZ0gRjDuRbUfV7LY",
+  "status": "PENDING",
+  "email": "",
+  "instagram_url": "",
+  "facebook_url": "",
+  "google_business_url": "https://www.google.com/maps/place/Custom+Auto+Repair/@53.3163443,-6.3374263,14z/data=!4m8!1m2!2m1!1sCustom+Auto+Repair!3m4!1s0x48670decfe96e19d:0xb6ecd5476d913b8c!8m2!3d53.3163443!4d-6.3374263",
+  "other_listing_url": "",
+  "enrichment_source": "google_business_url:https://www.google.com/maps/place/Custom+Auto+Repair/@53.3163443,-6.3374263,14z/data=!4m8!1m2!2m1!1sCustom+Auto+Repair!3m4!1s0x48670decfe96e19d:0xb6ecd5476d913b8c!8m2!3d53.3163443!4d-6.3374263 (existing dataset / place_id ChIJneGW_uwNZ0gRjDuRbUfV7LY)",
+  "match_confidence": "HIGH",
+  "enrichment_status": "PARTIAL",
+  "notes": "",
+  "processed_at": null
+}
