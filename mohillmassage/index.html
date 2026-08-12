@@ -100,69 +100,112 @@
     <!-- HERO -->
     <section class="hero">
       <svg class="hero-graphic" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+        <defs>
+          <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="currentColor" stop-opacity="0.55"/>
+            <stop offset="55%" stop-color="currentColor" stop-opacity="0.16"/>
+            <stop offset="100%" stop-color="currentColor" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="hillBack" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="currentColor" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="currentColor" stop-opacity="0.04"/>
+          </linearGradient>
+          <linearGradient id="hillFront" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="currentColor" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="currentColor" stop-opacity="0.07"/>
+          </linearGradient>
+          <symbol id="blossom" viewBox="-8 -8 16 16">
+            <g fill="currentColor">
+              <path d="M0,-1 C2,-6 5,-6 5,-2 C5,1 2,2 0,-1 Z"/>
+              <path d="M0,-1 C2,-6 5,-6 5,-2 C5,1 2,2 0,-1 Z" transform="rotate(72)"/>
+              <path d="M0,-1 C2,-6 5,-6 5,-2 C5,1 2,2 0,-1 Z" transform="rotate(144)"/>
+              <path d="M0,-1 C2,-6 5,-6 5,-2 C5,1 2,2 0,-1 Z" transform="rotate(216)"/>
+              <path d="M0,-1 C2,-6 5,-6 5,-2 C5,1 2,2 0,-1 Z" transform="rotate(288)"/>
+              <circle cx="0" cy="0" r="1.3"/>
+            </g>
+          </symbol>
+        </defs>
+
         <!-- moon -->
-        <path d="M850,60 A40,40 0 1,0 850,140 A32,32 0 1,1 850,60 Z" fill="currentColor"/>
+        <circle cx="850" cy="100" r="72" fill="url(#moonGlow)"/>
+        <path d="M850,60 A40,40 0 1,0 850,140 A32,32 0 1,1 850,60 Z" fill="currentColor" opacity="0.9"/>
+        <circle cx="770" cy="70" r="1.6" fill="currentColor" opacity="0.5"/>
+        <circle cx="795" cy="45" r="1.2" fill="currentColor" opacity="0.4"/>
+        <circle cx="740" cy="110" r="1.4" fill="currentColor" opacity="0.35"/>
 
         <!-- hills -->
-        <path d="M0,420 C120,380 220,400 340,385 C460,370 560,395 680,375 C800,355 900,385 1000,365" fill="none" stroke="currentColor" stroke-width="2"/>
-        <path d="M0,460 C130,425 240,450 360,430 C480,410 580,440 700,420 C820,400 920,435 1000,410" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M0,420 C120,380 220,400 340,385 C460,370 560,395 680,375 C800,355 900,385 1000,365 L1000,500 L0,500 Z" fill="url(#hillBack)"/>
+        <path d="M0,460 C130,425 240,450 360,430 C480,410 580,440 700,420 C820,400 920,435 1000,410 L1000,500 L0,500 Z" fill="url(#hillFront)"/>
 
         <!-- bamboo -->
-        <g stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round">
-          <line x1="90" y1="170" x2="90" y2="460"/>
-          <line x1="76" y1="212" x2="104" y2="212"/>
-          <line x1="76" y1="256" x2="104" y2="256"/>
-          <line x1="76" y1="300" x2="104" y2="300"/>
-          <line x1="76" y1="344" x2="104" y2="344"/>
-          <line x1="76" y1="388" x2="104" y2="388"/>
+        <g>
+          <path d="M86,460 C86,380 88,300 90,170 C90,168 94,168 94,170 C96,300 98,380 98,460 Z" fill="currentColor" opacity="0.42"/>
+          <path d="M126,460 C126,360 128,260 130,140 C130,138 134,138 134,140 C136,260 138,360 138,460 Z" fill="currentColor" opacity="0.5"/>
+          <path d="M162,460 C162,380 164,300 166,200 C166,198 170,198 170,200 C172,300 174,380 174,460 Z" fill="currentColor" opacity="0.46"/>
 
-          <line x1="130" y1="140" x2="130" y2="460"/>
-          <line x1="116" y1="182" x2="144" y2="182"/>
-          <line x1="116" y1="226" x2="144" y2="226"/>
-          <line x1="116" y1="270" x2="144" y2="270"/>
-          <line x1="116" y1="314" x2="144" y2="314"/>
-          <line x1="116" y1="358" x2="144" y2="358"/>
-          <line x1="116" y1="402" x2="144" y2="402"/>
+          <g stroke="currentColor" stroke-width="1.6" opacity="0.55">
+            <line x1="78" y1="212" x2="102" y2="212"/>
+            <line x1="78" y1="256" x2="102" y2="256"/>
+            <line x1="78" y1="300" x2="102" y2="300"/>
+            <line x1="78" y1="344" x2="102" y2="344"/>
+            <line x1="78" y1="388" x2="102" y2="388"/>
 
-          <line x1="166" y1="200" x2="166" y2="460"/>
-          <line x1="152" y1="240" x2="180" y2="240"/>
-          <line x1="152" y1="284" x2="180" y2="284"/>
-          <line x1="152" y1="328" x2="180" y2="328"/>
-          <line x1="152" y1="372" x2="180" y2="372"/>
-          <line x1="152" y1="416" x2="180" y2="416"/>
+            <line x1="118" y1="182" x2="142" y2="182"/>
+            <line x1="118" y1="226" x2="142" y2="226"/>
+            <line x1="118" y1="270" x2="142" y2="270"/>
+            <line x1="118" y1="314" x2="142" y2="314"/>
+            <line x1="118" y1="358" x2="142" y2="358"/>
+            <line x1="118" y1="402" x2="142" y2="402"/>
 
-          <path d="M130,140 C112,120 96,116 82,124"/>
-          <path d="M130,140 C148,122 166,120 180,130"/>
-          <path d="M166,200 C150,182 134,178 120,186"/>
-          <path d="M90,170 C74,154 60,152 48,160"/>
+            <line x1="154" y1="240" x2="178" y2="240"/>
+            <line x1="154" y1="284" x2="178" y2="284"/>
+            <line x1="154" y1="328" x2="178" y2="328"/>
+            <line x1="154" y1="372" x2="178" y2="372"/>
+            <line x1="154" y1="416" x2="178" y2="416"/>
+          </g>
+
+          <g fill="currentColor" opacity="0.5">
+            <path d="M130,140 C110,124 90,118 76,126 C92,131 110,138 130,140 Z"/>
+            <path d="M130,140 C150,122 170,119 184,130 C168,132 148,138 130,140 Z"/>
+            <path d="M166,200 C148,183 130,178 116,187 C132,192 150,197 166,200 Z"/>
+            <path d="M90,170 C72,153 55,150 42,159 C58,164 76,168 90,170 Z"/>
+          </g>
         </g>
 
         <!-- cherry blossom tree -->
-        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity="0.55">
           <path d="M900,440 C895,390 908,350 890,300 C878,265 900,230 885,190 C878,165 895,140 888,110"/>
           <path d="M890,300 C855,280 820,268 790,255"/>
           <path d="M885,190 C905,165 930,150 955,135"/>
           <path d="M895,350 C930,338 955,325 975,305"/>
         </g>
-        <g fill="currentColor">
-          <circle cx="790" cy="255" r="4"/>
-          <circle cx="778" cy="248" r="3"/>
-          <circle cx="795" cy="242" r="3"/>
-          <circle cx="782" cy="262" r="3"/>
 
-          <circle cx="955" cy="135" r="4"/>
-          <circle cx="943" cy="128" r="3"/>
-          <circle cx="960" cy="122" r="3"/>
-          <circle cx="948" cy="142" r="3"/>
+        <g opacity="0.75">
+          <use href="#blossom" x="780" y="245" width="20" height="20"/>
+          <use href="#blossom" x="768" y="238" width="14" height="14"/>
+          <use href="#blossom" x="792" y="232" width="16" height="16"/>
+          <use href="#blossom" x="774" y="260" width="12" height="12"/>
 
-          <circle cx="975" cy="305" r="4"/>
-          <circle cx="963" cy="298" r="3"/>
-          <circle cx="982" cy="295" r="3"/>
-          <circle cx="968" cy="312" r="3"/>
+          <use href="#blossom" x="945" y="125" width="20" height="20"/>
+          <use href="#blossom" x="931" y="118" width="14" height="14"/>
+          <use href="#blossom" x="954" y="112" width="16" height="16"/>
+          <use href="#blossom" x="938" y="140" width="12" height="12"/>
 
-          <circle cx="860" cy="270" r="2.5"/>
-          <circle cx="900" cy="230" r="2.5"/>
-          <circle cx="870" cy="190" r="2.5"/>
+          <use href="#blossom" x="966" y="296" width="18" height="18"/>
+          <use href="#blossom" x="951" y="289" width="13" height="13"/>
+          <use href="#blossom" x="977" y="285" width="15" height="15"/>
+          <use href="#blossom" x="959" y="309" width="12" height="12"/>
+
+          <use href="#blossom" x="855" y="265" width="10" height="10" opacity="0.6"/>
+          <use href="#blossom" x="895" y="225" width="10" height="10" opacity="0.6"/>
+          <use href="#blossom" x="865" y="185" width="10" height="10" opacity="0.6"/>
+        </g>
+
+        <!-- floating petals -->
+        <g opacity="0.4">
+          <use href="#blossom" x="696" y="176" width="9" height="9"/>
+          <use href="#blossom" x="647" y="227" width="7" height="7"/>
+          <use href="#blossom" x="596" y="136" width="8" height="8"/>
         </g>
       </svg>
       <div class="container hero-content">

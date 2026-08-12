@@ -25,11 +25,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Sticky header state
+  // Sticky header state + mobile "Get in Touch" bar (hidden until the user scrolls,
+  // so it doesn't cover the hero's "View Treatments" button on first load)
   var header = document.getElementById('site-header');
-  if (header) {
+  var stickyCta = document.querySelector('.sticky-cta');
+  if (header || stickyCta) {
     var onScroll = function () {
-      header.classList.toggle('scrolled', window.scrollY > 40);
+      var scrolled = window.scrollY > 40;
+      if (header) header.classList.toggle('scrolled', scrolled);
+      if (stickyCta) stickyCta.classList.toggle('visible', scrolled);
     };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
