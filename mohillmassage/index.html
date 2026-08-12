@@ -99,17 +99,77 @@
   <main id="main">
     <!-- HERO -->
     <section class="hero">
-      <svg class="hero-graphic" viewBox="0 0 400 200" aria-hidden="true">
+      <svg class="hero-graphic" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+        <!-- moon -->
+        <path d="M850,60 A40,40 0 1,0 850,140 A32,32 0 1,1 850,60 Z" fill="currentColor"/>
+
+        <!-- hills -->
+        <path d="M0,420 C120,380 220,400 340,385 C460,370 560,395 680,375 C800,355 900,385 1000,365" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M0,460 C130,425 240,450 360,430 C480,410 580,440 700,420 C820,400 920,435 1000,410" fill="none" stroke="currentColor" stroke-width="2"/>
+
+        <!-- bamboo -->
+        <g stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round">
+          <line x1="90" y1="170" x2="90" y2="460"/>
+          <line x1="76" y1="212" x2="104" y2="212"/>
+          <line x1="76" y1="256" x2="104" y2="256"/>
+          <line x1="76" y1="300" x2="104" y2="300"/>
+          <line x1="76" y1="344" x2="104" y2="344"/>
+          <line x1="76" y1="388" x2="104" y2="388"/>
+
+          <line x1="130" y1="140" x2="130" y2="460"/>
+          <line x1="116" y1="182" x2="144" y2="182"/>
+          <line x1="116" y1="226" x2="144" y2="226"/>
+          <line x1="116" y1="270" x2="144" y2="270"/>
+          <line x1="116" y1="314" x2="144" y2="314"/>
+          <line x1="116" y1="358" x2="144" y2="358"/>
+          <line x1="116" y1="402" x2="144" y2="402"/>
+
+          <line x1="166" y1="200" x2="166" y2="460"/>
+          <line x1="152" y1="240" x2="180" y2="240"/>
+          <line x1="152" y1="284" x2="180" y2="284"/>
+          <line x1="152" y1="328" x2="180" y2="328"/>
+          <line x1="152" y1="372" x2="180" y2="372"/>
+          <line x1="152" y1="416" x2="180" y2="416"/>
+
+          <path d="M130,140 C112,120 96,116 82,124"/>
+          <path d="M130,140 C148,122 166,120 180,130"/>
+          <path d="M166,200 C150,182 134,178 120,186"/>
+          <path d="M90,170 C74,154 60,152 48,160"/>
+        </g>
+
+        <!-- cherry blossom tree -->
+        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M900,440 C895,390 908,350 890,300 C878,265 900,230 885,190 C878,165 895,140 888,110"/>
+          <path d="M890,300 C855,280 820,268 790,255"/>
+          <path d="M885,190 C905,165 930,150 955,135"/>
+          <path d="M895,350 C930,338 955,325 975,305"/>
+        </g>
         <g fill="currentColor">
-          <path d="M200,15 C205,50 214,58 218,68 C226,60 240,58 252,66 C242,74 236,82 238,92 C248,84 264,82 278,92 C266,100 258,110 261,120 C274,110 292,110 306,122 C292,128 282,138 285,150 C300,140 318,142 332,156 L200,185 Z"/>
-          <path d="M200,15 C195,50 186,58 182,68 C174,60 160,58 148,66 C158,74 164,82 162,92 C152,84 136,82 122,92 C134,100 142,110 139,120 C126,110 108,110 94,122 C108,128 118,138 115,150 C100,140 82,142 68,156 L200,185 Z"/>
+          <circle cx="790" cy="255" r="4"/>
+          <circle cx="778" cy="248" r="3"/>
+          <circle cx="795" cy="242" r="3"/>
+          <circle cx="782" cy="262" r="3"/>
+
+          <circle cx="955" cy="135" r="4"/>
+          <circle cx="943" cy="128" r="3"/>
+          <circle cx="960" cy="122" r="3"/>
+          <circle cx="948" cy="142" r="3"/>
+
+          <circle cx="975" cy="305" r="4"/>
+          <circle cx="963" cy="298" r="3"/>
+          <circle cx="982" cy="295" r="3"/>
+          <circle cx="968" cy="312" r="3"/>
+
+          <circle cx="860" cy="270" r="2.5"/>
+          <circle cx="900" cy="230" r="2.5"/>
+          <circle cx="870" cy="190" r="2.5"/>
         </g>
       </svg>
       <div class="container hero-content">
         <span class="hero-kicker reveal" style="--d:.05s">Authentic Thai Bodywork &middot; Est. in Mohill</span>
         <img class="hero-art reveal" src="images/hero-crown-art.webp" alt="Illustrated gold line-art of a hand-carved Thai crown ornament depicting two traditional dancing figures" style="--d:.12s" />
         <h1 class="hero-line1 reveal" style="--d:.2s">Traditional Thai Massage</h1>
-        <p class="hero-sub reveal" style="--d:.3s">A private, one-room practice in Mohill, Co. Leitrim &mdash; traditional technique, genuine care, and a space built for real rest.</p>
+        <p class="hero-sub reveal" style="--d:.3s">A private Thai massage practice in Mohill, Co. Leitrim &mdash; traditional technique, genuine care, and a space built for real rest.</p>
         <div class="hero-badges reveal" style="--d:.4s">
           <span>Trained in Thailand</span><span aria-hidden="true">&middot;</span>
           <span>Private Sessions</span><span aria-hidden="true">&middot;</span>
@@ -386,7 +446,7 @@
           <article class="why-card reveal" style="--d:.06s">
             <span class="why-num">02</span>
             <h3>A Private Sanctuary</h3>
-            <p>One room, one client, undivided attention for the length of your session.</p>
+            <p>One client at a time, undivided attention for the length of your session.</p>
           </article>
           <article class="why-card reveal" style="--d:.12s">
             <span class="why-num">03</span>
@@ -451,7 +511,7 @@
             devoted to bringing authentic, therapeutic touch to Mohill, Co. Leitrim.
           </p>
           <p>
-            Every guest is welcomed personally into a one-room, one-therapist practice built on genuine care
+            Every guest is welcomed personally into a practice built on genuine care
             rather than volume &mdash; where the pressure, the pace, and the space are all shaped around you.
           </p>
           <ul class="checklist">
