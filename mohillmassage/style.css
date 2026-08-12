@@ -370,6 +370,15 @@ a { color: inherit; text-decoration: none; }
   gap: var(--space-2);
 }
 
+/* On desktop, skip the fade-in delay for the hero CTAs so they're usable immediately */
+@media (min-width: 861px) {
+  .hero-actions.reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 .hero-art {
   animation: hero-breathe 7s ease-in-out infinite;
 }
@@ -863,6 +872,16 @@ a { color: inherit; text-decoration: none; }
 
   .sticky-cta.visible { display: flex; }
   body { padding-bottom: 76px; }
+
+  /* Hero: mobile viewports are short, so trim content height and guard against
+     the CTA buttons getting clipped by .hero's overflow before the user scrolls */
+  .hero { padding: 92px 0 24px; overflow-y: visible; }
+  .hero-art { width: min(190px, 44vw); margin: 0 auto 12px; }
+  .hero-kicker { margin-bottom: 8px; font-size: 0.64rem; }
+  .hero-sub { display: none; }
+  .hero-badges { margin-top: 14px; font-size: 0.66rem; }
+  .hero-actions { margin-top: 18px; flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { min-height: 46px; width: 100%; }
 }
 
 @media (max-width: 620px) {
