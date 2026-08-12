@@ -25,18 +25,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Sticky header state + mobile "Get in Touch" bar (hidden until the user scrolls,
-  // so it doesn't cover the hero's "View Treatments" button on first load)
+  // Sticky header state
   var header = document.getElementById('site-header');
-  var stickyCta = document.querySelector('.sticky-cta');
-  if (header || stickyCta) {
-    var onScroll = function () {
-      var scrolled = window.scrollY > 40;
-      if (header) header.classList.toggle('scrolled', scrolled);
-      if (stickyCta) stickyCta.classList.toggle('visible', scrolled);
+  if (header) {
+    var onHeaderScroll = function () {
+      header.classList.toggle('scrolled', window.scrollY > 40);
     };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
+    onHeaderScroll();
+    window.addEventListener('scroll', onHeaderScroll, { passive: true });
+  }
+
+  // Mobile "Get in Touch" bar — stays hidden until the hero has fully scrolled
+  // off screen, so it never covers the hero's own CTA buttons.
+  var stickyCta = document.querySelector('.sticky-cta');
+  var hero = document.querySelector('.hero');
+  if (stickyCta && hero) {
+    var onCtaScroll = function () {
+      stickyCta.classList.toggle('visible', window.scrollY >= hero.offsetHeight);
+    };
+    onCtaScroll();
+    window.addEventListener('scroll', onCtaScroll, { passive: true });
+    window.addEventListener('resize', onCtaScroll, { passive: true });
   }
 
   // Scroll reveals
