@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="See how Ryder Web Solutions builds high-converting websites for plumbers and tradesmen across Ireland.">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#faf8f4">
 
     <title>Your Call is Booked | Ryder Web Solutions</title>
 
-    <link rel="stylesheet" href="/cosmetic-clinic/cosmetic-clinic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/plumbing/plumbing-base.css">
     <link rel="stylesheet" href="/plumbing/plumbing.css">
     <style>
         /* ============================================
@@ -17,9 +20,14 @@
            ============================================ */
 
         :root {
-            --lp-border: #1c1c1c;
-            --lp-muted:  #6b7280;
-            --lp-card:   #0d0d0d;
+            --lp-border: #e4e0d6;
+            --lp-muted:  #5c6067;
+            --lp-card:   #ffffff;
+        }
+
+        .lp-hero h1,
+        .lp-footer h2 {
+            font-family: var(--font-display);
         }
 
         /* ---- reset section padding to be consistent ---- */
@@ -52,10 +60,10 @@
             justify-content: center;
             width: 3.5rem;
             height: 3.5rem;
-            border: 1px solid #2a2a2a;
+            border: 1px solid var(--color-border-strong);
             border-radius: 50%;
             font-size: 1.4rem;
-            color: var(--color-accent-light);
+            color: var(--color-accent);
             margin-bottom: 2rem;
         }
 
@@ -63,7 +71,7 @@
             font-size: clamp(2rem, 5vw, 3rem);
             font-weight: 600;
             letter-spacing: -0.75px;
-            color: #ffffff;
+            color: var(--color-text);
             margin-bottom: 1rem;
             line-height: 1.15;
         }
@@ -81,8 +89,8 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.8rem 2rem;
-            background: #ffffff;
-            color: #000000;
+            background: var(--color-text);
+            color: var(--color-bg);
             border-radius: 0.375rem;
             font-size: 0.95rem;
             font-weight: 600;
@@ -91,8 +99,8 @@
         }
 
         .lp-cta-primary:hover {
-            background: #e5e7eb;
-            color: #000000;
+            background: #2b2e33;
+            color: var(--color-bg);
         }
 
         /* ============================================
@@ -117,7 +125,7 @@
         .step-card h3 {
             font-size: 1.0625rem;
             font-weight: 600;
-            color: #ffffff;
+            color: var(--color-text);
             margin-bottom: 0.4rem;
         }
 
@@ -145,6 +153,7 @@
             border: 1px solid var(--lp-border);
             border-radius: 0.75rem;
             overflow: hidden;
+            box-shadow: 0 20px 44px -28px rgba(22, 24, 27, 0.28);
         }
 
         .case-study-body {
@@ -161,9 +170,10 @@
         }
 
         .case-study-domain {
+            font-family: var(--font-display);
             font-size: 2rem;
-            font-weight: 700;
-            color: #ffffff;
+            font-weight: 600;
+            color: var(--color-text);
             letter-spacing: -0.5px;
             margin-bottom: 1rem;
             line-height: 1;
@@ -186,11 +196,11 @@
 
         .cs-tag {
             padding: 0.3rem 0.75rem;
-            background: #161616;
-            border: 1px solid #252525;
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
             border-radius: 0.25rem;
             font-size: 0.8rem;
-            color: #9ca3af;
+            color: var(--color-text-secondary);
         }
 
         .case-study-link {
@@ -240,7 +250,7 @@
         }
 
         .industry-row:hover {
-            background: #0d0d0d;
+            background: var(--color-bg-secondary);
         }
 
         .industry-row-left {
@@ -263,7 +273,7 @@
         .industry-url {
             font-size: 0.9375rem;
             font-weight: 500;
-            color: #d1d5db;
+            color: var(--color-text);
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -272,7 +282,7 @@
         .industry-row-arrow {
             flex-shrink: 0;
             font-size: 0.875rem;
-            color: #3a3a3a;
+            color: var(--color-border-strong);
             transition: color 0.15s, transform 0.15s;
         }
 
@@ -296,7 +306,7 @@
             font-weight: 600;
             letter-spacing: 2px;
             text-transform: uppercase;
-            color: #3a3a3a;
+            color: var(--color-text-secondary);
             margin-bottom: 2rem;
         }
 
@@ -304,7 +314,7 @@
             font-size: clamp(1.5rem, 3vw, 2rem);
             font-weight: 600;
             letter-spacing: -0.5px;
-            color: #ffffff;
+            color: var(--color-text);
             margin-bottom: 0.75rem;
         }
 
@@ -327,8 +337,8 @@
             align-items: center;
             gap: 0.4rem;
             padding: 0.75rem 1.75rem;
-            background: #ffffff;
-            color: #000000;
+            background: var(--color-text);
+            color: var(--color-bg);
             border-radius: 0.375rem;
             font-size: 0.9rem;
             font-weight: 600;
@@ -337,8 +347,8 @@
         }
 
         .lp-btn-primary:hover {
-            background: #e5e7eb;
-            color: #000;
+            background: #2b2e33;
+            color: var(--color-bg);
         }
 
         .lp-btn-ghost {
@@ -347,8 +357,8 @@
             gap: 0.4rem;
             padding: 0.75rem 1.5rem;
             background: transparent;
-            color: #6b7280;
-            border: 1px solid #2a2a2a;
+            color: var(--color-text-secondary);
+            border: 1px solid var(--color-border-strong);
             border-radius: 0.375rem;
             font-size: 0.9rem;
             font-weight: 500;
@@ -357,8 +367,8 @@
         }
 
         .lp-btn-ghost:hover {
-            border-color: #4a4a4a;
-            color: #d1d5db;
+            border-color: var(--color-text);
+            color: var(--color-text);
         }
 
         /* ============================================

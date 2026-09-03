@@ -3,57 +3,182 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About | Roebuck Building Services</title>
-  <meta name="description" content="Meet Roebuck Building Services, premium residential specialists known for quality craftsmanship, trust, and detail-focused project delivery." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/roebuck.css" />
+  <title>About | Ryder Web Solutions</title>
+  <meta name="description" content="Ryder Web Solutions is run by Dylan Ryder, a Dublin-based developer who has shipped 12 live websites for local service businesses across Ireland." />
+  <meta name="theme-color" content="#050608" />
+  <link rel="icon" type="image/png" href="../assets/Ryderweb%20Logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .founder-photo-wrap {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .founder-photo-wrap img {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      display: block;
+    }
+    @media (max-width: 900px) {
+      .founder-photo-wrap {
+        grid-template-columns: 120px 1fr;
+        gap: 1.25rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <header class="header"><div class="container header__inner"><a class="brand" href="/"><span class="brand__mark">RB</span><span class="brand__name">Roebuck Building Services</span></a><button class="mobile-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">Menu</button><nav class="nav" aria-label="Main navigation"><div class="nav__links"><a href="/">Home</a><a href="/services/">Services</a><a href="/projects/">Projects</a><a href="/about/" aria-current="page">About</a><a href="/process/">Process</a><a href="/contact/">Contact</a></div><a class="btn btn-primary" href="/contact/">Request Consultation</a></nav></div></header>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <main id="main">
-    <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow">About Roebuck</p>
-        <h1>Experienced. Detail-Focused. Built On Trust.</h1>
-        <p>Roebuck Building Services is a premium residential contractor team serving Dublin homeowners who value thoughtful project leadership, precise workmanship, and polished final results.</p>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html#top">
+        <img src="../assets/Ryderweb%20Logo.png" alt="Ryder Web Solutions" class="brand__logo" />
+        <span>Ryder Web Solutions</span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <a href="../index.html#top">Home</a>
+        <a href="../what-weve-done/">Our Work</a>
+        <a href="../services/">Services</a>
+        <a href="../about/" class="is-active" aria-current="page">About</a>
+        <a href="../contact/">Contact</a>
+        <a class="btn btn--nav" href="../general-consultation/">Book a Free Strategy Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section about-hero">
+      <div class="container about-hero__wrap">
+        <p class="eyebrow">About</p>
+        <h1>Started with nothing. Now 12 live sites in.</h1>
+        <p>Ryder Web Solutions is a Dublin-based web studio built around one idea: a website should get you more work, not just sit there looking nice.</p>
       </div>
     </section>
 
-    <section class="section about-layout">
-      <div class="container split">
-        <article class="mini-card reveal">
-          <h2>Our Position</h2>
-          <p>We focus exclusively on high-quality residential work: new builds, extensions, renovations, and bespoke interior enhancements. That specialist focus allows us to maintain quality control and consistency across every stage of delivery.</p>
-        </article>
-        <article class="mini-card reveal">
-          <h2>How We Work</h2>
-          <p>Our clients get a direct, professional relationship with a team that communicates clearly, manages proactively, and treats your home with care. We do not overpromise. We execute with precision.</p>
-        </article>
-      </div>
-
-      <div class="container split" style="margin-top:1.2rem;">
-        <article class="list-block reveal">
-          <h3>What Defines Us</h3>
-          <ul>
-            <li>Premium residential craftsmanship and finish quality</li>
-            <li>Transparent planning and timeline discipline</li>
-            <li>Respectful site standards and practical communication</li>
-            <li>Results that feel architect-adjacent and client-ready</li>
-          </ul>
-        </article>
-        <div class="media-wide reveal">
-          <img loading="lazy" src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Premium completed residential interior with refined craftsmanship" />
+    <section class="section reveal">
+      <div class="container">
+        <div class="founder-photo-wrap">
+          <img src="../assets/dylan-portrait.jpg" alt="Dylan Ryder, founder of Ryder Web Solutions" />
+          <div class="founder-wrap">
+            <p class="story-num">The Founder</p>
+            <h2 style="margin-top:0.4rem; margin-bottom:0.75rem;">Hi, I'm Dylan.</h2>
+            <p>I started Ryder Web Solutions with no client list and no portfolio — just a laptop and a willingness to build for anyone who'd give me a shot. That's grown into 12 live websites across trades, wellness, media, and retail, plus paid ad management running for three of those businesses.</p>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted reveal">
+      <div class="container about-grid">
+        <div class="about-card">
+          <p class="story-num">Why Local Businesses</p>
+          <h3>We work with the people who actually do the work</h3>
+          <p>Plumbers, flooring fitters, scaffolders, therapists, mechanics, bike shops — the businesses we build for are run by people who are good at their trade and don't have time to also become a marketer. That's the gap we fill.</p>
+        </div>
+        <div class="about-card">
+          <p class="story-num">How We Work</p>
+          <h3>Small enough to actually care about your site</h3>
+          <p>We take on a limited number of projects at a time. That means your site isn't one of fifty accounts — it's one of a handful, and you can reach the person who built it directly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <p class="eyebrow">Where We Are Now</p>
+        <h2>Growing, one real project at a time</h2>
+        <div class="included-grid" style="margin-top: 2rem;">
+          <div class="included-item">
+            <strong>12 live websites</strong>
+            <p>Delivered for real businesses across trades, wellness, media, and retail — see them all on <a href="../what-weve-done/">Our Work</a>.</p>
+          </div>
+          <div class="included-item">
+            <strong>3 successful ad campaigns</strong>
+            <p>Jobs booked for PrimeSeal Waterproofing, e-commerce products paid for through FTBB, and visibility gained for Greenezine.</p>
+          </div>
+          <div class="included-item">
+            <strong>Growing Instagram presence</strong>
+            <p>Follow the build process and launches at <a href="https://instagram.com/ryderwebsolutions" target="_blank" rel="noopener noreferrer">@ryderwebsolutions</a>.</p>
+          </div>
+          <div class="included-item">
+            <strong>Based in Dublin</strong>
+            <p>Working with businesses across Ireland, remote-friendly by default.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-cta reveal">
+      <div class="container dark-cta__inner">
+        <p class="dark-cta__eyebrow">Ryder Web Solutions</p>
+        <h2>Want to be part of what's next?</h2>
+        <p>Book a free strategy call and let's talk about where your business fits into this.</p>
+        <a class="dark-cta__button" href="../general-consultation/">Book your free strategy call</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><div class="container footer__inner"><p>Roebuck Building Services. Premium Residential Construction Across Dublin.</p><p>Phone: <a href="tel:+353874129456">+353 87 412 9456</a> | Email: <a href="mailto:hello@roebuckbuildingservices.ie">hello@roebuckbuildingservices.ie</a></p><div class="footer__links"><a href="/">Home</a><a href="/services/">Services</a><a href="/projects/">Projects</a><a href="/about/" aria-current="page">About</a><a href="/process/">Process</a><a href="/contact/">Contact</a></div><p>Copyright <span data-year></span> Roebuck Building Services</p></div></footer>
-  <div class="sticky-cta"><div class="container sticky-cta__inner"><p>Looking for a trusted premium contractor?</p><a class="btn btn-primary" href="/contact/">Request Consultation</a></div></div>
-  <script src="/roebuck.js" defer></script>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Ryder Web Solutions · Dublin, Ireland</p>
+      <p><a href="mailto:dylan@ryderwebsolutions.com">dylan@ryderwebsolutions.com</a></p>
+      <p class="footer-links"><a href="../index.html#top">Home</a> · <a href="../what-weve-done/">Our Work</a> · <a href="../services/">Services</a> · <a href="../about/" class="is-active" aria-current="page">About</a> · <a href="../contact/">Contact</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const siteNav = document.getElementById('site-nav');
+
+    if (mobileNavToggle && siteNav) {
+      const closeMobileNav = () => {
+        siteNav.classList.remove('nav--open');
+        mobileNavToggle.setAttribute('aria-expanded', 'false');
+        mobileNavToggle.setAttribute('aria-label', 'Open navigation menu');
+      };
+
+      mobileNavToggle.addEventListener('click', () => {
+        const isOpen = siteNav.classList.toggle('nav--open');
+        mobileNavToggle.setAttribute('aria-expanded', String(isOpen));
+        mobileNavToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      });
+
+      siteNav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          if (window.matchMedia('(max-width: 900px)').matches) {
+            closeMobileNav();
+          }
+        });
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 900) {
+          closeMobileNav();
+        }
+      });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html>
